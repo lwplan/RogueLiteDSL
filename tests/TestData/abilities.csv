@@ -4,8 +4,8 @@ Molten Bombard,Yes,,Ability (Artillery): For 3 turns: Deals Physical(6) Fire dam
 Molton Barbard Test,Yes,,"Ability (Artillery): For 3 turns: { Deals Physical(6) Fire damage, Deals Magical(2) damage }"
 Heavy Shell,Yes,,Ability (Artillery): Charges 1 turn then Deals Physical(15) Fire damage
 Piercing Shrapnel1,Yes,,Support (Artillery) : Adds Piercing(50%) to damage
-Storm Mortar,No,,Ability (Artillery): Deals Physical(6) Electrical damage afterwards [Bounce if roll < 30]
-Load Munition,No,,Support(Artillery) : Adds Fire to damage (Adjective = Loaded)
+Storm Mortar,Yes,,Ability (Artillery): Deals Physical(6) Electrical damage afterwards [Bounce if roll < 30]
+Load Munition,Yes,,Support(Artillery) : Adds Fire to damage (Adjective = Loaded)
 Bigger Caliber,No,,Support(Artillery) : Adds Bonus(+3) to damage (Adjective = Boosted)
 Critial Magazine,No,,Support(Artillery) : Adds Crit to damage if roll < 30 (Adjective = Critical)
 Molten Cannonball,No,,Support(Artillery) : Adds Applies Deals Physical(6) Fire damage for 3 turn (Adjective = Burning)

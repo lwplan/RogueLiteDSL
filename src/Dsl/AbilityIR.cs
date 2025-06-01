@@ -93,14 +93,15 @@ public enum SkillStat
 
 public record SupportIR(
     Role Role,
-    List<SupportEffectIR> SupportEffects
+    List<SupportEffectIR> SupportEffects,
+    string? adjectivive
 );
 
 public abstract record SupportEffectIR;
 
 public record DamageSupportIR(DamageMechanicType Mechanic, float Value) : SupportEffectIR;
 
-
+public record ElementSupportIR(Element Element) : SupportEffectIR;
 
 public enum EconomyStat
 {
@@ -200,31 +201,30 @@ public record ModiferEffectIR(
 
 // MODIFIERS
 
+public enum DurationType { Rounds, Turns }
+public record Duration(DurationType DurationType, int Amount);
+
 public abstract record ModifierIR(
-    int DurationTurns,
-    int DurationRounds
+    Duration Duration
 );
 
 public record EffectModifierIR(
-    int DurationTurns,
-    int DurationRounds,
+    Duration Duration,
     EffectIR Effect
-) : ModifierIR(DurationTurns, DurationRounds);
+) : ModifierIR(Duration);
 
 public record BuffDebuffIR(int Amount, SkillStat Stat);
 
 public record BuffDebuffModifierIR(
-    int DurationTurns,
-    int DurationRounds,
+    Duration Duration,
     List<BuffDebuffIR> BuffDebuffs
-) : ModifierIR(DurationTurns, DurationRounds);
+) : ModifierIR(Duration);
 
 public record ShieldModifierIR(
-    int DurationTurns,
-    int DurationRounds,
+    Duration Duration,
     int Shield,
     bool ShieldBreakable
-) : ModifierIR(DurationTurns, DurationRounds);
+) : ModifierIR(Duration);
 
 public enum MultiplierModifierType
 {
@@ -235,12 +235,11 @@ public enum MultiplierModifierType
 }
 
 public record MultiplierModifierIR(
-    int DurationTurns,
-    int DurationRounds,
+    Duration Duration,
     MultiplierModifierType MultiplierModifierType,
     float Amount,
     Condition Condition
-) : ModifierIR(DurationTurns, DurationRounds);
+) : ModifierIR(Duration);
 
 public enum ChanceModifierType
 {
@@ -249,14 +248,21 @@ public enum ChanceModifierType
 }
 
 public record ChanceModifierIR(
-    int DurationTurns,
-    int DurationRounds,
+    Duration Duration,
     ChanceModifierType ChanceModifierType,
     float Amount,
     Condition? Condition
-) : ModifierIR(DurationTurns, DurationRounds);
+) : ModifierIR(Duration);
+
+public enum SideEffectMechanicType
+{
+    Bounce,
+    Splash
+}
+
+public record SideEffectMechanic(SideEffectMechanicType SideEffectMechanicType, float Amount);
 
 public record SideEffectsIR(
-    List<EffectIR> Effects,
+    List<SideEffectMechanic> Effects,
     Condition? When = null
 );

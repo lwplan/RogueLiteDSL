@@ -7,6 +7,7 @@ using CsvHelper.Configuration;
 using DSLApp1.Dsl;
 using Pidgin;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace DSLApp1.Tests.Dsl
 {
@@ -17,6 +18,11 @@ namespace DSLApp1.Tests.Dsl
     /// </summary>
     public sealed class AbilityDslCsvTests
     {
+        
+        private readonly ITestOutputHelper _output;
+        
+        public AbilityDslCsvTests(ITestOutputHelper output) => _output = output;
+        
         private static readonly string CsvPath =
             Path.Combine(AppContext.BaseDirectory, "TestData", "abilities.csv");
 
@@ -63,6 +69,11 @@ namespace DSLApp1.Tests.Dsl
             bool shouldPass)
         {
             var tokens = DslTokenizer.Tokenize(proposedDsl);
+            
+            var tokens1 = DslTokenizer.Tokenize("Ability(Artillery): Charges 1 turn then Deals Physical(15) Fire damage");
+            foreach (var t in tokens)
+                _output.WriteLine($"{t.Type}: '{t.Text}'");
+            
             var parser = DslParsers.HexParser;
 
             if (shouldPass)

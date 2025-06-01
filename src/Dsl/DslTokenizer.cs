@@ -12,9 +12,9 @@ namespace DSLApp1.Dsl
         {
             "Ability", "Targets", "Deals", "with", "Physical", "damage", "For", "Charges", "Adds",
             "Fire", "Poison", "Ice", "Water", "Dark", "Light", "Electrical", "then", "Support",
-            "Artillery", "Brute", "Nomad", "Chaos", "Blessing", "Execution", "Piercing",
+            "Artillery", "Brute", "Nomad", "Chaos", "Blessing", "Execution", "Piercing", "Adjective",
             "Self", "Ally", "Allies", "Enemy", "Enemies", "Magical", "to",
-            "MultiHit", "MultiTarget", "Random",  "turns",  "rounds"
+            "MultiHit", "MultiTarget", "Random",  "turns",  "rounds", "Bounce", "Splash", "turn", "round"
         };
 
         public static IReadOnlyList<Token> Tokenize(string input)
@@ -30,7 +30,7 @@ namespace DSLApp1.Dsl
                     continue;
                 }
 
-                int start = i; //   <DSLApp1>\Dsl\DslTokenizer.cs:1079 Conflicting variable 'start' is defined below
+                int start = i;
 
                 if (char.IsLetter(input[i]))
                 {
@@ -40,13 +40,12 @@ namespace DSLApp1.Dsl
                     string word = input.Substring(start, i - start);
                     string lowerWord = word.ToLowerInvariant();
                     tokens.Add(new Token(
-                        Keywords.Contains(word) ? TokenType.Keyword : TokenType.Identifier,
-                        word
+                        Keywords.Contains(lowerWord) ? TokenType.Keyword : TokenType.Identifier,
+                        Keywords.Contains(lowerWord) ? lowerWord : word
                     ));
                 }
                 else if (char.IsDigit(input[i]))
                 {
-                    // Reuse the outer `start` variable — no need to redeclare it
                     while (i < input.Length && char.IsDigit(input[i]))
                         i++;
 
@@ -62,7 +61,6 @@ namespace DSLApp1.Dsl
                         tokens.Add(new Token(TokenType.Number, number));
                     }
                 }
-
                 else
                 {
                     Token token = input[i] switch
@@ -76,6 +74,10 @@ namespace DSLApp1.Dsl
                         '{' => new Token(TokenType.LBrace, "{"),
                         '}' => new Token(TokenType.RBrace, "}"),
                         '%' => new Token(TokenType.Percent, "%"),
+                        '<' => new Token(TokenType.Symbol, "<"),
+                        '>' => new Token(TokenType.Symbol, ">"),
+                        '=' => new Token(TokenType.Symbol, "="),
+                        '!' => new Token(TokenType.Symbol, "!"),
                         _ => throw new Exception($"Unexpected character '{input[i]}' at position {i}")
                     };
                     tokens.Add(token);
@@ -86,5 +88,6 @@ namespace DSLApp1.Dsl
             tokens.Add(new Token(TokenType.EndOfFile, ""));
             return tokens;
         }
+        
     }
 }
