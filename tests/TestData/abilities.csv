@@ -1,0 +1,103 @@
+Name,Test,Legacy,ProposedDSL
+Cannonzade,Yes,,"Ability (Artillery): Targets Enemies with [MultiHit(6), Random], Deals Physical(6) Fire damage"
+Molten Bombard,Yes,,Ability (Artillery): For 3 turns: Deals Physical(6) Fire damage
+Molton Barbard Test,Yes,,"Ability (Artillery): For 3 turns: { Deals Physical(6) Fire damage, Deals Magical(2) damage }"
+Heavy Shell,Yes,,Ability (Artillery): Charges 1 turn then Deals Physical(15) Fire damage
+Piercing Shrapnel1,Yes,,Support (Artillery) : Adds Piercing(50%) to damage
+Storm Mortar,No,,Ability (Artillery): Deals Physical(6) Electrical damage afterwards [Bounce if roll < 30]
+Load Munition,No,,Support(Artillery) : Adds Fire to damage (Adjective = Loaded)
+Bigger Caliber,No,,Support(Artillery) : Adds Bonus(+3) to damage (Adjective = Boosted)
+Critial Magazine,No,,Support(Artillery) : Adds Crit to damage if roll < 30 (Adjective = Critical)
+Molten Cannonball,No,,Support(Artillery) : Adds Applies Deals Physical(6) Fire damage for 3 turn (Adjective = Burning)
+Siege Lock,No,,Ability (Artillery): Applies Delay(2)
+Chaos,No,,
+Shuffle,No,Randomizes all turn order for the current round.,Ability (Chaos): Targets All Invokes Shuffle
+Sleight of Hand,No,Advances the next turn of a selected ally.,Ability (Chaos): Targets Ally Invokes Advance(2)
+Tripwire,No,Delays the next turn of a selected enemy by two slots.,Ability (Chaos): Invokes Delay(2)
+Double Blink,No,Delays the next turn of a selected enemy by two slots.,Ability (Chaos): Targets Ally Invokes Swap
+Joker’s Gambit,No,50% chance to gain 3x damage for the next turn.,Ability (Chaos): Targets Self [Applies Power(300%) for 1 turn] if roll < 50
+Execution,No,,
+Finish Him,No,Deals 10 damage to targets below 30% HP no effect on others.,Ability (Execution): Deals Physical(10) damage if target.hpPercent < 30
+Last Words,No,"When a target dies,  gain 10 mana.",Support (Execution): Adds afterwards ManaBoost(10) if result killCount > 0 
+Axe Man,No,Heavy strike that splash enemies if it kills the target.,Ability (Execution): Deals Physical(10) damage aftwards Spash if result killCount > 0
+Fatal Mark,No,Marks an enemy: the next attack deals double damage,Ability (Execution): Applies Vulnerability(200) until hit
+Killing Blow (Splash),No,Physical attack on a kill 50% of damage applied to all enemies.,Ability (Execution): Deals Physical(10) damage aftwards Spash(50%) if result killCount > 0
+Farewell,No, if the enemy is 15% or less HP you immediately kill him.,Ability (Execution): Deals Kill if target.hpPercentage < 15
+Killing Blow (Bounce),No,"If this attack kills the target, deal 50% of that damage to a second random enemy.",Ability (Execution): Deals Physical(10) damage aftwards Bounce(50%) if result killCount > 0
+Holy,No,,
+Sacred Light,No,Heals all allies for 20 HP.,Ability (Holy): Targets Allies Heals(20)
+Holy Armor,No,Grants +6 Defense for 3 turns.,"Ability (Holy): Applies Buff(DEF,6) for 3 turns"
+Divine Reflex,No,Grants +2 initiative for the next 2 rounds,"Ability (Holy): Applies Buff(IVE,6) for 2 rounds"
+Radiant Vow,No,"If the user dies this round, they revive with 1 HP.",Ability (Holy): Applies Revival(1) for 1 round
+Light Ray,No,Magic attack with light element.,Ability (Holy): Deals Magical(1) with Light
+Cleric’s Boon,No,Heals all allies for 20 HP.,Ability (Holy): Targets Allies Applies Cleanse
+Protector,No,,
+Iron Guard,No,"Enter a defensive stance: reduce incoming damage by 40% for 1 turn.
+","Ability (Protector): Targets Self, Applies DefensiveStance, Applies Protection(40%) for 1 turn"
+Shield Wall,No,"Enter a defensive stance: Add a 30HP shield
+","Ability (Protector): Targets Self, Applies DefensiveStance, Applies Shield(30)"
+Mighty Shield,No, Add a 30HP shield,"Ability (Protector): Targets Self, Applies Shield(30)"
+Intercepting Step,No,Leap into the path of the next enemy attack,"Ability (Protector): Targets Self, Applies DefensiveStance until hit"
+Brute,No,,
+Overhead Slam,No,"Deals massive damage but stuns the user for 1 turn.
+",Ability (Brute): Deals Physical(20) afftewards 
+Reckless Charge,No,,
+Earthbreaker,No,,
+Double Down,No,,
+Crushbone,No,,
+Solitude,No,,
+Lone Stance,No,,
+Echoing Blade,No,,
+Isolated Will,No,,
+Stillness Before the Storm,No,,
+Last Man Standing,No,,
+Quiet Defiance,No,,
+Discipline,No,,
+Measured Strike,No,,
+Calm Mind,No,,
+Form Practice,No,,
+Rising Focus,No,,
+Unwavering,No,,
+Perfect Rhythm,No,,
+Curse,No,,
+Wither Touch,No,,
+Soul Chain,No,,
+Black Echo,No,,
+Mark of Frailty,No,,
+Hex Pulse,No,,
+Rotten Grace,No,,
+Sleight,No,,
+Feint Step,No,,
+Quick Pocket,No,,
+Smoke Bloom,No,,
+Misdirection,No,,
+Ghost Draw,No,,
+Palm Flash,No,,
+Overload,No,,
+Overcharge Pulse,No,,
+Feedback Arc,No,,
+Crackleburst,No,,
+Core Surge,No,,
+Stability Break,No,,
+Storm Tension,No,,
+HiddenBlade,No,,
+Veinpiercer,No,,
+Silent Fang,No,,
+Crimson Echo,No,,
+Expose Weakness,No,,
+Gut Hook,No,,
+Shadow Hemorrhage,No,,
+Resolve,No,,
+Steady Form,No,,
+Stone Patience,No,,
+Endure Flow,No,,
+Silent Step,No,,
+Oath Fulfilled,No,,
+Watchful Waiting,No,,
+Looting,No,,
+Snatch Mana,No,,
+Coin Toss,No,,
+Opportunist Cut,No,,
+Pickpocket Rhythm,No,,
+Black Market Gift,No,,
+Empty Their Pockets,No,,

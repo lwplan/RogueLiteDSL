@@ -1,0 +1,37 @@
+# === .NET build artifacts ===
+**/bin/
+**/obj/
+
+# === Rider and VS user-specific settings ===
+*.DotSettings.user
+.idea/
+.vscode/
+*.user
+*.suo
+
+# === OS metadata ===
+.DS_Store
+Thumbs.db
+
+# === Logs and crash reports ===
+*.log
+
+# === Build outputs ===
+*.dll
+*.pdb
+*.exe
+*.cache
+
+# === Unit test outputs ===
+TestResults/
+*.coverage
+
+# === Temporary or editor files ===
+*~
+*.swp
+*.tmp
+
+# === Dependency resolution ===
+project.lock.json
+project.fragment.lock.json
+
