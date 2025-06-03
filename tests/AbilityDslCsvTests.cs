@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using Components.Root;
 using CsvHelper;
 using CsvHelper.Configuration;
 using DSLApp1.Dsl;
@@ -20,59 +23,42 @@ namespace DSLApp1.Tests.Dsl
     {
         
         private readonly ITestOutputHelper _output;
-        
+        private static readonly string SheetId = "1O9QoC-a7ZlYEijzzvyAcg8KNZw8j9kjh_HjwE5il4T0";
+        private static readonly string SheetName = "abilities"; // match the tab name exactly
+        private static readonly Task<List<object[]>> CachedRows = LoadRows();
+
         public AbilityDslCsvTests(ITestOutputHelper output) => _output = output;
-        
-        private static readonly string CsvPath =
-            Path.Combine(AppContext.BaseDirectory, "TestData", "abilities.csv");
 
-        /// <summary>
-        /// Streams the CSV rows into xUnit’s MemberData.
-        /// </summary>
-        public static IEnumerable<object[]> CsvRows()
+        public static async Task<List<object[]>> LoadRows()
         {
-            var path = CsvPath;
-            using var reader = new StreamReader(CsvPath);
-            var cfg = new CsvConfiguration(CultureInfo.InvariantCulture)
-            {
-                TrimOptions = TrimOptions.Trim,      // eat sneaky spaces
-                HeaderValidated = null,
-                MissingFieldFound = null
-            };
-            using var csv = new CsvReader(reader, cfg);
+            var loader = new GoogleCsvLoader(SheetId);
+            var records = await loader.LoadCsvRecords(SheetName);
 
-            csv.Read();
-            csv.ReadHeader();
-
-            while (csv.Read())
-            {
-                var name        = csv.GetField<string>("Name");
-                var shouldPass  = string.Equals(csv.GetField<string>("Test"), "Yes",
-                                                StringComparison.OrdinalIgnoreCase);
-                var dsl         = csv.GetField<string>("ProposedDSL");
-
-                if (shouldPass)  // ✅ Filter: only run tests expected to succeed
-                    yield return new object[] { name, dsl, true };
-            }
+            return records
+                .Where(r => r.TryGetValue("Test", out var test) && test.Equals("Yes", StringComparison.OrdinalIgnoreCase))
+                .Select(r => new object[]
+                {
+                    r["Name"],
+                    r["ProposedDSL"],
+                    true
+                })
+                .ToList();
         }
 
-        /// <remarks>
-        /// Today we only have <see cref="DslParsers.DamageEffectParser"/>.
-        /// As you grow a full Ability parser, swap <c>DamageEffectParser</c>
-        /// for <c>AbilityParser</c> (or whatever you name it) and the tests
-        /// instantly level-up.
-        /// </remarks>
+        public static IEnumerable<object[]> CsvRows()
+        {
+            return CachedRows.Result;
+        }
+
         [Theory]
         [MemberData(nameof(CsvRows))]
-        public void Csv_ProposedDsl_Matches_CurrentGrammar(string name,
-            string proposedDsl,
-            bool shouldPass)
+        public void Csv_ProposedDsl_Matches_CurrentGrammar(string name, string proposedDsl, bool shouldPass)
         {
             var tokens = DslTokenizer.Tokenize(proposedDsl);
-            
+
             foreach (var t in tokens)
                 _output.WriteLine($"{t.Type}: '{t.Text}'");
-            
+
             var parser = DslParsers.HexParser;
 
             if (shouldPass)
@@ -85,6 +71,5 @@ namespace DSLApp1.Tests.Dsl
                 Assert.Throws<ParseException>(() => parser.ParseOrThrow(tokens));
             }
         }
-
     }
 }
