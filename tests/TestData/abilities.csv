@@ -1,21 +1,20 @@
 Name,Test,Legacy,ProposedDSL
-Cannonzade,Yes,,"Ability (Artillery): Targets Enemies with [MultiHit(6), Random], Deals Physical(6) Fire damage"
+Cannonzade,Yes,,"aaAbility (Artillery): Targets Enemies with [MultiHit(6), Random], Deals Physical(6) Fire damage"
 Molten Bombard,Yes,,Ability (Artillery): For 3 turns: Deals Physical(6) Fire damage
 Molton Barbard Test,Yes,,"Ability (Artillery): For 3 turns: { Deals Physical(6) Fire damage, Deals Magical(2) damage }"
 Heavy Shell,Yes,,Ability (Artillery): Charges 1 turn then Deals Physical(15) Fire damage
 Piercing Shrapnel1,Yes,,Support (Artillery) : Adds Piercing(50%) to damage
 Storm Mortar,Yes,,Ability (Artillery): Deals Physical(6) Electrical damage afterwards [Bounce if roll < 30]
 Load Munition,Yes,,Support(Artillery) : Adds Fire to damage (Adjective = Loaded)
-Bigger Caliber,No,,Support(Artillery) : Adds Bonus(+3) to damage (Adjective = Boosted)
-Critial Magazine,No,,Support(Artillery) : Adds Crit to damage if roll < 30 (Adjective = Critical)
-Molten Cannonball,No,,Support(Artillery) : Adds Applies Deals Physical(6) Fire damage for 3 turn (Adjective = Burning)
-Siege Lock,No,,Ability (Artillery): Applies Delay(2)
-Chaos,No,,
-Shuffle,No,Randomizes all turn order for the current round.,Ability (Chaos): Targets All Invokes Shuffle
-Sleight of Hand,No,Advances the next turn of a selected ally.,Ability (Chaos): Targets Ally Invokes Advance(2)
-Tripwire,No,Delays the next turn of a selected enemy by two slots.,Ability (Chaos): Invokes Delay(2)
-Double Blink,No,Delays the next turn of a selected enemy by two slots.,Ability (Chaos): Targets Ally Invokes Swap
-Joker’s Gambit,No,50% chance to gain 3x damage for the next turn.,Ability (Chaos): Targets Self [Applies Power(300%) for 1 turn] if roll < 50
+Bigger Caliber,Yes,,Support(Artillery) : Adds Bonus(+3) to damage (Adjective = Boosted)
+Critial Magazine,Yes,,Support(Artillery) : Adds Physical(4) to damage
+Molten Cannonball,Yes,,Support(Artillery) : Adds Applies Deals Physical(6) Fire damage for 3 turn (Adjective = Burning)
+Siege Lock,Yes,,"Ability (Artillery): Targets Enemy, Applies Delay(2)"
+Shuffle,Yes,Randomizes all turn order for the current round.,"Ability (Chaos): Targets All, Invokes Shuffle"
+Sleight of Hand,Yes,Advances the next turn of a selected ally.,"Ability (Chaos): Targets Ally, Invokes Advance(2)"
+Tripwire,Yes,Delays the next turn of a selected enemy by two slots.,"Ability (Chaos): Targets Enemy, Invokes Delay(2)"
+Double Blink,Yes,Delays the next turn of a selected enemy by two slots.,"Ability (Chaos): Targets Ally, Invokes Swap"
+Joker’s Gambit,Yes,50% chance to gain 3x damage for the next turn.,"Ability (Chaos): Targets Self, [Applies Power(300%) for 1 turn] if roll < 50"
 Execution,No,,
 Finish Him,No,Deals 10 damage to targets below 30% HP no effect on others.,Ability (Execution): Deals Physical(10) damage if target.hpPercent < 30
 Last Words,No,"When a target dies,  gain 10 mana.",Support (Execution): Adds afterwards ManaBoost(10) if result killCount > 0 

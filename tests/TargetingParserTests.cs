@@ -14,11 +14,7 @@
 //         {
 //             const string input = "Targets Enemies with MultiHit(6), Random";
 //                 //                1234567890123456789012345678
-//             var parser = 
-//                 from _targets in DslParsers.Tok("Targets")
-//                 from target   in DslParsers.TargetabilityParser.Before(DslParsers.Tok("with"))
-//                 from mechs    in DslParsers.TargetMechanicParser.Separated(Char(',').Before(SkipWhitespaces))
-//                 select new Targeting(target, mechs.ToList());
+//
 //
 //             var result = parser.ParseOrThrow(input, null);
 //

@@ -7,4 +7,5 @@ public enum Targetability
     Allies,
     Enemy,
     Enemies,
+    All
 }

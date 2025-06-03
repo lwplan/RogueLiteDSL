@@ -70,7 +70,6 @@ namespace DSLApp1.Tests.Dsl
         {
             var tokens = DslTokenizer.Tokenize(proposedDsl);
             
-            var tokens1 = DslTokenizer.Tokenize("Ability(Artillery): Charges 1 turn then Deals Physical(15) Fire damage");
             foreach (var t in tokens)
                 _output.WriteLine($"{t.Type}: '{t.Text}'");
             

@@ -6,15 +6,35 @@ using DSLApp1.Dsl;
 
 namespace DSLApp1.Dsl
 {
+    public enum TokenType
+    {
+        Keyword,
+        Identifier,
+        Number,
+        LParen,
+        RParen,
+        LBracket,
+        RBracket,
+        Comma,
+        Colon,
+        EndOfFile,
+        LBrace,
+        RBrace,
+        Percent,
+        Symbol,
+    }
+
+    
     public static class DslTokenizer
     {
         private static readonly HashSet<string> Keywords = new(StringComparer.OrdinalIgnoreCase)
         {
-            "Ability", "Targets", "Deals", "with", "Physical", "damage", "For", "Charges", "Adds",
-            "Fire", "Poison", "Ice", "Water", "Dark", "Light", "Electrical", "then", "Support",
+            "Ability", "Targets", "Deals", "with", "Physical", "damage", "For", "Charges", "Adds", "if", "roll",
+            "Fire", "Poison", "Ice", "Water", "Dark", "Light", "Electrical", "then", "Support", "Spiral",
             "Artillery", "Brute", "Nomad", "Chaos", "Blessing", "Execution", "Piercing", "Adjective",
-            "Self", "Ally", "Allies", "Enemy", "Enemies", "Magical", "to",
-            "MultiHit", "MultiTarget", "Random",  "turns",  "rounds", "Bounce", "Splash", "turn", "round"
+            "Self", "Ally", "Allies", "Enemy", "Enemies", "Magical", "to", "ExtraDamage", "Crit",
+            "MultiHit", "MultiTarget", "Random",  "turns",  "rounds", "Bounce", "Splash", "turn", "round", "Invokes", "Delay",
+            "Advance", "Swap", "Shuffle", "All"
         };
 
         public static IReadOnlyList<Token> Tokenize(string input)
@@ -60,6 +80,26 @@ namespace DSLApp1.Dsl
                         string number = input.Substring(start, i - start);
                         tokens.Add(new Token(TokenType.Number, number));
                     }
+                }
+                else if (input[i] == '=' && i + 1 < input.Length && input[i + 1] == '=')
+                {
+                    tokens.Add(new Token(TokenType.Symbol, "=="));
+                    i += 2;
+                }
+                else if (input[i] == '!' && i + 1 < input.Length && input[i + 1] == '=')
+                {
+                    tokens.Add(new Token(TokenType.Symbol, "!="));
+                    i += 2;
+                }
+                else if (input[i] == '<' && i + 1 < input.Length && input[i + 1] == '=')
+                {
+                    tokens.Add(new Token(TokenType.Symbol, "<="));
+                    i += 2;
+                }
+                else if (input[i] == '>' && i + 1 < input.Length && input[i + 1] == '=')
+                {
+                    tokens.Add(new Token(TokenType.Symbol, ">="));
+                    i += 2;
                 }
                 else
                 {

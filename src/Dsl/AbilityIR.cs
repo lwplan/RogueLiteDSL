@@ -44,14 +44,25 @@ public enum EffectType
 {
     Damage,
     Heal,
-    Turn,
-    Mana,
-    Opportunity,
+    Invoke,
+    Economy,
     Modifier,
     Composite
 }
 
+public enum BuffMechanicType
+{
+    Buff,
+    Debuff,
+}
 
+public enum DamageMultiplierMechanicType
+{
+    Might,
+    Frailty,
+    Vulnerability,
+    Protection
+}
 
 public enum TargetMechanicType
 {
@@ -69,7 +80,9 @@ public record Targeting( Targetability Targetability, List<TargetMechanic> Targe
 public enum DamageMechanicType
 {
     Piercing,
-    Spiral
+    Spiral,
+    ExtraDamage,
+    Crit
 }
 
 public enum DamageFormula
@@ -91,10 +104,12 @@ public enum SkillStat
     Initiative
 }
 
+
 public record SupportIR(
     Role Role,
     List<SupportEffectIR> SupportEffects,
-    string? adjectivive
+    string? adjectivive,
+    Condition? When = null
 );
 
 public abstract record SupportEffectIR;
@@ -102,6 +117,8 @@ public abstract record SupportEffectIR;
 public record DamageSupportIR(DamageMechanicType Mechanic, float Value) : SupportEffectIR;
 
 public record ElementSupportIR(Element Element) : SupportEffectIR;
+
+public record EffectSupportIR(EffectIR Effect) : SupportEffectIR;
 
 public enum EconomyStat
 {
@@ -113,7 +130,8 @@ public enum EconomyStat
 public enum Op
 {
     Gt, Lt, Eq, Ge, Le,
-    Contains
+    Contains,
+    Ne
 }
 
 public enum Field
@@ -168,7 +186,7 @@ public record DamageEffectIR(
     List<DamageMechanic>? With = null
 ) : EffectIR(Subject, EffectType.Damage, null);
 
-public enum TurnMechanicType
+public enum InvokeMechanicType
 {
     Advance,
     Swap,
@@ -176,17 +194,27 @@ public enum TurnMechanicType
     Shuffle
 }
 
-public record TurnEffectIR(
-    Subject Subject,
-    TurnMechanicType TurnMechanic,
-    int Amount,
-    Condition? Condition
-) : EffectIR(Subject, EffectType.Turn, Condition);
+public record InvokeMechanic(InvokeMechanicType MechanicType, float Value);
 
-public record ManaEffectIR(
+public record InvokeEffectIR(
     Subject Subject,
-    int Amount
-) : EffectIR(Subject, EffectType.Mana, null);
+    InvokeMechanic InvokeMechanic,
+    Condition? Condition
+) : EffectIR(Subject, EffectType.Invoke, Condition);
+
+public enum EconomyMechanicType
+{
+    Loot,
+    Give
+}
+
+public struct EconomyMechanic(EconomyMechanicType economyMechanicType, float Value);
+
+public record EconomyEffectIR(
+    Subject Subject,
+    EconomyMechanic EconomyMechanic,
+    Condition? Condition
+) : EffectIR(Subject, EffectType.Economy, null);
 
 public record HealEffectIR(
     Subject Subject,
