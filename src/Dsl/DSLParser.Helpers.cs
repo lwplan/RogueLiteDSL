@@ -14,9 +14,9 @@ public static partial class DslParsers
     
     /* ───────────── Helpers  ───────────── */
 
-    public static Parser<Token, Token> Tok(TokenType type, string text) =>
-        Token(t => t.Type == type && t.Text.Equals(text, StringComparison.OrdinalIgnoreCase)
-        );
+    // public static Parser<Token, Token> Tok(TokenType type, string text) =>
+    //     Token(t => t.Type == type && t.Text.Equals(text, StringComparison.OrdinalIgnoreCase)
+    //     );
 
 
     private static Parser<Token, Token> Symbol(TokenType type) => Token(t => t.Type == type);
@@ -30,7 +30,7 @@ public static partial class DslParsers
             Token(t => t.Type == TokenType.Number).Select(t => float.Parse(t.Text, CultureInfo.InvariantCulture))
         );
     
-    private static readonly Parser<Token, Unit> Comma = Symbol(TokenType.Comma).Then(Return(Unit.Value));
+    private static readonly Parser<Token, Unit> Comma = Tok.Comma.Then(Return(Unit.Value));
     
 
 }

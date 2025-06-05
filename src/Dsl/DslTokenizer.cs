@@ -9,33 +9,16 @@ namespace DSLApp1.Dsl
     public enum TokenType
     {
         Keyword,
-        Identifier,
         Number,
-        LParen,
-        RParen,
-        LBracket,
-        RBracket,
-        Comma,
-        Colon,
         EndOfFile,
-        LBrace,
-        RBrace,
         Percent,
         Symbol,
     }
 
-    
+
     public static class DslTokenizer
     {
-        private static readonly HashSet<string> Keywords = new(StringComparer.OrdinalIgnoreCase)
-        {
-            "Ability", "Targets", "Deals", "with", "Physical", "damage", "For", "Charges", "Adds", "if", "roll",
-            "Fire", "Poison", "Ice", "Water", "Dark", "Light", "Electrical", "then", "Support", "Spiral",
-            "Artillery", "Brute", "Nomad", "Chaos", "Blessing", "Execution", "Piercing", "Adjective",
-            "Self", "Ally", "Allies", "Enemy", "Enemies", "Magical", "to", "ExtraDamage", "Crit",
-            "MultiHit", "MultiTarget", "Random",  "turns",  "rounds", "Bounce", "Splash", "turn", "round", "Invokes", "Delay",
-            "Advance", "Swap", "Shuffle", "All"
-        };
+
 
         public static IReadOnlyList<Token> Tokenize(string input)
         {
@@ -58,27 +41,20 @@ namespace DSLApp1.Dsl
                         i++;
 
                     string word = input.Substring(start, i - start);
-                    string lowerWord = word.ToLowerInvariant();
-                    tokens.Add(new Token(
-                        Keywords.Contains(lowerWord) ? TokenType.Keyword : TokenType.Identifier,
-                        Keywords.Contains(lowerWord) ? lowerWord : word
-                    ));
+                    tokens.Add(new Token(TokenType.Keyword, word));
                 }
                 else if (char.IsDigit(input[i]))
                 {
-                    while (i < input.Length && char.IsDigit(input[i]))
-                        i++;
+                    while (i < input.Length && char.IsDigit(input[i])) i++;
 
                     if (i < input.Length && input[i] == '%')
                     {
                         i++;
-                        string percent = input.Substring(start, i - start);
-                        tokens.Add(new Token(TokenType.Percent, percent));
+                        tokens.Add(new Token(TokenType.Percent, input.Substring(start, i - start)));
                     }
                     else
                     {
-                        string number = input.Substring(start, i - start);
-                        tokens.Add(new Token(TokenType.Number, number));
+                        tokens.Add(new Token(TokenType.Number, input.Substring(start, i - start)));
                     }
                 }
                 else if (input[i] == '=' && i + 1 < input.Length && input[i + 1] == '=')
@@ -103,17 +79,16 @@ namespace DSLApp1.Dsl
                 }
                 else
                 {
-                    Token token = input[i] switch
+                    var token = input[i] switch
                     {
-                        '(' => new Token(TokenType.LParen, "("),
-                        ')' => new Token(TokenType.RParen, ")"),
-                        '[' => new Token(TokenType.LBracket, "["),
-                        ']' => new Token(TokenType.RBracket, "]"),
-                        ',' => new Token(TokenType.Comma, ","),
-                        ':' => new Token(TokenType.Colon, ":"),
-                        '{' => new Token(TokenType.LBrace, "{"),
-                        '}' => new Token(TokenType.RBrace, "}"),
-                        '%' => new Token(TokenType.Percent, "%"),
+                        '(' => new Token(TokenType.Symbol, "("),
+                        ')' => new Token(TokenType.Symbol, ")"),
+                        '[' => new Token(TokenType.Symbol, "["),
+                        ']' => new Token(TokenType.Symbol, "]"),
+                        ',' => new Token(TokenType.Symbol, ","),
+                        ':' => new Token(TokenType.Symbol, ":"),
+                        '{' => new Token(TokenType.Symbol, "{"),
+                        '}' => new Token(TokenType.Symbol, "}"),
                         '<' => new Token(TokenType.Symbol, "<"),
                         '>' => new Token(TokenType.Symbol, ">"),
                         '=' => new Token(TokenType.Symbol, "="),
@@ -128,6 +103,7 @@ namespace DSLApp1.Dsl
             tokens.Add(new Token(TokenType.EndOfFile, ""));
             return tokens;
         }
-        
     }
 }
+
+

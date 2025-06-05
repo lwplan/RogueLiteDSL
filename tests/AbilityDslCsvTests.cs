@@ -41,6 +41,7 @@ namespace DSLApp1.Tests.Dsl
                     r["Name"],
                     r["ProposedDSL"],
                     true
+                    
                 })
                 .ToList();
         }

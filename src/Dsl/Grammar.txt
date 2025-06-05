@@ -1,0 +1,89 @@
+ability :=
+    header body
+    
+body := 
+    [charges-clause]
+    [targeting-clause]
+    [immediate-clause]
+    [modifier-clause]
+    [side-effects-clause]
+    [miss-clause]
+    
+    
+immediate-clause :=
+    [deals-clause|heals-clause|invokes-clause]
+    
+modifier-clause :=
+    inflicts-clause|cures-clause|applies-clause
+ 
+
+deals-clause := 'Deals' damage-clause 
+
+damage-clause :=  { element-type } damage-type  'damage' ['with' damage-mechanic { ',' damage-mechanic } ]  ['if' condition]
+
+damage-mechanic := damage-mechanic-type mechanic-specifier
+
+damage-mechanic-type := 'Spiral' | 'Piercing' | 'Kill'
+
+
+
+heals-clause :=  healing-type healing-clause
+
+healing-type := 'Heals'|'Removes'|'Gives'|'Takes'
+
+healing-clause :=  int ['hp'|'mana'|'opportunity'] ['when' condition]
+
+mechanic-specifier := ['(' amount ')'] ['when' condition]
+
+invokes-clause := 'Invokes'  invoke-mechanic ['if' condition]
+
+invoke-mechanic := invoke-mechanic-type  mechanic-specifier
+
+invoke-mechanic-type := 'Swap' | 'Shuffle' | 'Advance' | 'Delay'
+
+
+
+inflicts-clause := 'Inflicts' damage-clause [auto-targeting-clause] duration-clause ['if' condition]
+
+auto-targeting-clause := 'Targeting' target-selection-criteria targetabilty 
+
+target-selection-criteria = 'Strongest' | 'Weakest' | 'NextUp' | 'LastUp' | 'Random'
+
+targetabilty = ['Single' | 'All'] ['Ally' | 'Allies' | 'Enemy' | 'Enemies' ] 
+
+duration-clause := 'for' (int 'turns' | 'rounds' | 'turn' | 'round' ) [ event-clause ]
+
+event-clause := 'on' ('round' 'start' | 'round' 'end' | 'turn' 'start' | 'turn' 'end' )
+
+cures-clause := ['Restores'|'Drains'|'Loots'|'Donates'] healing-clause [targeting-clause] duration-clause ['if' condition]
+
+applies-clause := 'Applies' modifier-mechanic {',' modifier-mechanic} [duration-clause] ['if' condition]
+
+modifier-mechanic := stat-buff-mechanic | multiplier-mechanic | state-mechanic
+
+state-mechanic:= ('Blessing' | 'Curse' | 'Stun' | 'Defensive' | 'Revival' ) [mechanic-specifier] 
+
+multiplier-mechanic := ('Vulnerability' | 'Protection' | 'Power' | 'Frailty'  ) ('against' | 'to' )  ['(' amount ')'] ( element | compatibility ) damage ['when' condition]
+
+side-effects-clause := 'afterwards'  side-effect-mechanic { ',' side-effect-mechanic}
+
+side-effect-mechanic := side-effect-mechanic |  side-effect-healing-mechanic
+
+side-effect-mechanic := side-effect-mechanic-type mechanic-specifier 
+
+side-effect-mechanic-type  := 'Bounce' | 'Splash' | 'Exhaust' | 'CoolOff'
+
+healing-side-effect := 'Restores' healing-clause
+
+## Conditions
+
+condition := comparison-field [ comparision amount ] 
+        
+comparison-field := (('User' | 'Target' ) character-stat | outcome-stat )
+
+character-stat := 'Attack' | 'Defense' | 'Intelligence' | 'Resistance' | 'Initiative' | 'MaxHp' | 'InitialMana' | 'Mana' | 'Hp' |  'Opportunity'
+
+outcome-stat := 'Roll' | 'Kills' | 'Missed' | 'Hits' | 'Damage'
+
+miss-clause := 'miss' 'if' condition
+

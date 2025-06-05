@@ -16,7 +16,7 @@ namespace DSLApp1.Tests.Dsl
             // Only parse the condition, skip the prefix
             var parser =
                 from _ in DslParsers.SupportEffectParser
-                from condition in DslParsers.SimpleConditionParser
+                from condition in DslParsers.ConditionParser
                 select condition;
 
             return parser.ParseOrThrow(tokens);
