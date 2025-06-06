@@ -1,18 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
-using ConsoleApp3.Core;
 using DSLApp1.Tests;
 
-namespace DSLApp1.Tests
-{
-    using System.Text;
-    using ConsoleApp3.Core;
-}
 
 namespace Components.Root
 {

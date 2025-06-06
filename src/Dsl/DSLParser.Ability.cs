@@ -79,7 +79,7 @@ public static partial class DslParsers
 
         select new AbilityIR(
             (immediate.HasValue 
-                ? [immediate.Value]
+                ? new List<EffectIR>(){immediate.Value}
                 : Enumerable.Empty<EffectIR>())
             .Concat(modifiers)
             .ToList(),

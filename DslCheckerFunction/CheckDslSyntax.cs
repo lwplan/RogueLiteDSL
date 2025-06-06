@@ -44,6 +44,7 @@ public class CheckDslSyntax
                 return response;
             }
 
+            // var expanded = DslMacroExpander.ExpandMacros(input.Dsl);
             var tokens = DslTokenizer.Tokenize(input.Dsl);
             var result = DslParsers.AbilityParser.Parse(tokens);
 

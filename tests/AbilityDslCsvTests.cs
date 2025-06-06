@@ -55,8 +55,10 @@ namespace DSLApp1.Tests.Dsl
         [MemberData(nameof(CsvRows))]
         public void Csv_ProposedDsl_Matches_CurrentGrammar(string name, string proposedDsl, bool shouldPass)
         {
+            
+            // var expanded = DslMacroExpander.ExpandMacros(proposedDsl);
             var tokens = DslTokenizer.Tokenize(proposedDsl);
-
+            
             foreach (var t in tokens)
                 _output.WriteLine($"{t.Type}: '{t.Text}'");
 
