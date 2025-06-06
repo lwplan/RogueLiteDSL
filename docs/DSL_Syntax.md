@@ -1,0 +1,117 @@
+# RogueLite DSL Overview
+
+This document provides a top‑down walk through of the ability description language used in this repository.  It summarizes the syntax using EBNF inspired notation and highlights some of the limits built into the grammar.
+
+## 1. Top Level: `ability`
+
+At the highest level an ability is composed of a header followed by a body.  The body is built from a series of optional clauses which may appear in a fixed order.  The grammar in `src/Dsl/Grammar.txt` starts with:
+
+```ebnf
+ability := header body
+
+body :=
+    [charges-clause]
+    [targeting-clause]
+    [immediate-clause]
+    [modifier-clause]
+    [side-effects-clause]
+    [miss-clause]
+```
+```
+
+Only the header is mandatory.  Each clause in the body is optional but must appear in the order shown above.  A single ability may contain exactly one immediate effect and zero or more modifier effects.
+
+## 2. Immediate Effects
+
+Immediate effects describe actions that happen as soon as the ability resolves.  The grammar allows dealing damage, healing, or invoking combat mechanics.  From the grammar:
+
+```ebnf
+immediate-clause := [deals-clause | heals-clause | invokes-clause]
+
+deals-clause := 'Deals' damage-clause
+
+heals-clause := healing-type healing-clause
+
+invokes-clause := 'Invokes' invoke-mechanic ['if' condition]
+```
+```
+
+`deals-clause` uses `damage-clause` which supports optional elemental tags and modifiers:
+
+```ebnf
+ damage-clause := { element-type } damage-type 'damage'
+                  ['with' damage-mechanic {',' damage-mechanic}]
+                  ['if' condition]
+```
+
+Elements such as `Fire` or `Ice` may be listed before the damage type (`Physical` or `Magical`).  Damage mechanics like `Piercing` or `Spiral` can be supplied in square brackets.  Each mechanic accepts an amount (number or percentage) and may include an additional `when` condition.
+
+Healing and invoking mechanics follow similar patterns with optional conditions and parameters.
+
+## 3. Modifier Effects
+
+Modifier effects apply ongoing changes.  These include inflicting damage over time, curing effects, or applying buffs and debuffs.  The grammar excerpt is:
+
+```ebnf
+modifier-clause :=
+    inflicts-clause | cures-clause | applies-clause
+
+inflicts-clause := 'Inflicts' damage-clause [auto-targeting-clause] duration-clause ['if' condition]
+
+cures-clause := ['Restores' | 'Drains' | 'Loots' | 'Donates'] healing-clause [targeting-clause] duration-clause ['if' condition]
+
+applies-clause := 'Applies' modifier-mechanic {',' modifier-mechanic} [duration-clause] ['if' condition]
+```
+```
+
+`duration-clause` limits how long the modifier lasts and can optionally attach an event such as `on round start`.
+
+Modifier mechanics can represent stat buffs, multipliers (e.g., `Vulnerability`), or named states like `Stun`:
+
+```ebnf
+modifier-mechanic := stat-buff-mechanic | multiplier-mechanic | state-mechanic
+state-mechanic := ('Blessing' | 'Curse' | 'Stun' | 'Defensive' | 'Revival') [mechanic-specifier]
+multiplier-mechanic := ('Vulnerability' | 'Protection' | 'Power' | 'Frailty') ('against' | 'to') ['(' amount ')'] (element | compatibility) damage ['when' condition]
+```
+```
+
+## 4. Targeting and Side Effects
+
+Targeting controls which units an ability can affect.  When present it specifies an automatic strategy, an optional target type, and the target side:
+
+```ebnf
+auto-targeting-clause := 'Targeting' target-selection-criteria targetability
+```
+
+Side effects occur after the main effects resolve and can include mechanics like `Bounce` or `Splash`:
+
+```ebnf
+side-effects-clause := 'afterwards' side-effect-mechanic {',' side-effect-mechanic}
+```
+
+Healing can also be used as a side effect.  Each mechanic accepts a numeric amount in parentheses and may be gated by a condition.
+
+## 5. Conditions
+
+Conditions gate many parts of the language.  They compare a subject’s stat or an outcome metric to a numeric value.
+
+```ebnf
+condition := comparison-field comparison amount
+
+comparison-field := (('User' | 'Target') character-stat) | outcome-stat
+character-stat := 'Attack' | 'Defense' | 'Intelligence' | 'Resistance' | 'Initiative' | 'MaxHp' | 'InitialMana' | 'Mana' | 'Hp' | 'Opportunity'
+outcome-stat := 'Roll' | 'Kills' | 'Missed' | 'Hits' | 'Damage'
+```
+```
+
+Comparison operators include `==`, `!=`, `<`, `>`, `<=`, and `>=`.  A special `miss-clause` uses a condition to specify when an ability is considered to miss.
+
+## 6. Restrictions and Notes
+
+- Clauses must appear in the strict order defined in the body grammar.
+- Exactly one immediate effect may be specified, but multiple modifier effects are allowed.
+- Element and mechanic names are case-insensitive keywords defined by the tokenizer.
+- Amounts for mechanics accept either whole numbers or numbers followed by `%`.
+- Conditions only support numeric comparisons; complex boolean logic is not currently part of the grammar.
+
+This overview mirrors the formal grammar found in [`src/Dsl/Grammar.txt`](../src/Dsl/Grammar.txt) and should help when authoring new ability definitions or extending the parser logic.
