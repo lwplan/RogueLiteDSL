@@ -17,7 +17,7 @@ body :=
     [side-effects-clause]
     [miss-clause]
 ```
-```
+
 
 Only the header is mandatory.  Each clause in the body is optional but must appear in the order shown above.  A single ability may contain exactly one immediate effect and zero or more modifier effects.
 
@@ -33,7 +33,6 @@ deals-clause := 'Deals' damage-clause
 heals-clause := healing-type healing-clause
 
 invokes-clause := 'Invokes' invoke-mechanic ['if' condition]
-```
 ```
 
 `deals-clause` uses `damage-clause` which supports optional elemental tags and modifiers:
@@ -62,7 +61,7 @@ cures-clause := ['Restores' | 'Drains' | 'Loots' | 'Donates'] healing-clause [ta
 
 applies-clause := 'Applies' modifier-mechanic {',' modifier-mechanic} [duration-clause] ['if' condition]
 ```
-```
+
 
 `duration-clause` limits how long the modifier lasts and can optionally attach an event such as `on round start`.
 
@@ -73,7 +72,7 @@ modifier-mechanic := stat-buff-mechanic | multiplier-mechanic | state-mechanic
 state-mechanic := ('Blessing' | 'Curse' | 'Stun' | 'Defensive' | 'Revival') [mechanic-specifier]
 multiplier-mechanic := ('Vulnerability' | 'Protection' | 'Power' | 'Frailty') ('against' | 'to') ['(' amount ')'] (element | compatibility) damage ['when' condition]
 ```
-```
+
 
 ## 4. Targeting and Side Effects
 
@@ -102,7 +101,7 @@ comparison-field := (('User' | 'Target') character-stat) | outcome-stat
 character-stat := 'Attack' | 'Defense' | 'Intelligence' | 'Resistance' | 'Initiative' | 'MaxHp' | 'InitialMana' | 'Mana' | 'Hp' | 'Opportunity'
 outcome-stat := 'Roll' | 'Kills' | 'Missed' | 'Hits' | 'Damage'
 ```
-```
+
 
 Comparison operators include `==`, `!=`, `<`, `>`, `<=`, and `>=`.  A special `miss-clause` uses a condition to specify when an ability is considered to miss.
 
