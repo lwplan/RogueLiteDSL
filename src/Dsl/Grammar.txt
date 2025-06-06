@@ -4,10 +4,11 @@ ability :=
 body := 
     [charges-clause]
     [targeting-clause]
-    [immediate-clause]
-    [modifier-clause]
+    [effect-clause { 'then' effect-clause }]
     [side-effects-clause]
     [miss-clause]
+
+effect-clause := immediate-clause | modifier-clause
     
     
 immediate-clause :=

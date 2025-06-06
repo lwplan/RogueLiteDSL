@@ -12,14 +12,14 @@ ability := header body
 body :=
     [charges-clause]
     [targeting-clause]
-    [immediate-clause]
-    [modifier-clause]
+    [effect-clause { 'then' effect-clause }]
     [side-effects-clause]
     [miss-clause]
+
+effect-clause := immediate-clause | modifier-clause
 ```
 
-
-Only the header is mandatory.  Each clause in the body is optional but must appear in the order shown above.  A single ability may contain exactly one immediate effect and zero or more modifier effects.
+Only the header is mandatory.  The body may include any number of `effect-clause` segments chained with the keyword `then`.  Validation rules ensure that at most one immediate effect is present and that it precedes any modifier effects.
 
 ## 2. Immediate Effects
 
@@ -107,8 +107,8 @@ Comparison operators include `==`, `!=`, `<`, `>`, `<=`, and `>=`.  A special `m
 
 ## 6. Restrictions and Notes
 
-- Clauses must appear in the strict order defined in the body grammar.
-- Exactly one immediate effect may be specified, but multiple modifier effects are allowed.
+- Clauses must appear in the order shown above. When multiple effects are present they should be separated with `then`.
+- Only one immediate effect is allowed and it must precede any modifier effects. This rule is enforced by the `Lint()` pass rather than the parser.
 - Element and mechanic names are case-insensitive keywords defined by the tokenizer.
 - Amounts for mechanics accept either whole numbers or numbers followed by `%`.
 - Conditions only support numeric comparisons; complex boolean logic is not currently part of the grammar.

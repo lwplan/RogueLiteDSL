@@ -33,7 +33,7 @@ public static partial class DslParsers
             select duration
         );
 
-    // Immediate effects (one max)
+    // Immediate effects
     public static Parser<Token, EffectIR> ImmediateClauseParser =>
         Try(
             InvokeEffectParser.Cast<EffectIR>()
@@ -41,12 +41,22 @@ public static partial class DslParsers
                 .Or(HealsEffectParser.Cast<EffectIR>())
         );
 
-    // Modifier effects (many allowed)
+    // Modifier effects
     public static Parser<Token, EffectIR> ModifierClauseParser =>
         Try(
             InflictsEffectParser.Cast<EffectIR>()
                 .Or(AppliesEffectParser.Cast<EffectIR>())
         );
+
+    // Any effect
+    public static Parser<Token, EffectIR> AnyEffectParser =>
+        ImmediateClauseParser
+            .Or(ModifierClauseParser);
+
+    public static Parser<Token, List<EffectIR>> EffectSequenceParser =>
+        AnyEffectParser
+            .Separated(Tok.Then)
+            .Select(list => list.ToList());
 
     // Side effects (optional)
     public static Parser<Token, SideEffectsIR> SideEffectsClauseParser =>
@@ -65,34 +75,29 @@ public static partial class DslParsers
             from _lparen in Tok.LParen
             from role in RoleParser
             from _rparen in Tok.RParen
-            from _colon in Tok.Colon
             select role
         ).Optional()
+        from _colon in Tok.Colon
 
         // Optional clauses in order
         from charges in ChargesClauseParser.Optional()
         from targeting in TargetingParser.Optional()
-        from immediate in ImmediateClauseParser.Optional()
-        from modifiers in ModifierClauseParser.Many()
+        from effects in EffectSequenceParser.Optional()
         from sideEffects in SideEffectsClauseParser.Optional()
         from miss in MissClauseParser.Optional()
 
         select new AbilityIR(
-            (immediate.HasValue 
-                ? [immediate.Value]
-                : Enumerable.Empty<EffectIR>())
-            .Concat(modifiers)
-            .ToList(),
-    
+            effects.GetValueOrDefault(new List<EffectIR>()),
+            
             targeting.HasValue
                 ? targeting.Value
                 : new Targeting(AutoTargetingStrategy.UserSelected, TargetType.Single, TargetSide.Enemy),
-    
+
             role.HasValue ? new List<Compatibility> { role.Value } : new List<Compatibility>(),
-            sideEffects.HasValue 
-                ? new List<SideEffectsIR> { sideEffects.Value } 
+            sideEffects.HasValue
+                ? new List<SideEffectsIR> { sideEffects.Value }
                 : new List<SideEffectsIR>(),
-    
+
             miss.GetValueOrDefault()
-        );
+        ).Lint();
 }
