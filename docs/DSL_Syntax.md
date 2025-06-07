@@ -134,3 +134,32 @@ Several lines in `tests/TestData/abilities.csv` fail to parse due to minor synta
 - **Stat buffs** must use `Buff(6) to Defense`.  Abbreviations like `Buff(DEF,6)` are invalid.
 - **Unimplemented mechanics** such as `RandomBuffOrDebuff` will cause errors.
 - **Side effects** must follow the `afterwards` keyword, e.g. `afterwards Bounce(50%) if kills > 0`.
+
+## 8. Examples from the CSV files
+
+The test data in `tests/TestData/abilities.csv` and `tests/TestData/macros.csv` provides
+real ability descriptions and macro definitions.  A few lines are reproduced here to
+illustrate how the syntax looks in practice.
+
+### Ability rows
+
+* **Lightning bolt** – `Ability : Deals Electrical Physical(30) damage miss if roll < 90`
+* **Vine whip** – `Ability : Deals Physical(10) damage then Applies @Slow[I] for 3 turns`
+* **Shield breaker** – `Ability : Deals Physical(5) damage with ShieldBreaker(30) if roll > 80`
+
+These examples show damage keywords, conditional clauses and the use of a macro
+(`@Slow[I]`) which expands to a debuff.
+
+### Macro snippets
+
+The `macros.csv` file defines shortcuts such as:
+
+```
+@Strength[X],Buff,"Buff(X#[4,6,7,9,10]) to Attack"
+@Weakness[X],Debuff,"Debuff(X#[4,6,7,9,10]) to Resistance"
+```
+
+Using `@Strength[III]` in an ability would expand to `Buff(9) to Attack`.  Likewise
+`@Weakness[I]` expands to `Debuff(4) to Resistance` as seen in the **Light ray** entry
+of the abilities CSV.  Any macro beginning with `@` can be substituted before parsing
+the DSL text.
