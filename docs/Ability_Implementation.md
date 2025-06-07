@@ -1,5 +1,7 @@
 # Ability Implementation Status
-This document lists abilities from `tests/TestData/abilities.csv` grouped by implementation status. Each entry has a `Test` value of `Pass`, `Fail`, or `Unimplemented`. Pass abilities should parse successfully; Fail ones are expected to fail; Unimplemented entries are not yet verified.
+This document lists abilities from `tests/TestData/abilities.csv` grouped by implementation status. Each entry has a `Test` value of `Pass`, `Fail`, or `Unimplemented`.
+Some rows marked as `Pass` still show `#ERROR!` in the CSV. These usually contain small syntax mistakes (for example `Buff(DEF,6)` instead of `Buff(6) to Defense`).
+Pass abilities should parse successfully; Fail ones are expected to fail; Unimplemented entries are not yet verified.
 
 ## Implemented Abilities (Pass)
 | Ability | Proposed Mechanics | Test |
