@@ -9,8 +9,7 @@ public enum HealSubMechanicType
     Cleanse
 }
 
-public record HealSubMechanic(HealSubMechanicType HealSubMechanicType, float Amount);
-
+public record HealSubMechanic(HealSubMechanicType Type, float Amount);
 
 public enum HealMechanicType
 {
@@ -28,21 +27,23 @@ public enum EconomyStat
 }
 
 public record HealMechanic(
-    HealMechanicType HealMechanicType,
+    HealMechanicType Type,
     float Amount,
-    EconomyStat EconomyStat,
-    Condition Condition);
+    EconomyStat Stat,
+    Condition Condition
+);
 
 public record HealEffectIR(
     Subject Subject,
-    HealMechanic HealMechanic,
-    List<HealSubMechanic>? SubMechanics,
+    HealMechanic Mechanic,
     Targeting? Targeting = null
 ) : EffectIR(Subject, EffectType.Heal);
 
 
 public static partial class DslParsers
 {
+    /* ────────── Healing Mechanics ────────── */
+
     public static Parser<Token, HealSubMechanic> HealSubMechanicParser =>
         Tok.Cleanse.Select(_ => new HealSubMechanic(HealSubMechanicType.Cleanse, 0f));
 
@@ -68,34 +69,23 @@ public static partial class DslParsers
             Tok.Opportunity.ThenReturn(EconomyStat.Opportunity)
         )
         from condition in Try(ConditionParser).Optional()
-        select new HealMechanic(
-            healType,
-            amount,
-            stat,
-            condition.GetValueOrDefault()
-        );
+        select new HealMechanic(healType, amount, stat, condition.GetValueOrDefault());
 
     public static Parser<Token, EffectIR> HealsEffectParser =>
         from heal in HealMechanicParser
-        from withSub in Try(Tok.With.Then(HealSubMechanicListParser)).Optional()
+        from _sub in Try(Tok.With.Then(HealSubMechanicListParser)).Optional() // Currently unused
         from targeting in Try(TargetingParser).Optional()
         from duration in Try(DurationClauseParser).Optional()
-
         select duration.HasValue
             ? new ModifierEffectIR(
                 Subject.Target,
                 new EffectModifierIR(
                     duration.Value,
-                    new HealEffectIR(
-                        Subject.Target,
-                        heal,
-                        withSub.GetValueOrDefault(),
-                        targeting.GetValueOrDefault()
-                    ),
+                    new HealEffectIR(Subject.Target, heal, targeting.GetValueOrDefault()),
                     heal.Condition
                 )
             )
             : targeting.HasValue
                 ? throw new Exception("Targeting without duration is not allowed for healing effects.")
-                : (EffectIR)new HealEffectIR(Subject.Target, heal, withSub.GetValueOrDefault());
+                : (EffectIR)new HealEffectIR(Subject.Target, heal);
 }
