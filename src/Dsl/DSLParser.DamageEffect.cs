@@ -9,7 +9,8 @@ public enum DamageMechanicType
     Piercing,
     Spiral,
     ExtraDamage,
-    Crit
+    Crit,
+    ShieldBreaker
 }
 
 public record DamageType(DamageFormula DamageFormula, Element Element, int BaseDamage);
@@ -34,7 +35,8 @@ public static partial class DslParsers
         Tok.Piercing.ThenReturn(DamageMechanicType.Piercing),
         Tok.Spiral.ThenReturn(DamageMechanicType.Spiral),
         Tok.ExtraDamage.ThenReturn(DamageMechanicType.ExtraDamage),
-        Tok.Crit.ThenReturn(DamageMechanicType.Crit)
+        Tok.Crit.ThenReturn(DamageMechanicType.Crit),
+        Tok.ShieldBreaker.ThenReturn(DamageMechanicType.ShieldBreaker)
     );
 
     public static Parser<Token, DamageMechanic> DamageMechanicAtom =>

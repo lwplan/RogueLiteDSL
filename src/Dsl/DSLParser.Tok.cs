@@ -65,6 +65,7 @@ namespace DSLApp1.Dsl
 
             public static readonly Parser<Token, Token> ExtraDamage = Keyword("ExtraDamage");
             public static readonly Parser<Token, Token> Crit = Keyword("Crit");
+            public static readonly Parser<Token, Token> ShieldBreaker = Keyword("ShieldBreaker");
             public static readonly Parser<Token, Token> MultiHit = Keyword("MultiHit");
             public static readonly Parser<Token, Token> MultiTarget = Keyword("MultiTarget");
             public static readonly Parser<Token, Token> Random = Keyword("Random");

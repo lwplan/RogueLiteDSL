@@ -12,10 +12,10 @@
 @Strength[X],Buff,"Buff(X#[4,6,7,9,10]) to Attack",Enhances Attack by a fixed amount,ATT+4,ATT+6,ATT+9,ATT+12,ATT+16
 @Dulled[X],Debuff,"Debuff(X#[4,6,7,9,10]) to Attack",Downgrade Attack by a fixed amount,ATT-4,ATT-6,ATT-9,ATT-12,ATT-16
 @Enlightened[X],Buff,"Buff(X#[4,6,7,9,10]) to Intelligence",Enhances Intelligence by a fixed amount,INT+4,INT+6,INT+9,INT+12,INT+16
-@Dummified[X],Debuff,"Deuff(X#[4,6,7,9,10]) to Intelligence",Downgrade Intelligence by a fixed amount,INT-4,INT-6,INT-9,INT-12,INT-16
+@Dummified[X],Debuff,"Debuff(X#[4,6,7,9,10]) to Intelligence",Downgrade Intelligence by a fixed amount,INT-4,INT-6,INT-9,INT-12,INT-16
 @Resiliance[X],Buff,"Buff(X#[4,6,7,9,10]) to Resistance",Enhances Resistance by a fixed amount,RES+4,RES+6,RES+9,RES+12,RES+16
-@Weakness[X],Debuff,"Deuff(X#[4,6,7,9,10]) to Resistance",Downgrade Resistance by a fixed amount,INT+4,INT+6,INT+9,INT+12,INT+16
+@Weakness[X],Debuff,"Debuff(X#[4,6,7,9,10]) to Resistance",Downgrade Resistance by a fixed amount,INT+4,INT+6,INT+9,INT+12,INT+16
 @Swiftness[X],Buff,"Buff(X#[4,6,7,9,10]) to Initiative",Enhances Initiative by a fixed amount,IVE+2,IVE+3,IVE+4,IVE+5,IVE+7
-@Slowness[X],Debuff,"Deuff(X#[4,6,7,9,10]) to Initiative",Downgrade Initiative by a fixed amount,IVE-1,IVE-2,IVE-3,IVE-4,IVE-6
-@Slow[X],Debuff,"Deuff(X#[4,6,7,9,10]) to Initiative",Downgrade Initiative by a fixed amount,IVE-1,IVE-2,IVE-3,IVE-4,IVE-6
+@Slowness[X],Debuff,"Debuff(X#[4,6,7,9,10]) to Initiative",Downgrade Initiative by a fixed amount,IVE-1,IVE-2,IVE-3,IVE-4,IVE-6
+@Slow[X],Debuff,"Debuff(X#[4,6,7,9,10]) to Initiative",Downgrade Initiative by a fixed amount,IVE-1,IVE-2,IVE-3,IVE-4,IVE-6
 

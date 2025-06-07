@@ -47,14 +47,14 @@ Meditate,,"Applies to any ally Enlightement I, Protection I, Vigor I and Enduran
 Unleash shadows,,A basic Attack,,,,,
 Desert slash,,A basic Attack,,,,,
 Loyalty pledge,,A basic Attack,,,,,
-Cannonzade,DontTest,,"Ability (Artillery): Targets Enemies with MultiHit(6), Deals Physical(6) Fire damage",OK,,,
+Cannonzade,Yes,,"Ability (Artillery): Targets Enemies with MultiHit(6), Deals Physical(6) Fire damage",OK,,,
 Molten Bombard,Yes,,Ability (Artillery): inflicts Physical(6) Fire damage for 3 turns,OK,,,
-Molton Barbard Test,DontTest,,"Ability (Artillery): For 3 turns: { Deals Physical(6) Fire damage, Deals Magical(2) damage }",OK,,,
+Molton Barbard Test,Yes,,"Ability (Artillery): For 3 turns: { Deals Physical(6) Fire damage, Deals Magical(2) damage }",OK,,,
 Heavy Shell,Yes,,Ability (Artillery): Charges 1 turn then Deals Physical(15) Fire damage,OK,,,
 Piercing Shrapnel,Yes,,Support (Artillery): Adds Piercing(50%) to damage (Adjective = Piercing),"Syntax Error: Parse error.
     unexpected Token { Type = Keyword, Text = Support }
     at line 1, col 1",,,
-Storm Mortar,DontTest,,Ability (Artillery): Deals Physical(6) Electrical damage afterwards [Bounce if roll < 30],OK,,,
+Storm Mortar,Yes,,Ability (Artillery): Deals Physical(6) Electrical damage afterwards [Bounce if roll < 30],OK,,,
 Load Munition,Yes,,Support(Artillery) : Adds Fire to damage,"Syntax Error: Parse error.
     unexpected Token { Type = Keyword, Text = Support }
     at line 1, col 1",,,
@@ -67,31 +67,31 @@ Critial Magazine,Yes,,Support(Artillery) : Adds Crit(20%) to damage if roll < 30
 Molten Cannonball,Yes,,Support(Artillery) : Adds For 3 turns : Deals Physical(6) Fire damage,"Syntax Error: Parse error.
     unexpected Token { Type = Keyword, Text = Support }
     at line 1, col 1",,,
-Siege Lock,DontTest,,"Ability (Artillery) : Targets Enemy,  Invokes Delay(2)",OK,,,
-Shuffle,DontTest,Randomizes all turn order for the current round.,"Ability (Chaos): Targets All, Invokes Shuffle",OK,,,
-Sleight of Hand,DontTest,Advances the next turn of a selected ally.,"Ability (Chaos): Targets Ally, Invokes Advance(2)",OK,,,
-Tripwire,DontTest,Delays the next turn of a selected enemy by two slots.,"Ability (Chaos): Targets Enemy, Invokes Delay(2)",OK,,,
-Double Blink,DontTest,Delays the next turn of a selected enemy by two slots.,"Ability (Chaos): Targets Ally, Invokes Swap",OK,,,
-Joker’s Gambit,DontTest,50% chance to gain 3x damage for the next turn.,"Ability (Chaos): Targets Self, Applies Power(300%) for 1 turn if roll > 50",OK,,,
-Finish Him,DontTest,Deals 10 damage to targets below 30% HP no effect on others.,Ability (Execution): Deals Physical(10) damage if target hpPercent < 30,OK,,,
-Last Words,DontTest,"When a target dies,  gain 10 mana.",Ability (Execution): Restore 10 mana,OK,,,
-Axe Man,DontTest,Heavy strike that splash enemies if it kills the target.,Ability (Execution): Deals Physical(10) damage aftwards Spash if killCount > 0,OK,,,
-Fatal Mark,DontTest,Marks an enemy: the next attack deals double damage,Ability (Execution): Applies Vulnerability(200) until hit,OK,,,
-Killing Blow (Splash),DontTest,Physical attack on a kill 50% of damage applied to all enemies.,Ability (Execution): Deals Physical(10) damage aftwards Spash(50%) if killCount > 0,OK,,,
-Farewell,DontTest,if the enemy is 15% or less HP you immediately kill him.,Ability (Execution): Deals Physical(0) with Kill if target hpPercent < 15,OK,,,
+Siege Lock,Yes,,"Ability (Artillery) : Targets Enemy,  Invokes Delay(2)",OK,,,
+Shuffle,Yes,Randomizes all turn order for the current round.,"Ability (Chaos): Targets All, Invokes Shuffle",OK,,,
+Sleight of Hand,Yes,Advances the next turn of a selected ally.,"Ability (Chaos): Targets Ally, Invokes Advance(2)",OK,,,
+Tripwire,Yes,Delays the next turn of a selected enemy by two slots.,"Ability (Chaos): Targets Enemy, Invokes Delay(2)",OK,,,
+Double Blink,Yes,Delays the next turn of a selected enemy by two slots.,"Ability (Chaos): Targets Ally, Invokes Swap",OK,,,
+Joker’s Gambit,Yes,50% chance to gain 3x damage for the next turn.,"Ability (Chaos): Targets Self, Applies Power(300%) for 1 turn if roll > 50",OK,,,
+Finish Him,Yes,Deals 10 damage to targets below 30% HP no effect on others.,Ability (Execution): Deals Physical(10) damage if target hpPercent < 30,OK,,,
+Last Words,Yes,"When a target dies,  gain 10 mana.",Ability (Execution): Restore 10 mana,OK,,,
+Axe Man,Yes,Heavy strike that splash enemies if it kills the target.,Ability (Execution): Deals Physical(10) damage aftwards Spash if killCount > 0,OK,,,
+Fatal Mark,Yes,Marks an enemy: the next attack deals double damage,Ability (Execution): Applies Vulnerability(200) until hit,OK,,,
+Killing Blow (Splash),Yes,Physical attack on a kill 50% of damage applied to all enemies.,Ability (Execution): Deals Physical(10) damage aftwards Spash(50%) if killCount > 0,OK,,,
+Farewell,Yes,if the enemy is 15% or less HP you immediately kill him.,Ability (Execution): Deals Physical(0) with Kill if target hpPercent < 15,OK,,,
 Killing Blow (Bounce),Yes,"If this attack kills the target, deal 50% of that damage to a second random enemy.",Ability (Execution): Deals Physical(10) damage aftwards Bounce(50%) if killCount > 0,#ERROR!,,,
-Sacred Light,DontTest,Heals all allies for 20 HP.,Ability (Holy): Targets Allies Heals(20),OK,,,
+Sacred Light,Yes,Heals all allies for 20 HP.,Ability (Holy): Targets Allies Heals(20),OK,,,
 Holy Armor,Yes,Grants +6 Defense for 3 turns.,"Ability (Holy): Applies Buff(DEF,6) for 3 turns",#ERROR!,,,
 Divine Reflex,Yes,Grants +2 initiative for the next 2 rounds,"Ability (Holy): Applies Buff(IVE,6) for 2 rounds",#ERROR!,,,
 Radiant Vow,Yes,"If the user dies this round, they revive with 1 HP.",Ability (Holy): Applies Revival(1) for 1 round,OK,,,
-Light Ray,DontTest,Magic attack with light element.,Ability (Holy): Deals Magical(1) with Light,OK,,,
+Light Ray,Yes,Magic attack with light element.,Ability (Holy): Deals Magical(1) with Light,OK,,,
 Cleric’s Boon,Yes,Heals all allies for 20 HP.,Ability (Holy): Targets Allies Applies Cleanse,#ERROR!,,,
-Iron Guard,DontTest,"Enter a defensive stance: reduce incoming damage by 40% for 1 turn.
+Iron Guard,Yes,"Enter a defensive stance: reduce incoming damage by 40% for 1 turn.
 ","Ability (Protector): Targets Self, Applies DefensiveStance, Applies Protection(40%) for 1 turn",OK,,,
-Shield Wall,DontTest,"Enter a defensive stance: Add a 30HP shield
+Shield Wall,Yes,"Enter a defensive stance: Add a 30HP shield
 ","Ability (Protector): Targets Self, Applies DefensiveStance, Applies Shield(30)",OK,,,
-Mighty Shield,DontTest,Add a 30HP shield,"Ability (Protector): Targets Self, Applies Shield(30)",OK,,,
-Intercepting Step,DontTest,Leap into the path of the next enemy attack,"Ability (Protector): Targets Self, Applies DefensiveStance until hit",OK,,,
+Mighty Shield,Yes,Add a 30HP shield,"Ability (Protector): Targets Self, Applies Shield(30)",OK,,,
+Intercepting Step,Yes,Leap into the path of the next enemy attack,"Ability (Protector): Targets Self, Applies DefensiveStance until hit",OK,,,
 Brute,No,,,,,,
 Overhead Slam,No,"Deals massive damage but stuns the user for 1 turn.
 ",Ability (Brute): Deals Physical(20) afftewards,,,,
