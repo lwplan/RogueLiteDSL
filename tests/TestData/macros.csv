@@ -1,0 +1,19 @@
+@Keyword[X],Class,macro,Tool Tip,Rank I,Rank II,Rank III,Rank IV,Rank V
+@Disintegrate[X],Debuff,"Deals Ether Magical( X#[4,6,7,9,10]) damage",Deals Ether Damage,,,,,
+@Fry[X],Debuff,"Deals Physical(X#[4,6,7,9,10]) Electical damage",Deals Electrial Damage,,,,,
+@Stoning[X],Debuff,"Deals Earth Physical(X#[4,6,7,9,10]) damage",Deals Earth Damage,,,,,
+@Drown[X],Debuff,"Deals Water Physical(X#[4,6,7,9,10]) damage",Deals Water Damage,,,,,
+@Irradiate[X],Debuff,"Deals Electical Physical(X#[4,6,7,9,10]) damage",Deals Light damage,,,,,
+@Burn[X],Debuff,"Deals Fire Physical(X#[4,6,7,9,10]) damage",Deals Fire damage,VEN-4,VEN-6,VEN-4:5,VEN-4:6,VEN-4:7
+@Frozen[X],Debuff,"Deals Ice Physical(X#[4,6,7,9,10]) damage",Deals Ice damage,,,,,
+@Poison[X],Debuff,"Deals Physical(X#[4,6,7,9,10]) damage",Deals Physical damage,POI-4,POI-6,POI-8,POI-11,POI-15
+@Fortitude[X],Buff,"Buff(X#[4,6,7,9,10]) to Defense",Enhances defence by a fixed amount,DEF+4,DEF+6,DEF+9,DEF+12,DEF+16
+@Fragility[X],Debuff,"Debuff(X#[4,6,7,9,10]) to Defense",Downgrade defence by a fixed amount,DEF-4,DEF-6,DEF-9,DEF-12,DEF-16
+@Strength[X],Buff,"Buff(X#[4,6,7,9,10]) to Attack",Enhances Attack by a fixed amount,ATT+4,ATT+6,ATT+9,ATT+12,ATT+16
+@Dulled[X],Debuff,"Debuff(X#[4,6,7,9,10]) to Attack",Downgrade Attack by a fixed amount,ATT-4,ATT-6,ATT-9,ATT-12,ATT-16
+@Enlightened[X],Buff,"Buff(X#[4,6,7,9,10]) to Intelligence",Enhances Intelligence by a fixed amount,INT+4,INT+6,INT+9,INT+12,INT+16
+@Dummified[X],Debuff,"Deuff(X#[4,6,7,9,10]) to Intelligence",Downgrade Intelligence by a fixed amount,INT-4,INT-6,INT-9,INT-12,INT-16
+@Resiliance[X],Buff,"Buff(X#[4,6,7,9,10]) to Resistance",Enhances Resistance by a fixed amount,RES+4,RES+6,RES+9,RES+12,RES+16
+@Weakness[X],Debuff,"Deuff(X#[4,6,7,9,10]) to Resistance",Downgrade Resistance by a fixed amount,INT+4,INT+6,INT+9,INT+12,INT+16
+@Swiftness[X],Buff,"Buff(X#[4,6,7,9,10]) to Initiative",Enhances Initiative by a fixed amount,IVE+2,IVE+3,IVE+4,IVE+5,IVE+7
+@Slowness[X],Debuff,"Deuff(X#[4,6,7,9,10]) to Initiative",Downgrade Initiative by a fixed amount,IVE-1,IVE-2,IVE-3,IVE-4,IVE-6
