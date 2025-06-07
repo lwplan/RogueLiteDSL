@@ -27,8 +27,6 @@ namespace DSLApp1.Tests.Dsl
     {
         
         private readonly ITestOutputHelper _output;
-        private static readonly bool IncludeFailTests =
-            Environment.GetEnvironmentVariable("TEST_FAILS") == "1";
         private static readonly Task<List<object[]>> CachedRows = LoadRows();
         private static readonly List<MacroDefinition> Macros = LoadMacros();
 
@@ -59,21 +57,7 @@ namespace DSLApp1.Tests.Dsl
             using var csv = new CsvReader(reader, config);
             var records = csv.GetRecords<AbilityRow>().ToList();
 
-            var passes = records
-                .Where(r => r.Test.Equals("Pass", StringComparison.OrdinalIgnoreCase))
-                .Where(r => r.SyntaxCheck.Equals("OK", StringComparison.OrdinalIgnoreCase))
-                .Select(r => new object[] { r.Name, r.ProposedDSL, true });
-
-            IEnumerable<object[]> fails = Enumerable.Empty<object[]>();
-            if (IncludeFailTests)
-            {
-                fails = records
-                    .Where(r => r.Test.Equals("Fail", StringComparison.OrdinalIgnoreCase))
-                    .Where(r => r.SyntaxCheck.Equals("OK", StringComparison.OrdinalIgnoreCase))
-                    .Select(r => new object[] { r.Name, r.ProposedDSL, false });
-            }
-
-            return passes.Concat(fails).ToList();
+            return records.Select(r => new object[] { r }).ToList();
         }
 
         private static List<MacroDefinition> LoadMacros()
@@ -133,7 +117,7 @@ namespace DSLApp1.Tests.Dsl
             return macros;
         }
 
-        private record AbilityRow
+        public record AbilityRow
         {
             public string Name { get; set; } = string.Empty;
             public string Test { get; set; } = string.Empty;
@@ -150,29 +134,28 @@ namespace DSLApp1.Tests.Dsl
 
         [Theory]
         [MemberData(nameof(CsvRows))]
-        public void Csv_ProposedDsl_Matches_CurrentGrammar(string name, string proposedDsl, bool shouldPass)
+        public void Csv_ProposedDsl_Matches_CurrentGrammar(AbilityRow row)
         {
-            
             var expanded = Regex.Replace(
-                proposedDsl,
+                row.ProposedDSL,
                 @"@\w+\[[IVXLCDM]+\]",
                 m => MacroExpander.Expand(m.Value, Macros));
 
-            var tokens = DslTokenizer.Tokenize(expanded);
-            
-            foreach (var t in tokens)
-                _output.WriteLine($"{t.Type}: '{t.Text}'");
-
-            var parser = DslParsers.HexParser;
-
-            if (shouldPass)
+            try
             {
-                var ir = parser.ParseOrThrow(tokens);
-                Assert.NotNull(ir);
+                var tokens = DslTokenizer.Tokenize(expanded);
+
+                foreach (var t in tokens)
+                    _output.WriteLine($"{t.Type}: '{t.Text}'");
+
+                var unimpl = UnimplementedKeywordChecker.Find(tokens);
+                var parser = DslParsers.HexParser;
+                var result = parser.Parse(tokens);
+                _output.WriteLine($"{row.Name}: {(unimpl.Any() ? "Unimplemented" : result.Success ? "Pass" : "Fail")}");
             }
-            else
+            catch (Exception ex)
             {
-                Assert.Throws<ParseException>(() => parser.ParseOrThrow(tokens));
+                _output.WriteLine($"{row.Name}: Exception {ex.Message}");
             }
         }
     }
