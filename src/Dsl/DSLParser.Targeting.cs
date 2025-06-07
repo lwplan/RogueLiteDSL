@@ -27,11 +27,39 @@ public enum TargetType
     Multiple
 }
 
-public record Targeting(AutoTargetingStrategy AutoTargetingStrategy, TargetType TargetType, TargetSide TargetSide);
+public enum TargetingMechanicsType
+{
+    MultiHit,
+    MultiTarget,
+    Random
+}
+
+public record TargetingMechanic(TargetingMechanicsType MechanicType, int Amount);
+
+public record Targeting(
+    AutoTargetingStrategy AutoTargetingStrategy,
+    TargetType TargetType,
+    TargetSide TargetSide,
+    List<TargetingMechanic>? With = null
+);
 public static partial class DslParsers
 {
-    
+
     /* ───────────── TARGETING PARSERS ───────────── */
+
+    public static Parser<Token, TargetingMechanicsType> TargetingMechanicTypeParser => OneOf(
+        Tok.MultiHit.ThenReturn(TargetingMechanicsType.MultiHit),
+        Tok.MultiTarget.ThenReturn(TargetingMechanicsType.MultiTarget),
+        Tok.Random.ThenReturn(TargetingMechanicsType.Random)
+    );
+
+    public static Parser<Token, TargetingMechanic> TargetingMechanicParser =>
+        from mech in TargetingMechanicTypeParser
+        from amount in Try(Tok.LParen.Then(IntLiteral).Before(Tok.RParen)).Optional()
+        select new TargetingMechanic(mech, amount.HasValue ? amount.Value : 0);
+
+    public static Parser<Token, List<TargetingMechanic>> TargetingMechanicListParser =>
+        TargetingMechanicParser.Separated(Comma).Select(x => x.ToList());
     
    public static Parser<Token, Targeting> TargetingParser =>
     // Handle "Targeting All" as a special early case
@@ -69,10 +97,16 @@ public static partial class DslParsers
             Tok.Enemy.ThenReturn(TargetSide.Enemy),
             Tok.Enemies.ThenReturn(TargetSide.Enemy)
         )
+        from withMechs in Try(
+            from _w in Tok.With
+            from ms in TargetingMechanicListParser
+            select ms
+        ).Optional()
         select new Targeting(
             strategy.HasValue ? strategy.Value : AutoTargetingStrategy.UserSelected,
             targetType.HasValue ? targetType.Value : InferTargetTypeFromSide(side),
-            side
+            side,
+            withMechs.GetValueOrDefault()
         )
     );
 
