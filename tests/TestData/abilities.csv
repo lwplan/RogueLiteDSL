@@ -78,7 +78,7 @@ Last Words,Yes,"When a target dies,  gain 10 mana.",Ability (Execution): Restore
 Axe Man,Yes,Heavy strike that splash enemies if it kills the target.,Ability (Execution): Deals Physical(10) damage afterwards Splash if kills > 0,OK,,,
 Fatal Mark,Yes,Marks an enemy: the next attack deals double damage,Ability (Execution): Applies Vulnerability(200) until hit,OK,,,
 Killing Blow (Splash),Yes,Physical attack on a kill 50% of damage applied to all enemies.,Ability (Execution): Deals Physical(10) damage afterwards Splash(50%) if kills > 0,OK,,,
-Farewell,Yes,if the enemy is 15% or less HP you immediately kill him.,Ability (Execution): Deals Physical(0) with Kill if target hpPercent < 15,OK,,,
+Farewell,Yes,if the enemy is 15% or less HP you immediately kill him.,Ability (Execution): Deals Physical(0) damage with Kill if target hpPercent < 15,OK,,,
 Killing Blow (Bounce),Yes,"If this attack kills the target, deal 50% of that damage to a second random enemy.",Ability (Execution): Deals Physical(10) damage afterwards Bounce(50%) if kills > 0,#ERROR!,,,
 Sacred Light,Yes,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies Heals(20),OK,,,
 Holy Armor,Yes,Grants +6 Defense for 3 turns.,"Ability (Holy): Applies Buff(DEF,6) for 3 turns",#ERROR!,,,

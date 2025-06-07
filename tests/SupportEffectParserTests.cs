@@ -90,5 +90,16 @@ namespace DSLApp1.Tests.Dsl
             Assert.Equal(25f, spiral.Value);
         }
 
+        [Fact]
+        public void Parses_Kill_Damage_Mechanic()
+        {
+            var effects = ParseSupportEffects("Kill(1)");
+            var effect = Assert.Single(effects);
+            var dmg = Assert.IsType<DamageSupportIR>(effect);
+
+            Assert.Equal(DamageMechanicType.Kill, dmg.Mechanic);
+            Assert.Equal(1f, dmg.Value);
+        }
+
     }
 }

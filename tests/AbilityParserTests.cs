@@ -43,5 +43,19 @@ namespace DSLApp1.Tests.Dsl
 
             Assert.Empty(ability.RoleCompatibilities);
         }
+
+        [Fact]
+        public void AbilityParser_Parses_Kill_Damage_Mechanic()
+        {
+            const string src =
+                "Ability (Execution): Deals Physical(0) damage with Kill if target hpPercent < 15";
+
+            var tokens = DslTokenizer.Tokenize(src);
+            var ability = DslParsers.AbilityParser.ParseOrThrow(tokens);
+
+            var dmgEffect = Assert.IsType<DamageEffectIR>(Assert.Single(ability.Effects));
+            var mechanic = Assert.Single(dmgEffect.With);
+            Assert.Equal(DamageMechanicType.Kill, mechanic.MechanicType);
+        }
     }
 }

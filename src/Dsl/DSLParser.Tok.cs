@@ -127,6 +127,7 @@ namespace DSLApp1.Dsl
             public static readonly Parser<Token, Token> Target = Keyword("Target");
             public static readonly Parser<Token, Token> Missed = Keyword("Missed");
             public static readonly Parser<Token, Token> Kills = Keyword("Kills");
+            public static readonly Parser<Token, Token> Kill = Keyword("Kill");
             public static readonly Parser<Token, Token> Hits = Keyword("Hits");
             public static readonly Parser<Token, Token> On = Keyword("On");
             
