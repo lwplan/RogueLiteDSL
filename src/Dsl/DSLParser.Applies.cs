@@ -82,7 +82,7 @@ public static partial class DslParsers
             Tok.Shield.ThenReturn(StateMechanicType.Shield)
         )
         from amount in Try(Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)).Optional()
-        from when in Try(Tok.When.Then(ConditionParser)).Optional()
+        from when in Try(Tok.When.Then(ConditionBodyParser)).Optional()
         select new StateMechanicIR(type, amount.GetValueOrDefault(), when.GetValueOrDefault());
 
     public static Parser<Token, TargetTag> TargetTagParser =>
@@ -110,7 +110,7 @@ public static partial class DslParsers
         ).Optional()
         from against in TargetTagParser
         from _ in Tok.Damage
-        from when in Try(Tok.When.Then(ConditionParser)).Optional()
+        from when in Try(Tok.When.Then(ConditionBodyParser)).Optional()
         select new MultiplierMechanicIR(
             type,
             amountBefore.HasValue ? amountBefore.Value : amountAfter.GetValueOrDefault(),

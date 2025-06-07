@@ -43,7 +43,7 @@ invokes-clause := 'Invokes' invoke-mechanic ['if' condition]
                   ['if' condition]
 ```
 
-Elements such as `Fire` or `Ice` may be listed before the damage type (`Physical` or `Magical`).  Damage mechanics like `Piercing` or `Spiral` can be supplied in square brackets.  Each mechanic accepts an amount (number or percentage) and may include an additional `when` condition.
+Elements such as `Fire` or `Ice` may be listed before the damage type (`Physical` or `Magical`).  Damage mechanics like `Piercing` or `Spiral` can be supplied in square brackets.  Each mechanic accepts an amount (number or percentage) and may include an additional condition introduced by `when` or `if`.
 
 Healing and invoking mechanics follow similar patterns with optional conditions and parameters.
 

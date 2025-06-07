@@ -85,8 +85,8 @@ public static partial class DslParsers
             Tok.Gt.ThenReturn(Op.Gt)
         );
 
-    public static Parser<Token, Condition> ConditionParser =>
-        from _if in Tok.If
+    // Parses the body of a condition without any leading keyword
+    public static Parser<Token, Condition> ConditionBodyParser =>
         from subjectAndField in Try(
             from subject in SubjectParser
             from field in CharacterFieldParser
@@ -97,4 +97,14 @@ public static partial class DslParsers
         from op in ComparisonOpParser
         from value in AmountLiteral
         select new Condition(subjectAndField.Item1, subjectAndField.Item2, op, value);
+
+    public static Parser<Token, Condition> ConditionParser =>
+        Tok.If.Then(ConditionBodyParser);
+
+    // Parses a condition preceded by either "if" or "when"
+    public static Parser<Token, Condition> ConditionIfOrWhenParser =>
+        OneOf(
+            Tok.If,
+            Tok.When
+        ).Then(ConditionBodyParser);
 }
