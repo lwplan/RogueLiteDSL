@@ -79,7 +79,10 @@ multiplier-mechanic := ('Vulnerability' | 'Protection' | 'Power' | 'Frailty') ('
 Targeting controls which units an ability can affect.  When present it specifies an automatic strategy, an optional target type, and the target side:
 
 ```ebnf
-auto-targeting-clause := 'Targeting' target-selection-criteria targetability
+auto-targeting-clause := 'Targeting' target-selection-criteria targetability ['with' targeting-mechanic { ',' targeting-mechanic } ]
+
+targeting-mechanic := targeting-mechanic-type ['(' amount ')']
+targeting-mechanic-type := 'MultiHit' | 'MultiTarget' | 'Random'
 ```
 
 Side effects occur after the main effects resolve and can include mechanics like `Bounce` or `Splash`:

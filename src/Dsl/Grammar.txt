@@ -45,7 +45,10 @@ invoke-mechanic-type := 'Swap' | 'Shuffle' | 'Advance' | 'Delay'
 
 inflicts-clause := 'Inflicts' damage-clause [auto-targeting-clause] duration-clause ['if' condition]
 
-auto-targeting-clause := 'Targeting' target-selection-criteria targetabilty 
+auto-targeting-clause := 'Targeting' target-selection-criteria targetabilty ['with' targeting-mechanic { ',' targeting-mechanic } ]
+
+targeting-mechanic := targeting-mechanic-type ['(' amount ')']
+targeting-mechanic-type := 'MultiHit' | 'MultiTarget' | 'Random'
 
 target-selection-criteria = 'Strongest' | 'Weakest' | 'NextUp' | 'LastUp' | 'Random'
 
