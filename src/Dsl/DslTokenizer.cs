@@ -93,6 +93,7 @@ namespace DSLApp1.Dsl
                         '>' => new Token(TokenType.Symbol, ">"),
                         '=' => new Token(TokenType.Symbol, "="),
                         '!' => new Token(TokenType.Symbol, "!"),
+                        '\'' => new Token(TokenType.Symbol, "'"),
                         _ => throw new Exception($"Unexpected character '{input[i]}' at position {i}")
                     };
                     tokens.Add(token);
