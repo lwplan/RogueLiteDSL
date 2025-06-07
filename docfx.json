@@ -1,0 +1,29 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["src/DSLApp1.csproj"],
+          "exclude": ["**/bin/**", "**/obj/**", "tests/**"]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["docs/**.md"],
+        "dest": "."
+      },
+      {
+        "files": ["api/**.yml"],
+        "dest": "api"
+      }
+    ],
+    "dest": "docs/_site",
+    "globalMetadata": {
+      "_appTitle": "RogueLiteDSL"
+    }
+  }
+}
