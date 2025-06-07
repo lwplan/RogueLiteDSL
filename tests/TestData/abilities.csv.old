@@ -18,9 +18,9 @@ Joker’s Gambit,Yes,50% chance to gain 3x damage for the next turn.,"Ability (C
 Execution,No,,
 Finish Him,No,Deals 10 damage to targets below 30% HP no effect on others.,Ability (Execution): Deals Physical(10) damage if target.hpPercent < 30
 Last Words,No,"When a target dies,  gain 10 mana.",Support (Execution): Adds afterwards ManaBoost(10) if result kills > 0 
-Axe Man,No,Heavy strike that splash enemies if it kills the target.,Ability (Execution): Deals Physical(10) damage afterwards Spash if result kills > 0
+Axe Man,No,Heavy strike that splash enemies if it kills the target.,Ability (Execution): Deals Physical(10) damage afterwards Splash if result kills > 0
 Fatal Mark,No,Marks an enemy: the next attack deals double damage,Ability (Execution): Applies Vulnerability(200) until hit
-Killing Blow (Splash),No,Physical attack on a kill 50% of damage applied to all enemies.,Ability (Execution): Deals Physical(10) damage afterwards Spash(50%) if result kills > 0
+Killing Blow (Splash),No,Physical attack on a kill 50% of damage applied to all enemies.,Ability (Execution): Deals Physical(10) damage afterwards Splash(50%) if result kills > 0
 Farewell,No, if the enemy is 15% or less HP you immediately kill him.,Ability (Execution): Deals Kill if target.hpPercentage < 15
 Killing Blow (Bounce),No,"If this attack kills the target, deal 50% of that damage to a second random enemy.",Ability (Execution): Deals Physical(10) damage afterwards Bounce(50%) if result kills > 0
 Holy,No,,
