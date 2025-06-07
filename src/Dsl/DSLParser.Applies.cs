@@ -159,19 +159,39 @@ public static partial class DslParsers
             .Or(MultiplierMechanicParser.Select(x => (ModifierMechanicIR)x));
 
 
+    private static Parser<Token, EffectIR> QuotedImmediateEffectParser =>
+        from _open in Tok.SingleQuote
+        from effect in OneOf(
+            DamageEffectParser.Cast<EffectIR>(),
+            HealsEffectParser.Cast<EffectIR>()
+        )
+        from _close in Tok.SingleQuote
+        select effect;
+
 
     public static Parser<Token, ModifierEffectIR> AppliesEffectParser =>
         from _ in Tok.Applies
-        from mechanics in ModifierMechanicParser.Separated(Tok.Comma)
-        from duration in Try(DurationClauseParser).Optional()
-        from condition in Try(ConditionParser).Optional()
-        select new ModifierEffectIR(
-            Subject.Target,
-            new AppliesModifierIR(
-                duration.GetValueOrDefault(new Duration(DurationType.Rounds, int.MaxValue)), // "forever"
-                mechanics.ToList(),
-                condition.GetValueOrDefault()
+        from result in Try(
+            from quoted in QuotedImmediateEffectParser
+            from duration in DurationClauseParser
+            from condition in Try(ConditionParser).Optional()
+            select new ModifierEffectIR(
+                Subject.Target,
+                new EffectModifierIR(duration, quoted, condition.GetValueOrDefault())
             )
-        );
+        ).Or(
+            from mechanics in ModifierMechanicParser.Separated(Tok.Comma)
+            from duration in Try(DurationClauseParser).Optional()
+            from condition in Try(ConditionParser).Optional()
+            select new ModifierEffectIR(
+                Subject.Target,
+                new AppliesModifierIR(
+                    duration.GetValueOrDefault(new Duration(DurationType.Rounds, int.MaxValue)), // "forever"
+                    mechanics.ToList(),
+                    condition.GetValueOrDefault()
+                )
+            )
+        )
+        select result;
 
 }

@@ -172,6 +172,7 @@ namespace DSLApp1.Dsl
             public static readonly Parser<Token, Token> Colon = Symbol(":");
             public static readonly Parser<Token, Token> LBracket = Symbol("[");
             public static readonly Parser<Token, Token> RBracket = Symbol("]");
+            public static readonly Parser<Token, Token> SingleQuote = Symbol("'");
             public static readonly Parser<Token, Token> EOF = Token(t => t.Type == TokenType.EndOfFile);
         }
 
