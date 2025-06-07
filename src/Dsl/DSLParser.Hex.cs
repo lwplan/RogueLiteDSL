@@ -13,6 +13,7 @@ public static partial class DslParsers
 
     public static Parser<Token, object> HexParser =>
         Try(AbilityParser.Select(a => (object)a))
-            .Or(SupportParser.Select(s => (object)s));
+            .Or(SupportParser.Select(s => (object)s))
+            .Before(Tok.EOF);
 
 }
