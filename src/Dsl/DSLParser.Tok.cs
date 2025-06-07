@@ -37,6 +37,7 @@ namespace DSLApp1.Dsl
             public static readonly Parser<Token, Token> Poison = Keyword("Poison");
             public static readonly Parser<Token, Token> Ice = Keyword("Ice");
             public static readonly Parser<Token, Token> Water = Keyword("Water");
+            public static readonly Parser<Token, Token> Earth = Keyword("Earth");
             public static readonly Parser<Token, Token> Dark = Keyword("Dark");
             public static readonly Parser<Token, Token> Light = Keyword("Light");
             public static readonly Parser<Token, Token> Electrical = Keyword("Electrical");

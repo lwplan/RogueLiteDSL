@@ -9,19 +9,21 @@ public enum Element
 
 ## Fields
 
-`Dark = 5` 
+`Dark = 6`
 
-`Electrical = 1` 
+`Earth = 5`
 
-`Fire = 0` 
+`Electrical = 1`
 
-`Ice = 3` 
+`Fire = 0`
 
-`Light = 6` 
+`Ice = 3`
 
-`None = 7` 
+`Light = 7`
 
-`Poison = 2` 
+`None = 8`
 
-`Water = 4` 
+`Poison = 2`
+
+`Water = 4`
 
