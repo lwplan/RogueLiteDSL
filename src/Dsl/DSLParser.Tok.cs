@@ -53,6 +53,7 @@ namespace DSLApp1.Dsl
             public static readonly Parser<Token, Token> Chaos = Keyword("Chaos");
             public static readonly Parser<Token, Token> Execution = Keyword("Execution");
             public static readonly Parser<Token, Token> Holy = Keyword("Holy");
+            public static readonly Parser<Token, Token> Protector = Keyword("Protector");
             public static readonly Parser<Token, Token> Piercing = Keyword("Piercing");
             public static readonly Parser<Token, Token> Adjective = Keyword("Adjective");
 
