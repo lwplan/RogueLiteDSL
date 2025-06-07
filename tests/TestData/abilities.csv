@@ -23,7 +23,7 @@ Camouflage,Pass,Applies a powerful buff so the next attack is Charge III,Ability
 Desert Javeline,Pass,A moderate earth physical skill which deals big damage,Ability : Deals Earth Physical(18) damage,,,,
 Nomad care,Pass,"moderate selfhealing, double potency if low hp*",Ability : Restores 10 hp then Restores 10 hp if Target HpPercent < 50,,,,
 Oil vial,Pass,"Leaves enemies oiled, which lowers their initiative and more vulnerable to fire",Ability : Applies Oiled for 3 turns then Applies Vulnerability(125%) to Fire damage for 3 turns,,,,
-Poison darts,Unimplemented,Deals low damage and applies poison II,Ability : Deals Physical(4) damage then Applies @Poison[II] for 3 turns,,,,
+Poison darts,Pass,Deals low damage and applies poison II,Ability : Deals Physical(4) damage then Applies @Poison[II] for 3 turns,,,,
 Desert firebomb,Unimplemented,"Deals moderate fire (int) damage, any enemy is oiled it triggers an explosion for extra damage*",Ability : Deals Fire Magical(10) damage afterwards Splash(50%) if target has Oiled,,,,
 Balance,Unimplemented,"Applies to any ally Enlightement I, Protection I, Vigor I and Endurance I",Ability : Targeting Ally Applies @Enlightened[I], @Protection[I], @Vigor[I], @Endurance[I] for 3 turns,,,,
 Prayer,Unimplemented,Applies low healing and regeneration I,Ability : Restores 6 hp then Restores 2 hp for 2 turns,,,,
@@ -84,13 +84,8 @@ Sacred Light,Pass,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies H
 Holy Armor,Pass,Grants +6 Defense for 3 turns.,Ability (Holy): Applies Buff(6) to Defense for 3 turns,#ERROR!,,,
 Divine Reflex,Pass,Grants +2 initiative for the next 2 rounds,Ability (Holy): Applies Buff(6) to initiative for 2 rounds,#ERROR!,,,
 Radiant Vow,Pass,"If the user dies this round, they revive with 1 HP.",Ability (Holy): Applies Revival(1) for 1 round,OK,,,
-<<<<<<< Updated upstream
 Light Ray,Pass,Magic attack with light element.,Ability (Holy): Deals Magical(1) with Light,OK,,,
 Cleric’s Boon,Pass,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies Heals 20 hp with Cleanse,OK,,,
-=======
-Light Ray,Pass,Magic attack with light element.,Ability (Holy): Deals Magical(1) light damage,OK,,,
-Cleric’s Boon,Pass,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies Heals 20 hp with Cleanse,#ERROR!,,,
->>>>>>> Stashed changes
 Iron Guard,Pass,"Enter a defensive stance: reduce incoming damage by 40% for 1 turn.
 ","Ability (Protector): Targeting Self, Applies DefensiveStance, Applies Protection(40%) for 1 turn",OK,,,
 Shield Wall,Pass,"Enter a defensive stance: Add a 30HP shield
@@ -103,7 +98,7 @@ Earthbreaker,Fail,Heavy strike that ignores armor but delays your next turn.,Abi
 Double Down,Unimplemented,"If this attack hits, immediately repeat it with reduced accuracy.",Ability (Brute): Deals Physical(15) damage then Repeat if hit at 80% accuracy,,,,
 Crushbone,Fail,Strike an enemy with such force they lose their next action.,Ability (Brute): Deals Physical(18) damage then Applies Stun for 1 turn,,,,
 Lone Stance,Fail,Gain +25% damage and -25% damage taken while no allies have acted this round.,"Ability (Solitude): Applies Power(125%), Protection(25%) for 1 round if no allies acted",,,,
-Echoing Blade,Fail,Deals +50% damage if you were the last to act on your team.,Ability (Solitude): Deals Physical(10) damage with Power(150%) if last ally to act,,,,
+Echoing Blade,Unimplemented,Deals +50% damage if you were the last to act on your team.,Ability (Solitude): Deals Physical(10) damage with Power(150%) if ally turns == 0,,,,
 Isolated Will,Unimplemented,Heal 20 HP if you have no other living allies.,Ability (Solitude): Heals 20 hp miss if ally count > 1,,,,
 Stillness Before the Storm,Fail,Skip your turn to gain +2 initiative and +30% damage next turn.,"Ability (Solitude): Invokes SkipSelf then Applies Initiative(2), Power(130%) next turn",,,,
 Last Man Standing,Fail,Gain stacking buffs (+5% damage per fallen ally) that persist until end of combat.,Ability (Solitude): Applies Power(105% per fallen ally) until end of combat,,,,
