@@ -1,0 +1,230 @@
+### YamlMime:TableOfContent
+- name: Components.Root
+  href: Components.Root.md
+  items:
+  - name: Classes
+  - name: GoogleCsvLoader
+    href: Components.Root.GoogleCsvLoader.md
+- name: ConsoleApp3.Core
+  href: ConsoleApp3.Core.md
+  items:
+  - name: Classes
+  - name: ConsoleLogger
+    href: ConsoleApp3.Core.ConsoleLogger.md
+  - name: FileLogger
+    href: ConsoleApp3.Core.FileLogger.md
+  - name: Interfaces
+  - name: ILogger
+    href: ConsoleApp3.Core.ILogger.md
+- name: DSLApp1.Dsl
+  href: DSLApp1.Dsl.md
+  items:
+  - name: Classes
+  - name: AbilityIR
+    href: DSLApp1.Dsl.AbilityIR.md
+  - name: AndCondition
+    href: DSLApp1.Dsl.AndCondition.md
+  - name: AppliesModifierIR
+    href: DSLApp1.Dsl.AppliesModifierIR.md
+  - name: BaseCondition
+    href: DSLApp1.Dsl.BaseCondition.md
+  - name: CompatibilityTag
+    href: DSLApp1.Dsl.CompatibilityTag.md
+  - name: Condition
+    href: DSLApp1.Dsl.Condition.md
+  - name: DamageEffectIR
+    href: DSLApp1.Dsl.DamageEffectIR.md
+  - name: DamageMechanic
+    href: DSLApp1.Dsl.DamageMechanic.md
+  - name: DamageSupportIR
+    href: DSLApp1.Dsl.DamageSupportIR.md
+  - name: DamageType
+    href: DSLApp1.Dsl.DamageType.md
+  - name: DslGrammar
+    href: DSLApp1.Dsl.DslGrammar.md
+  - name: DslParsers
+    href: DSLApp1.Dsl.DslParsers.md
+  - name: DslTokenizer
+    href: DSLApp1.Dsl.DslTokenizer.md
+  - name: Duration
+    href: DSLApp1.Dsl.Duration.md
+  - name: EffectIR
+    href: DSLApp1.Dsl.EffectIR.md
+  - name: EffectModifierIR
+    href: DSLApp1.Dsl.EffectModifierIR.md
+  - name: EffectSupportIR
+    href: DSLApp1.Dsl.EffectSupportIR.md
+  - name: ElementSupportIR
+    href: DSLApp1.Dsl.ElementSupportIR.md
+  - name: ElementTag
+    href: DSLApp1.Dsl.ElementTag.md
+  - name: Header
+    href: DSLApp1.Dsl.Header.md
+  - name: HealEffectIR
+    href: DSLApp1.Dsl.HealEffectIR.md
+  - name: HealMechanic
+    href: DSLApp1.Dsl.HealMechanic.md
+  - name: HealingSideEffectMechanic
+    href: DSLApp1.Dsl.HealingSideEffectMechanic.md
+  - name: InvokeEffectIR
+    href: DSLApp1.Dsl.InvokeEffectIR.md
+  - name: InvokeMechanic
+    href: DSLApp1.Dsl.InvokeMechanic.md
+  - name: MacroDefinition
+    href: DSLApp1.Dsl.MacroDefinition.md
+  - name: MacroLoader
+    href: DSLApp1.Dsl.MacroLoader.md
+  - name: ModifierEffectIR
+    href: DSLApp1.Dsl.ModifierEffectIR.md
+  - name: ModifierIR
+    href: DSLApp1.Dsl.ModifierIR.md
+  - name: ModifierMechanicIR
+    href: DSLApp1.Dsl.ModifierMechanicIR.md
+  - name: MultiplierMechanicIR
+    href: DSLApp1.Dsl.MultiplierMechanicIR.md
+  - name: OptionalExtensions
+    href: DSLApp1.Dsl.OptionalExtensions.md
+  - name: SideEffectMechanic
+    href: DSLApp1.Dsl.SideEffectMechanic.md
+  - name: SideEffectMechanicIR
+    href: DSLApp1.Dsl.SideEffectMechanicIR.md
+  - name: SideEffectSupportIR
+    href: DSLApp1.Dsl.SideEffectSupportIR.md
+  - name: SideEffectsIR
+    href: DSLApp1.Dsl.SideEffectsIR.md
+  - name: SpreadsheetMacroExpander
+    href: DSLApp1.Dsl.SpreadsheetMacroExpander.md
+  - name: StatBuffMechanicIR
+    href: DSLApp1.Dsl.StatBuffMechanicIR.md
+  - name: StateMechanicIR
+    href: DSLApp1.Dsl.StateMechanicIR.md
+  - name: SupportEffectIR
+    href: DSLApp1.Dsl.SupportEffectIR.md
+  - name: SupportIR
+    href: DSLApp1.Dsl.SupportIR.md
+  - name: TargetTag
+    href: DSLApp1.Dsl.TargetTag.md
+  - name: Targeting
+    href: DSLApp1.Dsl.Targeting.md
+  - name: Tok
+    href: DSLApp1.Dsl.Tok.md
+  - name: Token
+    href: DSLApp1.Dsl.Token.md
+  - name: Enums
+  - name: AutoTargetingStrategy
+    href: DSLApp1.Dsl.AutoTargetingStrategy.md
+  - name: BuffMechanicType
+    href: DSLApp1.Dsl.BuffMechanicType.md
+  - name: Compatibility
+    href: DSLApp1.Dsl.Compatibility.md
+  - name: DamageFormula
+    href: DSLApp1.Dsl.DamageFormula.md
+  - name: DamageMechanicType
+    href: DSLApp1.Dsl.DamageMechanicType.md
+  - name: DamageMultiplierMechanicType
+    href: DSLApp1.Dsl.DamageMultiplierMechanicType.md
+  - name: DurationType
+    href: DSLApp1.Dsl.DurationType.md
+  - name: EconomyStat
+    href: DSLApp1.Dsl.EconomyStat.md
+  - name: EffectType
+    href: DSLApp1.Dsl.EffectType.md
+  - name: Element
+    href: DSLApp1.Dsl.Element.md
+  - name: Field
+    href: DSLApp1.Dsl.Field.md
+  - name: HealMechanicType
+    href: DSLApp1.Dsl.HealMechanicType.md
+  - name: HexType
+    href: DSLApp1.Dsl.HexType.md
+  - name: InvokeMechanicType
+    href: DSLApp1.Dsl.InvokeMechanicType.md
+  - name: MultiplierMechanicType
+    href: DSLApp1.Dsl.MultiplierMechanicType.md
+  - name: Op
+    href: DSLApp1.Dsl.Op.md
+  - name: SideEffectMechanicType
+    href: DSLApp1.Dsl.SideEffectMechanicType.md
+  - name: StatField
+    href: DSLApp1.Dsl.StatField.md
+  - name: StateMechanicType
+    href: DSLApp1.Dsl.StateMechanicType.md
+  - name: Subject
+    href: DSLApp1.Dsl.Subject.md
+  - name: TargetSide
+    href: DSLApp1.Dsl.TargetSide.md
+  - name: TargetType
+    href: DSLApp1.Dsl.TargetType.md
+  - name: TimingEvent
+    href: DSLApp1.Dsl.TimingEvent.md
+  - name: TokenType
+    href: DSLApp1.Dsl.TokenType.md
+- name: DSLApp1.Model
+  href: DSLApp1.Model.md
+  items:
+  - name: Classes
+  - name: Behaviour
+    href: DSLApp1.Model.Behaviour.md
+  - name: Behaviour.NpcAction
+    href: DSLApp1.Model.Behaviour.NpcAction.md
+  - name: BoardState
+    href: DSLApp1.Model.BoardState.md
+  - name: CharacterCombatState
+    href: DSLApp1.Model.CharacterCombatState.md
+  - name: CombatEvent
+    href: DSLApp1.Model.CombatEvent.md
+  - name: CombatEventBuilder
+    href: DSLApp1.Model.CombatEventBuilder.md
+  - name: CombatRound
+    href: DSLApp1.Model.CombatRound.md
+  - name: CombatState
+    href: DSLApp1.Model.CombatState.md
+  - name: Damage
+    href: DSLApp1.Model.Damage.md
+  - name: Fragment
+    href: DSLApp1.Model.Fragment.md
+  - name: HexPiece
+    href: DSLApp1.Model.HexPiece.md
+  - name: Structs
+  - name: HexCoord
+    href: DSLApp1.Model.HexCoord.md
+  - name: Interfaces
+  - name: IAbility
+    href: DSLApp1.Model.IAbility.md
+  - name: ICharacterBaseState
+    href: DSLApp1.Model.ICharacterBaseState.md
+  - name: ICharacterCombatState
+    href: DSLApp1.Model.ICharacterCombatState.md
+  - name: ICharacterDefinition
+    href: DSLApp1.Model.ICharacterDefinition.md
+  - name: ICombatCharacter
+    href: DSLApp1.Model.ICombatCharacter.md
+  - name: IIdentifiable
+    href: DSLApp1.Model.IIdentifiable.md
+  - name: IModifier
+    href: DSLApp1.Model.IModifier.md
+  - name: Enums
+  - name: BehaviourType
+    href: DSLApp1.Model.BehaviourType.md
+  - name: CharacterCombatState.AbilityMode
+    href: DSLApp1.Model.CharacterCombatState.AbilityMode.md
+  - name: CombatState.Phase
+    href: DSLApp1.Model.CombatState.Phase.md
+  - name: Exclusivity
+    href: DSLApp1.Model.Exclusivity.md
+  - name: HexCoord.FaceDirection
+    href: DSLApp1.Model.HexCoord.FaceDirection.md
+  - name: HexCoord.VertexDirection
+    href: DSLApp1.Model.HexCoord.VertexDirection.md
+  - name: Rarity
+    href: DSLApp1.Model.Rarity.md
+  - name: Stat
+    href: DSLApp1.Model.Stat.md
+  - name: Targetability
+    href: DSLApp1.Model.Targetability.md
+- name: DSLApp1.Tests
+  href: DSLApp1.Tests.md
+  items:
+  - name: Classes
+  - name: Log
+    href: DSLApp1.Tests.Log.md
