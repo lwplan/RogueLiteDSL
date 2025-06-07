@@ -81,11 +81,11 @@ Killing Blow (Splash),Pass,Physical attack on a kill 50% of damage applied to al
 Farewell,Pass,if the enemy is 15% or less HP you immediately kill him.,Ability (Execution): Deals Physical(0) damage with Kill if target hpPercent < 15,OK,,,
 Killing Blow (Bounce),Pass,"If this attack kills the target, deal 50% of that damage to a second random enemy.",Ability (Execution): Deals Physical(10) damage afterwards Bounce(50%) if kills > 0,#ERROR!,,,
 Sacred Light,Pass,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies Heals(20),OK,,,
-Holy Armor,Pass,Grants +6 Defense for 3 turns.,"Ability (Holy): Applies Buff(DEF,6) for 3 turns",#ERROR!,,,
+Holy Armor,Pass,Grants +6 Defense for 3 turns.,Ability (Holy): Applies Buff(6) to Defense for 3 turns,#ERROR!,,,
 Divine Reflex,Pass,Grants +2 initiative for the next 2 rounds,"Ability (Holy): Applies Buff(IVE,6) for 2 rounds",#ERROR!,,,
 Radiant Vow,Pass,"If the user dies this round, they revive with 1 HP.",Ability (Holy): Applies Revival(1) for 1 round,OK,,,
 Light Ray,Pass,Magic attack with light element.,Ability (Holy): Deals Magical(1) with Light,OK,,,
-Cleric’s Boon,Pass,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies Applies Cleanse,#ERROR!,,,
+Cleric’s Boon,Pass,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies Heals 20 hp with Cleanse,#ERROR!,,,
 Iron Guard,Pass,"Enter a defensive stance: reduce incoming damage by 40% for 1 turn.
 ","Ability (Protector): Targeting Self, Applies DefensiveStance, Applies Protection(40%) for 1 turn",OK,,,
 Shield Wall,Pass,"Enter a defensive stance: Add a 30HP shield
@@ -123,7 +123,7 @@ Ghost Draw,Fail,Copy the top fragment from your discard pile and prepare it for 
 Palm Flash,Fail,Stun an enemy if you acted earlier in the round than they did.,Ability (Sleight): Applies Stun(1) if acted earlier this round,,,,
 Overcharge Pulse,Fail,"Deals heavy elemental damage. After use, the user takes 15 true damage at the end of their next turn.",Ability (Overload): Deals Elemental(25) damage then SelfDamage(15) end of next turn,,,,
 Feedback Arc,Fail,Cast your last used ability again with +25% power. Increases all damage received next round by 30%.,Ability (Overload): Recast last ability with Power(125%) then Applies Vulnerability(130%) next round,,,,
-Crackleburst,Fail,"Gain +1 initiative this round and +20% damage. After your turn, lose 4 initiative stat for 2 rounds.","Ability (Overload): Applies Initiative(1), Power(120%) this round then Debuff(IVE,-4) for 2 rounds",,,,
+Crackleburst,Fail,"Gain +1 initiative this round and +20% damage. After your turn, lose 4 initiative stat for 2 rounds.","Ability (Overload): Applies Initiative(1), Power(120%) for 1 round then Applies Debuff(4) Initiative for 2 rounds",,,,
 Core Surge,Fail,"Heal 20 HP and gain +20% damage next turn. If overhealed beyond max HP, take 10 recoil damage.",Ability (Overload): Heals(20) then Power(120%) next turn if overheal SelfDamage(10),,,,
 Stability Break,Fail,"Next 3 attacks gain +0.2 multiplier. After the third, you are silenced for 1 round.",Ability (Overload): Buff next 3 attacks Power(120%) then Applies Silence(1),,,,
 Storm Tension,Fail,"Gain initiative for all current turns this round. At the start of next round, delay all actions by 2 slots.",Ability (Overload): Gain Initiative this round then DelaySelf(2) next round,,,,
