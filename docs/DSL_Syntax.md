@@ -32,6 +32,8 @@ deals-clause := 'Deals' damage-clause
 
 heals-clause := healing-type healing-clause
 
+healing-type := 'Restores' | 'Drains' | 'Gives' | 'Takes'
+
 invokes-clause := 'Invokes' invoke-mechanic ['if' condition]
 ```
 
@@ -41,9 +43,14 @@ invokes-clause := 'Invokes' invoke-mechanic ['if' condition]
  damage-clause := { element-type } damage-type 'damage'
                   ['with' damage-mechanic {',' damage-mechanic}]
                   ['if' condition]
+
+damage-mechanic := damage-mechanic-type mechanic-specifier
+damage-mechanic-type :=
+    'Spiral' | 'Piercing' | 'Kill' |
+    'ExtraDamage' | 'Crit' | 'ShieldBreaker'
 ```
 
-Elements such as `Fire` or `Ice` may be listed before the damage type (`Physical` or `Magical`).  Damage mechanics like `Piercing` or `Spiral` can be supplied in square brackets.  Each mechanic accepts an amount (number or percentage) and may include an additional condition introduced by `when` or `if`.
+Elements such as `Fire` or `Ice` may be listed before the damage type (`Physical` or `Magical`).  Damage mechanics like `Piercing`, `ExtraDamage`, or `Spiral` can be supplied after the keyword `with`.  Each mechanic accepts an amount (number or percentage) and may include an additional condition introduced by `when` or `if`.
 
 Healing and invoking mechanics follow similar patterns with optional conditions and parameters.
 
@@ -71,6 +78,8 @@ Modifier mechanics can represent stat buffs, multipliers (e.g., `Vulnerability`)
 modifier-mechanic := stat-buff-mechanic | multiplier-mechanic | state-mechanic
 state-mechanic := ('Blessing' | 'Curse' | 'Stun' | 'Defensive' | 'Revival') [mechanic-specifier]
 multiplier-mechanic := ('Vulnerability' | 'Protection' | 'Power' | 'Frailty') ('against' | 'to') ['(' amount ')'] (element | compatibility) damage ['when' condition]
+stat-buff-mechanic := ('Buff' | 'Debuff') '(' amount ')' 'to' stat-field
+stat-field := 'Attack' | 'Defense' | 'Intelligence' | 'Resistance' | 'Initiative'
 ```
 
 
@@ -102,7 +111,7 @@ condition := comparison-field comparison amount
 
 comparison-field := (('User' | 'Target') character-stat) | outcome-stat
 character-stat := 'Attack' | 'Defense' | 'Intelligence' | 'Resistance' | 'Initiative' | 'MaxHp' | 'InitialMana' | 'Mana' | 'Hp' | 'Opportunity'
-outcome-stat := 'Roll' | 'Kills' | 'Missed' | 'Hits' | 'Damage'
+outcome-stat := 'Roll' | 'Kills' | 'Missed' | 'Hits'
 ```
 
 
@@ -117,3 +126,11 @@ Comparison operators include `==`, `!=`, `<`, `>`, `<=`, and `>=`.  A special `m
 - Conditions only support numeric comparisons; complex boolean logic is not currently part of the grammar.
 
 This overview mirrors the formal grammar found in [`src/Dsl/Grammar.txt`](../src/Dsl/Grammar.txt) and should help when authoring new ability definitions or extending the parser logic.
+
+## 7. Common Pitfalls
+
+Several lines in `tests/TestData/abilities.csv` fail to parse due to minor syntax mistakes:
+
+- **Stat buffs** must use `Buff(6) to Defense`.  Abbreviations like `Buff(DEF,6)` are invalid.
+- **Unimplemented mechanics** such as `Cleanse` or `RandomBuffOrDebuff` will cause errors.
+- **Side effects** must follow the `afterwards` keyword, e.g. `afterwards Bounce(50%) if kills > 0`.
