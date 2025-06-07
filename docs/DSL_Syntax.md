@@ -132,5 +132,5 @@ This overview mirrors the formal grammar found in [`src/Dsl/Grammar.txt`](../src
 Several lines in `tests/TestData/abilities.csv` fail to parse due to minor syntax mistakes:
 
 - **Stat buffs** must use `Buff(6) to Defense`.  Abbreviations like `Buff(DEF,6)` are invalid.
-- **Unimplemented mechanics** such as `Cleanse` or `RandomBuffOrDebuff` will cause errors.
+- **Unimplemented mechanics** such as `RandomBuffOrDebuff` will cause errors.
 - **Side effects** must follow the `afterwards` keyword, e.g. `afterwards Bounce(50%) if kills > 0`.

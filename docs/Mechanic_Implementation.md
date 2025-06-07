@@ -34,6 +34,7 @@ This document summarizes which combat mechanics are currently supported by the p
 | Defensive | State |
 | Revival | State |
 | Shield | State |
+| Cleanse | State |
 | MultiHit | Targeting |
 | MultiTarget | Targeting |
 | Random | Targeting |
@@ -45,7 +46,6 @@ The following mechanics appear in `tests/TestData/abilities.csv` but are not def
 | Mechanic | Category | Description |
 |----------|----------|-------------|
 | Bleed | State | Deals damage over time each turn. |
-| Cleanse | State | Removes negative status effects from the target. |
 | RandomBuffOrDebuff | State | Applies a random buff or a random debuff. |
 | DefensiveStance | State | Enters a defensive posture to reduce damage or intercept. |
 | HealBlock | State | Prevents or reduces healing received. |

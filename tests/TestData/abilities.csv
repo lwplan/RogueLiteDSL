@@ -85,7 +85,7 @@ Holy Armor,Pass,Grants +6 Defense for 3 turns.,Ability (Holy): Applies Buff(6) t
 Divine Reflex,Pass,Grants +2 initiative for the next 2 rounds,"Ability (Holy): Applies Buff(IVE,6) for 2 rounds",#ERROR!,,,
 Radiant Vow,Pass,"If the user dies this round, they revive with 1 HP.",Ability (Holy): Applies Revival(1) for 1 round,OK,,,
 Light Ray,Pass,Magic attack with light element.,Ability (Holy): Deals Magical(1) with Light,OK,,,
-Cleric’s Boon,Pass,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies Heals 20 hp with Cleanse,#ERROR!,,,
+Cleric’s Boon,Pass,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies Heals 20 hp with Cleanse,OK,,,
 Iron Guard,Pass,"Enter a defensive stance: reduce incoming damage by 40% for 1 turn.
 ","Ability (Protector): Targeting Self, Applies DefensiveStance, Applies Protection(40%) for 1 turn",OK,,,
 Shield Wall,Pass,"Enter a defensive stance: Add a 30HP shield
