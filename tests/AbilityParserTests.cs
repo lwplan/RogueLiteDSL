@@ -56,6 +56,32 @@ namespace DSLApp1.Tests.Dsl
             var dmgEffect = Assert.IsType<DamageEffectIR>(Assert.Single(ability.Effects));
             var mechanic = Assert.Single(dmgEffect.With);
             Assert.Equal(DamageMechanicType.Kill, mechanic.MechanicType);
+            Assert.NotNull(mechanic.Condition);
+            var cond = Assert.IsType<Condition>(mechanic.Condition);
+            Assert.Equal(Subject.Target, cond.Subject);
+            Assert.Equal(Field.HpPercent, cond.Field);
+            Assert.Equal(Op.Lt, cond.Op);
+            Assert.Equal(15f, cond.Value);
+        }
+
+        [Fact]
+        public void AbilityParser_Parses_Kill_Damage_Mechanic_When()
+        {
+            const string src =
+                "Ability (Execution): Deals Physical(0) damage with Kill when target hpPercent < 15";
+
+            var tokens = DslTokenizer.Tokenize(src);
+            var ability = DslParsers.AbilityParser.ParseOrThrow(tokens);
+
+            var dmgEffect = Assert.IsType<DamageEffectIR>(Assert.Single(ability.Effects));
+            var mechanic = Assert.Single(dmgEffect.With);
+            Assert.Equal(DamageMechanicType.Kill, mechanic.MechanicType);
+            Assert.NotNull(mechanic.Condition);
+            var cond = Assert.IsType<Condition>(mechanic.Condition);
+            Assert.Equal(Subject.Target, cond.Subject);
+            Assert.Equal(Field.HpPercent, cond.Field);
+            Assert.Equal(Op.Lt, cond.Op);
+            Assert.Equal(15f, cond.Value);
         }
     }
 }

@@ -42,7 +42,7 @@ public static partial class DslParsers
             Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)
         ).Optional()
         from whenCondition in Try(
-            Tok.When.Then(ConditionParser)
+            Tok.When.Then(ConditionBodyParser)
         ).Optional()
         select new InvokeMechanic(
             mechType,

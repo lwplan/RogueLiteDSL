@@ -16,7 +16,7 @@ public enum DamageMechanicType
 
 public record DamageType(DamageFormula DamageFormula, Element Element, int BaseDamage);
 
-public record DamageMechanic(DamageMechanicType MechanicType, float Value, Condition Condition);
+public record DamageMechanic(DamageMechanicType MechanicType, float Value, Condition? Condition);
 
 
 public record DamageEffectIR(
@@ -44,13 +44,22 @@ public static partial class DslParsers
     public static Parser<Token, DamageMechanic> DamageMechanicAtom =>
         from mech in DamageMechanicTypeParser
         from value in Try(Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)).Optional()
-        select new DamageMechanic(mech, value.HasValue ? value.Value : 0f, null);
+        from cond in Try(ConditionIfOrWhenParser).Optional()
+        select new DamageMechanic(
+            mech,
+            value.HasValue ? value.Value : 0f,
+            cond.GetValueOrDefault()
+        );
 
     public static Parser<Token, List<DamageMechanic>> DamageMechanicGroupParser =>
         from _l in Tok.LBracket
         from items in DamageMechanicAtom.Separated(Comma)
         from _r in Tok.RBracket
         select items.ToList();
+
+    public static Parser<Token, List<DamageMechanic>> DamageMechanicListParser =>
+        Try(DamageMechanicGroupParser)
+            .Or(DamageMechanicAtom.Separated(Comma).Select(ms => ms.ToList()));
 
 
 
@@ -75,7 +84,7 @@ public static partial class DslParsers
         from _damage in Tok.Damage
         from withMechs in Try(
             from _w in Tok.With
-            from ms in DamageMechanicGroupParser
+            from ms in DamageMechanicListParser
             select ms
         ).Optional()
         select new DamageEffectIR(

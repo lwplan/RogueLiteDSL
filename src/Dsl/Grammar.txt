@@ -33,7 +33,7 @@ healing-type := 'Heals'|'Removes'|'Gives'|'Takes'
 
 healing-clause :=  int ['hp'|'mana'|'opportunity'] ['when' condition]
 
-mechanic-specifier := ['(' amount ')'] ['when' condition]
+mechanic-specifier := ['(' amount ')'] [('when' | 'if') condition]
 
 invokes-clause := 'Invokes'  invoke-mechanic ['if' condition]
 
