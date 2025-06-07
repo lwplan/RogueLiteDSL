@@ -36,7 +36,10 @@ namespace DSLApp1.Tests
             }
 
             var macros = new List<MacroDefinition>();
-            var argPattern = new Regex(@"(?<name>\w+)#\((?<values>[\d,\s]+)\)");
+            // macros specify index arguments using square brackets, e.g. X#[1,2]
+            // older versions of the test expected parentheses which no longer
+            // match the csv format. Update the regex accordingly.
+            var argPattern = new Regex(@"(?<name>\w+)#\[(?<values>[\d,\s]+)\]");
             foreach (var record in records)
             {
                 if (!record.TryGetValue("@Keyword[X]", out var rawKeyword) ||
