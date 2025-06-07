@@ -1,6 +1,6 @@
 Name,Test,Description,ProposedDSL,Syntax Check,Rarity,Mana Cost,Notes
 Dark tendrils,Yes,"High damage, high risk, at a price",Ability : Deals Dark Physical(20) damage miss if roll < 80,OK,,,
-Light ray,Yes,A light ray that deals low damage and applies weaken I,Ability : Deals Light Physical(5) damage then Applies @Weakness[I] for 3 turns ,Parsing Exception: Unexpected character '@' at position 54,,,
+Light ray,Yes,A light ray that deals low damage and applies weaken I,Ability : Deals Light Physical(5) damage then Applies @Weakness[I] for 3 turns ,OK,,,
 Vine whip,Yes,deals moderate damage and applies slow 1 to enemy,Ability : Deals Physical(10) damage then Applies @Slow[I] for 3 turns,Parsing Exception: Unexpected character '@' at position 49,,,
 Lightning bolt,Yes,deals high damage with high risk,Ability : Deals Electrical Physical(30) damage miss if roll < 90,OK,,,
 Water bullet,Yes,Deals water damage and leaves the enemy wet,Ability : Deals Water Physical(5) damage then applies vulnerability(150%) to electrical damage for 3 turns ,OK,,,

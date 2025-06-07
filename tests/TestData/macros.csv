@@ -17,3 +17,5 @@
 @Weakness[X],Debuff,"Deuff(X#[4,6,7,9,10]) to Resistance",Downgrade Resistance by a fixed amount,INT+4,INT+6,INT+9,INT+12,INT+16
 @Swiftness[X],Buff,"Buff(X#[4,6,7,9,10]) to Initiative",Enhances Initiative by a fixed amount,IVE+2,IVE+3,IVE+4,IVE+5,IVE+7
 @Slowness[X],Debuff,"Deuff(X#[4,6,7,9,10]) to Initiative",Downgrade Initiative by a fixed amount,IVE-1,IVE-2,IVE-3,IVE-4,IVE-6
+@Slow[X],Debuff,"Deuff(X#[4,6,7,9,10]) to Initiative",Downgrade Initiative by a fixed amount,IVE-1,IVE-2,IVE-3,IVE-4,IVE-6
+

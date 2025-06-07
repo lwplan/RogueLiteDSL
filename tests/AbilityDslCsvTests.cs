@@ -12,6 +12,7 @@ using DSLApp1.Dsl;
 using Pidgin;
 using Xunit;
 using Xunit.Abstractions;
+using System.Text.RegularExpressions;
 
 namespace DSLApp1.Tests.Dsl
 {
@@ -25,6 +26,7 @@ namespace DSLApp1.Tests.Dsl
         
         private readonly ITestOutputHelper _output;
         private static readonly Task<List<object[]>> CachedRows = LoadRows();
+        private static readonly List<MacroDefinition> Macros = LoadMacros();
 
         public AbilityDslCsvTests(ITestOutputHelper output) => _output = output;
 
@@ -47,6 +49,63 @@ namespace DSLApp1.Tests.Dsl
                 .ToList();
         }
 
+        private static List<MacroDefinition> LoadMacros()
+        {
+            var csvPath = Path.Combine(AppContext.BaseDirectory, "TestData", "macros.csv");
+            if (!File.Exists(csvPath))
+                throw new FileNotFoundException("macros.csv not found", csvPath);
+
+            var lines = File.ReadAllLines(csvPath)
+                .Where(l => !string.IsNullOrWhiteSpace(l))
+                .ToArray();
+            if (lines.Length == 0)
+                return new();
+
+            var headers = GoogleCsvLoader.ParseCsvLine(lines[0]);
+            var records = new List<Dictionary<string, string>>();
+            for (int i = 1; i < lines.Length; i++)
+            {
+                var values = GoogleCsvLoader.ParseCsvLine(lines[i]);
+                var record = headers.Zip(values, (h, v) => new { h, v })
+                    .ToDictionary(x => x.h.Trim(), x => x.v.Trim());
+                records.Add(record);
+            }
+
+            var macros = new List<MacroDefinition>();
+            var argPattern = new Regex(@"(?<name>\w+)#\[(?<values>[\d,\s]+)\]");
+            foreach (var record in records)
+            {
+                if (!record.TryGetValue("@Keyword[X]", out var rawKeyword) ||
+                    !record.TryGetValue("macro", out var macroBody))
+                    continue;
+
+                record.TryGetValue("Class", out var macroClass);
+                record.TryGetValue("Tool Tip", out var tooltip);
+
+                var indexArgs = new Dictionary<string, List<int>>();
+                string template = macroBody;
+                foreach (Match m in argPattern.Matches(macroBody))
+                {
+                    var argName = m.Groups["name"].Value;
+                    var values = m.Groups["values"].Value
+                        .Split(',')
+                        .Select(v => int.TryParse(v.Trim(), out var n) ? n : -1)
+                        .Where(n => n >= 0)
+                        .ToList();
+
+                    indexArgs[argName] = values;
+                    template = template.Replace(m.Value, argName);
+                }
+
+                var nameMatch = Regex.Match(rawKeyword, @"@(?<name>\w+)\[\w+\]");
+                if (!nameMatch.Success) continue;
+
+                var name = "@" + nameMatch.Groups["name"].Value;
+                macros.Add(new MacroDefinition(name, template, indexArgs, macroClass ?? "", tooltip ?? ""));
+            }
+            return macros;
+        }
+
         private record AbilityRow
         {
             public string Name { get; set; } = string.Empty;
@@ -67,8 +126,12 @@ namespace DSLApp1.Tests.Dsl
         public void Csv_ProposedDsl_Matches_CurrentGrammar(string name, string proposedDsl, bool shouldPass)
         {
             
-            // var expanded = DslMacroExpander.ExpandMacros(proposedDsl);
-            var tokens = DslTokenizer.Tokenize(proposedDsl);
+            var expanded = Regex.Replace(
+                proposedDsl,
+                @"@\w+\[[IVXLCDM]+\]",
+                m => MacroExpander.Expand(m.Value, Macros));
+
+            var tokens = DslTokenizer.Tokenize(expanded);
             
             foreach (var t in tokens)
                 _output.WriteLine($"{t.Type}: '{t.Text}'");
