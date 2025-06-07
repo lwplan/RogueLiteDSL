@@ -11,7 +11,7 @@ Earth hammer,Pass,Deals inmense damage with high cost,Ability : Deals Dark Physi
 Jet stream axe,Pass,deals high damage with high risk,Ability : Deals Physical(20) damage miss if roll < 80,OK,,,
 Fire slash,Pass,deals fire damage,Ability : Deals Fire Physical(20) damage,OK,,,
 Flow cut,Pass,deal physical water damage,Ability : Deals Physical(10) water damage,OK,,,
-Raise shield,Unimplemented,Applies protection II and endurance II,Outfit : Equips @Protection[II] and @Endurance[II] ,,,,
+Raise shield,Unimplemented,Applies protection II and endurance II,Outfit : Equips @Fortitude[II] and @Resiliance[II] ,,,,
 Royal Wall,Unimplemented,Applies Royal Wall for a turn,What is royal wall?,,,,
 Overwhelming force,Pass,Deals massive amounts of damage,Ability : Deals Physical(20) damage,OK,,,
 Shield breaker,Pass,Applies Shreded II,Ability : Deals Physical(5) damage with ShieldBreaker(30) if roll > 80,OK,,,
