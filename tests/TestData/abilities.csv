@@ -49,11 +49,9 @@ Desert slash,Unimplemented,A basic Attack,Ability : Deals Physical(10) damage,,,
 Loyalty pledge,Unimplemented,A basic Attack,Ability : Deals Physical(10) damage,,,,
 Cannonzade,Pass,,Ability (Artillery): Targeting Enemies with MultiHit(6) Deals Physical(6) Fire damage,OK,,,
 Molten Bombard,Pass,,Ability (Artillery): Applies 'Deals Physical(6) Fire damage' for 3 turns,OK,,,
-Molton Barbard Test,Pass,,Ability (Artillery): Deals Physical(6) Fire damage then Applies Magical(2) damage for 1 turn,OK,,,
+Molton Barbard Test,Pass,,Ability (Artillery): Deals Physical(6) Fire damage then Applies 'Deals Magical(2) damage' for 1 turn,OK,,,
 Heavy Shell,Pass,,Ability (Artillery): Charges 1 turn then Deals Physical(15) Fire damage,OK,,,
-Piercing Shrapnel,Pass,,Support (Artillery): Adds Piercing(50%) to damage (Adjective = Piercing),"Syntax Error: Parse error.
-    unexpected Token { Type = Keyword, Text = Support }
-    at line 1, col 1",,,
+Piercing Shrapnel,Pass,,Support (Artillery): Adds Piercing(50%) to damage,OK,,,
 Storm Mortar,Pass,,Ability (Artillery): Deals Physical(6) Electrical damage afterwards Bounce if roll < 30,OK,,,
 Load Munition,Pass,,Support(Artillery) : Adds Fire to damage,"Syntax Error: Parse error.
     unexpected Token { Type = Keyword, Text = Support }
@@ -64,9 +62,7 @@ Bigger Caliber,Pass,,Support(Artillery) : Adds ExtraDamage(3) to damage,"Syntax 
 Critial Magazine,Pass,,Support(Artillery) : Adds Crit(20%) to damage if roll < 30,"Syntax Error: Parse error.
     unexpected Token { Type = Keyword, Text = Support }
     at line 1, col 1",,,
-Molten Cannonball,Pass,,Support(Artillery) : Adds For 3 turns : Deals Physical(6) Fire damage,"Syntax Error: Parse error.
-    unexpected Token { Type = Keyword, Text = Support }
-    at line 1, col 1",,,
+Molten Cannonball,Pass,,Support(Artillery) : Adds Applies 'Deals Physical(6) Fire damage' for 3 turns,OK,,,
 Siege Lock,Pass,,Ability (Artillery) : Targeting Enemy  Invokes Delay(2),OK,,,
 Shuffle,Pass,Randomizes all turn order for the current round.,Ability (Chaos): Targeting All Invokes Shuffle,OK,,,
 Sleight of Hand,Pass,Advances the next turn of a selected ally.,Ability (Chaos): Targeting Ally Invokes Advance(2),OK,,,
@@ -84,7 +80,7 @@ Sacred Light,Pass,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies R
 Holy Armor,Pass,Grants +6 Defense for 3 turns.,Ability (Holy): Applies Buff(6) to Defense for 3 turns,#ERROR!,,,
 Divine Reflex,Pass,Grants +2 initiative for the next 2 rounds,Ability (Holy): Applies Buff(6) to initiative for 2 rounds,#ERROR!,,,
 Radiant Vow,Pass,"If the user dies this round, they revive with 1 HP.",Ability (Holy): Applies Revival(1) for 1 round,OK,,,
-Light Ray,Pass,Magic attack with light element.,Ability (Holy): Deals Magical(1) with Light,OK,,,
+Light Ray,Pass,Magic attack with light element.,Ability (Holy): Deals Light Magical(1) damage,OK,,,
 Cleric’s Boon,Pass,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies Restores 20 hp with Cleanse,OK,,,
 Iron Guard,Pass,"Enter a defensive stance: reduce incoming damage by 40% for 1 turn.
 ",Ability (Protector): Targeting Self Applies Defensive then Applies Protection(40%) for 1 turn,OK,,,
