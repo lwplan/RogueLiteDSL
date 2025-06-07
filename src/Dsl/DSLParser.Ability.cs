@@ -43,10 +43,8 @@ public static partial class DslParsers
 
     // Modifier effects (many allowed)
     public static Parser<Token, EffectIR> ModifierClauseParser =>
-        Try(
-            InflictsEffectParser.Cast<EffectIR>()
-                .Or(AppliesEffectParser.Cast<EffectIR>())
-        );
+        InflictsEffectParser.Cast<EffectIR>()
+            .Or(AppliesEffectParser.Cast<EffectIR>());
 
     // Side effects (optional)
     public static Parser<Token, SideEffectsIR> SideEffectsClauseParser =>
