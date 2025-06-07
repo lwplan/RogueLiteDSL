@@ -13,8 +13,13 @@
   "build": {
     "content": [
       {
-        "files": ["docs/**.md"],
+        "files": ["index.md"],
         "dest": "."
+      },
+      {
+        "files": ["docs/**.md"],
+        "exclude": ["docs/index.md"],
+        "dest": "docs"
       },
       {
         "files": ["api/**.yml"],
