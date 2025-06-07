@@ -81,7 +81,9 @@ public static partial class DslParsers
             Tok.Stun.ThenReturn(StateMechanicType.Stun),
             Tok.Defensive.ThenReturn(StateMechanicType.Defensive),
             Tok.Revival.ThenReturn(StateMechanicType.Revival),
-            Tok.Shield.ThenReturn(StateMechanicType.Shield)
+            Tok.Shield.ThenReturn(StateMechanicType.Shield),
+            Tok.Wet.ThenReturn(StateMechanicType.Wet),
+            Tok.Oiled.ThenReturn(StateMechanicType.Oiled)
         )
         from amount in Try(Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)).Optional()
         from when in Try(Tok.When.Then(ConditionBodyParser)).Optional()

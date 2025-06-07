@@ -76,7 +76,7 @@ Modifier mechanics can represent stat buffs, multipliers (e.g., `Vulnerability`)
 
 ```ebnf
 modifier-mechanic := stat-buff-mechanic | multiplier-mechanic | state-mechanic
-state-mechanic := ('Blessing' | 'Curse' | 'Stun' | 'Defensive' | 'Revival') [mechanic-specifier]
+state-mechanic := ('Blessing' | 'Curse' | 'Stun' | 'Defensive' | 'Revival' | 'Shield' | 'Wet' | 'Oiled') [mechanic-specifier]
 multiplier-mechanic := ('Vulnerability' | 'Protection' | 'Power' | 'Frailty') ['(' amount ')'] [('against' | 'to') (element | compatibility) damage] ['when' condition]
 stat-buff-mechanic := ('Buff' | 'Debuff') '(' amount ')' 'to' stat-field
 stat-field := 'Attack' | 'Defense' | 'Intelligence' | 'Resistance' | 'Initiative'
