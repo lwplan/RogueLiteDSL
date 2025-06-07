@@ -14,9 +14,10 @@ using System.Runtime.InteropServices;
      Nomad,
      Chaos,
      Blessing,
-     Execution,
-     Holy
- }
+    Execution,
+    Holy,
+    Protector
+}
  
  public record Header(HexType Type, Compatibility? Compatibility);
  
@@ -28,11 +29,12 @@ using System.Runtime.InteropServices;
          Tok.Brute.ThenReturn(Compatibility.Brute),
          Tok.Artillery.ThenReturn(Compatibility.Artillery),
          Tok.Nomad.ThenReturn(Compatibility.Nomad),
-         Tok.Chaos.ThenReturn(Compatibility.Chaos),
-         Tok.Blessing.ThenReturn(Compatibility.Blessing),
-         Tok.Execution.ThenReturn(Compatibility.Execution),
-         Tok.Holy.ThenReturn(Compatibility.Holy)
-     );
+        Tok.Chaos.ThenReturn(Compatibility.Chaos),
+        Tok.Blessing.ThenReturn(Compatibility.Blessing),
+        Tok.Execution.ThenReturn(Compatibility.Execution),
+        Tok.Holy.ThenReturn(Compatibility.Holy),
+        Tok.Protector.ThenReturn(Compatibility.Protector)
+    );
      
      public static Parser<Token, Header> HeaderParser =>
          from type in OneOf(

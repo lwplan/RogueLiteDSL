@@ -17,7 +17,7 @@ namespace DSLApp1.Dsl
                 "Afterwards","Ability","Inflicts","Deals","With","Physical","damage",
                 "For","Charges","Adds","If","Against","When","roll","Fire","Poison",
                 "Ice","Water","Earth","Dark","Light","Electrical","then","Support",
-                "Outfit","Spiral","Artillery","Brute","Nomad","Chaos","Execution","Holy",
+                "Outfit","Spiral","Artillery","Brute","Nomad","Chaos","Execution","Holy","Protector",
                 "Piercing","Adjective","Self","Ally","Allies","Enemy","Enemies",
                 "Magical","to","ExtraDamage","Crit","ShieldBreaker","MultiHit",
                 "MultiTarget","Random","turns","rounds","turn","round","Start","End",
