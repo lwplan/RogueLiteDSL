@@ -59,38 +59,38 @@ Pass abilities should parse successfully; Fail ones are expected to fail; Unimpl
 |---------|-------------------|------|
 | Raise shield | Outfit : Equips @Protection[II] and @Endurance[II] | Fail |
 | Royal Wall | What is royal wall? | Fail |
-| Radiating light |  | Unimplemented |
-| Waterfall meditation |  | Unimplemented |
-| Ice bolas |  | Unimplemented |
-| Holy Smite |  | Unimplemented |
-| Camouflage |  | Unimplemented |
-| Desert Javeline |  | Unimplemented |
-| Nomad care |  | Unimplemented |
-| Oil vial |  | Unimplemented |
-| Poison darts |  | Unimplemented |
-| Desert firebomb |  | Unimplemented |
-| Balance |  | Unimplemented |
-| Prayer |  | Unimplemented |
-| Spiraling dark |  | Unimplemented |
-| Ether blast |  | Unimplemented |
-| Light Blessing |  | Unimplemented |
-| fortitous heal |  | Unimplemented |
-| Shadow convocationS |  | Unimplemented |
-| Ether Cannon |  | Unimplemented |
-| Shield Bash |  | Unimplemented |
-| Attack |  | Unimplemented |
-| Defend |  | Unimplemented |
-| Aegis Throw |  | Unimplemented |
-| Venom Bite |  | Unimplemented |
-| Super slash |  | Unimplemented |
-| Aether blast |  | Unimplemented |
-| Great Slash |  | Unimplemented |
-| Swift Slash |  | Unimplemented |
-| Light spark |  | Unimplemented |
-| Meditate |  | Unimplemented |
-| Unleash shadows |  | Unimplemented |
-| Desert slash |  | Unimplemented |
-| Loyalty pledge |  | Unimplemented |
+| Radiating light | Ability (Holy): Restores 12 hp then Restores 3 hp for 3 turns | Unimplemented |
+| Waterfall meditation | Ability (Holy): Targeting Self Restores 8 hp then Applies @Surge[II] for 2 turns | Unimplemented |
+| Ice bolas | Ability : Deals Water Physical(8) damage with Exhaust then Applies @Slow[III] for 2 turns | Unimplemented |
+| Holy Smite | Ability (Holy): Deals Light Magical(15) damage | Unimplemented |
+| Camouflage | Ability : Applies @Charge[III] to Self | Unimplemented |
+| Desert Javeline | Ability : Deals Earth Physical(18) damage | Unimplemented |
+| Nomad care | Ability : Restores 10 hp then Restores 10 hp if Target HpPercent < 50 | Unimplemented |
+| Oil vial | Ability : Applies Oiled for 3 turns then Applies Vulnerability(125%) to Fire for 3 turns | Unimplemented |
+| Poison darts | Ability : Deals Physical(4) damage then Applies @Poison[II] for 3 turns | Unimplemented |
+| Desert firebomb | Ability : Deals Fire Magical(10) damage afterwards Splash(50%) if target has Oiled | Unimplemented |
+| Balance | Ability : Targeting Ally Applies @Enlightened[I], @Protection[I], @Vigor[I], @Endurance[I] for 3 turns | Unimplemented |
+| Prayer | Ability : Restores 6 hp then Restores 2 hp for 2 turns | Unimplemented |
+| Spiraling dark | Ability : Applies Spiral(V) to target | Unimplemented |
+| Ether blast | Ability : Deals Piercing Magical(8) Ether damage | Unimplemented |
+| Light Blessing | Ability (Holy): Targeting Ally Applies @Regeneration[II] and @Protection[II] for 3 turns | Unimplemented |
+| fortitous heal | Ability : Restores 5 hp then Applies @Contingency[II] | Unimplemented |
+| Shadow convocationS | Ability : Applies @Poison[II] then Applies @Enlightened[IV] | Unimplemented |
+| Ether Cannon | Ability : Deals Piercing Magical(40) Ether damage afterwards Exhaust | Unimplemented |
+| Shield Bash | Ability : Deals Physical(10) damage based on Defense | Unimplemented |
+| Attack | Ability : Deals Physical(5) damage | Unimplemented |
+| Defend | Ability : Applies Defensive for 1 turn | Unimplemented |
+| Aegis Throw | Ability : Deals Physical(10) damage based on Resistance | Unimplemented |
+| Venom Bite | Ability : Deals Physical(4) Poison damage then Applies @Poison[I] for 3 turns | Unimplemented |
+| Super slash | Ability : Deals Physical(15) damage | Unimplemented |
+| Aether blast | Ability : Deals Ether Magical(12) damage | Unimplemented |
+| Great Slash | Ability : Deals Physical(20) damage | Unimplemented |
+| Swift Slash | Ability : Deals Physical(8) damage with MultiHit(2) | Unimplemented |
+| Light spark | Ability : Targeting Ally Applies @Enlightened[I], @Protection[I], @Vigor[I], @Endurance[I] for 3 turns | Unimplemented |
+| Meditate | Ability : Targeting Self Applies @Enlightened[I], @Protection[I], @Vigor[I], @Endurance[I] for 3 turns | Unimplemented |
+| Unleash shadows | Ability : Deals Dark Physical(10) damage | Unimplemented |
+| Desert slash | Ability : Deals Physical(10) damage | Unimplemented |
+| Loyalty pledge | Ability : Deals Physical(10) damage | Unimplemented |
 | Brute |  | Fail |
 | Overhead Slam | Ability (Brute): Deals Physical(25) damage then Applies Stun(1) to Self for 1 turn | Fail |
 | Reckless Charge | Ability (Brute): Targeting Line Deals Physical(15) damage then Applies Vulnerability(125%) to Self for 1 turn | Fail |
