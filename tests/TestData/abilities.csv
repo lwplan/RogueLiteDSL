@@ -1,14 +1,14 @@
 Name,Test,Legacy,ProposedDSL
-Cannonzade,Yes,,"aaAbility (Artillery): Targets Enemies with [MultiHit(6), Random], Deals Physical(6) Fire damage"
+Cannonzade,No,,"Ability (Artillery): Targets Enemies with [MultiHit(6), Random], Deals Physical(6) Fire damage"
 Molten Bombard,Yes,,Ability (Artillery): For 3 turns: Deals Physical(6) Fire damage
 Molton Barbard Test,Yes,,"Ability (Artillery): For 3 turns: { Deals Physical(6) Fire damage, Deals Magical(2) damage }"
 Heavy Shell,Yes,,Ability (Artillery): Charges 1 turn then Deals Physical(15) Fire damage
 Piercing Shrapnel1,Yes,,Support (Artillery) : Adds Piercing(50%) to damage
 Storm Mortar,Yes,,Ability (Artillery): Deals Physical(6) Electrical damage afterwards [Bounce if roll < 30]
 Load Munition,Yes,,Support(Artillery) : Adds Fire to damage (Adjective = Loaded)
-Bigger Caliber,Yes,,Support(Artillery) : Adds Bonus(+3) to damage (Adjective = Boosted)
-Critial Magazine,Yes,,Support(Artillery) : Adds Physical(4) to damage
-Molten Cannonball,Yes,,Support(Artillery) : Adds Applies Deals Physical(6) Fire damage for 3 turn (Adjective = Burning)
+Bigger Caliber,No,,Support(Artillery) : Adds Bonus(+3) to damage (Adjective = Boosted)
+Critial Magazine,No,,Support(Artillery) : Adds Physical(4) to damage
+Molten Cannonball,No,,Support(Artillery) : Adds Applies Deals Physical(6) Fire damage for 3 turn (Adjective = Burning)
 Siege Lock,Yes,,"Ability (Artillery): Targets Enemy, Applies Delay(2)"
 Shuffle,Yes,Randomizes all turn order for the current round.,"Ability (Chaos): Targets All, Invokes Shuffle"
 Sleight of Hand,Yes,Advances the next turn of a selected ally.,"Ability (Chaos): Targets Ally, Invokes Advance(2)"
