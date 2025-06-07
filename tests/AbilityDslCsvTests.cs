@@ -34,9 +34,22 @@ namespace DSLApp1.Tests.Dsl
 
         public AbilityDslCsvTests(ITestOutputHelper output) => _output = output;
 
+        private static string GetTestDataPath(string fileName)
+        {
+            // When tests are executed with '--no-build' the working directory
+            // contains a copied TestData folder under bin/Debug/netX.Y.  This
+            // causes stale data to be used if abilities.csv was modified after
+            // the previous build.  To ensure the latest changes are read we
+            // resolve the path relative to the project directory instead of the
+            // output directory.
+
+            var projectDir = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", ".."));
+            return Path.Combine(projectDir, "TestData", fileName);
+        }
+
         public static async Task<List<object[]>> LoadRows()
         {
-            var csvPath = Path.Combine(AppContext.BaseDirectory, "TestData", "abilities.csv");
+            var csvPath = GetTestDataPath("abilities.csv");
             using var reader = new StreamReader(csvPath);
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
@@ -65,7 +78,7 @@ namespace DSLApp1.Tests.Dsl
 
         private static List<MacroDefinition> LoadMacros()
         {
-            var csvPath = Path.Combine(AppContext.BaseDirectory, "TestData", "macros.csv");
+            var csvPath = GetTestDataPath("macros.csv");
             if (!File.Exists(csvPath))
                 throw new FileNotFoundException("macros.csv not found", csvPath);
 
