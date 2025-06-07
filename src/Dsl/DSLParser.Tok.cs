@@ -120,6 +120,8 @@ namespace DSLApp1.Dsl
             public static readonly Parser<Token, Token> Initiative = Keyword("Initiative");
             
             public static readonly Parser<Token, Token> Applies = Keyword("Applies");
+            public static readonly Parser<Token, Token> Equips = Keyword("Equips");
+            public static readonly Parser<Token, Token> And = Keyword("and");
 
 
             

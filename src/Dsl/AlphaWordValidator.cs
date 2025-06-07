@@ -25,7 +25,7 @@ namespace DSLApp1.Dsl
                 "Blessing","Curse","Stun","Defensive","Revival","Shield","Wet","Oiled","Cleanse",
                 "Bounce","Splash","Exhaust","CoolOff","Invokes","Delay","Advance",
                 "Swap","Shuffle","All","Miss","Attack","Defense","Intelligence",
-                "Resistance","Initiative","Applies","Mana","Hp","HpPercent",
+                "Resistance","Initiative","Applies","Equips","and","Mana","Hp","HpPercent",
                 "Opportunity","User","Target","Missed","Kills","Kill","Hits","On",
                 "Restores","Drains","Gives","Takes","Targeting","UserSelected",
                 "Neutral","Strongest","Weakest","NextUp","LastUp","Single","Multiple"

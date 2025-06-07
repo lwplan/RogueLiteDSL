@@ -170,7 +170,7 @@ public static partial class DslParsers
 
 
     public static Parser<Token, ModifierEffectIR> AppliesEffectParser =>
-        from _ in Tok.Applies
+        from _ in OneOf(Tok.Applies, Tok.Equips)
         from result in Try(
             from quoted in QuotedImmediateEffectParser
             from duration in DurationClauseParser
@@ -180,7 +180,7 @@ public static partial class DslParsers
                 new EffectModifierIR(duration, quoted, condition.GetValueOrDefault())
             )
         ).Or(
-            from mechanics in ModifierMechanicParser.Separated(Tok.Comma)
+            from mechanics in ModifierMechanicParser.Separated(OneOf(Tok.Comma, Tok.And))
             from duration in Try(DurationClauseParser).Optional()
             from condition in Try(ConditionParser).Optional()
             select new ModifierEffectIR(
