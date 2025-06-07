@@ -31,5 +31,17 @@ namespace DSLApp1.Tests.Dsl
 
 
         }
+
+        [Fact]
+        public void AbilityParser_Parses_NoRole_WithColon()
+        {
+            const string src =
+                "Ability : Deals Dark Physical(20) damage miss if roll < 80";
+
+            var tokens = DslTokenizer.Tokenize(src);
+            var ability = DslParsers.AbilityParser.ParseOrThrow(tokens);
+
+            Assert.Empty(ability.RoleCompatibilities);
+        }
     }
 }
