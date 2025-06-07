@@ -18,13 +18,17 @@ namespace DSLApp1.Tests.Dsl
 {
     /// <summary>
     /// Reads <c>TestData/abilities.csv</c> and checks each ProposedDSL line
-    /// against the DSL parser.  Lines flagged “Yes” must parse, “No” must still
-    /// fail (until you flip them to Yes).
+    /// against the DSL parser.  Lines flagged <c>Pass</c> must parse while
+    /// entries marked <c>Fail</c> must not.  The <c>Fail</c> cases are only
+    /// evaluated when the <c>TEST_FAILS</c> environment variable is set to
+    /// <c>1</c>.
     /// </summary>
     public sealed class AbilityDslCsvTests
     {
         
         private readonly ITestOutputHelper _output;
+        private static readonly bool IncludeFailTests =
+            Environment.GetEnvironmentVariable("TEST_FAILS") == "1";
         private static readonly Task<List<object[]>> CachedRows = LoadRows();
         private static readonly List<MacroDefinition> Macros = LoadMacros();
 
@@ -42,11 +46,21 @@ namespace DSLApp1.Tests.Dsl
             using var csv = new CsvReader(reader, config);
             var records = csv.GetRecords<AbilityRow>().ToList();
 
-            return records
-                .Where(r => r.Test.Equals("Yes", StringComparison.OrdinalIgnoreCase))
+            var passes = records
+                .Where(r => r.Test.Equals("Pass", StringComparison.OrdinalIgnoreCase))
                 .Where(r => r.SyntaxCheck.Equals("OK", StringComparison.OrdinalIgnoreCase))
-                .Select(r => new object[] { r.Name, r.ProposedDSL, true })
-                .ToList();
+                .Select(r => new object[] { r.Name, r.ProposedDSL, true });
+
+            IEnumerable<object[]> fails = Enumerable.Empty<object[]>();
+            if (IncludeFailTests)
+            {
+                fails = records
+                    .Where(r => r.Test.Equals("Fail", StringComparison.OrdinalIgnoreCase))
+                    .Where(r => r.SyntaxCheck.Equals("OK", StringComparison.OrdinalIgnoreCase))
+                    .Select(r => new object[] { r.Name, r.ProposedDSL, false });
+            }
+
+            return passes.Concat(fails).ToList();
         }
 
         private static List<MacroDefinition> LoadMacros()
