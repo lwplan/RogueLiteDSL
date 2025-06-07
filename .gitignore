@@ -36,4 +36,5 @@ project.lock.json
 project.fragment.lock.json
 
 docs/_site/
+api/
 
