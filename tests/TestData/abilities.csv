@@ -17,7 +17,7 @@ Overwhelming force,Pass,Deals massive amounts of damage,Ability : Deals Physical
 Shield breaker,Pass,Applies Shreded II,Ability : Deals Physical(5) damage with ShieldBreaker(30) if roll > 80,OK,,,
 Radiating light,Pass,midrange healing with regeneration I,Ability (Holy): Restores 12 hp then Restores 3 hp for 3 turns,,,,
 Waterfall meditation,Pass,Applies a small range selfheal and applies Surge II,Ability (Holy): Targeting Self Restores 8 hp then Applies @Surge[II] for 2 turns,,,,
-Ice bolas,Pass,"Physical water skill which exhaust, applies Slow III",Ability : Deals Water Physical(8) damage with Exhaust then Applies @Slow[III] for 2 turns,,,,
+Ice bolas,Pass,"Physical water skill which exhaust, applies Slow III",Ability : Deals Water Physical(8) damage then Applies @Slow[III] for 2 turns afterwards Exhaust,,,,
 Holy Smite,Pass,A blast of holy light,Ability (Holy): Deals Light Magical(15) damage,,,,
 Camouflage,Pass,Applies a powerful buff so the next attack is Charge III,Ability : Targeting Self Apply @Charge[III] for 1 turn,,,,
 Desert Javeline,Pass,A moderate earth physical skill which deals big damage,Ability : Deals Earth Physical(18) damage,,,,
