@@ -97,15 +97,26 @@ public static partial class DslParsers
             Tok.Power.ThenReturn(MultiplierMechanicType.Power),
             Tok.Frailty.ThenReturn(MultiplierMechanicType.Frailty)
         )
+        // Amount can appear either before or after the infix keyword
+        from amountBefore in Try(
+            Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)
+        ).Optional()
         from _infix in OneOf(
             Tok.Against,
             Tok.To
         )
-        from amount in Try(Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)).Optional()
+        from amountAfter in Try(
+            Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)
+        ).Optional()
         from against in TargetTagParser
         from _ in Tok.Damage
         from when in Try(Tok.When.Then(ConditionParser)).Optional()
-        select new MultiplierMechanicIR(type, amount.GetValueOrDefault(), against, when.GetValueOrDefault());
+        select new MultiplierMechanicIR(
+            type,
+            amountBefore.HasValue ? amountBefore.Value : amountAfter.GetValueOrDefault(),
+            against,
+            when.GetValueOrDefault()
+        );
 
     public static Parser<Token, MultiplierMechanicIR> SimpleMultiplierMechanicParser =>
         from type in OneOf(
