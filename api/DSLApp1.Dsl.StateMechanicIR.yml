@@ -1,0 +1,622 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.StateMechanicIR
+  commentId: T:DSLApp1.Dsl.StateMechanicIR
+  id: StateMechanicIR
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.StateMechanicIR.#ctor(DSLApp1.Dsl.StateMechanicType,System.Nullable{System.Single},DSLApp1.Dsl.Condition)
+  - DSLApp1.Dsl.StateMechanicIR.Amount
+  - DSLApp1.Dsl.StateMechanicIR.Type
+  - DSLApp1.Dsl.StateMechanicIR.When
+  langs:
+  - csharp
+  - vb
+  name: StateMechanicIR
+  nameWithType: StateMechanicIR
+  fullName: DSLApp1.Dsl.StateMechanicIR
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: StateMechanicIR
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 46
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: 'public record StateMechanicIR : ModifierMechanicIR, IEquatable<ModifierMechanicIR>, IEquatable<StateMechanicIR>'
+    content.vb: Public Class StateMechanicIR Inherits ModifierMechanicIR Implements IEquatable(Of ModifierMechanicIR), IEquatable(Of StateMechanicIR)
+  inheritance:
+  - System.Object
+  - DSLApp1.Dsl.ModifierMechanicIR
+  implements:
+  - System.IEquatable{DSLApp1.Dsl.ModifierMechanicIR}
+  - System.IEquatable{DSLApp1.Dsl.StateMechanicIR}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: DSLApp1.Dsl.StateMechanicIR.#ctor(DSLApp1.Dsl.StateMechanicType,System.Nullable{System.Single},DSLApp1.Dsl.Condition)
+  commentId: M:DSLApp1.Dsl.StateMechanicIR.#ctor(DSLApp1.Dsl.StateMechanicType,System.Nullable{System.Single},DSLApp1.Dsl.Condition)
+  id: '#ctor(DSLApp1.Dsl.StateMechanicType,System.Nullable{System.Single},DSLApp1.Dsl.Condition)'
+  parent: DSLApp1.Dsl.StateMechanicIR
+  langs:
+  - csharp
+  - vb
+  name: StateMechanicIR(StateMechanicType, float?, Condition?)
+  nameWithType: StateMechanicIR.StateMechanicIR(StateMechanicType, float?, Condition?)
+  fullName: DSLApp1.Dsl.StateMechanicIR.StateMechanicIR(DSLApp1.Dsl.StateMechanicType, float?, DSLApp1.Dsl.Condition?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: .ctor
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 46
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public StateMechanicIR(StateMechanicType Type, float? Amount, Condition? When)
+    parameters:
+    - id: Type
+      type: DSLApp1.Dsl.StateMechanicType
+    - id: Amount
+      type: System.Nullable{System.Single}
+    - id: When
+      type: DSLApp1.Dsl.Condition
+    content.vb: Public Sub New(Type As StateMechanicType, Amount As Single?, [When] As Condition)
+  overload: DSLApp1.Dsl.StateMechanicIR.#ctor*
+  nameWithType.vb: StateMechanicIR.New(StateMechanicType, Single?, Condition)
+  fullName.vb: DSLApp1.Dsl.StateMechanicIR.New(DSLApp1.Dsl.StateMechanicType, Single?, DSLApp1.Dsl.Condition)
+  name.vb: New(StateMechanicType, Single?, Condition)
+- uid: DSLApp1.Dsl.StateMechanicIR.Type
+  commentId: P:DSLApp1.Dsl.StateMechanicIR.Type
+  id: Type
+  parent: DSLApp1.Dsl.StateMechanicIR
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: StateMechanicIR.Type
+  fullName: DSLApp1.Dsl.StateMechanicIR.Type
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Type
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 47
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public StateMechanicType Type { get; init; }
+    parameters: []
+    return:
+      type: DSLApp1.Dsl.StateMechanicType
+    content.vb: Public Property Type As StateMechanicType
+  overload: DSLApp1.Dsl.StateMechanicIR.Type*
+- uid: DSLApp1.Dsl.StateMechanicIR.Amount
+  commentId: P:DSLApp1.Dsl.StateMechanicIR.Amount
+  id: Amount
+  parent: DSLApp1.Dsl.StateMechanicIR
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: StateMechanicIR.Amount
+  fullName: DSLApp1.Dsl.StateMechanicIR.Amount
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Amount
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 48
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public float? Amount { get; init; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Single}
+    content.vb: Public Property Amount As Single?
+  overload: DSLApp1.Dsl.StateMechanicIR.Amount*
+- uid: DSLApp1.Dsl.StateMechanicIR.When
+  commentId: P:DSLApp1.Dsl.StateMechanicIR.When
+  id: When
+  parent: DSLApp1.Dsl.StateMechanicIR
+  langs:
+  - csharp
+  - vb
+  name: When
+  nameWithType: StateMechanicIR.When
+  fullName: DSLApp1.Dsl.StateMechanicIR.When
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: When
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 49
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public Condition? When { get; init; }
+    parameters: []
+    return:
+      type: DSLApp1.Dsl.Condition
+    content.vb: Public Property [When] As Condition
+  overload: DSLApp1.Dsl.StateMechanicIR.When*
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: DSLApp1.Dsl.ModifierMechanicIR
+  commentId: T:DSLApp1.Dsl.ModifierMechanicIR
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.ModifierMechanicIR.html
+  name: ModifierMechanicIR
+  nameWithType: ModifierMechanicIR
+  fullName: DSLApp1.Dsl.ModifierMechanicIR
+- uid: System.IEquatable{DSLApp1.Dsl.ModifierMechanicIR}
+  commentId: T:System.IEquatable{DSLApp1.Dsl.ModifierMechanicIR}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ModifierMechanicIR>
+  nameWithType: IEquatable<ModifierMechanicIR>
+  fullName: System.IEquatable<DSLApp1.Dsl.ModifierMechanicIR>
+  nameWithType.vb: IEquatable(Of ModifierMechanicIR)
+  fullName.vb: System.IEquatable(Of DSLApp1.Dsl.ModifierMechanicIR)
+  name.vb: IEquatable(Of ModifierMechanicIR)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: DSLApp1.Dsl.ModifierMechanicIR
+    name: ModifierMechanicIR
+    href: DSLApp1.Dsl.ModifierMechanicIR.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.ModifierMechanicIR
+    name: ModifierMechanicIR
+    href: DSLApp1.Dsl.ModifierMechanicIR.html
+  - name: )
+- uid: System.IEquatable{DSLApp1.Dsl.StateMechanicIR}
+  commentId: T:System.IEquatable{DSLApp1.Dsl.StateMechanicIR}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<StateMechanicIR>
+  nameWithType: IEquatable<StateMechanicIR>
+  fullName: System.IEquatable<DSLApp1.Dsl.StateMechanicIR>
+  nameWithType.vb: IEquatable(Of StateMechanicIR)
+  fullName.vb: System.IEquatable(Of DSLApp1.Dsl.StateMechanicIR)
+  name.vb: IEquatable(Of StateMechanicIR)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: DSLApp1.Dsl.StateMechanicIR
+    name: StateMechanicIR
+    href: DSLApp1.Dsl.StateMechanicIR.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.StateMechanicIR
+    name: StateMechanicIR
+    href: DSLApp1.Dsl.StateMechanicIR.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DSLApp1.Dsl.StateMechanicIR.#ctor*
+  commentId: Overload:DSLApp1.Dsl.StateMechanicIR.#ctor
+  href: DSLApp1.Dsl.StateMechanicIR.html#DSLApp1_Dsl_StateMechanicIR__ctor_DSLApp1_Dsl_StateMechanicType_System_Nullable_System_Single__DSLApp1_Dsl_Condition_
+  name: StateMechanicIR
+  nameWithType: StateMechanicIR.StateMechanicIR
+  fullName: DSLApp1.Dsl.StateMechanicIR.StateMechanicIR
+  nameWithType.vb: StateMechanicIR.New
+  fullName.vb: DSLApp1.Dsl.StateMechanicIR.New
+  name.vb: New
+- uid: DSLApp1.Dsl.StateMechanicType
+  commentId: T:DSLApp1.Dsl.StateMechanicType
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.StateMechanicType.html
+  name: StateMechanicType
+  nameWithType: StateMechanicType
+  fullName: DSLApp1.Dsl.StateMechanicType
+- uid: System.Nullable{System.Single}
+  commentId: T:System.Nullable{System.Single}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float?
+  nameWithType: float?
+  fullName: float?
+  nameWithType.vb: Single?
+  fullName.vb: Single?
+  name.vb: Single?
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '?'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '?'
+- uid: DSLApp1.Dsl.Condition
+  commentId: T:DSLApp1.Dsl.Condition
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.Condition.html
+  name: Condition
+  nameWithType: Condition
+  fullName: DSLApp1.Dsl.Condition
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DSLApp1.Dsl.StateMechanicIR.Type*
+  commentId: Overload:DSLApp1.Dsl.StateMechanicIR.Type
+  href: DSLApp1.Dsl.StateMechanicIR.html#DSLApp1_Dsl_StateMechanicIR_Type
+  name: Type
+  nameWithType: StateMechanicIR.Type
+  fullName: DSLApp1.Dsl.StateMechanicIR.Type
+- uid: DSLApp1.Dsl.StateMechanicIR.Amount*
+  commentId: Overload:DSLApp1.Dsl.StateMechanicIR.Amount
+  href: DSLApp1.Dsl.StateMechanicIR.html#DSLApp1_Dsl_StateMechanicIR_Amount
+  name: Amount
+  nameWithType: StateMechanicIR.Amount
+  fullName: DSLApp1.Dsl.StateMechanicIR.Amount
+- uid: DSLApp1.Dsl.StateMechanicIR.When*
+  commentId: Overload:DSLApp1.Dsl.StateMechanicIR.When
+  href: DSLApp1.Dsl.StateMechanicIR.html#DSLApp1_Dsl_StateMechanicIR_When
+  name: When
+  nameWithType: StateMechanicIR.When
+  fullName: DSLApp1.Dsl.StateMechanicIR.When

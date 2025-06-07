@@ -1,0 +1,422 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Model.IAbility
+  commentId: T:DSLApp1.Model.IAbility
+  id: IAbility
+  parent: DSLApp1.Model
+  children:
+  - DSLApp1.Model.IAbility.Apply(DSLApp1.Model.ICombatCharacter,System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter},System.Boolean)
+  - DSLApp1.Model.IAbility.ManaCost
+  - DSLApp1.Model.IAbility.Name
+  - DSLApp1.Model.IAbility.Targetability
+  - DSLApp1.Model.IAbility.ValidTargets(DSLApp1.Model.ICombatCharacter,System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter})
+  langs:
+  - csharp
+  - vb
+  name: IAbility
+  nameWithType: IAbility
+  fullName: DSLApp1.Model.IAbility
+  type: Interface
+  source:
+    remote:
+      path: src/Model/IAbility.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: IAbility
+    path: src/Model/IAbility.cs
+    startLine: 2
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: 'public interface IAbility : IIdentifiable'
+    content.vb: Public Interface IAbility Inherits IIdentifiable
+  inheritedMembers:
+  - DSLApp1.Model.IIdentifiable.Id
+- uid: DSLApp1.Model.IAbility.Name
+  commentId: P:DSLApp1.Model.IAbility.Name
+  id: Name
+  parent: DSLApp1.Model.IAbility
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IAbility.Name
+  fullName: DSLApp1.Model.IAbility.Name
+  type: Property
+  source:
+    remote:
+      path: src/Model/IAbility.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Name
+    path: src/Model/IAbility.cs
+    startLine: 4
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: DSLApp1.Model.IAbility.Name*
+- uid: DSLApp1.Model.IAbility.ManaCost
+  commentId: P:DSLApp1.Model.IAbility.ManaCost
+  id: ManaCost
+  parent: DSLApp1.Model.IAbility
+  langs:
+  - csharp
+  - vb
+  name: ManaCost
+  nameWithType: IAbility.ManaCost
+  fullName: DSLApp1.Model.IAbility.ManaCost
+  type: Property
+  source:
+    remote:
+      path: src/Model/IAbility.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ManaCost
+    path: src/Model/IAbility.cs
+    startLine: 5
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: int ManaCost { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ManaCost As Integer
+  overload: DSLApp1.Model.IAbility.ManaCost*
+- uid: DSLApp1.Model.IAbility.Targetability
+  commentId: P:DSLApp1.Model.IAbility.Targetability
+  id: Targetability
+  parent: DSLApp1.Model.IAbility
+  langs:
+  - csharp
+  - vb
+  name: Targetability
+  nameWithType: IAbility.Targetability
+  fullName: DSLApp1.Model.IAbility.Targetability
+  type: Property
+  source:
+    remote:
+      path: src/Model/IAbility.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Targetability
+    path: src/Model/IAbility.cs
+    startLine: 6
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: Targetability Targetability { get; }
+    parameters: []
+    return:
+      type: DSLApp1.Model.Targetability
+    content.vb: ReadOnly Property Targetability As Targetability
+  overload: DSLApp1.Model.IAbility.Targetability*
+- uid: DSLApp1.Model.IAbility.ValidTargets(DSLApp1.Model.ICombatCharacter,System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter})
+  commentId: M:DSLApp1.Model.IAbility.ValidTargets(DSLApp1.Model.ICombatCharacter,System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter})
+  id: ValidTargets(DSLApp1.Model.ICombatCharacter,System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter})
+  parent: DSLApp1.Model.IAbility
+  langs:
+  - csharp
+  - vb
+  name: ValidTargets(ICombatCharacter, List<ICombatCharacter>)
+  nameWithType: IAbility.ValidTargets(ICombatCharacter, List<ICombatCharacter>)
+  fullName: DSLApp1.Model.IAbility.ValidTargets(DSLApp1.Model.ICombatCharacter, System.Collections.Generic.List<DSLApp1.Model.ICombatCharacter>)
+  type: Method
+  source:
+    remote:
+      path: src/Model/IAbility.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ValidTargets
+    path: src/Model/IAbility.cs
+    startLine: 7
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: List<ICombatCharacter> ValidTargets(ICombatCharacter user, List<ICombatCharacter> targets)
+    parameters:
+    - id: user
+      type: DSLApp1.Model.ICombatCharacter
+    - id: targets
+      type: System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter}
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter}
+    content.vb: Function ValidTargets(user As ICombatCharacter, targets As List(Of ICombatCharacter)) As List(Of ICombatCharacter)
+  overload: DSLApp1.Model.IAbility.ValidTargets*
+  nameWithType.vb: IAbility.ValidTargets(ICombatCharacter, List(Of ICombatCharacter))
+  fullName.vb: DSLApp1.Model.IAbility.ValidTargets(DSLApp1.Model.ICombatCharacter, System.Collections.Generic.List(Of DSLApp1.Model.ICombatCharacter))
+  name.vb: ValidTargets(ICombatCharacter, List(Of ICombatCharacter))
+- uid: DSLApp1.Model.IAbility.Apply(DSLApp1.Model.ICombatCharacter,System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter},System.Boolean)
+  commentId: M:DSLApp1.Model.IAbility.Apply(DSLApp1.Model.ICombatCharacter,System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter},System.Boolean)
+  id: Apply(DSLApp1.Model.ICombatCharacter,System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter},System.Boolean)
+  parent: DSLApp1.Model.IAbility
+  langs:
+  - csharp
+  - vb
+  name: Apply(ICombatCharacter, List<ICombatCharacter>, bool)
+  nameWithType: IAbility.Apply(ICombatCharacter, List<ICombatCharacter>, bool)
+  fullName: DSLApp1.Model.IAbility.Apply(DSLApp1.Model.ICombatCharacter, System.Collections.Generic.List<DSLApp1.Model.ICombatCharacter>, bool)
+  type: Method
+  source:
+    remote:
+      path: src/Model/IAbility.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Apply
+    path: src/Model/IAbility.cs
+    startLine: 8
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: CombatEvent Apply(ICombatCharacter combatCharacter, List<ICombatCharacter> targets, bool opportunity = false)
+    parameters:
+    - id: combatCharacter
+      type: DSLApp1.Model.ICombatCharacter
+    - id: targets
+      type: System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter}
+    - id: opportunity
+      type: System.Boolean
+    return:
+      type: DSLApp1.Model.CombatEvent
+    content.vb: Function Apply(combatCharacter As ICombatCharacter, targets As List(Of ICombatCharacter), opportunity As Boolean = False) As CombatEvent
+  overload: DSLApp1.Model.IAbility.Apply*
+  nameWithType.vb: IAbility.Apply(ICombatCharacter, List(Of ICombatCharacter), Boolean)
+  fullName.vb: DSLApp1.Model.IAbility.Apply(DSLApp1.Model.ICombatCharacter, System.Collections.Generic.List(Of DSLApp1.Model.ICombatCharacter), Boolean)
+  name.vb: Apply(ICombatCharacter, List(Of ICombatCharacter), Boolean)
+references:
+- uid: DSLApp1.Model
+  commentId: N:DSLApp1.Model
+  href: DSLApp1.html
+  name: DSLApp1.Model
+  nameWithType: DSLApp1.Model
+  fullName: DSLApp1.Model
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Model
+    name: Model
+    href: DSLApp1.Model.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Model
+    name: Model
+    href: DSLApp1.Model.html
+- uid: DSLApp1.Model.IIdentifiable.Id
+  commentId: P:DSLApp1.Model.IIdentifiable.Id
+  parent: DSLApp1.Model.IIdentifiable
+  href: DSLApp1.Model.IIdentifiable.html#DSLApp1_Model_IIdentifiable_Id
+  name: Id
+  nameWithType: IIdentifiable.Id
+  fullName: DSLApp1.Model.IIdentifiable.Id
+- uid: DSLApp1.Model.IIdentifiable
+  commentId: T:DSLApp1.Model.IIdentifiable
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.IIdentifiable.html
+  name: IIdentifiable
+  nameWithType: IIdentifiable
+  fullName: DSLApp1.Model.IIdentifiable
+- uid: DSLApp1.Model.IAbility.Name*
+  commentId: Overload:DSLApp1.Model.IAbility.Name
+  href: DSLApp1.Model.IAbility.html#DSLApp1_Model_IAbility_Name
+  name: Name
+  nameWithType: IAbility.Name
+  fullName: DSLApp1.Model.IAbility.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DSLApp1.Model.IAbility.ManaCost*
+  commentId: Overload:DSLApp1.Model.IAbility.ManaCost
+  href: DSLApp1.Model.IAbility.html#DSLApp1_Model_IAbility_ManaCost
+  name: ManaCost
+  nameWithType: IAbility.ManaCost
+  fullName: DSLApp1.Model.IAbility.ManaCost
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: DSLApp1.Model.IAbility.Targetability*
+  commentId: Overload:DSLApp1.Model.IAbility.Targetability
+  href: DSLApp1.Model.IAbility.html#DSLApp1_Model_IAbility_Targetability
+  name: Targetability
+  nameWithType: IAbility.Targetability
+  fullName: DSLApp1.Model.IAbility.Targetability
+- uid: DSLApp1.Model.Targetability
+  commentId: T:DSLApp1.Model.Targetability
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.Targetability.html
+  name: Targetability
+  nameWithType: Targetability
+  fullName: DSLApp1.Model.Targetability
+- uid: DSLApp1.Model.IAbility.ValidTargets*
+  commentId: Overload:DSLApp1.Model.IAbility.ValidTargets
+  href: DSLApp1.Model.IAbility.html#DSLApp1_Model_IAbility_ValidTargets_DSLApp1_Model_ICombatCharacter_System_Collections_Generic_List_DSLApp1_Model_ICombatCharacter__
+  name: ValidTargets
+  nameWithType: IAbility.ValidTargets
+  fullName: DSLApp1.Model.IAbility.ValidTargets
+- uid: DSLApp1.Model.ICombatCharacter
+  commentId: T:DSLApp1.Model.ICombatCharacter
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.ICombatCharacter.html
+  name: ICombatCharacter
+  nameWithType: ICombatCharacter
+  fullName: DSLApp1.Model.ICombatCharacter
+- uid: System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter}
+  commentId: T:System.Collections.Generic.List{DSLApp1.Model.ICombatCharacter}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ICombatCharacter>
+  nameWithType: List<ICombatCharacter>
+  fullName: System.Collections.Generic.List<DSLApp1.Model.ICombatCharacter>
+  nameWithType.vb: List(Of ICombatCharacter)
+  fullName.vb: System.Collections.Generic.List(Of DSLApp1.Model.ICombatCharacter)
+  name.vb: List(Of ICombatCharacter)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: DSLApp1.Model.ICombatCharacter
+    name: ICombatCharacter
+    href: DSLApp1.Model.ICombatCharacter.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Model.ICombatCharacter
+    name: ICombatCharacter
+    href: DSLApp1.Model.ICombatCharacter.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DSLApp1.Model.IAbility.Apply*
+  commentId: Overload:DSLApp1.Model.IAbility.Apply
+  href: DSLApp1.Model.IAbility.html#DSLApp1_Model_IAbility_Apply_DSLApp1_Model_ICombatCharacter_System_Collections_Generic_List_DSLApp1_Model_ICombatCharacter__System_Boolean_
+  name: Apply
+  nameWithType: IAbility.Apply
+  fullName: DSLApp1.Model.IAbility.Apply
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: DSLApp1.Model.CombatEvent
+  commentId: T:DSLApp1.Model.CombatEvent
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.CombatEvent.html
+  name: CombatEvent
+  nameWithType: CombatEvent
+  fullName: DSLApp1.Model.CombatEvent

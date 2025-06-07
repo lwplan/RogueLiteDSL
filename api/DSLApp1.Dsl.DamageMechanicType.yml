@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.DamageMechanicType
+  commentId: T:DSLApp1.Dsl.DamageMechanicType
+  id: DamageMechanicType
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.DamageMechanicType.Crit
+  - DSLApp1.Dsl.DamageMechanicType.ExtraDamage
+  - DSLApp1.Dsl.DamageMechanicType.Piercing
+  - DSLApp1.Dsl.DamageMechanicType.Spiral
+  langs:
+  - csharp
+  - vb
+  name: DamageMechanicType
+  nameWithType: DamageMechanicType
+  fullName: DSLApp1.Dsl.DamageMechanicType
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.DamageEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DamageMechanicType
+    path: src/Dsl/DSLParser.DamageEffect.cs
+    startLine: 6
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum DamageMechanicType
+    content.vb: Public Enum DamageMechanicType
+- uid: DSLApp1.Dsl.DamageMechanicType.Piercing
+  commentId: F:DSLApp1.Dsl.DamageMechanicType.Piercing
+  id: Piercing
+  parent: DSLApp1.Dsl.DamageMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Piercing
+  nameWithType: DamageMechanicType.Piercing
+  fullName: DSLApp1.Dsl.DamageMechanicType.Piercing
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.DamageEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Piercing
+    path: src/Dsl/DSLParser.DamageEffect.cs
+    startLine: 8
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Piercing = 0
+    return:
+      type: DSLApp1.Dsl.DamageMechanicType
+- uid: DSLApp1.Dsl.DamageMechanicType.Spiral
+  commentId: F:DSLApp1.Dsl.DamageMechanicType.Spiral
+  id: Spiral
+  parent: DSLApp1.Dsl.DamageMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Spiral
+  nameWithType: DamageMechanicType.Spiral
+  fullName: DSLApp1.Dsl.DamageMechanicType.Spiral
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.DamageEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Spiral
+    path: src/Dsl/DSLParser.DamageEffect.cs
+    startLine: 9
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Spiral = 1
+    return:
+      type: DSLApp1.Dsl.DamageMechanicType
+- uid: DSLApp1.Dsl.DamageMechanicType.ExtraDamage
+  commentId: F:DSLApp1.Dsl.DamageMechanicType.ExtraDamage
+  id: ExtraDamage
+  parent: DSLApp1.Dsl.DamageMechanicType
+  langs:
+  - csharp
+  - vb
+  name: ExtraDamage
+  nameWithType: DamageMechanicType.ExtraDamage
+  fullName: DSLApp1.Dsl.DamageMechanicType.ExtraDamage
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.DamageEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ExtraDamage
+    path: src/Dsl/DSLParser.DamageEffect.cs
+    startLine: 10
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: ExtraDamage = 2
+    return:
+      type: DSLApp1.Dsl.DamageMechanicType
+- uid: DSLApp1.Dsl.DamageMechanicType.Crit
+  commentId: F:DSLApp1.Dsl.DamageMechanicType.Crit
+  id: Crit
+  parent: DSLApp1.Dsl.DamageMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Crit
+  nameWithType: DamageMechanicType.Crit
+  fullName: DSLApp1.Dsl.DamageMechanicType.Crit
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.DamageEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Crit
+    path: src/Dsl/DSLParser.DamageEffect.cs
+    startLine: 11
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Crit = 3
+    return:
+      type: DSLApp1.Dsl.DamageMechanicType
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.DamageMechanicType
+  commentId: T:DSLApp1.Dsl.DamageMechanicType
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.DamageMechanicType.html
+  name: DamageMechanicType
+  nameWithType: DamageMechanicType
+  fullName: DSLApp1.Dsl.DamageMechanicType

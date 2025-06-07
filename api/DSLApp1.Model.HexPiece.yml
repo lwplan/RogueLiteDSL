@@ -1,0 +1,1385 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Model.HexPiece
+  commentId: T:DSLApp1.Model.HexPiece
+  id: HexPiece
+  parent: DSLApp1.Model
+  children:
+  - DSLApp1.Model.HexPiece.#ctor(DSLApp1.Model.Fragment)
+  - DSLApp1.Model.HexPiece.Ability
+  - DSLApp1.Model.HexPiece.BoardIndex
+  - DSLApp1.Model.HexPiece.Description
+  - DSLApp1.Model.HexPiece.Equips
+  - DSLApp1.Model.HexPiece.Exclusivities
+  - DSLApp1.Model.HexPiece.ExclusivityText
+  - DSLApp1.Model.HexPiece.FitsIn(System.Collections.Generic.List{DSLApp1.Model.HexCoord})
+  - DSLApp1.Model.HexPiece.GenerateRandomHexPieceSignature(System.Int32,System.Int32)
+  - DSLApp1.Model.HexPiece.GetCoordinatesFromSignature(System.String)
+  - DSLApp1.Model.HexPiece.HasAbility
+  - DSLApp1.Model.HexPiece.HexCoords
+  - DSLApp1.Model.HexPiece.HexSignature
+  - DSLApp1.Model.HexPiece.IsCompatibleWith(DSLApp1.Model.ICharacterDefinition)
+  - DSLApp1.Model.HexPiece.IsSeparateFrom(System.Collections.Generic.HashSet{DSLApp1.Model.HexCoord})
+  - DSLApp1.Model.HexPiece.Name
+  - DSLApp1.Model.HexPiece.Offset
+  - DSLApp1.Model.HexPiece.Rarity
+  - DSLApp1.Model.HexPiece.Rotation
+  - DSLApp1.Model.HexPiece.TransformedCoordinates
+  - DSLApp1.Model.HexPiece.Unlocked
+  langs:
+  - csharp
+  - vb
+  name: HexPiece
+  nameWithType: HexPiece
+  fullName: DSLApp1.Model.HexPiece
+  type: Class
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HexPiece
+    path: src/Model/HexPiece.cs
+    startLine: 2
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public class HexPiece
+    content.vb: Public Class HexPiece
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: DSLApp1.Model.HexPiece.BoardIndex
+  commentId: P:DSLApp1.Model.HexPiece.BoardIndex
+  id: BoardIndex
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: BoardIndex
+  nameWithType: HexPiece.BoardIndex
+  fullName: DSLApp1.Model.HexPiece.BoardIndex
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: BoardIndex
+    path: src/Model/HexPiece.cs
+    startLine: 5
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public int BoardIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property BoardIndex As Integer
+  overload: DSLApp1.Model.HexPiece.BoardIndex*
+- uid: DSLApp1.Model.HexPiece.Offset
+  commentId: P:DSLApp1.Model.HexPiece.Offset
+  id: Offset
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: Offset
+  nameWithType: HexPiece.Offset
+  fullName: DSLApp1.Model.HexPiece.Offset
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Offset
+    path: src/Model/HexPiece.cs
+    startLine: 6
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public HexCoord Offset { get; set; }
+    parameters: []
+    return:
+      type: DSLApp1.Model.HexCoord
+    content.vb: Public Property Offset As HexCoord
+  overload: DSLApp1.Model.HexPiece.Offset*
+- uid: DSLApp1.Model.HexPiece.Rotation
+  commentId: P:DSLApp1.Model.HexPiece.Rotation
+  id: Rotation
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: Rotation
+  nameWithType: HexPiece.Rotation
+  fullName: DSLApp1.Model.HexPiece.Rotation
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Rotation
+    path: src/Model/HexPiece.cs
+    startLine: 7
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public int Rotation { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Rotation As Integer
+  overload: DSLApp1.Model.HexPiece.Rotation*
+- uid: DSLApp1.Model.HexPiece.HexCoords
+  commentId: P:DSLApp1.Model.HexPiece.HexCoords
+  id: HexCoords
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: HexCoords
+  nameWithType: HexPiece.HexCoords
+  fullName: DSLApp1.Model.HexPiece.HexCoords
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HexCoords
+    path: src/Model/HexPiece.cs
+    startLine: 8
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public List<HexCoord> HexCoords { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.HexCoord}
+    content.vb: Public ReadOnly Property HexCoords As List(Of HexCoord)
+  overload: DSLApp1.Model.HexPiece.HexCoords*
+- uid: DSLApp1.Model.HexPiece.Unlocked
+  commentId: P:DSLApp1.Model.HexPiece.Unlocked
+  id: Unlocked
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: Unlocked
+  nameWithType: HexPiece.Unlocked
+  fullName: DSLApp1.Model.HexPiece.Unlocked
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Unlocked
+    path: src/Model/HexPiece.cs
+    startLine: 10
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public bool Unlocked { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property Unlocked As Boolean
+  overload: DSLApp1.Model.HexPiece.Unlocked*
+- uid: DSLApp1.Model.HexPiece.Name
+  commentId: P:DSLApp1.Model.HexPiece.Name
+  id: Name
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: HexPiece.Name
+  fullName: DSLApp1.Model.HexPiece.Name
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Name
+    path: src/Model/HexPiece.cs
+    startLine: 11
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: DSLApp1.Model.HexPiece.Name*
+- uid: DSLApp1.Model.HexPiece.Description
+  commentId: P:DSLApp1.Model.HexPiece.Description
+  id: Description
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: HexPiece.Description
+  fullName: DSLApp1.Model.HexPiece.Description
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Description
+    path: src/Model/HexPiece.cs
+    startLine: 12
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: DSLApp1.Model.HexPiece.Description*
+- uid: DSLApp1.Model.HexPiece.HexSignature
+  commentId: P:DSLApp1.Model.HexPiece.HexSignature
+  id: HexSignature
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: HexSignature
+  nameWithType: HexPiece.HexSignature
+  fullName: DSLApp1.Model.HexPiece.HexSignature
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HexSignature
+    path: src/Model/HexPiece.cs
+    startLine: 13
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public string HexSignature { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property HexSignature As String
+  overload: DSLApp1.Model.HexPiece.HexSignature*
+- uid: DSLApp1.Model.HexPiece.Rarity
+  commentId: P:DSLApp1.Model.HexPiece.Rarity
+  id: Rarity
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: Rarity
+  nameWithType: HexPiece.Rarity
+  fullName: DSLApp1.Model.HexPiece.Rarity
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Rarity
+    path: src/Model/HexPiece.cs
+    startLine: 15
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public Rarity Rarity { get; }
+    parameters: []
+    return:
+      type: DSLApp1.Model.Rarity
+    content.vb: Public Property Rarity As Rarity
+  overload: DSLApp1.Model.HexPiece.Rarity*
+- uid: DSLApp1.Model.HexPiece.Exclusivities
+  commentId: P:DSLApp1.Model.HexPiece.Exclusivities
+  id: Exclusivities
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: Exclusivities
+  nameWithType: HexPiece.Exclusivities
+  fullName: DSLApp1.Model.HexPiece.Exclusivities
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Exclusivities
+    path: src/Model/HexPiece.cs
+    startLine: 17
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public List<Exclusivity> Exclusivities { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.Exclusivity}
+    content.vb: Public Property Exclusivities As List(Of Exclusivity)
+  overload: DSLApp1.Model.HexPiece.Exclusivities*
+- uid: DSLApp1.Model.HexPiece.Equips
+  commentId: P:DSLApp1.Model.HexPiece.Equips
+  id: Equips
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: Equips
+  nameWithType: HexPiece.Equips
+  fullName: DSLApp1.Model.HexPiece.Equips
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Equips
+    path: src/Model/HexPiece.cs
+    startLine: 18
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public List<IModifier> Equips { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.IModifier}
+    content.vb: Public ReadOnly Property Equips As List(Of IModifier)
+  overload: DSLApp1.Model.HexPiece.Equips*
+- uid: DSLApp1.Model.HexPiece.HasAbility
+  commentId: P:DSLApp1.Model.HexPiece.HasAbility
+  id: HasAbility
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: HasAbility
+  nameWithType: HexPiece.HasAbility
+  fullName: DSLApp1.Model.HexPiece.HasAbility
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HasAbility
+    path: src/Model/HexPiece.cs
+    startLine: 19
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public bool HasAbility { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasAbility As Boolean
+  overload: DSLApp1.Model.HexPiece.HasAbility*
+- uid: DSLApp1.Model.HexPiece.Ability
+  commentId: P:DSLApp1.Model.HexPiece.Ability
+  id: Ability
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: Ability
+  nameWithType: HexPiece.Ability
+  fullName: DSLApp1.Model.HexPiece.Ability
+  type: Property
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Ability
+    path: src/Model/HexPiece.cs
+    startLine: 20
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public IAbility Ability { get; }
+    parameters: []
+    return:
+      type: DSLApp1.Model.IAbility
+    content.vb: Public ReadOnly Property Ability As IAbility
+  overload: DSLApp1.Model.HexPiece.Ability*
+- uid: DSLApp1.Model.HexPiece.#ctor(DSLApp1.Model.Fragment)
+  commentId: M:DSLApp1.Model.HexPiece.#ctor(DSLApp1.Model.Fragment)
+  id: '#ctor(DSLApp1.Model.Fragment)'
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: HexPiece(Fragment)
+  nameWithType: HexPiece.HexPiece(Fragment)
+  fullName: DSLApp1.Model.HexPiece.HexPiece(DSLApp1.Model.Fragment)
+  type: Constructor
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: .ctor
+    path: src/Model/HexPiece.cs
+    startLine: 22
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public HexPiece(Fragment fragment)
+    parameters:
+    - id: fragment
+      type: DSLApp1.Model.Fragment
+    content.vb: Public Sub New(fragment As Fragment)
+  overload: DSLApp1.Model.HexPiece.#ctor*
+  nameWithType.vb: HexPiece.New(Fragment)
+  fullName.vb: DSLApp1.Model.HexPiece.New(DSLApp1.Model.Fragment)
+  name.vb: New(Fragment)
+- uid: DSLApp1.Model.HexPiece.GetCoordinatesFromSignature(System.String)
+  commentId: M:DSLApp1.Model.HexPiece.GetCoordinatesFromSignature(System.String)
+  id: GetCoordinatesFromSignature(System.String)
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: GetCoordinatesFromSignature(string)
+  nameWithType: HexPiece.GetCoordinatesFromSignature(string)
+  fullName: DSLApp1.Model.HexPiece.GetCoordinatesFromSignature(string)
+  type: Method
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: GetCoordinatesFromSignature
+    path: src/Model/HexPiece.cs
+    startLine: 54
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  summary: >-
+    Converts a hex signature (a string of digits) into a list of HexCoord objects.
+
+    Starts at the origin and for each digit moves to the corresponding neighbor.
+  example: []
+  syntax:
+    content: public static List<HexCoord> GetCoordinatesFromSignature(string signature)
+    parameters:
+    - id: signature
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.HexCoord}
+    content.vb: Public Shared Function GetCoordinatesFromSignature(signature As String) As List(Of HexCoord)
+  overload: DSLApp1.Model.HexPiece.GetCoordinatesFromSignature*
+  nameWithType.vb: HexPiece.GetCoordinatesFromSignature(String)
+  fullName.vb: DSLApp1.Model.HexPiece.GetCoordinatesFromSignature(String)
+  name.vb: GetCoordinatesFromSignature(String)
+- uid: DSLApp1.Model.HexPiece.GenerateRandomHexPieceSignature(System.Int32,System.Int32)
+  commentId: M:DSLApp1.Model.HexPiece.GenerateRandomHexPieceSignature(System.Int32,System.Int32)
+  id: GenerateRandomHexPieceSignature(System.Int32,System.Int32)
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: GenerateRandomHexPieceSignature(int, int)
+  nameWithType: HexPiece.GenerateRandomHexPieceSignature(int, int)
+  fullName: DSLApp1.Model.HexPiece.GenerateRandomHexPieceSignature(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: GenerateRandomHexPieceSignature
+    path: src/Model/HexPiece.cs
+    startLine: 79
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  summary: >-
+    Generates a deterministic random hex piece signature given the number of hexes.
+
+    The seed ensures that the same hexCount and seed always yield the same layout.
+  example: []
+  syntax:
+    content: public static string GenerateRandomHexPieceSignature(int hexCount, int seed = 0)
+    parameters:
+    - id: hexCount
+      type: System.Int32
+    - id: seed
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Shared Function GenerateRandomHexPieceSignature(hexCount As Integer, seed As Integer = 0) As String
+  overload: DSLApp1.Model.HexPiece.GenerateRandomHexPieceSignature*
+  nameWithType.vb: HexPiece.GenerateRandomHexPieceSignature(Integer, Integer)
+  fullName.vb: DSLApp1.Model.HexPiece.GenerateRandomHexPieceSignature(Integer, Integer)
+  name.vb: GenerateRandomHexPieceSignature(Integer, Integer)
+- uid: DSLApp1.Model.HexPiece.TransformedCoordinates
+  commentId: M:DSLApp1.Model.HexPiece.TransformedCoordinates
+  id: TransformedCoordinates
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: TransformedCoordinates()
+  nameWithType: HexPiece.TransformedCoordinates()
+  fullName: DSLApp1.Model.HexPiece.TransformedCoordinates()
+  type: Method
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: TransformedCoordinates
+    path: src/Model/HexPiece.cs
+    startLine: 104
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public List<HexCoord> TransformedCoordinates()
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.HexCoord}
+    content.vb: Public Function TransformedCoordinates() As List(Of HexCoord)
+  overload: DSLApp1.Model.HexPiece.TransformedCoordinates*
+- uid: DSLApp1.Model.HexPiece.FitsIn(System.Collections.Generic.List{DSLApp1.Model.HexCoord})
+  commentId: M:DSLApp1.Model.HexPiece.FitsIn(System.Collections.Generic.List{DSLApp1.Model.HexCoord})
+  id: FitsIn(System.Collections.Generic.List{DSLApp1.Model.HexCoord})
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: FitsIn(List<HexCoord>)
+  nameWithType: HexPiece.FitsIn(List<HexCoord>)
+  fullName: DSLApp1.Model.HexPiece.FitsIn(System.Collections.Generic.List<DSLApp1.Model.HexCoord>)
+  type: Method
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: FitsIn
+    path: src/Model/HexPiece.cs
+    startLine: 123
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public bool FitsIn(List<HexCoord> other)
+    parameters:
+    - id: other
+      type: System.Collections.Generic.List{DSLApp1.Model.HexCoord}
+    return:
+      type: System.Boolean
+    content.vb: Public Function FitsIn(other As List(Of HexCoord)) As Boolean
+  overload: DSLApp1.Model.HexPiece.FitsIn*
+  nameWithType.vb: HexPiece.FitsIn(List(Of HexCoord))
+  fullName.vb: DSLApp1.Model.HexPiece.FitsIn(System.Collections.Generic.List(Of DSLApp1.Model.HexCoord))
+  name.vb: FitsIn(List(Of HexCoord))
+- uid: DSLApp1.Model.HexPiece.IsSeparateFrom(System.Collections.Generic.HashSet{DSLApp1.Model.HexCoord})
+  commentId: M:DSLApp1.Model.HexPiece.IsSeparateFrom(System.Collections.Generic.HashSet{DSLApp1.Model.HexCoord})
+  id: IsSeparateFrom(System.Collections.Generic.HashSet{DSLApp1.Model.HexCoord})
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: IsSeparateFrom(HashSet<HexCoord>)
+  nameWithType: HexPiece.IsSeparateFrom(HashSet<HexCoord>)
+  fullName: DSLApp1.Model.HexPiece.IsSeparateFrom(System.Collections.Generic.HashSet<DSLApp1.Model.HexCoord>)
+  type: Method
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: IsSeparateFrom
+    path: src/Model/HexPiece.cs
+    startLine: 128
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public bool IsSeparateFrom(HashSet<HexCoord> other)
+    parameters:
+    - id: other
+      type: System.Collections.Generic.HashSet{DSLApp1.Model.HexCoord}
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsSeparateFrom(other As HashSet(Of HexCoord)) As Boolean
+  overload: DSLApp1.Model.HexPiece.IsSeparateFrom*
+  nameWithType.vb: HexPiece.IsSeparateFrom(HashSet(Of HexCoord))
+  fullName.vb: DSLApp1.Model.HexPiece.IsSeparateFrom(System.Collections.Generic.HashSet(Of DSLApp1.Model.HexCoord))
+  name.vb: IsSeparateFrom(HashSet(Of HexCoord))
+- uid: DSLApp1.Model.HexPiece.IsCompatibleWith(DSLApp1.Model.ICharacterDefinition)
+  commentId: M:DSLApp1.Model.HexPiece.IsCompatibleWith(DSLApp1.Model.ICharacterDefinition)
+  id: IsCompatibleWith(DSLApp1.Model.ICharacterDefinition)
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: IsCompatibleWith(ICharacterDefinition)
+  nameWithType: HexPiece.IsCompatibleWith(ICharacterDefinition)
+  fullName: DSLApp1.Model.HexPiece.IsCompatibleWith(DSLApp1.Model.ICharacterDefinition)
+  type: Method
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: IsCompatibleWith
+    path: src/Model/HexPiece.cs
+    startLine: 133
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public bool IsCompatibleWith(ICharacterDefinition character)
+    parameters:
+    - id: character
+      type: DSLApp1.Model.ICharacterDefinition
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsCompatibleWith(character As ICharacterDefinition) As Boolean
+  overload: DSLApp1.Model.HexPiece.IsCompatibleWith*
+- uid: DSLApp1.Model.HexPiece.ExclusivityText
+  commentId: M:DSLApp1.Model.HexPiece.ExclusivityText
+  id: ExclusivityText
+  parent: DSLApp1.Model.HexPiece
+  langs:
+  - csharp
+  - vb
+  name: ExclusivityText()
+  nameWithType: HexPiece.ExclusivityText()
+  fullName: DSLApp1.Model.HexPiece.ExclusivityText()
+  type: Method
+  source:
+    remote:
+      path: src/Model/HexPiece.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ExclusivityText
+    path: src/Model/HexPiece.cs
+    startLine: 152
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public string ExclusivityText()
+    return:
+      type: System.String
+    content.vb: Public Function ExclusivityText() As String
+  overload: DSLApp1.Model.HexPiece.ExclusivityText*
+references:
+- uid: DSLApp1.Model
+  commentId: N:DSLApp1.Model
+  href: DSLApp1.html
+  name: DSLApp1.Model
+  nameWithType: DSLApp1.Model
+  fullName: DSLApp1.Model
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Model
+    name: Model
+    href: DSLApp1.Model.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Model
+    name: Model
+    href: DSLApp1.Model.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DSLApp1.Model.HexPiece.BoardIndex*
+  commentId: Overload:DSLApp1.Model.HexPiece.BoardIndex
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_BoardIndex
+  name: BoardIndex
+  nameWithType: HexPiece.BoardIndex
+  fullName: DSLApp1.Model.HexPiece.BoardIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: DSLApp1.Model.HexPiece.Offset*
+  commentId: Overload:DSLApp1.Model.HexPiece.Offset
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_Offset
+  name: Offset
+  nameWithType: HexPiece.Offset
+  fullName: DSLApp1.Model.HexPiece.Offset
+- uid: DSLApp1.Model.HexCoord
+  commentId: T:DSLApp1.Model.HexCoord
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.HexCoord.html
+  name: HexCoord
+  nameWithType: HexCoord
+  fullName: DSLApp1.Model.HexCoord
+- uid: DSLApp1.Model.HexPiece.Rotation*
+  commentId: Overload:DSLApp1.Model.HexPiece.Rotation
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_Rotation
+  name: Rotation
+  nameWithType: HexPiece.Rotation
+  fullName: DSLApp1.Model.HexPiece.Rotation
+- uid: DSLApp1.Model.HexPiece.HexCoords*
+  commentId: Overload:DSLApp1.Model.HexPiece.HexCoords
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_HexCoords
+  name: HexCoords
+  nameWithType: HexPiece.HexCoords
+  fullName: DSLApp1.Model.HexPiece.HexCoords
+- uid: System.Collections.Generic.List{DSLApp1.Model.HexCoord}
+  commentId: T:System.Collections.Generic.List{DSLApp1.Model.HexCoord}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<HexCoord>
+  nameWithType: List<HexCoord>
+  fullName: System.Collections.Generic.List<DSLApp1.Model.HexCoord>
+  nameWithType.vb: List(Of HexCoord)
+  fullName.vb: System.Collections.Generic.List(Of DSLApp1.Model.HexCoord)
+  name.vb: List(Of HexCoord)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: DSLApp1.Model.HexCoord
+    name: HexCoord
+    href: DSLApp1.Model.HexCoord.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Model.HexCoord
+    name: HexCoord
+    href: DSLApp1.Model.HexCoord.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DSLApp1.Model.HexPiece.Unlocked*
+  commentId: Overload:DSLApp1.Model.HexPiece.Unlocked
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_Unlocked
+  name: Unlocked
+  nameWithType: HexPiece.Unlocked
+  fullName: DSLApp1.Model.HexPiece.Unlocked
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: DSLApp1.Model.HexPiece.Name*
+  commentId: Overload:DSLApp1.Model.HexPiece.Name
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_Name
+  name: Name
+  nameWithType: HexPiece.Name
+  fullName: DSLApp1.Model.HexPiece.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: DSLApp1.Model.HexPiece.Description*
+  commentId: Overload:DSLApp1.Model.HexPiece.Description
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_Description
+  name: Description
+  nameWithType: HexPiece.Description
+  fullName: DSLApp1.Model.HexPiece.Description
+- uid: DSLApp1.Model.HexPiece.HexSignature*
+  commentId: Overload:DSLApp1.Model.HexPiece.HexSignature
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_HexSignature
+  name: HexSignature
+  nameWithType: HexPiece.HexSignature
+  fullName: DSLApp1.Model.HexPiece.HexSignature
+- uid: DSLApp1.Model.HexPiece.Rarity*
+  commentId: Overload:DSLApp1.Model.HexPiece.Rarity
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_Rarity
+  name: Rarity
+  nameWithType: HexPiece.Rarity
+  fullName: DSLApp1.Model.HexPiece.Rarity
+- uid: DSLApp1.Model.Rarity
+  commentId: T:DSLApp1.Model.Rarity
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.Rarity.html
+  name: Rarity
+  nameWithType: Rarity
+  fullName: DSLApp1.Model.Rarity
+- uid: DSLApp1.Model.HexPiece.Exclusivities*
+  commentId: Overload:DSLApp1.Model.HexPiece.Exclusivities
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_Exclusivities
+  name: Exclusivities
+  nameWithType: HexPiece.Exclusivities
+  fullName: DSLApp1.Model.HexPiece.Exclusivities
+- uid: System.Collections.Generic.List{DSLApp1.Model.Exclusivity}
+  commentId: T:System.Collections.Generic.List{DSLApp1.Model.Exclusivity}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Exclusivity>
+  nameWithType: List<Exclusivity>
+  fullName: System.Collections.Generic.List<DSLApp1.Model.Exclusivity>
+  nameWithType.vb: List(Of Exclusivity)
+  fullName.vb: System.Collections.Generic.List(Of DSLApp1.Model.Exclusivity)
+  name.vb: List(Of Exclusivity)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: DSLApp1.Model.Exclusivity
+    name: Exclusivity
+    href: DSLApp1.Model.Exclusivity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Model.Exclusivity
+    name: Exclusivity
+    href: DSLApp1.Model.Exclusivity.html
+  - name: )
+- uid: DSLApp1.Model.HexPiece.Equips*
+  commentId: Overload:DSLApp1.Model.HexPiece.Equips
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_Equips
+  name: Equips
+  nameWithType: HexPiece.Equips
+  fullName: DSLApp1.Model.HexPiece.Equips
+- uid: System.Collections.Generic.List{DSLApp1.Model.IModifier}
+  commentId: T:System.Collections.Generic.List{DSLApp1.Model.IModifier}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IModifier>
+  nameWithType: List<IModifier>
+  fullName: System.Collections.Generic.List<DSLApp1.Model.IModifier>
+  nameWithType.vb: List(Of IModifier)
+  fullName.vb: System.Collections.Generic.List(Of DSLApp1.Model.IModifier)
+  name.vb: List(Of IModifier)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: DSLApp1.Model.IModifier
+    name: IModifier
+    href: DSLApp1.Model.IModifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Model.IModifier
+    name: IModifier
+    href: DSLApp1.Model.IModifier.html
+  - name: )
+- uid: DSLApp1.Model.HexPiece.HasAbility*
+  commentId: Overload:DSLApp1.Model.HexPiece.HasAbility
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_HasAbility
+  name: HasAbility
+  nameWithType: HexPiece.HasAbility
+  fullName: DSLApp1.Model.HexPiece.HasAbility
+- uid: DSLApp1.Model.HexPiece.Ability*
+  commentId: Overload:DSLApp1.Model.HexPiece.Ability
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_Ability
+  name: Ability
+  nameWithType: HexPiece.Ability
+  fullName: DSLApp1.Model.HexPiece.Ability
+- uid: DSLApp1.Model.IAbility
+  commentId: T:DSLApp1.Model.IAbility
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.IAbility.html
+  name: IAbility
+  nameWithType: IAbility
+  fullName: DSLApp1.Model.IAbility
+- uid: DSLApp1.Model.HexPiece.#ctor*
+  commentId: Overload:DSLApp1.Model.HexPiece.#ctor
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece__ctor_DSLApp1_Model_Fragment_
+  name: HexPiece
+  nameWithType: HexPiece.HexPiece
+  fullName: DSLApp1.Model.HexPiece.HexPiece
+  nameWithType.vb: HexPiece.New
+  fullName.vb: DSLApp1.Model.HexPiece.New
+  name.vb: New
+- uid: DSLApp1.Model.Fragment
+  commentId: T:DSLApp1.Model.Fragment
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.Fragment.html
+  name: Fragment
+  nameWithType: Fragment
+  fullName: DSLApp1.Model.Fragment
+- uid: DSLApp1.Model.HexPiece.GetCoordinatesFromSignature*
+  commentId: Overload:DSLApp1.Model.HexPiece.GetCoordinatesFromSignature
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_GetCoordinatesFromSignature_System_String_
+  name: GetCoordinatesFromSignature
+  nameWithType: HexPiece.GetCoordinatesFromSignature
+  fullName: DSLApp1.Model.HexPiece.GetCoordinatesFromSignature
+- uid: DSLApp1.Model.HexPiece.GenerateRandomHexPieceSignature*
+  commentId: Overload:DSLApp1.Model.HexPiece.GenerateRandomHexPieceSignature
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_GenerateRandomHexPieceSignature_System_Int32_System_Int32_
+  name: GenerateRandomHexPieceSignature
+  nameWithType: HexPiece.GenerateRandomHexPieceSignature
+  fullName: DSLApp1.Model.HexPiece.GenerateRandomHexPieceSignature
+- uid: DSLApp1.Model.HexPiece.TransformedCoordinates*
+  commentId: Overload:DSLApp1.Model.HexPiece.TransformedCoordinates
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_TransformedCoordinates
+  name: TransformedCoordinates
+  nameWithType: HexPiece.TransformedCoordinates
+  fullName: DSLApp1.Model.HexPiece.TransformedCoordinates
+- uid: DSLApp1.Model.HexPiece.FitsIn*
+  commentId: Overload:DSLApp1.Model.HexPiece.FitsIn
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_FitsIn_System_Collections_Generic_List_DSLApp1_Model_HexCoord__
+  name: FitsIn
+  nameWithType: HexPiece.FitsIn
+  fullName: DSLApp1.Model.HexPiece.FitsIn
+- uid: DSLApp1.Model.HexPiece.IsSeparateFrom*
+  commentId: Overload:DSLApp1.Model.HexPiece.IsSeparateFrom
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_IsSeparateFrom_System_Collections_Generic_HashSet_DSLApp1_Model_HexCoord__
+  name: IsSeparateFrom
+  nameWithType: HexPiece.IsSeparateFrom
+  fullName: DSLApp1.Model.HexPiece.IsSeparateFrom
+- uid: System.Collections.Generic.HashSet{DSLApp1.Model.HexCoord}
+  commentId: T:System.Collections.Generic.HashSet{DSLApp1.Model.HexCoord}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<HexCoord>
+  nameWithType: HashSet<HexCoord>
+  fullName: System.Collections.Generic.HashSet<DSLApp1.Model.HexCoord>
+  nameWithType.vb: HashSet(Of HexCoord)
+  fullName.vb: System.Collections.Generic.HashSet(Of DSLApp1.Model.HexCoord)
+  name.vb: HashSet(Of HexCoord)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - uid: DSLApp1.Model.HexCoord
+    name: HexCoord
+    href: DSLApp1.Model.HexCoord.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Model.HexCoord
+    name: HexCoord
+    href: DSLApp1.Model.HexCoord.html
+  - name: )
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.hashset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DSLApp1.Model.HexPiece.IsCompatibleWith*
+  commentId: Overload:DSLApp1.Model.HexPiece.IsCompatibleWith
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_IsCompatibleWith_DSLApp1_Model_ICharacterDefinition_
+  name: IsCompatibleWith
+  nameWithType: HexPiece.IsCompatibleWith
+  fullName: DSLApp1.Model.HexPiece.IsCompatibleWith
+- uid: DSLApp1.Model.ICharacterDefinition
+  commentId: T:DSLApp1.Model.ICharacterDefinition
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.ICharacterDefinition.html
+  name: ICharacterDefinition
+  nameWithType: ICharacterDefinition
+  fullName: DSLApp1.Model.ICharacterDefinition
+- uid: DSLApp1.Model.HexPiece.ExclusivityText*
+  commentId: Overload:DSLApp1.Model.HexPiece.ExclusivityText
+  href: DSLApp1.Model.HexPiece.html#DSLApp1_Model_HexPiece_ExclusivityText
+  name: ExclusivityText
+  nameWithType: HexPiece.ExclusivityText
+  fullName: DSLApp1.Model.HexPiece.ExclusivityText

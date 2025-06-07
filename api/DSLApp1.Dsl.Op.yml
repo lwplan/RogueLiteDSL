@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.Op
+  commentId: T:DSLApp1.Dsl.Op
+  id: Op
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.Op.Contains
+  - DSLApp1.Dsl.Op.Eq
+  - DSLApp1.Dsl.Op.Ge
+  - DSLApp1.Dsl.Op.Gt
+  - DSLApp1.Dsl.Op.Le
+  - DSLApp1.Dsl.Op.Lt
+  - DSLApp1.Dsl.Op.Ne
+  langs:
+  - csharp
+  - vb
+  name: Op
+  nameWithType: Op
+  fullName: DSLApp1.Dsl.Op
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Op
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 6
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum Op
+    content.vb: Public Enum Op
+- uid: DSLApp1.Dsl.Op.Gt
+  commentId: F:DSLApp1.Dsl.Op.Gt
+  id: Gt
+  parent: DSLApp1.Dsl.Op
+  langs:
+  - csharp
+  - vb
+  name: Gt
+  nameWithType: Op.Gt
+  fullName: DSLApp1.Dsl.Op.Gt
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Gt
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 8
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Gt = 0
+    return:
+      type: DSLApp1.Dsl.Op
+- uid: DSLApp1.Dsl.Op.Lt
+  commentId: F:DSLApp1.Dsl.Op.Lt
+  id: Lt
+  parent: DSLApp1.Dsl.Op
+  langs:
+  - csharp
+  - vb
+  name: Lt
+  nameWithType: Op.Lt
+  fullName: DSLApp1.Dsl.Op.Lt
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Lt
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 8
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Lt = 1
+    return:
+      type: DSLApp1.Dsl.Op
+- uid: DSLApp1.Dsl.Op.Eq
+  commentId: F:DSLApp1.Dsl.Op.Eq
+  id: Eq
+  parent: DSLApp1.Dsl.Op
+  langs:
+  - csharp
+  - vb
+  name: Eq
+  nameWithType: Op.Eq
+  fullName: DSLApp1.Dsl.Op.Eq
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Eq
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 8
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Eq = 2
+    return:
+      type: DSLApp1.Dsl.Op
+- uid: DSLApp1.Dsl.Op.Ge
+  commentId: F:DSLApp1.Dsl.Op.Ge
+  id: Ge
+  parent: DSLApp1.Dsl.Op
+  langs:
+  - csharp
+  - vb
+  name: Ge
+  nameWithType: Op.Ge
+  fullName: DSLApp1.Dsl.Op.Ge
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Ge
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 8
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Ge = 3
+    return:
+      type: DSLApp1.Dsl.Op
+- uid: DSLApp1.Dsl.Op.Le
+  commentId: F:DSLApp1.Dsl.Op.Le
+  id: Le
+  parent: DSLApp1.Dsl.Op
+  langs:
+  - csharp
+  - vb
+  name: Le
+  nameWithType: Op.Le
+  fullName: DSLApp1.Dsl.Op.Le
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Le
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 8
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Le = 4
+    return:
+      type: DSLApp1.Dsl.Op
+- uid: DSLApp1.Dsl.Op.Contains
+  commentId: F:DSLApp1.Dsl.Op.Contains
+  id: Contains
+  parent: DSLApp1.Dsl.Op
+  langs:
+  - csharp
+  - vb
+  name: Contains
+  nameWithType: Op.Contains
+  fullName: DSLApp1.Dsl.Op.Contains
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Contains
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 9
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Contains = 5
+    return:
+      type: DSLApp1.Dsl.Op
+- uid: DSLApp1.Dsl.Op.Ne
+  commentId: F:DSLApp1.Dsl.Op.Ne
+  id: Ne
+  parent: DSLApp1.Dsl.Op
+  langs:
+  - csharp
+  - vb
+  name: Ne
+  nameWithType: Op.Ne
+  fullName: DSLApp1.Dsl.Op.Ne
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Ne
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 10
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Ne = 6
+    return:
+      type: DSLApp1.Dsl.Op
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.Op
+  commentId: T:DSLApp1.Dsl.Op
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.Op.html
+  name: Op
+  nameWithType: Op
+  fullName: DSLApp1.Dsl.Op

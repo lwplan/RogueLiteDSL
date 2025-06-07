@@ -1,0 +1,586 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.StatBuffMechanicIR
+  commentId: T:DSLApp1.Dsl.StatBuffMechanicIR
+  id: StatBuffMechanicIR
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.StatBuffMechanicIR.#ctor(DSLApp1.Dsl.StatField,System.Single,System.Boolean)
+  - DSLApp1.Dsl.StatBuffMechanicIR.Amount
+  - DSLApp1.Dsl.StatBuffMechanicIR.IsBuff
+  - DSLApp1.Dsl.StatBuffMechanicIR.Stat
+  langs:
+  - csharp
+  - vb
+  name: StatBuffMechanicIR
+  nameWithType: StatBuffMechanicIR
+  fullName: DSLApp1.Dsl.StatBuffMechanicIR
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: StatBuffMechanicIR
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 65
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: 'public record StatBuffMechanicIR : ModifierMechanicIR, IEquatable<ModifierMechanicIR>, IEquatable<StatBuffMechanicIR>'
+    content.vb: Public Class StatBuffMechanicIR Inherits ModifierMechanicIR Implements IEquatable(Of ModifierMechanicIR), IEquatable(Of StatBuffMechanicIR)
+  inheritance:
+  - System.Object
+  - DSLApp1.Dsl.ModifierMechanicIR
+  implements:
+  - System.IEquatable{DSLApp1.Dsl.ModifierMechanicIR}
+  - System.IEquatable{DSLApp1.Dsl.StatBuffMechanicIR}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: DSLApp1.Dsl.StatBuffMechanicIR.#ctor(DSLApp1.Dsl.StatField,System.Single,System.Boolean)
+  commentId: M:DSLApp1.Dsl.StatBuffMechanicIR.#ctor(DSLApp1.Dsl.StatField,System.Single,System.Boolean)
+  id: '#ctor(DSLApp1.Dsl.StatField,System.Single,System.Boolean)'
+  parent: DSLApp1.Dsl.StatBuffMechanicIR
+  langs:
+  - csharp
+  - vb
+  name: StatBuffMechanicIR(StatField, float, bool)
+  nameWithType: StatBuffMechanicIR.StatBuffMechanicIR(StatField, float, bool)
+  fullName: DSLApp1.Dsl.StatBuffMechanicIR.StatBuffMechanicIR(DSLApp1.Dsl.StatField, float, bool)
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: .ctor
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 65
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public StatBuffMechanicIR(StatField Stat, float Amount, bool IsBuff)
+    parameters:
+    - id: Stat
+      type: DSLApp1.Dsl.StatField
+    - id: Amount
+      type: System.Single
+    - id: IsBuff
+      type: System.Boolean
+    content.vb: Public Sub New(Stat As StatField, Amount As Single, IsBuff As Boolean)
+  overload: DSLApp1.Dsl.StatBuffMechanicIR.#ctor*
+  nameWithType.vb: StatBuffMechanicIR.New(StatField, Single, Boolean)
+  fullName.vb: DSLApp1.Dsl.StatBuffMechanicIR.New(DSLApp1.Dsl.StatField, Single, Boolean)
+  name.vb: New(StatField, Single, Boolean)
+- uid: DSLApp1.Dsl.StatBuffMechanicIR.Stat
+  commentId: P:DSLApp1.Dsl.StatBuffMechanicIR.Stat
+  id: Stat
+  parent: DSLApp1.Dsl.StatBuffMechanicIR
+  langs:
+  - csharp
+  - vb
+  name: Stat
+  nameWithType: StatBuffMechanicIR.Stat
+  fullName: DSLApp1.Dsl.StatBuffMechanicIR.Stat
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Stat
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 66
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public StatField Stat { get; init; }
+    parameters: []
+    return:
+      type: DSLApp1.Dsl.StatField
+    content.vb: Public Property Stat As StatField
+  overload: DSLApp1.Dsl.StatBuffMechanicIR.Stat*
+- uid: DSLApp1.Dsl.StatBuffMechanicIR.Amount
+  commentId: P:DSLApp1.Dsl.StatBuffMechanicIR.Amount
+  id: Amount
+  parent: DSLApp1.Dsl.StatBuffMechanicIR
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: StatBuffMechanicIR.Amount
+  fullName: DSLApp1.Dsl.StatBuffMechanicIR.Amount
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Amount
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 67
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public float Amount { get; init; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Amount As Single
+  overload: DSLApp1.Dsl.StatBuffMechanicIR.Amount*
+- uid: DSLApp1.Dsl.StatBuffMechanicIR.IsBuff
+  commentId: P:DSLApp1.Dsl.StatBuffMechanicIR.IsBuff
+  id: IsBuff
+  parent: DSLApp1.Dsl.StatBuffMechanicIR
+  langs:
+  - csharp
+  - vb
+  name: IsBuff
+  nameWithType: StatBuffMechanicIR.IsBuff
+  fullName: DSLApp1.Dsl.StatBuffMechanicIR.IsBuff
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: IsBuff
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 68
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public bool IsBuff { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsBuff As Boolean
+  overload: DSLApp1.Dsl.StatBuffMechanicIR.IsBuff*
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: DSLApp1.Dsl.ModifierMechanicIR
+  commentId: T:DSLApp1.Dsl.ModifierMechanicIR
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.ModifierMechanicIR.html
+  name: ModifierMechanicIR
+  nameWithType: ModifierMechanicIR
+  fullName: DSLApp1.Dsl.ModifierMechanicIR
+- uid: System.IEquatable{DSLApp1.Dsl.ModifierMechanicIR}
+  commentId: T:System.IEquatable{DSLApp1.Dsl.ModifierMechanicIR}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ModifierMechanicIR>
+  nameWithType: IEquatable<ModifierMechanicIR>
+  fullName: System.IEquatable<DSLApp1.Dsl.ModifierMechanicIR>
+  nameWithType.vb: IEquatable(Of ModifierMechanicIR)
+  fullName.vb: System.IEquatable(Of DSLApp1.Dsl.ModifierMechanicIR)
+  name.vb: IEquatable(Of ModifierMechanicIR)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: DSLApp1.Dsl.ModifierMechanicIR
+    name: ModifierMechanicIR
+    href: DSLApp1.Dsl.ModifierMechanicIR.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.ModifierMechanicIR
+    name: ModifierMechanicIR
+    href: DSLApp1.Dsl.ModifierMechanicIR.html
+  - name: )
+- uid: System.IEquatable{DSLApp1.Dsl.StatBuffMechanicIR}
+  commentId: T:System.IEquatable{DSLApp1.Dsl.StatBuffMechanicIR}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<StatBuffMechanicIR>
+  nameWithType: IEquatable<StatBuffMechanicIR>
+  fullName: System.IEquatable<DSLApp1.Dsl.StatBuffMechanicIR>
+  nameWithType.vb: IEquatable(Of StatBuffMechanicIR)
+  fullName.vb: System.IEquatable(Of DSLApp1.Dsl.StatBuffMechanicIR)
+  name.vb: IEquatable(Of StatBuffMechanicIR)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: DSLApp1.Dsl.StatBuffMechanicIR
+    name: StatBuffMechanicIR
+    href: DSLApp1.Dsl.StatBuffMechanicIR.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.StatBuffMechanicIR
+    name: StatBuffMechanicIR
+    href: DSLApp1.Dsl.StatBuffMechanicIR.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DSLApp1.Dsl.StatBuffMechanicIR.#ctor*
+  commentId: Overload:DSLApp1.Dsl.StatBuffMechanicIR.#ctor
+  href: DSLApp1.Dsl.StatBuffMechanicIR.html#DSLApp1_Dsl_StatBuffMechanicIR__ctor_DSLApp1_Dsl_StatField_System_Single_System_Boolean_
+  name: StatBuffMechanicIR
+  nameWithType: StatBuffMechanicIR.StatBuffMechanicIR
+  fullName: DSLApp1.Dsl.StatBuffMechanicIR.StatBuffMechanicIR
+  nameWithType.vb: StatBuffMechanicIR.New
+  fullName.vb: DSLApp1.Dsl.StatBuffMechanicIR.New
+  name.vb: New
+- uid: DSLApp1.Dsl.StatField
+  commentId: T:DSLApp1.Dsl.StatField
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.StatField.html
+  name: StatField
+  nameWithType: StatField
+  fullName: DSLApp1.Dsl.StatField
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: DSLApp1.Dsl.StatBuffMechanicIR.Stat*
+  commentId: Overload:DSLApp1.Dsl.StatBuffMechanicIR.Stat
+  href: DSLApp1.Dsl.StatBuffMechanicIR.html#DSLApp1_Dsl_StatBuffMechanicIR_Stat
+  name: Stat
+  nameWithType: StatBuffMechanicIR.Stat
+  fullName: DSLApp1.Dsl.StatBuffMechanicIR.Stat
+- uid: DSLApp1.Dsl.StatBuffMechanicIR.Amount*
+  commentId: Overload:DSLApp1.Dsl.StatBuffMechanicIR.Amount
+  href: DSLApp1.Dsl.StatBuffMechanicIR.html#DSLApp1_Dsl_StatBuffMechanicIR_Amount
+  name: Amount
+  nameWithType: StatBuffMechanicIR.Amount
+  fullName: DSLApp1.Dsl.StatBuffMechanicIR.Amount
+- uid: DSLApp1.Dsl.StatBuffMechanicIR.IsBuff*
+  commentId: Overload:DSLApp1.Dsl.StatBuffMechanicIR.IsBuff
+  href: DSLApp1.Dsl.StatBuffMechanicIR.html#DSLApp1_Dsl_StatBuffMechanicIR_IsBuff
+  name: IsBuff
+  nameWithType: StatBuffMechanicIR.IsBuff
+  fullName: DSLApp1.Dsl.StatBuffMechanicIR.IsBuff

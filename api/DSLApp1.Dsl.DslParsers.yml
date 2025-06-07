@@ -1,0 +1,3672 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.DslParsers
+  commentId: T:DSLApp1.Dsl.DslParsers
+  id: DslParsers
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.DslParsers.AbilityParser
+  - DSLApp1.Dsl.DslParsers.AnySideEffectMechanicParser
+  - DSLApp1.Dsl.DslParsers.AppliesEffectParser
+  - DSLApp1.Dsl.DslParsers.BasicSupportEffectParser
+  - DSLApp1.Dsl.DslParsers.CharacterFieldParser
+  - DSLApp1.Dsl.DslParsers.ChargesClauseParser
+  - DSLApp1.Dsl.DslParsers.ComparisonOpParser
+  - DSLApp1.Dsl.DslParsers.ConditionParser
+  - DSLApp1.Dsl.DslParsers.DamageEffectParser
+  - DSLApp1.Dsl.DslParsers.DamageFormulaParser
+  - DSLApp1.Dsl.DslParsers.DamageMechanicAtom
+  - DSLApp1.Dsl.DslParsers.DamageMechanicGroupParser
+  - DSLApp1.Dsl.DslParsers.DamageMechanicTypeParser
+  - DSLApp1.Dsl.DslParsers.DamageSupportIRParser
+  - DSLApp1.Dsl.DslParsers.DurationClauseParser
+  - DSLApp1.Dsl.DslParsers.DurationParser
+  - DSLApp1.Dsl.DslParsers.EffectSupportIRParser
+  - DSLApp1.Dsl.DslParsers.ElementParser
+  - DSLApp1.Dsl.DslParsers.ElementSupportIRParser
+  - DSLApp1.Dsl.DslParsers.EventClauseParser
+  - DSLApp1.Dsl.DslParsers.HeaderParser
+  - DSLApp1.Dsl.DslParsers.HealMechanicParser
+  - DSLApp1.Dsl.DslParsers.HealingSideEffectParser
+  - DSLApp1.Dsl.DslParsers.HealsEffectParser
+  - DSLApp1.Dsl.DslParsers.HexParser
+  - DSLApp1.Dsl.DslParsers.ImmediateClauseParser
+  - DSLApp1.Dsl.DslParsers.InflictsEffectParser
+  - DSLApp1.Dsl.DslParsers.InvokeEffectParser
+  - DSLApp1.Dsl.DslParsers.InvokeMechanicParser
+  - DSLApp1.Dsl.DslParsers.InvokeMechanicTypeParser
+  - DSLApp1.Dsl.DslParsers.MissClauseParser
+  - DSLApp1.Dsl.DslParsers.ModifierClauseParser
+  - DSLApp1.Dsl.DslParsers.ModifierMechanicParser
+  - DSLApp1.Dsl.DslParsers.MultiplierMechanicParser
+  - DSLApp1.Dsl.DslParsers.OutcomeFieldParser
+  - DSLApp1.Dsl.DslParsers.RoleParser
+  - DSLApp1.Dsl.DslParsers.SideEffectMechanicParser
+  - DSLApp1.Dsl.DslParsers.SideEffectMechanicTypeParser
+  - DSLApp1.Dsl.DslParsers.SideEffectSupportIRParser
+  - DSLApp1.Dsl.DslParsers.SideEffectsClauseParser
+  - DSLApp1.Dsl.DslParsers.SideEffectsParser
+  - DSLApp1.Dsl.DslParsers.StatBuffMechanicParser
+  - DSLApp1.Dsl.DslParsers.StateMechanicParser
+  - DSLApp1.Dsl.DslParsers.SubjectParser
+  - DSLApp1.Dsl.DslParsers.SupportEffectListOrSingleParser
+  - DSLApp1.Dsl.DslParsers.SupportEffectListParser
+  - DSLApp1.Dsl.DslParsers.SupportEffectParser
+  - DSLApp1.Dsl.DslParsers.SupportMechanicsElementListParser
+  - DSLApp1.Dsl.DslParsers.SupportParser
+  - DSLApp1.Dsl.DslParsers.TargetTagParser
+  - DSLApp1.Dsl.DslParsers.TargetabilityParser
+  - DSLApp1.Dsl.DslParsers.TargetingParser
+  langs:
+  - csharp
+  - vb
+  name: DslParsers
+  nameWithType: DslParsers
+  fullName: DSLApp1.Dsl.DslParsers
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Targeting.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DslParsers
+    path: src/Dsl/DSLParser.Targeting.cs
+    startLine: 30
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static class DslParsers
+    content.vb: Public Module DslParsers
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: DSLApp1.Dsl.DslParsers.ChargesClauseParser
+  commentId: P:DSLApp1.Dsl.DslParsers.ChargesClauseParser
+  id: ChargesClauseParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: ChargesClauseParser
+  nameWithType: DslParsers.ChargesClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.ChargesClauseParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Ability.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ChargesClauseParser
+    path: src/Dsl/DSLParser.Ability.cs
+    startLine: 27
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Duration> ChargesClauseParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Duration}
+    content.vb: Public Shared ReadOnly Property ChargesClauseParser As Parser(Of Token, Duration)
+  overload: DSLApp1.Dsl.DslParsers.ChargesClauseParser*
+- uid: DSLApp1.Dsl.DslParsers.ImmediateClauseParser
+  commentId: P:DSLApp1.Dsl.DslParsers.ImmediateClauseParser
+  id: ImmediateClauseParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: ImmediateClauseParser
+  nameWithType: DslParsers.ImmediateClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.ImmediateClauseParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Ability.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ImmediateClauseParser
+    path: src/Dsl/DSLParser.Ability.cs
+    startLine: 36
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, EffectIR> ImmediateClauseParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.EffectIR}
+    content.vb: Public Shared ReadOnly Property ImmediateClauseParser As Parser(Of Token, EffectIR)
+  overload: DSLApp1.Dsl.DslParsers.ImmediateClauseParser*
+- uid: DSLApp1.Dsl.DslParsers.ModifierClauseParser
+  commentId: P:DSLApp1.Dsl.DslParsers.ModifierClauseParser
+  id: ModifierClauseParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: ModifierClauseParser
+  nameWithType: DslParsers.ModifierClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.ModifierClauseParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Ability.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ModifierClauseParser
+    path: src/Dsl/DSLParser.Ability.cs
+    startLine: 44
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, EffectIR> ModifierClauseParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.EffectIR}
+    content.vb: Public Shared ReadOnly Property ModifierClauseParser As Parser(Of Token, EffectIR)
+  overload: DSLApp1.Dsl.DslParsers.ModifierClauseParser*
+- uid: DSLApp1.Dsl.DslParsers.SideEffectsClauseParser
+  commentId: P:DSLApp1.Dsl.DslParsers.SideEffectsClauseParser
+  id: SideEffectsClauseParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: SideEffectsClauseParser
+  nameWithType: DslParsers.SideEffectsClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.SideEffectsClauseParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Ability.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: SideEffectsClauseParser
+    path: src/Dsl/DSLParser.Ability.cs
+    startLine: 51
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, SideEffectsIR> SideEffectsClauseParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SideEffectsIR}
+    content.vb: Public Shared ReadOnly Property SideEffectsClauseParser As Parser(Of Token, SideEffectsIR)
+  overload: DSLApp1.Dsl.DslParsers.SideEffectsClauseParser*
+- uid: DSLApp1.Dsl.DslParsers.MissClauseParser
+  commentId: P:DSLApp1.Dsl.DslParsers.MissClauseParser
+  id: MissClauseParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: MissClauseParser
+  nameWithType: DslParsers.MissClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.MissClauseParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Ability.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: MissClauseParser
+    path: src/Dsl/DSLParser.Ability.cs
+    startLine: 55
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Condition> MissClauseParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Condition}
+    content.vb: Public Shared ReadOnly Property MissClauseParser As Parser(Of Token, Condition)
+  overload: DSLApp1.Dsl.DslParsers.MissClauseParser*
+- uid: DSLApp1.Dsl.DslParsers.AbilityParser
+  commentId: P:DSLApp1.Dsl.DslParsers.AbilityParser
+  id: AbilityParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: AbilityParser
+  nameWithType: DslParsers.AbilityParser
+  fullName: DSLApp1.Dsl.DslParsers.AbilityParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Ability.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: AbilityParser
+    path: src/Dsl/DSLParser.Ability.cs
+    startLine: 61
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, AbilityIR> AbilityParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.AbilityIR}
+    content.vb: Public Shared ReadOnly Property AbilityParser As Parser(Of Token, AbilityIR)
+  overload: DSLApp1.Dsl.DslParsers.AbilityParser*
+- uid: DSLApp1.Dsl.DslParsers.StateMechanicParser
+  commentId: P:DSLApp1.Dsl.DslParsers.StateMechanicParser
+  id: StateMechanicParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: StateMechanicParser
+  nameWithType: DslParsers.StateMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.StateMechanicParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: StateMechanicParser
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 74
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, StateMechanicIR> StateMechanicParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.StateMechanicIR}
+    content.vb: Public Shared ReadOnly Property StateMechanicParser As Parser(Of Token, StateMechanicIR)
+  overload: DSLApp1.Dsl.DslParsers.StateMechanicParser*
+- uid: DSLApp1.Dsl.DslParsers.TargetTagParser
+  commentId: P:DSLApp1.Dsl.DslParsers.TargetTagParser
+  id: TargetTagParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: TargetTagParser
+  nameWithType: DslParsers.TargetTagParser
+  fullName: DSLApp1.Dsl.DslParsers.TargetTagParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: TargetTagParser
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 87
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, TargetTag> TargetTagParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.TargetTag}
+    content.vb: Public Shared ReadOnly Property TargetTagParser As Parser(Of Token, TargetTag)
+  overload: DSLApp1.Dsl.DslParsers.TargetTagParser*
+- uid: DSLApp1.Dsl.DslParsers.MultiplierMechanicParser
+  commentId: P:DSLApp1.Dsl.DslParsers.MultiplierMechanicParser
+  id: MultiplierMechanicParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: MultiplierMechanicParser
+  nameWithType: DslParsers.MultiplierMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.MultiplierMechanicParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: MultiplierMechanicParser
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 92
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, MultiplierMechanicIR> MultiplierMechanicParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.MultiplierMechanicIR}
+    content.vb: Public Shared ReadOnly Property MultiplierMechanicParser As Parser(Of Token, MultiplierMechanicIR)
+  overload: DSLApp1.Dsl.DslParsers.MultiplierMechanicParser*
+- uid: DSLApp1.Dsl.DslParsers.StatBuffMechanicParser
+  commentId: P:DSLApp1.Dsl.DslParsers.StatBuffMechanicParser
+  id: StatBuffMechanicParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: StatBuffMechanicParser
+  nameWithType: DslParsers.StatBuffMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.StatBuffMechanicParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: StatBuffMechanicParser
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 110
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, StatBuffMechanicIR> StatBuffMechanicParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.StatBuffMechanicIR}
+    content.vb: Public Shared ReadOnly Property StatBuffMechanicParser As Parser(Of Token, StatBuffMechanicIR)
+  overload: DSLApp1.Dsl.DslParsers.StatBuffMechanicParser*
+- uid: DSLApp1.Dsl.DslParsers.ModifierMechanicParser
+  commentId: P:DSLApp1.Dsl.DslParsers.ModifierMechanicParser
+  id: ModifierMechanicParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: ModifierMechanicParser
+  nameWithType: DslParsers.ModifierMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.ModifierMechanicParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ModifierMechanicParser
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 126
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, ModifierMechanicIR> ModifierMechanicParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.ModifierMechanicIR}
+    content.vb: Public Shared ReadOnly Property ModifierMechanicParser As Parser(Of Token, ModifierMechanicIR)
+  overload: DSLApp1.Dsl.DslParsers.ModifierMechanicParser*
+- uid: DSLApp1.Dsl.DslParsers.AppliesEffectParser
+  commentId: P:DSLApp1.Dsl.DslParsers.AppliesEffectParser
+  id: AppliesEffectParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: AppliesEffectParser
+  nameWithType: DslParsers.AppliesEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.AppliesEffectParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: AppliesEffectParser
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 133
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, ModifierEffectIR> AppliesEffectParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.ModifierEffectIR}
+    content.vb: Public Shared ReadOnly Property AppliesEffectParser As Parser(Of Token, ModifierEffectIR)
+  overload: DSLApp1.Dsl.DslParsers.AppliesEffectParser*
+- uid: DSLApp1.Dsl.DslParsers.SubjectParser
+  commentId: P:DSLApp1.Dsl.DslParsers.SubjectParser
+  id: SubjectParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: SubjectParser
+  nameWithType: DslParsers.SubjectParser
+  fullName: DSLApp1.Dsl.DslParsers.SubjectParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: SubjectParser
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 49
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Subject> SubjectParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Subject}
+    content.vb: Public Shared ReadOnly Property SubjectParser As Parser(Of Token, Subject)
+  overload: DSLApp1.Dsl.DslParsers.SubjectParser*
+- uid: DSLApp1.Dsl.DslParsers.CharacterFieldParser
+  commentId: P:DSLApp1.Dsl.DslParsers.CharacterFieldParser
+  id: CharacterFieldParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: CharacterFieldParser
+  nameWithType: DslParsers.CharacterFieldParser
+  fullName: DSLApp1.Dsl.DslParsers.CharacterFieldParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: CharacterFieldParser
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 55
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Field> CharacterFieldParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Field}
+    content.vb: Public Shared ReadOnly Property CharacterFieldParser As Parser(Of Token, Field)
+  overload: DSLApp1.Dsl.DslParsers.CharacterFieldParser*
+- uid: DSLApp1.Dsl.DslParsers.OutcomeFieldParser
+  commentId: P:DSLApp1.Dsl.DslParsers.OutcomeFieldParser
+  id: OutcomeFieldParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: OutcomeFieldParser
+  nameWithType: DslParsers.OutcomeFieldParser
+  fullName: DSLApp1.Dsl.DslParsers.OutcomeFieldParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: OutcomeFieldParser
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 68
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Field> OutcomeFieldParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Field}
+    content.vb: Public Shared ReadOnly Property OutcomeFieldParser As Parser(Of Token, Field)
+  overload: DSLApp1.Dsl.DslParsers.OutcomeFieldParser*
+- uid: DSLApp1.Dsl.DslParsers.ComparisonOpParser
+  commentId: P:DSLApp1.Dsl.DslParsers.ComparisonOpParser
+  id: ComparisonOpParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: ComparisonOpParser
+  nameWithType: DslParsers.ComparisonOpParser
+  fullName: DSLApp1.Dsl.DslParsers.ComparisonOpParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ComparisonOpParser
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 77
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Op> ComparisonOpParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Op}
+    content.vb: Public Shared ReadOnly Property ComparisonOpParser As Parser(Of Token, Op)
+  overload: DSLApp1.Dsl.DslParsers.ComparisonOpParser*
+- uid: DSLApp1.Dsl.DslParsers.ConditionParser
+  commentId: P:DSLApp1.Dsl.DslParsers.ConditionParser
+  id: ConditionParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: ConditionParser
+  nameWithType: DslParsers.ConditionParser
+  fullName: DSLApp1.Dsl.DslParsers.ConditionParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ConditionParser
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 87
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Condition> ConditionParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Condition}
+    content.vb: Public Shared ReadOnly Property ConditionParser As Parser(Of Token, Condition)
+  overload: DSLApp1.Dsl.DslParsers.ConditionParser*
+- uid: DSLApp1.Dsl.DslParsers.DamageMechanicTypeParser
+  commentId: P:DSLApp1.Dsl.DslParsers.DamageMechanicTypeParser
+  id: DamageMechanicTypeParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: DamageMechanicTypeParser
+  nameWithType: DslParsers.DamageMechanicTypeParser
+  fullName: DSLApp1.Dsl.DslParsers.DamageMechanicTypeParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.DamageEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DamageMechanicTypeParser
+    path: src/Dsl/DSLParser.DamageEffect.cs
+    startLine: 32
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, DamageMechanicType> DamageMechanicTypeParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.DamageMechanicType}
+    content.vb: Public Shared ReadOnly Property DamageMechanicTypeParser As Parser(Of Token, DamageMechanicType)
+  overload: DSLApp1.Dsl.DslParsers.DamageMechanicTypeParser*
+- uid: DSLApp1.Dsl.DslParsers.DamageMechanicAtom
+  commentId: P:DSLApp1.Dsl.DslParsers.DamageMechanicAtom
+  id: DamageMechanicAtom
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: DamageMechanicAtom
+  nameWithType: DslParsers.DamageMechanicAtom
+  fullName: DSLApp1.Dsl.DslParsers.DamageMechanicAtom
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.DamageEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DamageMechanicAtom
+    path: src/Dsl/DSLParser.DamageEffect.cs
+    startLine: 39
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, DamageMechanic> DamageMechanicAtom { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.DamageMechanic}
+    content.vb: Public Shared ReadOnly Property DamageMechanicAtom As Parser(Of Token, DamageMechanic)
+  overload: DSLApp1.Dsl.DslParsers.DamageMechanicAtom*
+- uid: DSLApp1.Dsl.DslParsers.DamageMechanicGroupParser
+  commentId: P:DSLApp1.Dsl.DslParsers.DamageMechanicGroupParser
+  id: DamageMechanicGroupParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: DamageMechanicGroupParser
+  nameWithType: DslParsers.DamageMechanicGroupParser
+  fullName: DSLApp1.Dsl.DslParsers.DamageMechanicGroupParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.DamageEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DamageMechanicGroupParser
+    path: src/Dsl/DSLParser.DamageEffect.cs
+    startLine: 44
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, List<DamageMechanic>> DamageMechanicGroupParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,System.Collections.Generic.List{DSLApp1.Dsl.DamageMechanic}}
+    content.vb: Public Shared ReadOnly Property DamageMechanicGroupParser As Parser(Of Token, List(Of DamageMechanic))
+  overload: DSLApp1.Dsl.DslParsers.DamageMechanicGroupParser*
+- uid: DSLApp1.Dsl.DslParsers.DamageEffectParser
+  commentId: P:DSLApp1.Dsl.DslParsers.DamageEffectParser
+  id: DamageEffectParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: DamageEffectParser
+  nameWithType: DslParsers.DamageEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.DamageEffectParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.DamageEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DamageEffectParser
+    path: src/Dsl/DSLParser.DamageEffect.cs
+    startLine: 50
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, DamageEffectIR> DamageEffectParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.DamageEffectIR}
+    content.vb: Public Shared ReadOnly Property DamageEffectParser As Parser(Of Token, DamageEffectIR)
+  overload: DSLApp1.Dsl.DslParsers.DamageEffectParser*
+- uid: DSLApp1.Dsl.DslParsers.EventClauseParser
+  commentId: P:DSLApp1.Dsl.DslParsers.EventClauseParser
+  id: EventClauseParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: EventClauseParser
+  nameWithType: DslParsers.EventClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.EventClauseParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Duration.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: EventClauseParser
+    path: src/Dsl/DSLParser.Duration.cs
+    startLine: 26
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, TimingEvent> EventClauseParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.TimingEvent}
+    content.vb: Public Shared ReadOnly Property EventClauseParser As Parser(Of Token, TimingEvent)
+  overload: DSLApp1.Dsl.DslParsers.EventClauseParser*
+- uid: DSLApp1.Dsl.DslParsers.DurationClauseParser
+  commentId: P:DSLApp1.Dsl.DslParsers.DurationClauseParser
+  id: DurationClauseParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: DurationClauseParser
+  nameWithType: DslParsers.DurationClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.DurationClauseParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Duration.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DurationClauseParser
+    path: src/Dsl/DSLParser.Duration.cs
+    startLine: 45
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Duration> DurationClauseParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Duration}
+    content.vb: Public Shared ReadOnly Property DurationClauseParser As Parser(Of Token, Duration)
+  overload: DSLApp1.Dsl.DslParsers.DurationClauseParser*
+- uid: DSLApp1.Dsl.DslParsers.TargetabilityParser
+  commentId: P:DSLApp1.Dsl.DslParsers.TargetabilityParser
+  id: TargetabilityParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: TargetabilityParser
+  nameWithType: DslParsers.TargetabilityParser
+  fullName: DSLApp1.Dsl.DslParsers.TargetabilityParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: TargetabilityParser
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 66
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Targetability> TargetabilityParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Model.Targetability}
+    content.vb: Public Shared ReadOnly Property TargetabilityParser As Parser(Of Token, Targetability)
+  overload: DSLApp1.Dsl.DslParsers.TargetabilityParser*
+- uid: DSLApp1.Dsl.DslParsers.ElementParser
+  commentId: P:DSLApp1.Dsl.DslParsers.ElementParser
+  id: ElementParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: ElementParser
+  nameWithType: DslParsers.ElementParser
+  fullName: DSLApp1.Dsl.DslParsers.ElementParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ElementParser
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 75
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Element> ElementParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Element}
+    content.vb: Public Shared ReadOnly Property ElementParser As Parser(Of Token, Element)
+  overload: DSLApp1.Dsl.DslParsers.ElementParser*
+- uid: DSLApp1.Dsl.DslParsers.DamageFormulaParser
+  commentId: P:DSLApp1.Dsl.DslParsers.DamageFormulaParser
+  id: DamageFormulaParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: DamageFormulaParser
+  nameWithType: DslParsers.DamageFormulaParser
+  fullName: DSLApp1.Dsl.DslParsers.DamageFormulaParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DamageFormulaParser
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 85
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, DamageFormula> DamageFormulaParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.DamageFormula}
+    content.vb: Public Shared ReadOnly Property DamageFormulaParser As Parser(Of Token, DamageFormula)
+  overload: DSLApp1.Dsl.DslParsers.DamageFormulaParser*
+- uid: DSLApp1.Dsl.DslParsers.InvokeMechanicTypeParser
+  commentId: P:DSLApp1.Dsl.DslParsers.InvokeMechanicTypeParser
+  id: InvokeMechanicTypeParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: InvokeMechanicTypeParser
+  nameWithType: DslParsers.InvokeMechanicTypeParser
+  fullName: DSLApp1.Dsl.DslParsers.InvokeMechanicTypeParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: InvokeMechanicTypeParser
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 90
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, InvokeMechanicType> InvokeMechanicTypeParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.InvokeMechanicType}
+    content.vb: Public Shared ReadOnly Property InvokeMechanicTypeParser As Parser(Of Token, InvokeMechanicType)
+  overload: DSLApp1.Dsl.DslParsers.InvokeMechanicTypeParser*
+- uid: DSLApp1.Dsl.DslParsers.SideEffectMechanicTypeParser
+  commentId: P:DSLApp1.Dsl.DslParsers.SideEffectMechanicTypeParser
+  id: SideEffectMechanicTypeParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: SideEffectMechanicTypeParser
+  nameWithType: DslParsers.SideEffectMechanicTypeParser
+  fullName: DSLApp1.Dsl.DslParsers.SideEffectMechanicTypeParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: SideEffectMechanicTypeParser
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 97
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, SideEffectMechanicType> SideEffectMechanicTypeParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SideEffectMechanicType}
+    content.vb: Public Shared ReadOnly Property SideEffectMechanicTypeParser As Parser(Of Token, SideEffectMechanicType)
+  overload: DSLApp1.Dsl.DslParsers.SideEffectMechanicTypeParser*
+- uid: DSLApp1.Dsl.DslParsers.RoleParser
+  commentId: P:DSLApp1.Dsl.DslParsers.RoleParser
+  id: RoleParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: RoleParser
+  nameWithType: DslParsers.RoleParser
+  fullName: DSLApp1.Dsl.DslParsers.RoleParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: RoleParser
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 25
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Compatibility> RoleParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Compatibility}
+    content.vb: Public Shared ReadOnly Property RoleParser As Parser(Of Token, Compatibility)
+  overload: DSLApp1.Dsl.DslParsers.RoleParser*
+- uid: DSLApp1.Dsl.DslParsers.HeaderParser
+  commentId: P:DSLApp1.Dsl.DslParsers.HeaderParser
+  id: HeaderParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: HeaderParser
+  nameWithType: DslParsers.HeaderParser
+  fullName: DSLApp1.Dsl.DslParsers.HeaderParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HeaderParser
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 36
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Header> HeaderParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Header}
+    content.vb: Public Shared ReadOnly Property HeaderParser As Parser(Of Token, Header)
+  overload: DSLApp1.Dsl.DslParsers.HeaderParser*
+- uid: DSLApp1.Dsl.DslParsers.HealMechanicParser
+  commentId: P:DSLApp1.Dsl.DslParsers.HealMechanicParser
+  id: HealMechanicParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: HealMechanicParser
+  nameWithType: DslParsers.HealMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.HealMechanicParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.HealsEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HealMechanicParser
+    path: src/Dsl/DSLParser.HealsEffect.cs
+    startLine: 36
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, HealMechanic> HealMechanicParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.HealMechanic}
+    content.vb: Public Shared ReadOnly Property HealMechanicParser As Parser(Of Token, HealMechanic)
+  overload: DSLApp1.Dsl.DslParsers.HealMechanicParser*
+- uid: DSLApp1.Dsl.DslParsers.HealsEffectParser
+  commentId: P:DSLApp1.Dsl.DslParsers.HealsEffectParser
+  id: HealsEffectParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: HealsEffectParser
+  nameWithType: DslParsers.HealsEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.HealsEffectParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.HealsEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HealsEffectParser
+    path: src/Dsl/DSLParser.HealsEffect.cs
+    startLine: 57
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, EffectIR> HealsEffectParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.EffectIR}
+    content.vb: Public Shared ReadOnly Property HealsEffectParser As Parser(Of Token, EffectIR)
+  overload: DSLApp1.Dsl.DslParsers.HealsEffectParser*
+- uid: DSLApp1.Dsl.DslParsers.HexParser
+  commentId: P:DSLApp1.Dsl.DslParsers.HexParser
+  id: HexParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: HexParser
+  nameWithType: DslParsers.HexParser
+  fullName: DSLApp1.Dsl.DslParsers.HexParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Hex.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HexParser
+    path: src/Dsl/DSLParser.Hex.cs
+    startLine: 13
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, object> HexParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,System.Object}
+    content.vb: Public Shared ReadOnly Property HexParser As Parser(Of Token, Object)
+  overload: DSLApp1.Dsl.DslParsers.HexParser*
+- uid: DSLApp1.Dsl.DslParsers.InflictsEffectParser
+  commentId: P:DSLApp1.Dsl.DslParsers.InflictsEffectParser
+  id: InflictsEffectParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: InflictsEffectParser
+  nameWithType: DslParsers.InflictsEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.InflictsEffectParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Inflicts.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: InflictsEffectParser
+    path: src/Dsl/DSLParser.Inflicts.cs
+    startLine: 27
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, ModifierEffectIR> InflictsEffectParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.ModifierEffectIR}
+    content.vb: Public Shared ReadOnly Property InflictsEffectParser As Parser(Of Token, ModifierEffectIR)
+  overload: DSLApp1.Dsl.DslParsers.InflictsEffectParser*
+- uid: DSLApp1.Dsl.DslParsers.InvokeMechanicParser
+  commentId: P:DSLApp1.Dsl.DslParsers.InvokeMechanicParser
+  id: InvokeMechanicParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: InvokeMechanicParser
+  nameWithType: DslParsers.InvokeMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.InvokeMechanicParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Invoke.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: InvokeMechanicParser
+    path: src/Dsl/DSLParser.Invoke.cs
+    startLine: 38
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, InvokeMechanic> InvokeMechanicParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.InvokeMechanic}
+    content.vb: Public Shared ReadOnly Property InvokeMechanicParser As Parser(Of Token, InvokeMechanic)
+  overload: DSLApp1.Dsl.DslParsers.InvokeMechanicParser*
+- uid: DSLApp1.Dsl.DslParsers.InvokeEffectParser
+  commentId: P:DSLApp1.Dsl.DslParsers.InvokeEffectParser
+  id: InvokeEffectParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: InvokeEffectParser
+  nameWithType: DslParsers.InvokeEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.InvokeEffectParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Invoke.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: InvokeEffectParser
+    path: src/Dsl/DSLParser.Invoke.cs
+    startLine: 55
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, InvokeEffectIR> InvokeEffectParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.InvokeEffectIR}
+    content.vb: Public Shared ReadOnly Property InvokeEffectParser As Parser(Of Token, InvokeEffectIR)
+  overload: DSLApp1.Dsl.DslParsers.InvokeEffectParser*
+- uid: DSLApp1.Dsl.DslParsers.DurationParser
+  commentId: P:DSLApp1.Dsl.DslParsers.DurationParser
+  id: DurationParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: DurationParser
+  nameWithType: DslParsers.DurationParser
+  fullName: DSLApp1.Dsl.DslParsers.DurationParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Modifiers.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DurationParser
+    path: src/Dsl/DSLParser.Modifiers.cs
+    startLine: 27
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Duration> DurationParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Duration}
+    content.vb: Public Shared ReadOnly Property DurationParser As Parser(Of Token, Duration)
+  overload: DSLApp1.Dsl.DslParsers.DurationParser*
+- uid: DSLApp1.Dsl.DslParsers.SideEffectMechanicParser
+  commentId: P:DSLApp1.Dsl.DslParsers.SideEffectMechanicParser
+  id: SideEffectMechanicParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: SideEffectMechanicParser
+  nameWithType: DslParsers.SideEffectMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.SideEffectMechanicParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.SideEffects.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: SideEffectMechanicParser
+    path: src/Dsl/DSLParser.SideEffects.cs
+    startLine: 49
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, SideEffectMechanicIR> SideEffectMechanicParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SideEffectMechanicIR}
+    content.vb: Public Shared ReadOnly Property SideEffectMechanicParser As Parser(Of Token, SideEffectMechanicIR)
+  overload: DSLApp1.Dsl.DslParsers.SideEffectMechanicParser*
+- uid: DSLApp1.Dsl.DslParsers.HealingSideEffectParser
+  commentId: P:DSLApp1.Dsl.DslParsers.HealingSideEffectParser
+  id: HealingSideEffectParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: HealingSideEffectParser
+  nameWithType: DslParsers.HealingSideEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.HealingSideEffectParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.SideEffects.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HealingSideEffectParser
+    path: src/Dsl/DSLParser.SideEffects.cs
+    startLine: 76
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, SideEffectMechanicIR> HealingSideEffectParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SideEffectMechanicIR}
+    content.vb: Public Shared ReadOnly Property HealingSideEffectParser As Parser(Of Token, SideEffectMechanicIR)
+  overload: DSLApp1.Dsl.DslParsers.HealingSideEffectParser*
+- uid: DSLApp1.Dsl.DslParsers.AnySideEffectMechanicParser
+  commentId: P:DSLApp1.Dsl.DslParsers.AnySideEffectMechanicParser
+  id: AnySideEffectMechanicParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: AnySideEffectMechanicParser
+  nameWithType: DslParsers.AnySideEffectMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.AnySideEffectMechanicParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.SideEffects.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: AnySideEffectMechanicParser
+    path: src/Dsl/DSLParser.SideEffects.cs
+    startLine: 80
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, SideEffectMechanicIR> AnySideEffectMechanicParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SideEffectMechanicIR}
+    content.vb: Public Shared ReadOnly Property AnySideEffectMechanicParser As Parser(Of Token, SideEffectMechanicIR)
+  overload: DSLApp1.Dsl.DslParsers.AnySideEffectMechanicParser*
+- uid: DSLApp1.Dsl.DslParsers.SideEffectsParser
+  commentId: P:DSLApp1.Dsl.DslParsers.SideEffectsParser
+  id: SideEffectsParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: SideEffectsParser
+  nameWithType: DslParsers.SideEffectsParser
+  fullName: DSLApp1.Dsl.DslParsers.SideEffectsParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.SideEffects.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: SideEffectsParser
+    path: src/Dsl/DSLParser.SideEffects.cs
+    startLine: 84
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, SideEffectsIR> SideEffectsParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SideEffectsIR}
+    content.vb: Public Shared ReadOnly Property SideEffectsParser As Parser(Of Token, SideEffectsIR)
+  overload: DSLApp1.Dsl.DslParsers.SideEffectsParser*
+- uid: DSLApp1.Dsl.DslParsers.ElementSupportIRParser
+  commentId: P:DSLApp1.Dsl.DslParsers.ElementSupportIRParser
+  id: ElementSupportIRParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: ElementSupportIRParser
+  nameWithType: DslParsers.ElementSupportIRParser
+  fullName: DSLApp1.Dsl.DslParsers.ElementSupportIRParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Support.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ElementSupportIRParser
+    path: src/Dsl/DSLParser.Support.cs
+    startLine: 30
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, SupportEffectIR> ElementSupportIRParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SupportEffectIR}
+    content.vb: Public Shared ReadOnly Property ElementSupportIRParser As Parser(Of Token, SupportEffectIR)
+  overload: DSLApp1.Dsl.DslParsers.ElementSupportIRParser*
+- uid: DSLApp1.Dsl.DslParsers.DamageSupportIRParser
+  commentId: P:DSLApp1.Dsl.DslParsers.DamageSupportIRParser
+  id: DamageSupportIRParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: DamageSupportIRParser
+  nameWithType: DslParsers.DamageSupportIRParser
+  fullName: DSLApp1.Dsl.DslParsers.DamageSupportIRParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Support.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DamageSupportIRParser
+    path: src/Dsl/DSLParser.Support.cs
+    startLine: 33
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, SupportEffectIR> DamageSupportIRParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SupportEffectIR}
+    content.vb: Public Shared ReadOnly Property DamageSupportIRParser As Parser(Of Token, SupportEffectIR)
+  overload: DSLApp1.Dsl.DslParsers.DamageSupportIRParser*
+- uid: DSLApp1.Dsl.DslParsers.EffectSupportIRParser
+  commentId: P:DSLApp1.Dsl.DslParsers.EffectSupportIRParser
+  id: EffectSupportIRParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: EffectSupportIRParser
+  nameWithType: DslParsers.EffectSupportIRParser
+  fullName: DSLApp1.Dsl.DslParsers.EffectSupportIRParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Support.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: EffectSupportIRParser
+    path: src/Dsl/DSLParser.Support.cs
+    startLine: 38
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, SupportEffectIR> EffectSupportIRParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SupportEffectIR}
+    content.vb: Public Shared ReadOnly Property EffectSupportIRParser As Parser(Of Token, SupportEffectIR)
+  overload: DSLApp1.Dsl.DslParsers.EffectSupportIRParser*
+- uid: DSLApp1.Dsl.DslParsers.BasicSupportEffectParser
+  commentId: P:DSLApp1.Dsl.DslParsers.BasicSupportEffectParser
+  id: BasicSupportEffectParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: BasicSupportEffectParser
+  nameWithType: DslParsers.BasicSupportEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.BasicSupportEffectParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Support.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: BasicSupportEffectParser
+    path: src/Dsl/DSLParser.Support.cs
+    startLine: 41
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, SupportEffectIR> BasicSupportEffectParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SupportEffectIR}
+    content.vb: Public Shared ReadOnly Property BasicSupportEffectParser As Parser(Of Token, SupportEffectIR)
+  overload: DSLApp1.Dsl.DslParsers.BasicSupportEffectParser*
+- uid: DSLApp1.Dsl.DslParsers.SupportEffectListParser
+  commentId: P:DSLApp1.Dsl.DslParsers.SupportEffectListParser
+  id: SupportEffectListParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: SupportEffectListParser
+  nameWithType: DslParsers.SupportEffectListParser
+  fullName: DSLApp1.Dsl.DslParsers.SupportEffectListParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Support.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: SupportEffectListParser
+    path: src/Dsl/DSLParser.Support.cs
+    startLine: 47
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, List<SupportEffectIR>> SupportEffectListParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,System.Collections.Generic.List{DSLApp1.Dsl.SupportEffectIR}}
+    content.vb: Public Shared ReadOnly Property SupportEffectListParser As Parser(Of Token, List(Of SupportEffectIR))
+  overload: DSLApp1.Dsl.DslParsers.SupportEffectListParser*
+- uid: DSLApp1.Dsl.DslParsers.SupportEffectListOrSingleParser
+  commentId: P:DSLApp1.Dsl.DslParsers.SupportEffectListOrSingleParser
+  id: SupportEffectListOrSingleParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: SupportEffectListOrSingleParser
+  nameWithType: DslParsers.SupportEffectListOrSingleParser
+  fullName: DSLApp1.Dsl.DslParsers.SupportEffectListOrSingleParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Support.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: SupportEffectListOrSingleParser
+    path: src/Dsl/DSLParser.Support.cs
+    startLine: 53
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, List<SupportEffectIR>> SupportEffectListOrSingleParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,System.Collections.Generic.List{DSLApp1.Dsl.SupportEffectIR}}
+    content.vb: Public Shared ReadOnly Property SupportEffectListOrSingleParser As Parser(Of Token, List(Of SupportEffectIR))
+  overload: DSLApp1.Dsl.DslParsers.SupportEffectListOrSingleParser*
+- uid: DSLApp1.Dsl.DslParsers.SupportMechanicsElementListParser
+  commentId: P:DSLApp1.Dsl.DslParsers.SupportMechanicsElementListParser
+  id: SupportMechanicsElementListParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: SupportMechanicsElementListParser
+  nameWithType: DslParsers.SupportMechanicsElementListParser
+  fullName: DSLApp1.Dsl.DslParsers.SupportMechanicsElementListParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Support.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: SupportMechanicsElementListParser
+    path: src/Dsl/DSLParser.Support.cs
+    startLine: 57
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, List<SupportEffectIR>> SupportMechanicsElementListParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,System.Collections.Generic.List{DSLApp1.Dsl.SupportEffectIR}}
+    content.vb: Public Shared ReadOnly Property SupportMechanicsElementListParser As Parser(Of Token, List(Of SupportEffectIR))
+  overload: DSLApp1.Dsl.DslParsers.SupportMechanicsElementListParser*
+- uid: DSLApp1.Dsl.DslParsers.SupportEffectParser
+  commentId: P:DSLApp1.Dsl.DslParsers.SupportEffectParser
+  id: SupportEffectParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: SupportEffectParser
+  nameWithType: DslParsers.SupportEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.SupportEffectParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Support.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: SupportEffectParser
+    path: src/Dsl/DSLParser.Support.cs
+    startLine: 63
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, List<SupportEffectIR>> SupportEffectParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,System.Collections.Generic.List{DSLApp1.Dsl.SupportEffectIR}}
+    content.vb: Public Shared ReadOnly Property SupportEffectParser As Parser(Of Token, List(Of SupportEffectIR))
+  overload: DSLApp1.Dsl.DslParsers.SupportEffectParser*
+- uid: DSLApp1.Dsl.DslParsers.SideEffectSupportIRParser
+  commentId: P:DSLApp1.Dsl.DslParsers.SideEffectSupportIRParser
+  id: SideEffectSupportIRParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: SideEffectSupportIRParser
+  nameWithType: DslParsers.SideEffectSupportIRParser
+  fullName: DSLApp1.Dsl.DslParsers.SideEffectSupportIRParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Support.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: SideEffectSupportIRParser
+    path: src/Dsl/DSLParser.Support.cs
+    startLine: 70
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, SupportEffectIR> SideEffectSupportIRParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SupportEffectIR}
+    content.vb: Public Shared ReadOnly Property SideEffectSupportIRParser As Parser(Of Token, SupportEffectIR)
+  overload: DSLApp1.Dsl.DslParsers.SideEffectSupportIRParser*
+- uid: DSLApp1.Dsl.DslParsers.SupportParser
+  commentId: P:DSLApp1.Dsl.DslParsers.SupportParser
+  id: SupportParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: SupportParser
+  nameWithType: DslParsers.SupportParser
+  fullName: DSLApp1.Dsl.DslParsers.SupportParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Support.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: SupportParser
+    path: src/Dsl/DSLParser.Support.cs
+    startLine: 74
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, SupportIR> SupportParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SupportIR}
+    content.vb: Public Shared ReadOnly Property SupportParser As Parser(Of Token, SupportIR)
+  overload: DSLApp1.Dsl.DslParsers.SupportParser*
+- uid: DSLApp1.Dsl.DslParsers.TargetingParser
+  commentId: P:DSLApp1.Dsl.DslParsers.TargetingParser
+  id: TargetingParser
+  parent: DSLApp1.Dsl.DslParsers
+  langs:
+  - csharp
+  - vb
+  name: TargetingParser
+  nameWithType: DslParsers.TargetingParser
+  fullName: DSLApp1.Dsl.DslParsers.TargetingParser
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Targeting.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: TargetingParser
+    path: src/Dsl/DSLParser.Targeting.cs
+    startLine: 35
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public static Parser<Token, Targeting> TargetingParser { get; }
+    parameters: []
+    return:
+      type: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Targeting}
+    content.vb: Public Shared ReadOnly Property TargetingParser As Parser(Of Token, Targeting)
+  overload: DSLApp1.Dsl.DslParsers.TargetingParser*
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DSLApp1.Dsl.DslParsers.ChargesClauseParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.ChargesClauseParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_ChargesClauseParser
+  name: ChargesClauseParser
+  nameWithType: DslParsers.ChargesClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.ChargesClauseParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Duration}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Duration}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, Duration>
+  nameWithType: Parser<Token, Duration>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.Duration>
+  nameWithType.vb: Parser(Of Token, Duration)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.Duration)
+  name.vb: Parser(Of Token, Duration)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Duration
+    name: Duration
+    href: DSLApp1.Dsl.Duration.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Duration
+    name: Duration
+    href: DSLApp1.Dsl.Duration.html
+  - name: )
+- uid: Pidgin.Parser`2
+  commentId: T:Pidgin.Parser`2
+  isExternal: true
+  name: Parser<TToken, T>
+  nameWithType: Parser<TToken, T>
+  fullName: Pidgin.Parser<TToken, T>
+  nameWithType.vb: Parser(Of TToken, T)
+  fullName.vb: Pidgin.Parser(Of TToken, T)
+  name.vb: Parser(Of TToken, T)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - name: TToken
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TToken
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: Pidgin
+  commentId: N:Pidgin
+  isExternal: true
+  name: Pidgin
+  nameWithType: Pidgin
+  fullName: Pidgin
+- uid: DSLApp1.Dsl.DslParsers.ImmediateClauseParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.ImmediateClauseParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_ImmediateClauseParser
+  name: ImmediateClauseParser
+  nameWithType: DslParsers.ImmediateClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.ImmediateClauseParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.EffectIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.EffectIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, EffectIR>
+  nameWithType: Parser<Token, EffectIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.EffectIR>
+  nameWithType.vb: Parser(Of Token, EffectIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.EffectIR)
+  name.vb: Parser(Of Token, EffectIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.EffectIR
+    name: EffectIR
+    href: DSLApp1.Dsl.EffectIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.EffectIR
+    name: EffectIR
+    href: DSLApp1.Dsl.EffectIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.ModifierClauseParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.ModifierClauseParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_ModifierClauseParser
+  name: ModifierClauseParser
+  nameWithType: DslParsers.ModifierClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.ModifierClauseParser
+- uid: DSLApp1.Dsl.DslParsers.SideEffectsClauseParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.SideEffectsClauseParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_SideEffectsClauseParser
+  name: SideEffectsClauseParser
+  nameWithType: DslParsers.SideEffectsClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.SideEffectsClauseParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SideEffectsIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SideEffectsIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, SideEffectsIR>
+  nameWithType: Parser<Token, SideEffectsIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.SideEffectsIR>
+  nameWithType.vb: Parser(Of Token, SideEffectsIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.SideEffectsIR)
+  name.vb: Parser(Of Token, SideEffectsIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.SideEffectsIR
+    name: SideEffectsIR
+    href: DSLApp1.Dsl.SideEffectsIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.SideEffectsIR
+    name: SideEffectsIR
+    href: DSLApp1.Dsl.SideEffectsIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.MissClauseParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.MissClauseParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_MissClauseParser
+  name: MissClauseParser
+  nameWithType: DslParsers.MissClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.MissClauseParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Condition}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Condition}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, Condition>
+  nameWithType: Parser<Token, Condition>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.Condition>
+  nameWithType.vb: Parser(Of Token, Condition)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.Condition)
+  name.vb: Parser(Of Token, Condition)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Condition
+    name: Condition
+    href: DSLApp1.Dsl.Condition.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Condition
+    name: Condition
+    href: DSLApp1.Dsl.Condition.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.AbilityParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.AbilityParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_AbilityParser
+  name: AbilityParser
+  nameWithType: DslParsers.AbilityParser
+  fullName: DSLApp1.Dsl.DslParsers.AbilityParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.AbilityIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.AbilityIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, AbilityIR>
+  nameWithType: Parser<Token, AbilityIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.AbilityIR>
+  nameWithType.vb: Parser(Of Token, AbilityIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.AbilityIR)
+  name.vb: Parser(Of Token, AbilityIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.AbilityIR
+    name: AbilityIR
+    href: DSLApp1.Dsl.AbilityIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.AbilityIR
+    name: AbilityIR
+    href: DSLApp1.Dsl.AbilityIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.StateMechanicParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.StateMechanicParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_StateMechanicParser
+  name: StateMechanicParser
+  nameWithType: DslParsers.StateMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.StateMechanicParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.StateMechanicIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.StateMechanicIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, StateMechanicIR>
+  nameWithType: Parser<Token, StateMechanicIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.StateMechanicIR>
+  nameWithType.vb: Parser(Of Token, StateMechanicIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.StateMechanicIR)
+  name.vb: Parser(Of Token, StateMechanicIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.StateMechanicIR
+    name: StateMechanicIR
+    href: DSLApp1.Dsl.StateMechanicIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.StateMechanicIR
+    name: StateMechanicIR
+    href: DSLApp1.Dsl.StateMechanicIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.TargetTagParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.TargetTagParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_TargetTagParser
+  name: TargetTagParser
+  nameWithType: DslParsers.TargetTagParser
+  fullName: DSLApp1.Dsl.DslParsers.TargetTagParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.TargetTag}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.TargetTag}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, TargetTag>
+  nameWithType: Parser<Token, TargetTag>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.TargetTag>
+  nameWithType.vb: Parser(Of Token, TargetTag)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.TargetTag)
+  name.vb: Parser(Of Token, TargetTag)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.TargetTag
+    name: TargetTag
+    href: DSLApp1.Dsl.TargetTag.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.TargetTag
+    name: TargetTag
+    href: DSLApp1.Dsl.TargetTag.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.MultiplierMechanicParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.MultiplierMechanicParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_MultiplierMechanicParser
+  name: MultiplierMechanicParser
+  nameWithType: DslParsers.MultiplierMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.MultiplierMechanicParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.MultiplierMechanicIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.MultiplierMechanicIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, MultiplierMechanicIR>
+  nameWithType: Parser<Token, MultiplierMechanicIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.MultiplierMechanicIR>
+  nameWithType.vb: Parser(Of Token, MultiplierMechanicIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.MultiplierMechanicIR)
+  name.vb: Parser(Of Token, MultiplierMechanicIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.MultiplierMechanicIR
+    name: MultiplierMechanicIR
+    href: DSLApp1.Dsl.MultiplierMechanicIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.MultiplierMechanicIR
+    name: MultiplierMechanicIR
+    href: DSLApp1.Dsl.MultiplierMechanicIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.StatBuffMechanicParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.StatBuffMechanicParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_StatBuffMechanicParser
+  name: StatBuffMechanicParser
+  nameWithType: DslParsers.StatBuffMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.StatBuffMechanicParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.StatBuffMechanicIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.StatBuffMechanicIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, StatBuffMechanicIR>
+  nameWithType: Parser<Token, StatBuffMechanicIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.StatBuffMechanicIR>
+  nameWithType.vb: Parser(Of Token, StatBuffMechanicIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.StatBuffMechanicIR)
+  name.vb: Parser(Of Token, StatBuffMechanicIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.StatBuffMechanicIR
+    name: StatBuffMechanicIR
+    href: DSLApp1.Dsl.StatBuffMechanicIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.StatBuffMechanicIR
+    name: StatBuffMechanicIR
+    href: DSLApp1.Dsl.StatBuffMechanicIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.ModifierMechanicParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.ModifierMechanicParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_ModifierMechanicParser
+  name: ModifierMechanicParser
+  nameWithType: DslParsers.ModifierMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.ModifierMechanicParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.ModifierMechanicIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.ModifierMechanicIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, ModifierMechanicIR>
+  nameWithType: Parser<Token, ModifierMechanicIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.ModifierMechanicIR>
+  nameWithType.vb: Parser(Of Token, ModifierMechanicIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.ModifierMechanicIR)
+  name.vb: Parser(Of Token, ModifierMechanicIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.ModifierMechanicIR
+    name: ModifierMechanicIR
+    href: DSLApp1.Dsl.ModifierMechanicIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.ModifierMechanicIR
+    name: ModifierMechanicIR
+    href: DSLApp1.Dsl.ModifierMechanicIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.AppliesEffectParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.AppliesEffectParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_AppliesEffectParser
+  name: AppliesEffectParser
+  nameWithType: DslParsers.AppliesEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.AppliesEffectParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.ModifierEffectIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.ModifierEffectIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, ModifierEffectIR>
+  nameWithType: Parser<Token, ModifierEffectIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.ModifierEffectIR>
+  nameWithType.vb: Parser(Of Token, ModifierEffectIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.ModifierEffectIR)
+  name.vb: Parser(Of Token, ModifierEffectIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.ModifierEffectIR
+    name: ModifierEffectIR
+    href: DSLApp1.Dsl.ModifierEffectIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.ModifierEffectIR
+    name: ModifierEffectIR
+    href: DSLApp1.Dsl.ModifierEffectIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.SubjectParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.SubjectParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_SubjectParser
+  name: SubjectParser
+  nameWithType: DslParsers.SubjectParser
+  fullName: DSLApp1.Dsl.DslParsers.SubjectParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Subject}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Subject}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, Subject>
+  nameWithType: Parser<Token, Subject>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.Subject>
+  nameWithType.vb: Parser(Of Token, Subject)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.Subject)
+  name.vb: Parser(Of Token, Subject)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Subject
+    name: Subject
+    href: DSLApp1.Dsl.Subject.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Subject
+    name: Subject
+    href: DSLApp1.Dsl.Subject.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.CharacterFieldParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.CharacterFieldParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_CharacterFieldParser
+  name: CharacterFieldParser
+  nameWithType: DslParsers.CharacterFieldParser
+  fullName: DSLApp1.Dsl.DslParsers.CharacterFieldParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Field}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Field}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, Field>
+  nameWithType: Parser<Token, Field>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.Field>
+  nameWithType.vb: Parser(Of Token, Field)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.Field)
+  name.vb: Parser(Of Token, Field)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Field
+    name: Field
+    href: DSLApp1.Dsl.Field.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Field
+    name: Field
+    href: DSLApp1.Dsl.Field.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.OutcomeFieldParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.OutcomeFieldParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_OutcomeFieldParser
+  name: OutcomeFieldParser
+  nameWithType: DslParsers.OutcomeFieldParser
+  fullName: DSLApp1.Dsl.DslParsers.OutcomeFieldParser
+- uid: DSLApp1.Dsl.DslParsers.ComparisonOpParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.ComparisonOpParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_ComparisonOpParser
+  name: ComparisonOpParser
+  nameWithType: DslParsers.ComparisonOpParser
+  fullName: DSLApp1.Dsl.DslParsers.ComparisonOpParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Op}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Op}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, Op>
+  nameWithType: Parser<Token, Op>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.Op>
+  nameWithType.vb: Parser(Of Token, Op)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.Op)
+  name.vb: Parser(Of Token, Op)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Op
+    name: Op
+    href: DSLApp1.Dsl.Op.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Op
+    name: Op
+    href: DSLApp1.Dsl.Op.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.ConditionParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.ConditionParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_ConditionParser
+  name: ConditionParser
+  nameWithType: DslParsers.ConditionParser
+  fullName: DSLApp1.Dsl.DslParsers.ConditionParser
+- uid: DSLApp1.Dsl.DslParsers.DamageMechanicTypeParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.DamageMechanicTypeParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_DamageMechanicTypeParser
+  name: DamageMechanicTypeParser
+  nameWithType: DslParsers.DamageMechanicTypeParser
+  fullName: DSLApp1.Dsl.DslParsers.DamageMechanicTypeParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.DamageMechanicType}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.DamageMechanicType}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, DamageMechanicType>
+  nameWithType: Parser<Token, DamageMechanicType>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.DamageMechanicType>
+  nameWithType.vb: Parser(Of Token, DamageMechanicType)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.DamageMechanicType)
+  name.vb: Parser(Of Token, DamageMechanicType)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.DamageMechanicType
+    name: DamageMechanicType
+    href: DSLApp1.Dsl.DamageMechanicType.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.DamageMechanicType
+    name: DamageMechanicType
+    href: DSLApp1.Dsl.DamageMechanicType.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.DamageMechanicAtom*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.DamageMechanicAtom
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_DamageMechanicAtom
+  name: DamageMechanicAtom
+  nameWithType: DslParsers.DamageMechanicAtom
+  fullName: DSLApp1.Dsl.DslParsers.DamageMechanicAtom
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.DamageMechanic}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.DamageMechanic}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, DamageMechanic>
+  nameWithType: Parser<Token, DamageMechanic>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.DamageMechanic>
+  nameWithType.vb: Parser(Of Token, DamageMechanic)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.DamageMechanic)
+  name.vb: Parser(Of Token, DamageMechanic)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.DamageMechanic
+    name: DamageMechanic
+    href: DSLApp1.Dsl.DamageMechanic.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.DamageMechanic
+    name: DamageMechanic
+    href: DSLApp1.Dsl.DamageMechanic.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.DamageMechanicGroupParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.DamageMechanicGroupParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_DamageMechanicGroupParser
+  name: DamageMechanicGroupParser
+  nameWithType: DslParsers.DamageMechanicGroupParser
+  fullName: DSLApp1.Dsl.DslParsers.DamageMechanicGroupParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,System.Collections.Generic.List{DSLApp1.Dsl.DamageMechanic}}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,System.Collections.Generic.List{DSLApp1.Dsl.DamageMechanic}}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, List<DamageMechanic>>
+  nameWithType: Parser<Token, List<DamageMechanic>>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, System.Collections.Generic.List<DSLApp1.Dsl.DamageMechanic>>
+  nameWithType.vb: Parser(Of Token, List(Of DamageMechanic))
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, System.Collections.Generic.List(Of DSLApp1.Dsl.DamageMechanic))
+  name.vb: Parser(Of Token, List(Of DamageMechanic))
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: DSLApp1.Dsl.DamageMechanic
+    name: DamageMechanic
+    href: DSLApp1.Dsl.DamageMechanic.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.DamageMechanic
+    name: DamageMechanic
+    href: DSLApp1.Dsl.DamageMechanic.html
+  - name: )
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.DamageEffectParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.DamageEffectParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_DamageEffectParser
+  name: DamageEffectParser
+  nameWithType: DslParsers.DamageEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.DamageEffectParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.DamageEffectIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.DamageEffectIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, DamageEffectIR>
+  nameWithType: Parser<Token, DamageEffectIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.DamageEffectIR>
+  nameWithType.vb: Parser(Of Token, DamageEffectIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.DamageEffectIR)
+  name.vb: Parser(Of Token, DamageEffectIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.DamageEffectIR
+    name: DamageEffectIR
+    href: DSLApp1.Dsl.DamageEffectIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.DamageEffectIR
+    name: DamageEffectIR
+    href: DSLApp1.Dsl.DamageEffectIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.EventClauseParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.EventClauseParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_EventClauseParser
+  name: EventClauseParser
+  nameWithType: DslParsers.EventClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.EventClauseParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.TimingEvent}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.TimingEvent}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, TimingEvent>
+  nameWithType: Parser<Token, TimingEvent>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.TimingEvent>
+  nameWithType.vb: Parser(Of Token, TimingEvent)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.TimingEvent)
+  name.vb: Parser(Of Token, TimingEvent)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.TimingEvent
+    name: TimingEvent
+    href: DSLApp1.Dsl.TimingEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.TimingEvent
+    name: TimingEvent
+    href: DSLApp1.Dsl.TimingEvent.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.DurationClauseParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.DurationClauseParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_DurationClauseParser
+  name: DurationClauseParser
+  nameWithType: DslParsers.DurationClauseParser
+  fullName: DSLApp1.Dsl.DslParsers.DurationClauseParser
+- uid: DSLApp1.Dsl.DslParsers.TargetabilityParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.TargetabilityParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_TargetabilityParser
+  name: TargetabilityParser
+  nameWithType: DslParsers.TargetabilityParser
+  fullName: DSLApp1.Dsl.DslParsers.TargetabilityParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Model.Targetability}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Model.Targetability}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, Targetability>
+  nameWithType: Parser<Token, Targetability>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Model.Targetability>
+  nameWithType.vb: Parser(Of Token, Targetability)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Model.Targetability)
+  name.vb: Parser(Of Token, Targetability)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Model.Targetability
+    name: Targetability
+    href: DSLApp1.Model.Targetability.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Model.Targetability
+    name: Targetability
+    href: DSLApp1.Model.Targetability.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.ElementParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.ElementParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_ElementParser
+  name: ElementParser
+  nameWithType: DslParsers.ElementParser
+  fullName: DSLApp1.Dsl.DslParsers.ElementParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Element}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Element}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, Element>
+  nameWithType: Parser<Token, Element>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.Element>
+  nameWithType.vb: Parser(Of Token, Element)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.Element)
+  name.vb: Parser(Of Token, Element)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Element
+    name: Element
+    href: DSLApp1.Dsl.Element.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Element
+    name: Element
+    href: DSLApp1.Dsl.Element.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.DamageFormulaParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.DamageFormulaParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_DamageFormulaParser
+  name: DamageFormulaParser
+  nameWithType: DslParsers.DamageFormulaParser
+  fullName: DSLApp1.Dsl.DslParsers.DamageFormulaParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.DamageFormula}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.DamageFormula}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, DamageFormula>
+  nameWithType: Parser<Token, DamageFormula>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.DamageFormula>
+  nameWithType.vb: Parser(Of Token, DamageFormula)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.DamageFormula)
+  name.vb: Parser(Of Token, DamageFormula)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.DamageFormula
+    name: DamageFormula
+    href: DSLApp1.Dsl.DamageFormula.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.DamageFormula
+    name: DamageFormula
+    href: DSLApp1.Dsl.DamageFormula.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.InvokeMechanicTypeParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.InvokeMechanicTypeParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_InvokeMechanicTypeParser
+  name: InvokeMechanicTypeParser
+  nameWithType: DslParsers.InvokeMechanicTypeParser
+  fullName: DSLApp1.Dsl.DslParsers.InvokeMechanicTypeParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.InvokeMechanicType}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.InvokeMechanicType}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, InvokeMechanicType>
+  nameWithType: Parser<Token, InvokeMechanicType>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.InvokeMechanicType>
+  nameWithType.vb: Parser(Of Token, InvokeMechanicType)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.InvokeMechanicType)
+  name.vb: Parser(Of Token, InvokeMechanicType)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.InvokeMechanicType
+    name: InvokeMechanicType
+    href: DSLApp1.Dsl.InvokeMechanicType.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.InvokeMechanicType
+    name: InvokeMechanicType
+    href: DSLApp1.Dsl.InvokeMechanicType.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.SideEffectMechanicTypeParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.SideEffectMechanicTypeParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_SideEffectMechanicTypeParser
+  name: SideEffectMechanicTypeParser
+  nameWithType: DslParsers.SideEffectMechanicTypeParser
+  fullName: DSLApp1.Dsl.DslParsers.SideEffectMechanicTypeParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SideEffectMechanicType}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SideEffectMechanicType}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, SideEffectMechanicType>
+  nameWithType: Parser<Token, SideEffectMechanicType>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.SideEffectMechanicType>
+  nameWithType.vb: Parser(Of Token, SideEffectMechanicType)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.SideEffectMechanicType)
+  name.vb: Parser(Of Token, SideEffectMechanicType)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.SideEffectMechanicType
+    name: SideEffectMechanicType
+    href: DSLApp1.Dsl.SideEffectMechanicType.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.SideEffectMechanicType
+    name: SideEffectMechanicType
+    href: DSLApp1.Dsl.SideEffectMechanicType.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.RoleParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.RoleParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_RoleParser
+  name: RoleParser
+  nameWithType: DslParsers.RoleParser
+  fullName: DSLApp1.Dsl.DslParsers.RoleParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Compatibility}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Compatibility}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, Compatibility>
+  nameWithType: Parser<Token, Compatibility>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.Compatibility>
+  nameWithType.vb: Parser(Of Token, Compatibility)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.Compatibility)
+  name.vb: Parser(Of Token, Compatibility)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Compatibility
+    name: Compatibility
+    href: DSLApp1.Dsl.Compatibility.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Compatibility
+    name: Compatibility
+    href: DSLApp1.Dsl.Compatibility.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.HeaderParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.HeaderParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_HeaderParser
+  name: HeaderParser
+  nameWithType: DslParsers.HeaderParser
+  fullName: DSLApp1.Dsl.DslParsers.HeaderParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Header}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Header}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, Header>
+  nameWithType: Parser<Token, Header>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.Header>
+  nameWithType.vb: Parser(Of Token, Header)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.Header)
+  name.vb: Parser(Of Token, Header)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Header
+    name: Header
+    href: DSLApp1.Dsl.Header.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Header
+    name: Header
+    href: DSLApp1.Dsl.Header.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.HealMechanicParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.HealMechanicParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_HealMechanicParser
+  name: HealMechanicParser
+  nameWithType: DslParsers.HealMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.HealMechanicParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.HealMechanic}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.HealMechanic}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, HealMechanic>
+  nameWithType: Parser<Token, HealMechanic>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.HealMechanic>
+  nameWithType.vb: Parser(Of Token, HealMechanic)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.HealMechanic)
+  name.vb: Parser(Of Token, HealMechanic)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.HealMechanic
+    name: HealMechanic
+    href: DSLApp1.Dsl.HealMechanic.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.HealMechanic
+    name: HealMechanic
+    href: DSLApp1.Dsl.HealMechanic.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.HealsEffectParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.HealsEffectParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_HealsEffectParser
+  name: HealsEffectParser
+  nameWithType: DslParsers.HealsEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.HealsEffectParser
+- uid: DSLApp1.Dsl.DslParsers.HexParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.HexParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_HexParser
+  name: HexParser
+  nameWithType: DslParsers.HexParser
+  fullName: DSLApp1.Dsl.DslParsers.HexParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,System.Object}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,System.Object}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, object>
+  nameWithType: Parser<Token, object>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, object>
+  nameWithType.vb: Parser(Of Token, Object)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, Object)
+  name.vb: Parser(Of Token, Object)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.InflictsEffectParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.InflictsEffectParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_InflictsEffectParser
+  name: InflictsEffectParser
+  nameWithType: DslParsers.InflictsEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.InflictsEffectParser
+- uid: DSLApp1.Dsl.DslParsers.InvokeMechanicParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.InvokeMechanicParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_InvokeMechanicParser
+  name: InvokeMechanicParser
+  nameWithType: DslParsers.InvokeMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.InvokeMechanicParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.InvokeMechanic}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.InvokeMechanic}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, InvokeMechanic>
+  nameWithType: Parser<Token, InvokeMechanic>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.InvokeMechanic>
+  nameWithType.vb: Parser(Of Token, InvokeMechanic)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.InvokeMechanic)
+  name.vb: Parser(Of Token, InvokeMechanic)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.InvokeMechanic
+    name: InvokeMechanic
+    href: DSLApp1.Dsl.InvokeMechanic.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.InvokeMechanic
+    name: InvokeMechanic
+    href: DSLApp1.Dsl.InvokeMechanic.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.InvokeEffectParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.InvokeEffectParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_InvokeEffectParser
+  name: InvokeEffectParser
+  nameWithType: DslParsers.InvokeEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.InvokeEffectParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.InvokeEffectIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.InvokeEffectIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, InvokeEffectIR>
+  nameWithType: Parser<Token, InvokeEffectIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.InvokeEffectIR>
+  nameWithType.vb: Parser(Of Token, InvokeEffectIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.InvokeEffectIR)
+  name.vb: Parser(Of Token, InvokeEffectIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.InvokeEffectIR
+    name: InvokeEffectIR
+    href: DSLApp1.Dsl.InvokeEffectIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.InvokeEffectIR
+    name: InvokeEffectIR
+    href: DSLApp1.Dsl.InvokeEffectIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.DurationParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.DurationParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_DurationParser
+  name: DurationParser
+  nameWithType: DslParsers.DurationParser
+  fullName: DSLApp1.Dsl.DslParsers.DurationParser
+- uid: DSLApp1.Dsl.DslParsers.SideEffectMechanicParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.SideEffectMechanicParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_SideEffectMechanicParser
+  name: SideEffectMechanicParser
+  nameWithType: DslParsers.SideEffectMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.SideEffectMechanicParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SideEffectMechanicIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SideEffectMechanicIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, SideEffectMechanicIR>
+  nameWithType: Parser<Token, SideEffectMechanicIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.SideEffectMechanicIR>
+  nameWithType.vb: Parser(Of Token, SideEffectMechanicIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.SideEffectMechanicIR)
+  name.vb: Parser(Of Token, SideEffectMechanicIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.SideEffectMechanicIR
+    name: SideEffectMechanicIR
+    href: DSLApp1.Dsl.SideEffectMechanicIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.SideEffectMechanicIR
+    name: SideEffectMechanicIR
+    href: DSLApp1.Dsl.SideEffectMechanicIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.HealingSideEffectParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.HealingSideEffectParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_HealingSideEffectParser
+  name: HealingSideEffectParser
+  nameWithType: DslParsers.HealingSideEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.HealingSideEffectParser
+- uid: DSLApp1.Dsl.DslParsers.AnySideEffectMechanicParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.AnySideEffectMechanicParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_AnySideEffectMechanicParser
+  name: AnySideEffectMechanicParser
+  nameWithType: DslParsers.AnySideEffectMechanicParser
+  fullName: DSLApp1.Dsl.DslParsers.AnySideEffectMechanicParser
+- uid: DSLApp1.Dsl.DslParsers.SideEffectsParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.SideEffectsParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_SideEffectsParser
+  name: SideEffectsParser
+  nameWithType: DslParsers.SideEffectsParser
+  fullName: DSLApp1.Dsl.DslParsers.SideEffectsParser
+- uid: DSLApp1.Dsl.DslParsers.ElementSupportIRParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.ElementSupportIRParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_ElementSupportIRParser
+  name: ElementSupportIRParser
+  nameWithType: DslParsers.ElementSupportIRParser
+  fullName: DSLApp1.Dsl.DslParsers.ElementSupportIRParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SupportEffectIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SupportEffectIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, SupportEffectIR>
+  nameWithType: Parser<Token, SupportEffectIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.SupportEffectIR>
+  nameWithType.vb: Parser(Of Token, SupportEffectIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.SupportEffectIR)
+  name.vb: Parser(Of Token, SupportEffectIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.SupportEffectIR
+    name: SupportEffectIR
+    href: DSLApp1.Dsl.SupportEffectIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.SupportEffectIR
+    name: SupportEffectIR
+    href: DSLApp1.Dsl.SupportEffectIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.DamageSupportIRParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.DamageSupportIRParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_DamageSupportIRParser
+  name: DamageSupportIRParser
+  nameWithType: DslParsers.DamageSupportIRParser
+  fullName: DSLApp1.Dsl.DslParsers.DamageSupportIRParser
+- uid: DSLApp1.Dsl.DslParsers.EffectSupportIRParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.EffectSupportIRParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_EffectSupportIRParser
+  name: EffectSupportIRParser
+  nameWithType: DslParsers.EffectSupportIRParser
+  fullName: DSLApp1.Dsl.DslParsers.EffectSupportIRParser
+- uid: DSLApp1.Dsl.DslParsers.BasicSupportEffectParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.BasicSupportEffectParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_BasicSupportEffectParser
+  name: BasicSupportEffectParser
+  nameWithType: DslParsers.BasicSupportEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.BasicSupportEffectParser
+- uid: DSLApp1.Dsl.DslParsers.SupportEffectListParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.SupportEffectListParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_SupportEffectListParser
+  name: SupportEffectListParser
+  nameWithType: DslParsers.SupportEffectListParser
+  fullName: DSLApp1.Dsl.DslParsers.SupportEffectListParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,System.Collections.Generic.List{DSLApp1.Dsl.SupportEffectIR}}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,System.Collections.Generic.List{DSLApp1.Dsl.SupportEffectIR}}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, List<SupportEffectIR>>
+  nameWithType: Parser<Token, List<SupportEffectIR>>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, System.Collections.Generic.List<DSLApp1.Dsl.SupportEffectIR>>
+  nameWithType.vb: Parser(Of Token, List(Of SupportEffectIR))
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, System.Collections.Generic.List(Of DSLApp1.Dsl.SupportEffectIR))
+  name.vb: Parser(Of Token, List(Of SupportEffectIR))
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: DSLApp1.Dsl.SupportEffectIR
+    name: SupportEffectIR
+    href: DSLApp1.Dsl.SupportEffectIR.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.SupportEffectIR
+    name: SupportEffectIR
+    href: DSLApp1.Dsl.SupportEffectIR.html
+  - name: )
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.SupportEffectListOrSingleParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.SupportEffectListOrSingleParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_SupportEffectListOrSingleParser
+  name: SupportEffectListOrSingleParser
+  nameWithType: DslParsers.SupportEffectListOrSingleParser
+  fullName: DSLApp1.Dsl.DslParsers.SupportEffectListOrSingleParser
+- uid: DSLApp1.Dsl.DslParsers.SupportMechanicsElementListParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.SupportMechanicsElementListParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_SupportMechanicsElementListParser
+  name: SupportMechanicsElementListParser
+  nameWithType: DslParsers.SupportMechanicsElementListParser
+  fullName: DSLApp1.Dsl.DslParsers.SupportMechanicsElementListParser
+- uid: DSLApp1.Dsl.DslParsers.SupportEffectParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.SupportEffectParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_SupportEffectParser
+  name: SupportEffectParser
+  nameWithType: DslParsers.SupportEffectParser
+  fullName: DSLApp1.Dsl.DslParsers.SupportEffectParser
+- uid: DSLApp1.Dsl.DslParsers.SideEffectSupportIRParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.SideEffectSupportIRParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_SideEffectSupportIRParser
+  name: SideEffectSupportIRParser
+  nameWithType: DslParsers.SideEffectSupportIRParser
+  fullName: DSLApp1.Dsl.DslParsers.SideEffectSupportIRParser
+- uid: DSLApp1.Dsl.DslParsers.SupportParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.SupportParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_SupportParser
+  name: SupportParser
+  nameWithType: DslParsers.SupportParser
+  fullName: DSLApp1.Dsl.DslParsers.SupportParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SupportIR}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.SupportIR}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, SupportIR>
+  nameWithType: Parser<Token, SupportIR>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.SupportIR>
+  nameWithType.vb: Parser(Of Token, SupportIR)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.SupportIR)
+  name.vb: Parser(Of Token, SupportIR)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.SupportIR
+    name: SupportIR
+    href: DSLApp1.Dsl.SupportIR.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.SupportIR
+    name: SupportIR
+    href: DSLApp1.Dsl.SupportIR.html
+  - name: )
+- uid: DSLApp1.Dsl.DslParsers.TargetingParser*
+  commentId: Overload:DSLApp1.Dsl.DslParsers.TargetingParser
+  href: DSLApp1.Dsl.DslParsers.html#DSLApp1_Dsl_DslParsers_TargetingParser
+  name: TargetingParser
+  nameWithType: DslParsers.TargetingParser
+  fullName: DSLApp1.Dsl.DslParsers.TargetingParser
+- uid: Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Targeting}
+  commentId: T:Pidgin.Parser{DSLApp1.Dsl.Token,DSLApp1.Dsl.Targeting}
+  parent: Pidgin
+  definition: Pidgin.Parser`2
+  href: DSLApp1.Dsl.Token.html
+  name: Parser<Token, Targeting>
+  nameWithType: Parser<Token, Targeting>
+  fullName: Pidgin.Parser<DSLApp1.Dsl.Token, DSLApp1.Dsl.Targeting>
+  nameWithType.vb: Parser(Of Token, Targeting)
+  fullName.vb: Pidgin.Parser(Of DSLApp1.Dsl.Token, DSLApp1.Dsl.Targeting)
+  name.vb: Parser(Of Token, Targeting)
+  spec.csharp:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: <
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Targeting
+    name: Targeting
+    href: DSLApp1.Dsl.Targeting.html
+  - name: '>'
+  spec.vb:
+  - uid: Pidgin.Parser`2
+    name: Parser
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    href: DSLApp1.Dsl.Token.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Dsl.Targeting
+    name: Targeting
+    href: DSLApp1.Dsl.Targeting.html
+  - name: )

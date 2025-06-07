@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.HexType
+  commentId: T:DSLApp1.Dsl.HexType
+  id: HexType
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.HexType.Ability
+  - DSLApp1.Dsl.HexType.Outfit
+  - DSLApp1.Dsl.HexType.Support
+  langs:
+  - csharp
+  - vb
+  name: HexType
+  nameWithType: HexType
+  fullName: DSLApp1.Dsl.HexType
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HexType
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 7
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum HexType
+    content.vb: Public Enum HexType
+- uid: DSLApp1.Dsl.HexType.Ability
+  commentId: F:DSLApp1.Dsl.HexType.Ability
+  id: Ability
+  parent: DSLApp1.Dsl.HexType
+  langs:
+  - csharp
+  - vb
+  name: Ability
+  nameWithType: HexType.Ability
+  fullName: DSLApp1.Dsl.HexType.Ability
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Ability
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 7
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Ability = 0
+    return:
+      type: DSLApp1.Dsl.HexType
+- uid: DSLApp1.Dsl.HexType.Support
+  commentId: F:DSLApp1.Dsl.HexType.Support
+  id: Support
+  parent: DSLApp1.Dsl.HexType
+  langs:
+  - csharp
+  - vb
+  name: Support
+  nameWithType: HexType.Support
+  fullName: DSLApp1.Dsl.HexType.Support
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Support
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 7
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Support = 1
+    return:
+      type: DSLApp1.Dsl.HexType
+- uid: DSLApp1.Dsl.HexType.Outfit
+  commentId: F:DSLApp1.Dsl.HexType.Outfit
+  id: Outfit
+  parent: DSLApp1.Dsl.HexType
+  langs:
+  - csharp
+  - vb
+  name: Outfit
+  nameWithType: HexType.Outfit
+  fullName: DSLApp1.Dsl.HexType.Outfit
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Outfit
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 7
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Outfit = 2
+    return:
+      type: DSLApp1.Dsl.HexType
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.HexType
+  commentId: T:DSLApp1.Dsl.HexType
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.HexType.html
+  name: HexType
+  nameWithType: HexType
+  fullName: DSLApp1.Dsl.HexType

@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.MultiplierMechanicType
+  commentId: T:DSLApp1.Dsl.MultiplierMechanicType
+  id: MultiplierMechanicType
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.MultiplierMechanicType.Frailty
+  - DSLApp1.Dsl.MultiplierMechanicType.Power
+  - DSLApp1.Dsl.MultiplierMechanicType.Protection
+  - DSLApp1.Dsl.MultiplierMechanicType.Vulnerability
+  langs:
+  - csharp
+  - vb
+  name: MultiplierMechanicType
+  nameWithType: MultiplierMechanicType
+  fullName: DSLApp1.Dsl.MultiplierMechanicType
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: MultiplierMechanicType
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 19
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum MultiplierMechanicType
+    content.vb: Public Enum MultiplierMechanicType
+- uid: DSLApp1.Dsl.MultiplierMechanicType.Vulnerability
+  commentId: F:DSLApp1.Dsl.MultiplierMechanicType.Vulnerability
+  id: Vulnerability
+  parent: DSLApp1.Dsl.MultiplierMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Vulnerability
+  nameWithType: MultiplierMechanicType.Vulnerability
+  fullName: DSLApp1.Dsl.MultiplierMechanicType.Vulnerability
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Vulnerability
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 21
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Vulnerability = 0
+    return:
+      type: DSLApp1.Dsl.MultiplierMechanicType
+- uid: DSLApp1.Dsl.MultiplierMechanicType.Protection
+  commentId: F:DSLApp1.Dsl.MultiplierMechanicType.Protection
+  id: Protection
+  parent: DSLApp1.Dsl.MultiplierMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Protection
+  nameWithType: MultiplierMechanicType.Protection
+  fullName: DSLApp1.Dsl.MultiplierMechanicType.Protection
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Protection
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 22
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Protection = 1
+    return:
+      type: DSLApp1.Dsl.MultiplierMechanicType
+- uid: DSLApp1.Dsl.MultiplierMechanicType.Power
+  commentId: F:DSLApp1.Dsl.MultiplierMechanicType.Power
+  id: Power
+  parent: DSLApp1.Dsl.MultiplierMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Power
+  nameWithType: MultiplierMechanicType.Power
+  fullName: DSLApp1.Dsl.MultiplierMechanicType.Power
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Power
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 23
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Power = 2
+    return:
+      type: DSLApp1.Dsl.MultiplierMechanicType
+- uid: DSLApp1.Dsl.MultiplierMechanicType.Frailty
+  commentId: F:DSLApp1.Dsl.MultiplierMechanicType.Frailty
+  id: Frailty
+  parent: DSLApp1.Dsl.MultiplierMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Frailty
+  nameWithType: MultiplierMechanicType.Frailty
+  fullName: DSLApp1.Dsl.MultiplierMechanicType.Frailty
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Applies.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Frailty
+    path: src/Dsl/DSLParser.Applies.cs
+    startLine: 24
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Frailty = 3
+    return:
+      type: DSLApp1.Dsl.MultiplierMechanicType
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.MultiplierMechanicType
+  commentId: T:DSLApp1.Dsl.MultiplierMechanicType
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.MultiplierMechanicType.html
+  name: MultiplierMechanicType
+  nameWithType: MultiplierMechanicType
+  fullName: DSLApp1.Dsl.MultiplierMechanicType

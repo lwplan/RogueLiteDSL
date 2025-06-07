@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.DurationType
+  commentId: T:DSLApp1.Dsl.DurationType
+  id: DurationType
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.DurationType.Rounds
+  - DSLApp1.Dsl.DurationType.Turns
+  langs:
+  - csharp
+  - vb
+  name: DurationType
+  nameWithType: DurationType
+  fullName: DSLApp1.Dsl.DurationType
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Duration.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DurationType
+    path: src/Dsl/DSLParser.Duration.cs
+    startLine: 19
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum DurationType
+    content.vb: Public Enum DurationType
+- uid: DSLApp1.Dsl.DurationType.Rounds
+  commentId: F:DSLApp1.Dsl.DurationType.Rounds
+  id: Rounds
+  parent: DSLApp1.Dsl.DurationType
+  langs:
+  - csharp
+  - vb
+  name: Rounds
+  nameWithType: DurationType.Rounds
+  fullName: DSLApp1.Dsl.DurationType.Rounds
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Duration.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Rounds
+    path: src/Dsl/DSLParser.Duration.cs
+    startLine: 19
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Rounds = 0
+    return:
+      type: DSLApp1.Dsl.DurationType
+- uid: DSLApp1.Dsl.DurationType.Turns
+  commentId: F:DSLApp1.Dsl.DurationType.Turns
+  id: Turns
+  parent: DSLApp1.Dsl.DurationType
+  langs:
+  - csharp
+  - vb
+  name: Turns
+  nameWithType: DurationType.Turns
+  fullName: DSLApp1.Dsl.DurationType.Turns
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Duration.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Turns
+    path: src/Dsl/DSLParser.Duration.cs
+    startLine: 19
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Turns = 1
+    return:
+      type: DSLApp1.Dsl.DurationType
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.DurationType
+  commentId: T:DSLApp1.Dsl.DurationType
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.DurationType.html
+  name: DurationType
+  nameWithType: DurationType
+  fullName: DSLApp1.Dsl.DurationType

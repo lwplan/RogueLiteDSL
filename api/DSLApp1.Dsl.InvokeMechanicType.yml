@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.InvokeMechanicType
+  commentId: T:DSLApp1.Dsl.InvokeMechanicType
+  id: InvokeMechanicType
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.InvokeMechanicType.Advance
+  - DSLApp1.Dsl.InvokeMechanicType.Delay
+  - DSLApp1.Dsl.InvokeMechanicType.Shuffle
+  - DSLApp1.Dsl.InvokeMechanicType.Swap
+  langs:
+  - csharp
+  - vb
+  name: InvokeMechanicType
+  nameWithType: InvokeMechanicType
+  fullName: DSLApp1.Dsl.InvokeMechanicType
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Invoke.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: InvokeMechanicType
+    path: src/Dsl/DSLParser.Invoke.cs
+    startLine: 16
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum InvokeMechanicType
+    content.vb: Public Enum InvokeMechanicType
+- uid: DSLApp1.Dsl.InvokeMechanicType.Advance
+  commentId: F:DSLApp1.Dsl.InvokeMechanicType.Advance
+  id: Advance
+  parent: DSLApp1.Dsl.InvokeMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Advance
+  nameWithType: InvokeMechanicType.Advance
+  fullName: DSLApp1.Dsl.InvokeMechanicType.Advance
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Invoke.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Advance
+    path: src/Dsl/DSLParser.Invoke.cs
+    startLine: 18
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Advance = 0
+    return:
+      type: DSLApp1.Dsl.InvokeMechanicType
+- uid: DSLApp1.Dsl.InvokeMechanicType.Swap
+  commentId: F:DSLApp1.Dsl.InvokeMechanicType.Swap
+  id: Swap
+  parent: DSLApp1.Dsl.InvokeMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Swap
+  nameWithType: InvokeMechanicType.Swap
+  fullName: DSLApp1.Dsl.InvokeMechanicType.Swap
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Invoke.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Swap
+    path: src/Dsl/DSLParser.Invoke.cs
+    startLine: 19
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Swap = 1
+    return:
+      type: DSLApp1.Dsl.InvokeMechanicType
+- uid: DSLApp1.Dsl.InvokeMechanicType.Delay
+  commentId: F:DSLApp1.Dsl.InvokeMechanicType.Delay
+  id: Delay
+  parent: DSLApp1.Dsl.InvokeMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Delay
+  nameWithType: InvokeMechanicType.Delay
+  fullName: DSLApp1.Dsl.InvokeMechanicType.Delay
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Invoke.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Delay
+    path: src/Dsl/DSLParser.Invoke.cs
+    startLine: 20
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Delay = 2
+    return:
+      type: DSLApp1.Dsl.InvokeMechanicType
+- uid: DSLApp1.Dsl.InvokeMechanicType.Shuffle
+  commentId: F:DSLApp1.Dsl.InvokeMechanicType.Shuffle
+  id: Shuffle
+  parent: DSLApp1.Dsl.InvokeMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Shuffle
+  nameWithType: InvokeMechanicType.Shuffle
+  fullName: DSLApp1.Dsl.InvokeMechanicType.Shuffle
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Invoke.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Shuffle
+    path: src/Dsl/DSLParser.Invoke.cs
+    startLine: 21
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Shuffle = 3
+    return:
+      type: DSLApp1.Dsl.InvokeMechanicType
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.InvokeMechanicType
+  commentId: T:DSLApp1.Dsl.InvokeMechanicType
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.InvokeMechanicType.html
+  name: InvokeMechanicType
+  nameWithType: InvokeMechanicType
+  fullName: DSLApp1.Dsl.InvokeMechanicType

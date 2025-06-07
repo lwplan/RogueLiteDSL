@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.SideEffectMechanicType
+  commentId: T:DSLApp1.Dsl.SideEffectMechanicType
+  id: SideEffectMechanicType
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.SideEffectMechanicType.Bounce
+  - DSLApp1.Dsl.SideEffectMechanicType.CoolOff
+  - DSLApp1.Dsl.SideEffectMechanicType.Exhaust
+  - DSLApp1.Dsl.SideEffectMechanicType.Splash
+  langs:
+  - csharp
+  - vb
+  name: SideEffectMechanicType
+  nameWithType: SideEffectMechanicType
+  fullName: DSLApp1.Dsl.SideEffectMechanicType
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.SideEffects.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: SideEffectMechanicType
+    path: src/Dsl/DSLParser.SideEffects.cs
+    startLine: 20
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum SideEffectMechanicType
+    content.vb: Public Enum SideEffectMechanicType
+- uid: DSLApp1.Dsl.SideEffectMechanicType.Bounce
+  commentId: F:DSLApp1.Dsl.SideEffectMechanicType.Bounce
+  id: Bounce
+  parent: DSLApp1.Dsl.SideEffectMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Bounce
+  nameWithType: SideEffectMechanicType.Bounce
+  fullName: DSLApp1.Dsl.SideEffectMechanicType.Bounce
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.SideEffects.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Bounce
+    path: src/Dsl/DSLParser.SideEffects.cs
+    startLine: 22
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Bounce = 0
+    return:
+      type: DSLApp1.Dsl.SideEffectMechanicType
+- uid: DSLApp1.Dsl.SideEffectMechanicType.Splash
+  commentId: F:DSLApp1.Dsl.SideEffectMechanicType.Splash
+  id: Splash
+  parent: DSLApp1.Dsl.SideEffectMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Splash
+  nameWithType: SideEffectMechanicType.Splash
+  fullName: DSLApp1.Dsl.SideEffectMechanicType.Splash
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.SideEffects.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Splash
+    path: src/Dsl/DSLParser.SideEffects.cs
+    startLine: 23
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Splash = 1
+    return:
+      type: DSLApp1.Dsl.SideEffectMechanicType
+- uid: DSLApp1.Dsl.SideEffectMechanicType.Exhaust
+  commentId: F:DSLApp1.Dsl.SideEffectMechanicType.Exhaust
+  id: Exhaust
+  parent: DSLApp1.Dsl.SideEffectMechanicType
+  langs:
+  - csharp
+  - vb
+  name: Exhaust
+  nameWithType: SideEffectMechanicType.Exhaust
+  fullName: DSLApp1.Dsl.SideEffectMechanicType.Exhaust
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.SideEffects.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Exhaust
+    path: src/Dsl/DSLParser.SideEffects.cs
+    startLine: 24
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Exhaust = 2
+    return:
+      type: DSLApp1.Dsl.SideEffectMechanicType
+- uid: DSLApp1.Dsl.SideEffectMechanicType.CoolOff
+  commentId: F:DSLApp1.Dsl.SideEffectMechanicType.CoolOff
+  id: CoolOff
+  parent: DSLApp1.Dsl.SideEffectMechanicType
+  langs:
+  - csharp
+  - vb
+  name: CoolOff
+  nameWithType: SideEffectMechanicType.CoolOff
+  fullName: DSLApp1.Dsl.SideEffectMechanicType.CoolOff
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.SideEffects.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: CoolOff
+    path: src/Dsl/DSLParser.SideEffects.cs
+    startLine: 25
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: CoolOff = 3
+    return:
+      type: DSLApp1.Dsl.SideEffectMechanicType
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.SideEffectMechanicType
+  commentId: T:DSLApp1.Dsl.SideEffectMechanicType
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.SideEffectMechanicType.html
+  name: SideEffectMechanicType
+  nameWithType: SideEffectMechanicType
+  fullName: DSLApp1.Dsl.SideEffectMechanicType

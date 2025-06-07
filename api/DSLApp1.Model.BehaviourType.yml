@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Model.BehaviourType
+  commentId: T:DSLApp1.Model.BehaviourType
+  id: BehaviourType
+  parent: DSLApp1.Model
+  children:
+  - DSLApp1.Model.BehaviourType.BoarBehaviour
+  - DSLApp1.Model.BehaviourType.DinoBotBehaviour
+  - DSLApp1.Model.BehaviourType.PlayerCharacterBehaviour
+  - DSLApp1.Model.BehaviourType.RandomBehaviour
+  langs:
+  - csharp
+  - vb
+  name: BehaviourType
+  nameWithType: BehaviourType
+  fullName: DSLApp1.Model.BehaviourType
+  type: Enum
+  source:
+    remote:
+      path: src/Model/Behaviour.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: BehaviourType
+    path: src/Model/Behaviour.cs
+    startLine: 4
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public enum BehaviourType
+    content.vb: Public Enum BehaviourType
+- uid: DSLApp1.Model.BehaviourType.PlayerCharacterBehaviour
+  commentId: F:DSLApp1.Model.BehaviourType.PlayerCharacterBehaviour
+  id: PlayerCharacterBehaviour
+  parent: DSLApp1.Model.BehaviourType
+  langs:
+  - csharp
+  - vb
+  name: PlayerCharacterBehaviour
+  nameWithType: BehaviourType.PlayerCharacterBehaviour
+  fullName: DSLApp1.Model.BehaviourType.PlayerCharacterBehaviour
+  type: Field
+  source:
+    remote:
+      path: src/Model/Behaviour.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: PlayerCharacterBehaviour
+    path: src/Model/Behaviour.cs
+    startLine: 6
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: PlayerCharacterBehaviour = 0
+    return:
+      type: DSLApp1.Model.BehaviourType
+- uid: DSLApp1.Model.BehaviourType.BoarBehaviour
+  commentId: F:DSLApp1.Model.BehaviourType.BoarBehaviour
+  id: BoarBehaviour
+  parent: DSLApp1.Model.BehaviourType
+  langs:
+  - csharp
+  - vb
+  name: BoarBehaviour
+  nameWithType: BehaviourType.BoarBehaviour
+  fullName: DSLApp1.Model.BehaviourType.BoarBehaviour
+  type: Field
+  source:
+    remote:
+      path: src/Model/Behaviour.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: BoarBehaviour
+    path: src/Model/Behaviour.cs
+    startLine: 7
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: BoarBehaviour = 1
+    return:
+      type: DSLApp1.Model.BehaviourType
+- uid: DSLApp1.Model.BehaviourType.DinoBotBehaviour
+  commentId: F:DSLApp1.Model.BehaviourType.DinoBotBehaviour
+  id: DinoBotBehaviour
+  parent: DSLApp1.Model.BehaviourType
+  langs:
+  - csharp
+  - vb
+  name: DinoBotBehaviour
+  nameWithType: BehaviourType.DinoBotBehaviour
+  fullName: DSLApp1.Model.BehaviourType.DinoBotBehaviour
+  type: Field
+  source:
+    remote:
+      path: src/Model/Behaviour.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DinoBotBehaviour
+    path: src/Model/Behaviour.cs
+    startLine: 8
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: DinoBotBehaviour = 2
+    return:
+      type: DSLApp1.Model.BehaviourType
+- uid: DSLApp1.Model.BehaviourType.RandomBehaviour
+  commentId: F:DSLApp1.Model.BehaviourType.RandomBehaviour
+  id: RandomBehaviour
+  parent: DSLApp1.Model.BehaviourType
+  langs:
+  - csharp
+  - vb
+  name: RandomBehaviour
+  nameWithType: BehaviourType.RandomBehaviour
+  fullName: DSLApp1.Model.BehaviourType.RandomBehaviour
+  type: Field
+  source:
+    remote:
+      path: src/Model/Behaviour.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: RandomBehaviour
+    path: src/Model/Behaviour.cs
+    startLine: 9
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: RandomBehaviour = 3
+    return:
+      type: DSLApp1.Model.BehaviourType
+references:
+- uid: DSLApp1.Model
+  commentId: N:DSLApp1.Model
+  href: DSLApp1.html
+  name: DSLApp1.Model
+  nameWithType: DSLApp1.Model
+  fullName: DSLApp1.Model
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Model
+    name: Model
+    href: DSLApp1.Model.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Model
+    name: Model
+    href: DSLApp1.Model.html
+- uid: DSLApp1.Model.BehaviourType
+  commentId: T:DSLApp1.Model.BehaviourType
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.BehaviourType.html
+  name: BehaviourType
+  nameWithType: BehaviourType
+  fullName: DSLApp1.Model.BehaviourType

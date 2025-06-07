@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.TargetType
+  commentId: T:DSLApp1.Dsl.TargetType
+  id: TargetType
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.TargetType.Multiple
+  - DSLApp1.Dsl.TargetType.Single
+  langs:
+  - csharp
+  - vb
+  name: TargetType
+  nameWithType: TargetType
+  fullName: DSLApp1.Dsl.TargetType
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Targeting.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: TargetType
+    path: src/Dsl/DSLParser.Targeting.cs
+    startLine: 23
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum TargetType
+    content.vb: Public Enum TargetType
+- uid: DSLApp1.Dsl.TargetType.Single
+  commentId: F:DSLApp1.Dsl.TargetType.Single
+  id: Single
+  parent: DSLApp1.Dsl.TargetType
+  langs:
+  - csharp
+  - vb
+  name: Single
+  nameWithType: TargetType.Single
+  fullName: DSLApp1.Dsl.TargetType.Single
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Targeting.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Single
+    path: src/Dsl/DSLParser.Targeting.cs
+    startLine: 25
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Single = 0
+    return:
+      type: DSLApp1.Dsl.TargetType
+- uid: DSLApp1.Dsl.TargetType.Multiple
+  commentId: F:DSLApp1.Dsl.TargetType.Multiple
+  id: Multiple
+  parent: DSLApp1.Dsl.TargetType
+  langs:
+  - csharp
+  - vb
+  name: Multiple
+  nameWithType: TargetType.Multiple
+  fullName: DSLApp1.Dsl.TargetType.Multiple
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Targeting.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Multiple
+    path: src/Dsl/DSLParser.Targeting.cs
+    startLine: 26
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Multiple = 1
+    return:
+      type: DSLApp1.Dsl.TargetType
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.TargetType
+  commentId: T:DSLApp1.Dsl.TargetType
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.TargetType.html
+  name: TargetType
+  nameWithType: TargetType
+  fullName: DSLApp1.Dsl.TargetType

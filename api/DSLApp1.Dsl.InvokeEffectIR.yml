@@ -1,0 +1,513 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.InvokeEffectIR
+  commentId: T:DSLApp1.Dsl.InvokeEffectIR
+  id: InvokeEffectIR
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.InvokeEffectIR.#ctor(DSLApp1.Dsl.Subject,DSLApp1.Dsl.InvokeMechanic)
+  - DSLApp1.Dsl.InvokeEffectIR.InvokeMechanic
+  langs:
+  - csharp
+  - vb
+  name: InvokeEffectIR
+  nameWithType: InvokeEffectIR
+  fullName: DSLApp1.Dsl.InvokeEffectIR
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Invoke.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: InvokeEffectIR
+    path: src/Dsl/DSLParser.Invoke.cs
+    startLine: 26
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: 'public record InvokeEffectIR : EffectIR, IEquatable<EffectIR>, IEquatable<InvokeEffectIR>'
+    content.vb: Public Class InvokeEffectIR Inherits EffectIR Implements IEquatable(Of EffectIR), IEquatable(Of InvokeEffectIR)
+  inheritance:
+  - System.Object
+  - DSLApp1.Dsl.EffectIR
+  implements:
+  - System.IEquatable{DSLApp1.Dsl.EffectIR}
+  - System.IEquatable{DSLApp1.Dsl.InvokeEffectIR}
+  inheritedMembers:
+  - DSLApp1.Dsl.EffectIR.Subject
+  - DSLApp1.Dsl.EffectIR.EffectType
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: DSLApp1.Dsl.InvokeEffectIR.#ctor(DSLApp1.Dsl.Subject,DSLApp1.Dsl.InvokeMechanic)
+  commentId: M:DSLApp1.Dsl.InvokeEffectIR.#ctor(DSLApp1.Dsl.Subject,DSLApp1.Dsl.InvokeMechanic)
+  id: '#ctor(DSLApp1.Dsl.Subject,DSLApp1.Dsl.InvokeMechanic)'
+  parent: DSLApp1.Dsl.InvokeEffectIR
+  langs:
+  - csharp
+  - vb
+  name: InvokeEffectIR(Subject, InvokeMechanic)
+  nameWithType: InvokeEffectIR.InvokeEffectIR(Subject, InvokeMechanic)
+  fullName: DSLApp1.Dsl.InvokeEffectIR.InvokeEffectIR(DSLApp1.Dsl.Subject, DSLApp1.Dsl.InvokeMechanic)
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Invoke.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: .ctor
+    path: src/Dsl/DSLParser.Invoke.cs
+    startLine: 26
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public InvokeEffectIR(Subject Subject, InvokeMechanic InvokeMechanic)
+    parameters:
+    - id: Subject
+      type: DSLApp1.Dsl.Subject
+    - id: InvokeMechanic
+      type: DSLApp1.Dsl.InvokeMechanic
+    content.vb: Public Sub New(Subject As Subject, InvokeMechanic As InvokeMechanic)
+  overload: DSLApp1.Dsl.InvokeEffectIR.#ctor*
+  nameWithType.vb: InvokeEffectIR.New(Subject, InvokeMechanic)
+  fullName.vb: DSLApp1.Dsl.InvokeEffectIR.New(DSLApp1.Dsl.Subject, DSLApp1.Dsl.InvokeMechanic)
+  name.vb: New(Subject, InvokeMechanic)
+- uid: DSLApp1.Dsl.InvokeEffectIR.InvokeMechanic
+  commentId: P:DSLApp1.Dsl.InvokeEffectIR.InvokeMechanic
+  id: InvokeMechanic
+  parent: DSLApp1.Dsl.InvokeEffectIR
+  langs:
+  - csharp
+  - vb
+  name: InvokeMechanic
+  nameWithType: InvokeEffectIR.InvokeMechanic
+  fullName: DSLApp1.Dsl.InvokeEffectIR.InvokeMechanic
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Invoke.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: InvokeMechanic
+    path: src/Dsl/DSLParser.Invoke.cs
+    startLine: 28
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public InvokeMechanic InvokeMechanic { get; init; }
+    parameters: []
+    return:
+      type: DSLApp1.Dsl.InvokeMechanic
+    content.vb: Public Property InvokeMechanic As InvokeMechanic
+  overload: DSLApp1.Dsl.InvokeEffectIR.InvokeMechanic*
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: DSLApp1.Dsl.EffectIR
+  commentId: T:DSLApp1.Dsl.EffectIR
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.EffectIR.html
+  name: EffectIR
+  nameWithType: EffectIR
+  fullName: DSLApp1.Dsl.EffectIR
+- uid: System.IEquatable{DSLApp1.Dsl.EffectIR}
+  commentId: T:System.IEquatable{DSLApp1.Dsl.EffectIR}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<EffectIR>
+  nameWithType: IEquatable<EffectIR>
+  fullName: System.IEquatable<DSLApp1.Dsl.EffectIR>
+  nameWithType.vb: IEquatable(Of EffectIR)
+  fullName.vb: System.IEquatable(Of DSLApp1.Dsl.EffectIR)
+  name.vb: IEquatable(Of EffectIR)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: DSLApp1.Dsl.EffectIR
+    name: EffectIR
+    href: DSLApp1.Dsl.EffectIR.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.EffectIR
+    name: EffectIR
+    href: DSLApp1.Dsl.EffectIR.html
+  - name: )
+- uid: System.IEquatable{DSLApp1.Dsl.InvokeEffectIR}
+  commentId: T:System.IEquatable{DSLApp1.Dsl.InvokeEffectIR}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<InvokeEffectIR>
+  nameWithType: IEquatable<InvokeEffectIR>
+  fullName: System.IEquatable<DSLApp1.Dsl.InvokeEffectIR>
+  nameWithType.vb: IEquatable(Of InvokeEffectIR)
+  fullName.vb: System.IEquatable(Of DSLApp1.Dsl.InvokeEffectIR)
+  name.vb: IEquatable(Of InvokeEffectIR)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: DSLApp1.Dsl.InvokeEffectIR
+    name: InvokeEffectIR
+    href: DSLApp1.Dsl.InvokeEffectIR.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.InvokeEffectIR
+    name: InvokeEffectIR
+    href: DSLApp1.Dsl.InvokeEffectIR.html
+  - name: )
+- uid: DSLApp1.Dsl.EffectIR.Subject
+  commentId: P:DSLApp1.Dsl.EffectIR.Subject
+  parent: DSLApp1.Dsl.EffectIR
+  href: DSLApp1.Dsl.EffectIR.html#DSLApp1_Dsl_EffectIR_Subject
+  name: Subject
+  nameWithType: EffectIR.Subject
+  fullName: DSLApp1.Dsl.EffectIR.Subject
+- uid: DSLApp1.Dsl.EffectIR.EffectType
+  commentId: P:DSLApp1.Dsl.EffectIR.EffectType
+  parent: DSLApp1.Dsl.EffectIR
+  href: DSLApp1.Dsl.EffectIR.html#DSLApp1_Dsl_EffectIR_EffectType
+  name: EffectType
+  nameWithType: EffectIR.EffectType
+  fullName: DSLApp1.Dsl.EffectIR.EffectType
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DSLApp1.Dsl.InvokeEffectIR.#ctor*
+  commentId: Overload:DSLApp1.Dsl.InvokeEffectIR.#ctor
+  href: DSLApp1.Dsl.InvokeEffectIR.html#DSLApp1_Dsl_InvokeEffectIR__ctor_DSLApp1_Dsl_Subject_DSLApp1_Dsl_InvokeMechanic_
+  name: InvokeEffectIR
+  nameWithType: InvokeEffectIR.InvokeEffectIR
+  fullName: DSLApp1.Dsl.InvokeEffectIR.InvokeEffectIR
+  nameWithType.vb: InvokeEffectIR.New
+  fullName.vb: DSLApp1.Dsl.InvokeEffectIR.New
+  name.vb: New
+- uid: DSLApp1.Dsl.Subject
+  commentId: T:DSLApp1.Dsl.Subject
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.Subject.html
+  name: Subject
+  nameWithType: Subject
+  fullName: DSLApp1.Dsl.Subject
+- uid: DSLApp1.Dsl.InvokeMechanic
+  commentId: T:DSLApp1.Dsl.InvokeMechanic
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.InvokeMechanic.html
+  name: InvokeMechanic
+  nameWithType: InvokeMechanic
+  fullName: DSLApp1.Dsl.InvokeMechanic
+- uid: DSLApp1.Dsl.InvokeEffectIR.InvokeMechanic*
+  commentId: Overload:DSLApp1.Dsl.InvokeEffectIR.InvokeMechanic
+  href: DSLApp1.Dsl.InvokeEffectIR.html#DSLApp1_Dsl_InvokeEffectIR_InvokeMechanic
+  name: InvokeMechanic
+  nameWithType: InvokeEffectIR.InvokeMechanic
+  fullName: DSLApp1.Dsl.InvokeEffectIR.InvokeMechanic

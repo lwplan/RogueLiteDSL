@@ -1,0 +1,734 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.MacroDefinition
+  commentId: T:DSLApp1.Dsl.MacroDefinition
+  id: MacroDefinition
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.MacroDefinition.#ctor(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Int32}},System.String,System.String)
+  - DSLApp1.Dsl.MacroDefinition.Category
+  - DSLApp1.Dsl.MacroDefinition.IndexArgs
+  - DSLApp1.Dsl.MacroDefinition.Name
+  - DSLApp1.Dsl.MacroDefinition.Template
+  - DSLApp1.Dsl.MacroDefinition.Tooltip
+  langs:
+  - csharp
+  - vb
+  name: MacroDefinition
+  nameWithType: MacroDefinition
+  fullName: DSLApp1.Dsl.MacroDefinition
+  type: Class
+  source:
+    remote:
+      path: src/Dsl/MacroLoader.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: MacroDefinition
+    path: src/Dsl/MacroLoader.cs
+    startLine: 5
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: 'public record MacroDefinition : IEquatable<MacroDefinition>'
+    content.vb: Public Class MacroDefinition Implements IEquatable(Of MacroDefinition)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{DSLApp1.Dsl.MacroDefinition}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: DSLApp1.Dsl.MacroDefinition.#ctor(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Int32}},System.String,System.String)
+  commentId: M:DSLApp1.Dsl.MacroDefinition.#ctor(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Int32}},System.String,System.String)
+  id: '#ctor(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Int32}},System.String,System.String)'
+  parent: DSLApp1.Dsl.MacroDefinition
+  langs:
+  - csharp
+  - vb
+  name: MacroDefinition(string, string, Dictionary<string, List<int>>, string, string)
+  nameWithType: MacroDefinition.MacroDefinition(string, string, Dictionary<string, List<int>>, string, string)
+  fullName: DSLApp1.Dsl.MacroDefinition.MacroDefinition(string, string, System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<int>>, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Dsl/MacroLoader.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: .ctor
+    path: src/Dsl/MacroLoader.cs
+    startLine: 5
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public MacroDefinition(string Name, string Template, Dictionary<string, List<int>> IndexArgs, string Category, string Tooltip)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: Template
+      type: System.String
+    - id: IndexArgs
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Int32}}
+    - id: Category
+      type: System.String
+    - id: Tooltip
+      type: System.String
+    content.vb: Public Sub New(Name As String, Template As String, IndexArgs As Dictionary(Of String, List(Of Integer)), Category As String, Tooltip As String)
+  overload: DSLApp1.Dsl.MacroDefinition.#ctor*
+  nameWithType.vb: MacroDefinition.New(String, String, Dictionary(Of String, List(Of Integer)), String, String)
+  fullName.vb: DSLApp1.Dsl.MacroDefinition.New(String, String, System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.List(Of Integer)), String, String)
+  name.vb: New(String, String, Dictionary(Of String, List(Of Integer)), String, String)
+- uid: DSLApp1.Dsl.MacroDefinition.Name
+  commentId: P:DSLApp1.Dsl.MacroDefinition.Name
+  id: Name
+  parent: DSLApp1.Dsl.MacroDefinition
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: MacroDefinition.Name
+  fullName: DSLApp1.Dsl.MacroDefinition.Name
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/MacroLoader.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Name
+    path: src/Dsl/MacroLoader.cs
+    startLine: 6
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public string Name { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: DSLApp1.Dsl.MacroDefinition.Name*
+- uid: DSLApp1.Dsl.MacroDefinition.Template
+  commentId: P:DSLApp1.Dsl.MacroDefinition.Template
+  id: Template
+  parent: DSLApp1.Dsl.MacroDefinition
+  langs:
+  - csharp
+  - vb
+  name: Template
+  nameWithType: MacroDefinition.Template
+  fullName: DSLApp1.Dsl.MacroDefinition.Template
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/MacroLoader.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Template
+    path: src/Dsl/MacroLoader.cs
+    startLine: 7
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public string Template { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Template As String
+  overload: DSLApp1.Dsl.MacroDefinition.Template*
+- uid: DSLApp1.Dsl.MacroDefinition.IndexArgs
+  commentId: P:DSLApp1.Dsl.MacroDefinition.IndexArgs
+  id: IndexArgs
+  parent: DSLApp1.Dsl.MacroDefinition
+  langs:
+  - csharp
+  - vb
+  name: IndexArgs
+  nameWithType: MacroDefinition.IndexArgs
+  fullName: DSLApp1.Dsl.MacroDefinition.IndexArgs
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/MacroLoader.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: IndexArgs
+    path: src/Dsl/MacroLoader.cs
+    startLine: 8
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public Dictionary<string, List<int>> IndexArgs { get; init; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Int32}}
+    content.vb: Public Property IndexArgs As Dictionary(Of String, List(Of Integer))
+  overload: DSLApp1.Dsl.MacroDefinition.IndexArgs*
+- uid: DSLApp1.Dsl.MacroDefinition.Category
+  commentId: P:DSLApp1.Dsl.MacroDefinition.Category
+  id: Category
+  parent: DSLApp1.Dsl.MacroDefinition
+  langs:
+  - csharp
+  - vb
+  name: Category
+  nameWithType: MacroDefinition.Category
+  fullName: DSLApp1.Dsl.MacroDefinition.Category
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/MacroLoader.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Category
+    path: src/Dsl/MacroLoader.cs
+    startLine: 9
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public string Category { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Category As String
+  overload: DSLApp1.Dsl.MacroDefinition.Category*
+- uid: DSLApp1.Dsl.MacroDefinition.Tooltip
+  commentId: P:DSLApp1.Dsl.MacroDefinition.Tooltip
+  id: Tooltip
+  parent: DSLApp1.Dsl.MacroDefinition
+  langs:
+  - csharp
+  - vb
+  name: Tooltip
+  nameWithType: MacroDefinition.Tooltip
+  fullName: DSLApp1.Dsl.MacroDefinition.Tooltip
+  type: Property
+  source:
+    remote:
+      path: src/Dsl/MacroLoader.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Tooltip
+    path: src/Dsl/MacroLoader.cs
+    startLine: 10
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public string Tooltip { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Tooltip As String
+  overload: DSLApp1.Dsl.MacroDefinition.Tooltip*
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{DSLApp1.Dsl.MacroDefinition}
+  commentId: T:System.IEquatable{DSLApp1.Dsl.MacroDefinition}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<MacroDefinition>
+  nameWithType: IEquatable<MacroDefinition>
+  fullName: System.IEquatable<DSLApp1.Dsl.MacroDefinition>
+  nameWithType.vb: IEquatable(Of MacroDefinition)
+  fullName.vb: System.IEquatable(Of DSLApp1.Dsl.MacroDefinition)
+  name.vb: IEquatable(Of MacroDefinition)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: DSLApp1.Dsl.MacroDefinition
+    name: MacroDefinition
+    href: DSLApp1.Dsl.MacroDefinition.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Dsl.MacroDefinition
+    name: MacroDefinition
+    href: DSLApp1.Dsl.MacroDefinition.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: DSLApp1.Dsl.MacroDefinition.#ctor*
+  commentId: Overload:DSLApp1.Dsl.MacroDefinition.#ctor
+  href: DSLApp1.Dsl.MacroDefinition.html#DSLApp1_Dsl_MacroDefinition__ctor_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_Int32___System_String_System_String_
+  name: MacroDefinition
+  nameWithType: MacroDefinition.MacroDefinition
+  fullName: DSLApp1.Dsl.MacroDefinition.MacroDefinition
+  nameWithType.vb: MacroDefinition.New
+  fullName.vb: DSLApp1.Dsl.MacroDefinition.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Int32}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.Int32}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, List<int>>
+  nameWithType: Dictionary<string, List<int>>
+  fullName: System.Collections.Generic.Dictionary<string, System.Collections.Generic.List<int>>
+  nameWithType.vb: Dictionary(Of String, List(Of Integer))
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.List(Of Integer))
+  name.vb: Dictionary(Of String, List(Of Integer))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DSLApp1.Dsl.MacroDefinition.Name*
+  commentId: Overload:DSLApp1.Dsl.MacroDefinition.Name
+  href: DSLApp1.Dsl.MacroDefinition.html#DSLApp1_Dsl_MacroDefinition_Name
+  name: Name
+  nameWithType: MacroDefinition.Name
+  fullName: DSLApp1.Dsl.MacroDefinition.Name
+- uid: DSLApp1.Dsl.MacroDefinition.Template*
+  commentId: Overload:DSLApp1.Dsl.MacroDefinition.Template
+  href: DSLApp1.Dsl.MacroDefinition.html#DSLApp1_Dsl_MacroDefinition_Template
+  name: Template
+  nameWithType: MacroDefinition.Template
+  fullName: DSLApp1.Dsl.MacroDefinition.Template
+- uid: DSLApp1.Dsl.MacroDefinition.IndexArgs*
+  commentId: Overload:DSLApp1.Dsl.MacroDefinition.IndexArgs
+  href: DSLApp1.Dsl.MacroDefinition.html#DSLApp1_Dsl_MacroDefinition_IndexArgs
+  name: IndexArgs
+  nameWithType: MacroDefinition.IndexArgs
+  fullName: DSLApp1.Dsl.MacroDefinition.IndexArgs
+- uid: DSLApp1.Dsl.MacroDefinition.Category*
+  commentId: Overload:DSLApp1.Dsl.MacroDefinition.Category
+  href: DSLApp1.Dsl.MacroDefinition.html#DSLApp1_Dsl_MacroDefinition_Category
+  name: Category
+  nameWithType: MacroDefinition.Category
+  fullName: DSLApp1.Dsl.MacroDefinition.Category
+- uid: DSLApp1.Dsl.MacroDefinition.Tooltip*
+  commentId: Overload:DSLApp1.Dsl.MacroDefinition.Tooltip
+  href: DSLApp1.Dsl.MacroDefinition.html#DSLApp1_Dsl_MacroDefinition_Tooltip
+  name: Tooltip
+  nameWithType: MacroDefinition.Tooltip
+  fullName: DSLApp1.Dsl.MacroDefinition.Tooltip

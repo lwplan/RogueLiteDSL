@@ -1,0 +1,329 @@
+### YamlMime:TableOfContent
+items:
+- uid: Components.Root
+  name: Components.Root
+  type: Namespace
+  items:
+  - uid: Components.Root.GoogleCsvLoader
+    name: GoogleCsvLoader
+    type: Class
+- uid: ConsoleApp3.Core
+  name: ConsoleApp3.Core
+  type: Namespace
+  items:
+  - uid: ConsoleApp3.Core.ConsoleLogger
+    name: ConsoleLogger
+    type: Class
+  - uid: ConsoleApp3.Core.FileLogger
+    name: FileLogger
+    type: Class
+  - uid: ConsoleApp3.Core.ILogger
+    name: ILogger
+    type: Interface
+- uid: DSLApp1.Dsl
+  name: DSLApp1.Dsl
+  type: Namespace
+  items:
+  - uid: DSLApp1.Dsl.AbilityIR
+    name: AbilityIR
+    type: Class
+  - uid: DSLApp1.Dsl.AndCondition
+    name: AndCondition
+    type: Class
+  - uid: DSLApp1.Dsl.AppliesModifierIR
+    name: AppliesModifierIR
+    type: Class
+  - uid: DSLApp1.Dsl.AutoTargetingStrategy
+    name: AutoTargetingStrategy
+    type: Enum
+  - uid: DSLApp1.Dsl.BaseCondition
+    name: BaseCondition
+    type: Class
+  - uid: DSLApp1.Dsl.BuffMechanicType
+    name: BuffMechanicType
+    type: Enum
+  - uid: DSLApp1.Dsl.Compatibility
+    name: Compatibility
+    type: Enum
+  - uid: DSLApp1.Dsl.CompatibilityTag
+    name: CompatibilityTag
+    type: Class
+  - uid: DSLApp1.Dsl.Condition
+    name: Condition
+    type: Class
+  - uid: DSLApp1.Dsl.DamageEffectIR
+    name: DamageEffectIR
+    type: Class
+  - uid: DSLApp1.Dsl.DamageFormula
+    name: DamageFormula
+    type: Enum
+  - uid: DSLApp1.Dsl.DamageMechanic
+    name: DamageMechanic
+    type: Class
+  - uid: DSLApp1.Dsl.DamageMechanicType
+    name: DamageMechanicType
+    type: Enum
+  - uid: DSLApp1.Dsl.DamageMultiplierMechanicType
+    name: DamageMultiplierMechanicType
+    type: Enum
+  - uid: DSLApp1.Dsl.DamageSupportIR
+    name: DamageSupportIR
+    type: Class
+  - uid: DSLApp1.Dsl.DamageType
+    name: DamageType
+    type: Class
+  - uid: DSLApp1.Dsl.DslGrammar
+    name: DslGrammar
+    type: Class
+  - uid: DSLApp1.Dsl.DslParsers
+    name: DslParsers
+    type: Class
+  - uid: DSLApp1.Dsl.DslTokenizer
+    name: DslTokenizer
+    type: Class
+  - uid: DSLApp1.Dsl.Duration
+    name: Duration
+    type: Class
+  - uid: DSLApp1.Dsl.DurationType
+    name: DurationType
+    type: Enum
+  - uid: DSLApp1.Dsl.EconomyStat
+    name: EconomyStat
+    type: Enum
+  - uid: DSLApp1.Dsl.EffectIR
+    name: EffectIR
+    type: Class
+  - uid: DSLApp1.Dsl.EffectModifierIR
+    name: EffectModifierIR
+    type: Class
+  - uid: DSLApp1.Dsl.EffectSupportIR
+    name: EffectSupportIR
+    type: Class
+  - uid: DSLApp1.Dsl.EffectType
+    name: EffectType
+    type: Enum
+  - uid: DSLApp1.Dsl.Element
+    name: Element
+    type: Enum
+  - uid: DSLApp1.Dsl.ElementSupportIR
+    name: ElementSupportIR
+    type: Class
+  - uid: DSLApp1.Dsl.ElementTag
+    name: ElementTag
+    type: Class
+  - uid: DSLApp1.Dsl.Field
+    name: Field
+    type: Enum
+  - uid: DSLApp1.Dsl.Header
+    name: Header
+    type: Class
+  - uid: DSLApp1.Dsl.HealEffectIR
+    name: HealEffectIR
+    type: Class
+  - uid: DSLApp1.Dsl.HealMechanic
+    name: HealMechanic
+    type: Class
+  - uid: DSLApp1.Dsl.HealMechanicType
+    name: HealMechanicType
+    type: Enum
+  - uid: DSLApp1.Dsl.HealingSideEffectMechanic
+    name: HealingSideEffectMechanic
+    type: Class
+  - uid: DSLApp1.Dsl.HexType
+    name: HexType
+    type: Enum
+  - uid: DSLApp1.Dsl.InvokeEffectIR
+    name: InvokeEffectIR
+    type: Class
+  - uid: DSLApp1.Dsl.InvokeMechanic
+    name: InvokeMechanic
+    type: Class
+  - uid: DSLApp1.Dsl.InvokeMechanicType
+    name: InvokeMechanicType
+    type: Enum
+  - uid: DSLApp1.Dsl.MacroDefinition
+    name: MacroDefinition
+    type: Class
+  - uid: DSLApp1.Dsl.MacroLoader
+    name: MacroLoader
+    type: Class
+  - uid: DSLApp1.Dsl.ModifierEffectIR
+    name: ModifierEffectIR
+    type: Class
+  - uid: DSLApp1.Dsl.ModifierIR
+    name: ModifierIR
+    type: Class
+  - uid: DSLApp1.Dsl.ModifierMechanicIR
+    name: ModifierMechanicIR
+    type: Class
+  - uid: DSLApp1.Dsl.MultiplierMechanicIR
+    name: MultiplierMechanicIR
+    type: Class
+  - uid: DSLApp1.Dsl.MultiplierMechanicType
+    name: MultiplierMechanicType
+    type: Enum
+  - uid: DSLApp1.Dsl.Op
+    name: Op
+    type: Enum
+  - uid: DSLApp1.Dsl.OptionalExtensions
+    name: OptionalExtensions
+    type: Class
+  - uid: DSLApp1.Dsl.SideEffectMechanic
+    name: SideEffectMechanic
+    type: Class
+  - uid: DSLApp1.Dsl.SideEffectMechanicIR
+    name: SideEffectMechanicIR
+    type: Class
+  - uid: DSLApp1.Dsl.SideEffectMechanicType
+    name: SideEffectMechanicType
+    type: Enum
+  - uid: DSLApp1.Dsl.SideEffectSupportIR
+    name: SideEffectSupportIR
+    type: Class
+  - uid: DSLApp1.Dsl.SideEffectsIR
+    name: SideEffectsIR
+    type: Class
+  - uid: DSLApp1.Dsl.SpreadsheetMacroExpander
+    name: SpreadsheetMacroExpander
+    type: Class
+  - uid: DSLApp1.Dsl.StatBuffMechanicIR
+    name: StatBuffMechanicIR
+    type: Class
+  - uid: DSLApp1.Dsl.StatField
+    name: StatField
+    type: Enum
+  - uid: DSLApp1.Dsl.StateMechanicIR
+    name: StateMechanicIR
+    type: Class
+  - uid: DSLApp1.Dsl.StateMechanicType
+    name: StateMechanicType
+    type: Enum
+  - uid: DSLApp1.Dsl.Subject
+    name: Subject
+    type: Enum
+  - uid: DSLApp1.Dsl.SupportEffectIR
+    name: SupportEffectIR
+    type: Class
+  - uid: DSLApp1.Dsl.SupportIR
+    name: SupportIR
+    type: Class
+  - uid: DSLApp1.Dsl.TargetSide
+    name: TargetSide
+    type: Enum
+  - uid: DSLApp1.Dsl.TargetTag
+    name: TargetTag
+    type: Class
+  - uid: DSLApp1.Dsl.TargetType
+    name: TargetType
+    type: Enum
+  - uid: DSLApp1.Dsl.Targeting
+    name: Targeting
+    type: Class
+  - uid: DSLApp1.Dsl.TimingEvent
+    name: TimingEvent
+    type: Enum
+  - uid: DSLApp1.Dsl.Tok
+    name: Tok
+    type: Class
+  - uid: DSLApp1.Dsl.Token
+    name: Token
+    type: Class
+  - uid: DSLApp1.Dsl.TokenType
+    name: TokenType
+    type: Enum
+- uid: DSLApp1.Model
+  name: DSLApp1.Model
+  type: Namespace
+  items:
+  - uid: DSLApp1.Model.Behaviour
+    name: Behaviour
+    type: Class
+  - uid: DSLApp1.Model.Behaviour.NpcAction
+    name: Behaviour.NpcAction
+    type: Class
+  - uid: DSLApp1.Model.BehaviourType
+    name: BehaviourType
+    type: Enum
+  - uid: DSLApp1.Model.BoardState
+    name: BoardState
+    type: Class
+  - uid: DSLApp1.Model.CharacterCombatState
+    name: CharacterCombatState
+    type: Class
+  - uid: DSLApp1.Model.CharacterCombatState.AbilityMode
+    name: CharacterCombatState.AbilityMode
+    type: Enum
+  - uid: DSLApp1.Model.CombatEvent
+    name: CombatEvent
+    type: Class
+  - uid: DSLApp1.Model.CombatEventBuilder
+    name: CombatEventBuilder
+    type: Class
+  - uid: DSLApp1.Model.CombatRound
+    name: CombatRound
+    type: Class
+  - uid: DSLApp1.Model.CombatState
+    name: CombatState
+    type: Class
+  - uid: DSLApp1.Model.CombatState.Phase
+    name: CombatState.Phase
+    type: Enum
+  - uid: DSLApp1.Model.Damage
+    name: Damage
+    type: Class
+  - uid: DSLApp1.Model.Exclusivity
+    name: Exclusivity
+    type: Enum
+  - uid: DSLApp1.Model.Fragment
+    name: Fragment
+    type: Class
+  - uid: DSLApp1.Model.HexCoord
+    name: HexCoord
+    type: Struct
+  - uid: DSLApp1.Model.HexCoord.FaceDirection
+    name: HexCoord.FaceDirection
+    type: Enum
+  - uid: DSLApp1.Model.HexCoord.VertexDirection
+    name: HexCoord.VertexDirection
+    type: Enum
+  - uid: DSLApp1.Model.HexPiece
+    name: HexPiece
+    type: Class
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    type: Interface
+  - uid: DSLApp1.Model.ICharacterBaseState
+    name: ICharacterBaseState
+    type: Interface
+  - uid: DSLApp1.Model.ICharacterCombatState
+    name: ICharacterCombatState
+    type: Interface
+  - uid: DSLApp1.Model.ICharacterDefinition
+    name: ICharacterDefinition
+    type: Interface
+  - uid: DSLApp1.Model.ICombatCharacter
+    name: ICombatCharacter
+    type: Interface
+  - uid: DSLApp1.Model.IIdentifiable
+    name: IIdentifiable
+    type: Interface
+  - uid: DSLApp1.Model.IModifier
+    name: IModifier
+    type: Interface
+  - uid: DSLApp1.Model.Rarity
+    name: Rarity
+    type: Enum
+  - uid: DSLApp1.Model.Stat
+    name: Stat
+    type: Enum
+  - uid: DSLApp1.Model.Targetability
+    name: Targetability
+    type: Enum
+- uid: DSLApp1.Tests
+  name: DSLApp1.Tests
+  type: Namespace
+  items:
+  - uid: DSLApp1.Tests.Log
+    name: Log
+    type: Class
+memberLayout: SamePage

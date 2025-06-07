@@ -1,0 +1,684 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Model.BoardState
+  commentId: T:DSLApp1.Model.BoardState
+  id: BoardState
+  parent: DSLApp1.Model
+  children:
+  - DSLApp1.Model.BoardState.#ctor(System.Int32)
+  - DSLApp1.Model.BoardState.AddHexPiece(DSLApp1.Model.HexPiece)
+  - DSLApp1.Model.BoardState.BoardCoordinates
+  - DSLApp1.Model.BoardState.GenerateBoardCoordinates(System.Int32)
+  - DSLApp1.Model.BoardState.HexPieces
+  - DSLApp1.Model.BoardState.RemoveHexPiece(DSLApp1.Model.HexPiece)
+  langs:
+  - csharp
+  - vb
+  name: BoardState
+  nameWithType: BoardState
+  fullName: DSLApp1.Model.BoardState
+  type: Class
+  source:
+    remote:
+      path: src/Model/BoardState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: BoardState
+    path: src/Model/BoardState.cs
+    startLine: 4
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class BoardState
+    content.vb: >-
+      <Serializable>
+
+      Public Class BoardState
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: DSLApp1.Model.BoardState.#ctor(System.Int32)
+  commentId: M:DSLApp1.Model.BoardState.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: DSLApp1.Model.BoardState
+  langs:
+  - csharp
+  - vb
+  name: BoardState(int)
+  nameWithType: BoardState.BoardState(int)
+  fullName: DSLApp1.Model.BoardState.BoardState(int)
+  type: Constructor
+  source:
+    remote:
+      path: src/Model/BoardState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: .ctor
+    path: src/Model/BoardState.cs
+    startLine: 10
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public BoardState(int range)
+    parameters:
+    - id: range
+      type: System.Int32
+    content.vb: Public Sub New(range As Integer)
+  overload: DSLApp1.Model.BoardState.#ctor*
+  nameWithType.vb: BoardState.New(Integer)
+  fullName.vb: DSLApp1.Model.BoardState.New(Integer)
+  name.vb: New(Integer)
+- uid: DSLApp1.Model.BoardState.BoardCoordinates
+  commentId: P:DSLApp1.Model.BoardState.BoardCoordinates
+  id: BoardCoordinates
+  parent: DSLApp1.Model.BoardState
+  langs:
+  - csharp
+  - vb
+  name: BoardCoordinates
+  nameWithType: BoardState.BoardCoordinates
+  fullName: DSLApp1.Model.BoardState.BoardCoordinates
+  type: Property
+  source:
+    remote:
+      path: src/Model/BoardState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: BoardCoordinates
+    path: src/Model/BoardState.cs
+    startLine: 15
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public List<HexCoord> BoardCoordinates { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.HexCoord}
+    content.vb: Public ReadOnly Property BoardCoordinates As List(Of HexCoord)
+  overload: DSLApp1.Model.BoardState.BoardCoordinates*
+- uid: DSLApp1.Model.BoardState.HexPieces
+  commentId: P:DSLApp1.Model.BoardState.HexPieces
+  id: HexPieces
+  parent: DSLApp1.Model.BoardState
+  langs:
+  - csharp
+  - vb
+  name: HexPieces
+  nameWithType: BoardState.HexPieces
+  fullName: DSLApp1.Model.BoardState.HexPieces
+  type: Property
+  source:
+    remote:
+      path: src/Model/BoardState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HexPieces
+    path: src/Model/BoardState.cs
+    startLine: 16
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public List<HexPiece> HexPieces { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.HexPiece}
+    content.vb: Public ReadOnly Property HexPieces As List(Of HexPiece)
+  overload: DSLApp1.Model.BoardState.HexPieces*
+- uid: DSLApp1.Model.BoardState.GenerateBoardCoordinates(System.Int32)
+  commentId: M:DSLApp1.Model.BoardState.GenerateBoardCoordinates(System.Int32)
+  id: GenerateBoardCoordinates(System.Int32)
+  parent: DSLApp1.Model.BoardState
+  langs:
+  - csharp
+  - vb
+  name: GenerateBoardCoordinates(int)
+  nameWithType: BoardState.GenerateBoardCoordinates(int)
+  fullName: DSLApp1.Model.BoardState.GenerateBoardCoordinates(int)
+  type: Method
+  source:
+    remote:
+      path: src/Model/BoardState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: GenerateBoardCoordinates
+    path: src/Model/BoardState.cs
+    startLine: 18
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public static List<HexCoord> GenerateBoardCoordinates(int range)
+    parameters:
+    - id: range
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.HexCoord}
+    content.vb: Public Shared Function GenerateBoardCoordinates(range As Integer) As List(Of HexCoord)
+  overload: DSLApp1.Model.BoardState.GenerateBoardCoordinates*
+  nameWithType.vb: BoardState.GenerateBoardCoordinates(Integer)
+  fullName.vb: DSLApp1.Model.BoardState.GenerateBoardCoordinates(Integer)
+  name.vb: GenerateBoardCoordinates(Integer)
+- uid: DSLApp1.Model.BoardState.AddHexPiece(DSLApp1.Model.HexPiece)
+  commentId: M:DSLApp1.Model.BoardState.AddHexPiece(DSLApp1.Model.HexPiece)
+  id: AddHexPiece(DSLApp1.Model.HexPiece)
+  parent: DSLApp1.Model.BoardState
+  langs:
+  - csharp
+  - vb
+  name: AddHexPiece(HexPiece)
+  nameWithType: BoardState.AddHexPiece(HexPiece)
+  fullName: DSLApp1.Model.BoardState.AddHexPiece(DSLApp1.Model.HexPiece)
+  type: Method
+  source:
+    remote:
+      path: src/Model/BoardState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: AddHexPiece
+    path: src/Model/BoardState.cs
+    startLine: 33
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public void AddHexPiece(HexPiece getHexPiece)
+    parameters:
+    - id: getHexPiece
+      type: DSLApp1.Model.HexPiece
+    content.vb: Public Sub AddHexPiece(getHexPiece As HexPiece)
+  overload: DSLApp1.Model.BoardState.AddHexPiece*
+- uid: DSLApp1.Model.BoardState.RemoveHexPiece(DSLApp1.Model.HexPiece)
+  commentId: M:DSLApp1.Model.BoardState.RemoveHexPiece(DSLApp1.Model.HexPiece)
+  id: RemoveHexPiece(DSLApp1.Model.HexPiece)
+  parent: DSLApp1.Model.BoardState
+  langs:
+  - csharp
+  - vb
+  name: RemoveHexPiece(HexPiece)
+  nameWithType: BoardState.RemoveHexPiece(HexPiece)
+  fullName: DSLApp1.Model.BoardState.RemoveHexPiece(DSLApp1.Model.HexPiece)
+  type: Method
+  source:
+    remote:
+      path: src/Model/BoardState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: RemoveHexPiece
+    path: src/Model/BoardState.cs
+    startLine: 41
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public void RemoveHexPiece(HexPiece getHexPiece)
+    parameters:
+    - id: getHexPiece
+      type: DSLApp1.Model.HexPiece
+    content.vb: Public Sub RemoveHexPiece(getHexPiece As HexPiece)
+  overload: DSLApp1.Model.BoardState.RemoveHexPiece*
+references:
+- uid: DSLApp1.Model
+  commentId: N:DSLApp1.Model
+  href: DSLApp1.html
+  name: DSLApp1.Model
+  nameWithType: DSLApp1.Model
+  fullName: DSLApp1.Model
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Model
+    name: Model
+    href: DSLApp1.Model.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Model
+    name: Model
+    href: DSLApp1.Model.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DSLApp1.Model.BoardState.#ctor*
+  commentId: Overload:DSLApp1.Model.BoardState.#ctor
+  href: DSLApp1.Model.BoardState.html#DSLApp1_Model_BoardState__ctor_System_Int32_
+  name: BoardState
+  nameWithType: BoardState.BoardState
+  fullName: DSLApp1.Model.BoardState.BoardState
+  nameWithType.vb: BoardState.New
+  fullName.vb: DSLApp1.Model.BoardState.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: DSLApp1.Model.BoardState.BoardCoordinates*
+  commentId: Overload:DSLApp1.Model.BoardState.BoardCoordinates
+  href: DSLApp1.Model.BoardState.html#DSLApp1_Model_BoardState_BoardCoordinates
+  name: BoardCoordinates
+  nameWithType: BoardState.BoardCoordinates
+  fullName: DSLApp1.Model.BoardState.BoardCoordinates
+- uid: System.Collections.Generic.List{DSLApp1.Model.HexCoord}
+  commentId: T:System.Collections.Generic.List{DSLApp1.Model.HexCoord}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<HexCoord>
+  nameWithType: List<HexCoord>
+  fullName: System.Collections.Generic.List<DSLApp1.Model.HexCoord>
+  nameWithType.vb: List(Of HexCoord)
+  fullName.vb: System.Collections.Generic.List(Of DSLApp1.Model.HexCoord)
+  name.vb: List(Of HexCoord)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: DSLApp1.Model.HexCoord
+    name: HexCoord
+    href: DSLApp1.Model.HexCoord.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Model.HexCoord
+    name: HexCoord
+    href: DSLApp1.Model.HexCoord.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DSLApp1.Model.BoardState.HexPieces*
+  commentId: Overload:DSLApp1.Model.BoardState.HexPieces
+  href: DSLApp1.Model.BoardState.html#DSLApp1_Model_BoardState_HexPieces
+  name: HexPieces
+  nameWithType: BoardState.HexPieces
+  fullName: DSLApp1.Model.BoardState.HexPieces
+- uid: System.Collections.Generic.List{DSLApp1.Model.HexPiece}
+  commentId: T:System.Collections.Generic.List{DSLApp1.Model.HexPiece}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<HexPiece>
+  nameWithType: List<HexPiece>
+  fullName: System.Collections.Generic.List<DSLApp1.Model.HexPiece>
+  nameWithType.vb: List(Of HexPiece)
+  fullName.vb: System.Collections.Generic.List(Of DSLApp1.Model.HexPiece)
+  name.vb: List(Of HexPiece)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: DSLApp1.Model.HexPiece
+    name: HexPiece
+    href: DSLApp1.Model.HexPiece.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Model.HexPiece
+    name: HexPiece
+    href: DSLApp1.Model.HexPiece.html
+  - name: )
+- uid: DSLApp1.Model.BoardState.GenerateBoardCoordinates*
+  commentId: Overload:DSLApp1.Model.BoardState.GenerateBoardCoordinates
+  href: DSLApp1.Model.BoardState.html#DSLApp1_Model_BoardState_GenerateBoardCoordinates_System_Int32_
+  name: GenerateBoardCoordinates
+  nameWithType: BoardState.GenerateBoardCoordinates
+  fullName: DSLApp1.Model.BoardState.GenerateBoardCoordinates
+- uid: DSLApp1.Model.BoardState.AddHexPiece*
+  commentId: Overload:DSLApp1.Model.BoardState.AddHexPiece
+  href: DSLApp1.Model.BoardState.html#DSLApp1_Model_BoardState_AddHexPiece_DSLApp1_Model_HexPiece_
+  name: AddHexPiece
+  nameWithType: BoardState.AddHexPiece
+  fullName: DSLApp1.Model.BoardState.AddHexPiece
+- uid: DSLApp1.Model.HexPiece
+  commentId: T:DSLApp1.Model.HexPiece
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.HexPiece.html
+  name: HexPiece
+  nameWithType: HexPiece
+  fullName: DSLApp1.Model.HexPiece
+- uid: DSLApp1.Model.BoardState.RemoveHexPiece*
+  commentId: Overload:DSLApp1.Model.BoardState.RemoveHexPiece
+  href: DSLApp1.Model.BoardState.html#DSLApp1_Model_BoardState_RemoveHexPiece_DSLApp1_Model_HexPiece_
+  name: RemoveHexPiece
+  nameWithType: BoardState.RemoveHexPiece
+  fullName: DSLApp1.Model.BoardState.RemoveHexPiece

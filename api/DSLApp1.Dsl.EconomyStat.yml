@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.EconomyStat
+  commentId: T:DSLApp1.Dsl.EconomyStat
+  id: EconomyStat
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.EconomyStat.Hp
+  - DSLApp1.Dsl.EconomyStat.Mana
+  - DSLApp1.Dsl.EconomyStat.Opportunity
+  langs:
+  - csharp
+  - vb
+  name: EconomyStat
+  nameWithType: EconomyStat
+  fullName: DSLApp1.Dsl.EconomyStat
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.HealsEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: EconomyStat
+    path: src/Dsl/DSLParser.HealsEffect.cs
+    startLine: 14
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum EconomyStat
+    content.vb: Public Enum EconomyStat
+- uid: DSLApp1.Dsl.EconomyStat.Mana
+  commentId: F:DSLApp1.Dsl.EconomyStat.Mana
+  id: Mana
+  parent: DSLApp1.Dsl.EconomyStat
+  langs:
+  - csharp
+  - vb
+  name: Mana
+  nameWithType: EconomyStat.Mana
+  fullName: DSLApp1.Dsl.EconomyStat.Mana
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.HealsEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Mana
+    path: src/Dsl/DSLParser.HealsEffect.cs
+    startLine: 16
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Mana = 0
+    return:
+      type: DSLApp1.Dsl.EconomyStat
+- uid: DSLApp1.Dsl.EconomyStat.Hp
+  commentId: F:DSLApp1.Dsl.EconomyStat.Hp
+  id: Hp
+  parent: DSLApp1.Dsl.EconomyStat
+  langs:
+  - csharp
+  - vb
+  name: Hp
+  nameWithType: EconomyStat.Hp
+  fullName: DSLApp1.Dsl.EconomyStat.Hp
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.HealsEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Hp
+    path: src/Dsl/DSLParser.HealsEffect.cs
+    startLine: 17
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Hp = 1
+    return:
+      type: DSLApp1.Dsl.EconomyStat
+- uid: DSLApp1.Dsl.EconomyStat.Opportunity
+  commentId: F:DSLApp1.Dsl.EconomyStat.Opportunity
+  id: Opportunity
+  parent: DSLApp1.Dsl.EconomyStat
+  langs:
+  - csharp
+  - vb
+  name: Opportunity
+  nameWithType: EconomyStat.Opportunity
+  fullName: DSLApp1.Dsl.EconomyStat.Opportunity
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.HealsEffect.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Opportunity
+    path: src/Dsl/DSLParser.HealsEffect.cs
+    startLine: 18
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Opportunity = 2
+    return:
+      type: DSLApp1.Dsl.EconomyStat
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.EconomyStat
+  commentId: T:DSLApp1.Dsl.EconomyStat
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.EconomyStat.html
+  name: EconomyStat
+  nameWithType: EconomyStat
+  fullName: DSLApp1.Dsl.EconomyStat

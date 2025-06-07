@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.Element
+  commentId: T:DSLApp1.Dsl.Element
+  id: Element
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.Element.Dark
+  - DSLApp1.Dsl.Element.Electrical
+  - DSLApp1.Dsl.Element.Fire
+  - DSLApp1.Dsl.Element.Ice
+  - DSLApp1.Dsl.Element.Light
+  - DSLApp1.Dsl.Element.None
+  - DSLApp1.Dsl.Element.Poison
+  - DSLApp1.Dsl.Element.Water
+  langs:
+  - csharp
+  - vb
+  name: Element
+  nameWithType: Element
+  fullName: DSLApp1.Dsl.Element
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Element
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 12
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum Element
+    content.vb: Public Enum Element
+- uid: DSLApp1.Dsl.Element.Fire
+  commentId: F:DSLApp1.Dsl.Element.Fire
+  id: Fire
+  parent: DSLApp1.Dsl.Element
+  langs:
+  - csharp
+  - vb
+  name: Fire
+  nameWithType: Element.Fire
+  fullName: DSLApp1.Dsl.Element.Fire
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Fire
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 14
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Fire = 0
+    return:
+      type: DSLApp1.Dsl.Element
+- uid: DSLApp1.Dsl.Element.Electrical
+  commentId: F:DSLApp1.Dsl.Element.Electrical
+  id: Electrical
+  parent: DSLApp1.Dsl.Element
+  langs:
+  - csharp
+  - vb
+  name: Electrical
+  nameWithType: Element.Electrical
+  fullName: DSLApp1.Dsl.Element.Electrical
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Electrical
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 15
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Electrical = 1
+    return:
+      type: DSLApp1.Dsl.Element
+- uid: DSLApp1.Dsl.Element.Poison
+  commentId: F:DSLApp1.Dsl.Element.Poison
+  id: Poison
+  parent: DSLApp1.Dsl.Element
+  langs:
+  - csharp
+  - vb
+  name: Poison
+  nameWithType: Element.Poison
+  fullName: DSLApp1.Dsl.Element.Poison
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Poison
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 16
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Poison = 2
+    return:
+      type: DSLApp1.Dsl.Element
+- uid: DSLApp1.Dsl.Element.Ice
+  commentId: F:DSLApp1.Dsl.Element.Ice
+  id: Ice
+  parent: DSLApp1.Dsl.Element
+  langs:
+  - csharp
+  - vb
+  name: Ice
+  nameWithType: Element.Ice
+  fullName: DSLApp1.Dsl.Element.Ice
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Ice
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 17
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Ice = 3
+    return:
+      type: DSLApp1.Dsl.Element
+- uid: DSLApp1.Dsl.Element.Water
+  commentId: F:DSLApp1.Dsl.Element.Water
+  id: Water
+  parent: DSLApp1.Dsl.Element
+  langs:
+  - csharp
+  - vb
+  name: Water
+  nameWithType: Element.Water
+  fullName: DSLApp1.Dsl.Element.Water
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Water
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 18
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Water = 4
+    return:
+      type: DSLApp1.Dsl.Element
+- uid: DSLApp1.Dsl.Element.Dark
+  commentId: F:DSLApp1.Dsl.Element.Dark
+  id: Dark
+  parent: DSLApp1.Dsl.Element
+  langs:
+  - csharp
+  - vb
+  name: Dark
+  nameWithType: Element.Dark
+  fullName: DSLApp1.Dsl.Element.Dark
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Dark
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 19
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Dark = 5
+    return:
+      type: DSLApp1.Dsl.Element
+- uid: DSLApp1.Dsl.Element.Light
+  commentId: F:DSLApp1.Dsl.Element.Light
+  id: Light
+  parent: DSLApp1.Dsl.Element
+  langs:
+  - csharp
+  - vb
+  name: Light
+  nameWithType: Element.Light
+  fullName: DSLApp1.Dsl.Element.Light
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Light
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 20
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Light = 6
+    return:
+      type: DSLApp1.Dsl.Element
+- uid: DSLApp1.Dsl.Element.None
+  commentId: F:DSLApp1.Dsl.Element.None
+  id: None
+  parent: DSLApp1.Dsl.Element
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: Element.None
+  fullName: DSLApp1.Dsl.Element.None
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: None
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 21
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: None = 7
+    return:
+      type: DSLApp1.Dsl.Element
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.Element
+  commentId: T:DSLApp1.Dsl.Element
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.Element.html
+  name: Element
+  nameWithType: Element
+  fullName: DSLApp1.Dsl.Element

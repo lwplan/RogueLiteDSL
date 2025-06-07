@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.Compatibility
+  commentId: T:DSLApp1.Dsl.Compatibility
+  id: Compatibility
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.Compatibility.Artillery
+  - DSLApp1.Dsl.Compatibility.Blessing
+  - DSLApp1.Dsl.Compatibility.Brute
+  - DSLApp1.Dsl.Compatibility.Chaos
+  - DSLApp1.Dsl.Compatibility.Execution
+  - DSLApp1.Dsl.Compatibility.Holy
+  - DSLApp1.Dsl.Compatibility.Nomad
+  langs:
+  - csharp
+  - vb
+  name: Compatibility
+  nameWithType: Compatibility
+  fullName: DSLApp1.Dsl.Compatibility
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Compatibility
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 9
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum Compatibility
+    content.vb: Public Enum Compatibility
+- uid: DSLApp1.Dsl.Compatibility.Artillery
+  commentId: F:DSLApp1.Dsl.Compatibility.Artillery
+  id: Artillery
+  parent: DSLApp1.Dsl.Compatibility
+  langs:
+  - csharp
+  - vb
+  name: Artillery
+  nameWithType: Compatibility.Artillery
+  fullName: DSLApp1.Dsl.Compatibility.Artillery
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Artillery
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 11
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Artillery = 0
+    return:
+      type: DSLApp1.Dsl.Compatibility
+- uid: DSLApp1.Dsl.Compatibility.Brute
+  commentId: F:DSLApp1.Dsl.Compatibility.Brute
+  id: Brute
+  parent: DSLApp1.Dsl.Compatibility
+  langs:
+  - csharp
+  - vb
+  name: Brute
+  nameWithType: Compatibility.Brute
+  fullName: DSLApp1.Dsl.Compatibility.Brute
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Brute
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 12
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Brute = 1
+    return:
+      type: DSLApp1.Dsl.Compatibility
+- uid: DSLApp1.Dsl.Compatibility.Nomad
+  commentId: F:DSLApp1.Dsl.Compatibility.Nomad
+  id: Nomad
+  parent: DSLApp1.Dsl.Compatibility
+  langs:
+  - csharp
+  - vb
+  name: Nomad
+  nameWithType: Compatibility.Nomad
+  fullName: DSLApp1.Dsl.Compatibility.Nomad
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Nomad
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 13
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Nomad = 2
+    return:
+      type: DSLApp1.Dsl.Compatibility
+- uid: DSLApp1.Dsl.Compatibility.Chaos
+  commentId: F:DSLApp1.Dsl.Compatibility.Chaos
+  id: Chaos
+  parent: DSLApp1.Dsl.Compatibility
+  langs:
+  - csharp
+  - vb
+  name: Chaos
+  nameWithType: Compatibility.Chaos
+  fullName: DSLApp1.Dsl.Compatibility.Chaos
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Chaos
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 14
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Chaos = 3
+    return:
+      type: DSLApp1.Dsl.Compatibility
+- uid: DSLApp1.Dsl.Compatibility.Blessing
+  commentId: F:DSLApp1.Dsl.Compatibility.Blessing
+  id: Blessing
+  parent: DSLApp1.Dsl.Compatibility
+  langs:
+  - csharp
+  - vb
+  name: Blessing
+  nameWithType: Compatibility.Blessing
+  fullName: DSLApp1.Dsl.Compatibility.Blessing
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Blessing
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 15
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Blessing = 4
+    return:
+      type: DSLApp1.Dsl.Compatibility
+- uid: DSLApp1.Dsl.Compatibility.Execution
+  commentId: F:DSLApp1.Dsl.Compatibility.Execution
+  id: Execution
+  parent: DSLApp1.Dsl.Compatibility
+  langs:
+  - csharp
+  - vb
+  name: Execution
+  nameWithType: Compatibility.Execution
+  fullName: DSLApp1.Dsl.Compatibility.Execution
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Execution
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 16
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Execution = 5
+    return:
+      type: DSLApp1.Dsl.Compatibility
+- uid: DSLApp1.Dsl.Compatibility.Holy
+  commentId: F:DSLApp1.Dsl.Compatibility.Holy
+  id: Holy
+  parent: DSLApp1.Dsl.Compatibility
+  langs:
+  - csharp
+  - vb
+  name: Holy
+  nameWithType: Compatibility.Holy
+  fullName: DSLApp1.Dsl.Compatibility.Holy
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Header.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Holy
+    path: src/Dsl/DSLParser.Header.cs
+    startLine: 17
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Holy = 6
+    return:
+      type: DSLApp1.Dsl.Compatibility
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.Compatibility
+  commentId: T:DSLApp1.Dsl.Compatibility
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.Compatibility.html
+  name: Compatibility
+  nameWithType: Compatibility
+  fullName: DSLApp1.Dsl.Compatibility

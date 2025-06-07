@@ -1,0 +1,2477 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Model.CharacterCombatState
+  commentId: T:DSLApp1.Model.CharacterCombatState
+  id: CharacterCombatState
+  parent: DSLApp1.Model
+  children:
+  - DSLApp1.Model.CharacterCombatState.#ctor(DSLApp1.Model.ICharacterDefinition)
+  - DSLApp1.Model.CharacterCombatState.AddHp(System.Int32)
+  - DSLApp1.Model.CharacterCombatState.AddMana(System.Int32)
+  - DSLApp1.Model.CharacterCombatState.AddModifier(DSLApp1.Model.IModifier)
+  - DSLApp1.Model.CharacterCombatState.AddOpportunityPoints(System.Int32)
+  - DSLApp1.Model.CharacterCombatState.ApplyModifiers(DSLApp1.Model.ICombatCharacter)
+  - DSLApp1.Model.CharacterCombatState.AttackMultiplier(DSLApp1.Model.IAbility,DSLApp1.Model.ICombatCharacter)
+  - DSLApp1.Model.CharacterCombatState.AvailableAbilities(DSLApp1.Model.CombatState,DSLApp1.Model.CharacterCombatState.AbilityMode)
+  - DSLApp1.Model.CharacterCombatState.CombatModifiers
+  - DSLApp1.Model.CharacterCombatState.DamageMultiplier(DSLApp1.Model.IAbility)
+  - DSLApp1.Model.CharacterCombatState.Description
+  - DSLApp1.Model.CharacterCombatState.GetAbilityUseCount(DSLApp1.Model.IAbility)
+  - DSLApp1.Model.CharacterCombatState.GetBuffedStat(DSLApp1.Model.Stat)
+  - DSLApp1.Model.CharacterCombatState.GetHexPieceAbilities
+  - DSLApp1.Model.CharacterCombatState.GetOpportunityAbility
+  - DSLApp1.Model.CharacterCombatState.GetPrimaryAbility
+  - DSLApp1.Model.CharacterCombatState.GetStat(DSLApp1.Model.Stat)
+  - DSLApp1.Model.CharacterCombatState.HexPieceAbilityOrRandom(System.Int32,System.Collections.Generic.List{DSLApp1.Model.IAbility})
+  - DSLApp1.Model.CharacterCombatState.Hp
+  - DSLApp1.Model.CharacterCombatState.HpPercentage
+  - DSLApp1.Model.CharacterCombatState.InOpportunityMode
+  - DSLApp1.Model.CharacterCombatState.IsActive
+  - DSLApp1.Model.CharacterCombatState.IsDead
+  - DSLApp1.Model.CharacterCombatState.Mana
+  - DSLApp1.Model.CharacterCombatState.Modifiers
+  - DSLApp1.Model.CharacterCombatState.OnAbilityUsed(DSLApp1.Model.IAbility)
+  - DSLApp1.Model.CharacterCombatState.OnCombatStart
+  - DSLApp1.Model.CharacterCombatState.OnEndTurn
+  - DSLApp1.Model.CharacterCombatState.OnOpportunityAbilityUsed
+  - DSLApp1.Model.CharacterCombatState.OnStartTurn
+  - DSLApp1.Model.CharacterCombatState.OpportunityGauge
+  - DSLApp1.Model.CharacterCombatState.OpportunityTurnsRemaining
+  - DSLApp1.Model.CharacterCombatState.RemainingTurns(DSLApp1.Model.IModifier)
+  langs:
+  - csharp
+  - vb
+  name: CharacterCombatState
+  nameWithType: CharacterCombatState
+  fullName: DSLApp1.Model.CharacterCombatState
+  type: Class
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: CharacterCombatState
+    path: src/Model/CharacterCombatState.cs
+    startLine: 2
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: 'public abstract class CharacterCombatState : ICharacterCombatState'
+    content.vb: Public MustInherit Class CharacterCombatState Implements ICharacterCombatState
+  inheritance:
+  - System.Object
+  implements:
+  - DSLApp1.Model.ICharacterCombatState
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: DSLApp1.Model.CharacterCombatState.#ctor(DSLApp1.Model.ICharacterDefinition)
+  commentId: M:DSLApp1.Model.CharacterCombatState.#ctor(DSLApp1.Model.ICharacterDefinition)
+  id: '#ctor(DSLApp1.Model.ICharacterDefinition)'
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: CharacterCombatState(ICharacterDefinition)
+  nameWithType: CharacterCombatState.CharacterCombatState(ICharacterDefinition)
+  fullName: DSLApp1.Model.CharacterCombatState.CharacterCombatState(DSLApp1.Model.ICharacterDefinition)
+  type: Constructor
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: .ctor
+    path: src/Model/CharacterCombatState.cs
+    startLine: 43
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public CharacterCombatState(ICharacterDefinition characterDefinition)
+    parameters:
+    - id: characterDefinition
+      type: DSLApp1.Model.ICharacterDefinition
+    content.vb: Public Sub New(characterDefinition As ICharacterDefinition)
+  overload: DSLApp1.Model.CharacterCombatState.#ctor*
+  nameWithType.vb: CharacterCombatState.New(ICharacterDefinition)
+  fullName.vb: DSLApp1.Model.CharacterCombatState.New(DSLApp1.Model.ICharacterDefinition)
+  name.vb: New(ICharacterDefinition)
+- uid: DSLApp1.Model.CharacterCombatState.OpportunityTurnsRemaining
+  commentId: P:DSLApp1.Model.CharacterCombatState.OpportunityTurnsRemaining
+  id: OpportunityTurnsRemaining
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: OpportunityTurnsRemaining
+  nameWithType: CharacterCombatState.OpportunityTurnsRemaining
+  fullName: DSLApp1.Model.CharacterCombatState.OpportunityTurnsRemaining
+  type: Property
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: OpportunityTurnsRemaining
+    path: src/Model/CharacterCombatState.cs
+    startLine: 86
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public int OpportunityTurnsRemaining { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property OpportunityTurnsRemaining As Integer
+  overload: DSLApp1.Model.CharacterCombatState.OpportunityTurnsRemaining*
+- uid: DSLApp1.Model.CharacterCombatState.IsActive
+  commentId: P:DSLApp1.Model.CharacterCombatState.IsActive
+  id: IsActive
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: CharacterCombatState.IsActive
+  fullName: DSLApp1.Model.CharacterCombatState.IsActive
+  type: Property
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: IsActive
+    path: src/Model/CharacterCombatState.cs
+    startLine: 87
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public bool IsActive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsActive As Boolean
+  overload: DSLApp1.Model.CharacterCombatState.IsActive*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.IsActive
+- uid: DSLApp1.Model.CharacterCombatState.Modifiers
+  commentId: P:DSLApp1.Model.CharacterCombatState.Modifiers
+  id: Modifiers
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: Modifiers
+  nameWithType: CharacterCombatState.Modifiers
+  fullName: DSLApp1.Model.CharacterCombatState.Modifiers
+  type: Property
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Modifiers
+    path: src/Model/CharacterCombatState.cs
+    startLine: 89
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public List<IModifier> Modifiers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.IModifier}
+    content.vb: Public ReadOnly Property Modifiers As List(Of IModifier)
+  overload: DSLApp1.Model.CharacterCombatState.Modifiers*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.Modifiers
+- uid: DSLApp1.Model.CharacterCombatState.CombatModifiers
+  commentId: P:DSLApp1.Model.CharacterCombatState.CombatModifiers
+  id: CombatModifiers
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: CombatModifiers
+  nameWithType: CharacterCombatState.CombatModifiers
+  fullName: DSLApp1.Model.CharacterCombatState.CombatModifiers
+  type: Property
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: CombatModifiers
+    path: src/Model/CharacterCombatState.cs
+    startLine: 94
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public List<IModifier> CombatModifiers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.IModifier}
+    content.vb: Public ReadOnly Property CombatModifiers As List(Of IModifier)
+  overload: DSLApp1.Model.CharacterCombatState.CombatModifiers*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.CombatModifiers
+- uid: DSLApp1.Model.CharacterCombatState.IsDead
+  commentId: P:DSLApp1.Model.CharacterCombatState.IsDead
+  id: IsDead
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: IsDead
+  nameWithType: CharacterCombatState.IsDead
+  fullName: DSLApp1.Model.CharacterCombatState.IsDead
+  type: Property
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: IsDead
+    path: src/Model/CharacterCombatState.cs
+    startLine: 97
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public bool IsDead { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsDead As Boolean
+  overload: DSLApp1.Model.CharacterCombatState.IsDead*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.IsDead
+- uid: DSLApp1.Model.CharacterCombatState.GetStat(DSLApp1.Model.Stat)
+  commentId: M:DSLApp1.Model.CharacterCombatState.GetStat(DSLApp1.Model.Stat)
+  id: GetStat(DSLApp1.Model.Stat)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: GetStat(Stat)
+  nameWithType: CharacterCombatState.GetStat(Stat)
+  fullName: DSLApp1.Model.CharacterCombatState.GetStat(DSLApp1.Model.Stat)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: GetStat
+    path: src/Model/CharacterCombatState.cs
+    startLine: 103
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public int GetStat(Stat stat)
+    parameters:
+    - id: stat
+      type: DSLApp1.Model.Stat
+    return:
+      type: System.Int32
+    content.vb: Public Function GetStat(stat As Stat) As Integer
+  overload: DSLApp1.Model.CharacterCombatState.GetStat*
+- uid: DSLApp1.Model.CharacterCombatState.GetBuffedStat(DSLApp1.Model.Stat)
+  commentId: M:DSLApp1.Model.CharacterCombatState.GetBuffedStat(DSLApp1.Model.Stat)
+  id: GetBuffedStat(DSLApp1.Model.Stat)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: GetBuffedStat(Stat)
+  nameWithType: CharacterCombatState.GetBuffedStat(Stat)
+  fullName: DSLApp1.Model.CharacterCombatState.GetBuffedStat(DSLApp1.Model.Stat)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: GetBuffedStat
+    path: src/Model/CharacterCombatState.cs
+    startLine: 119
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public int GetBuffedStat(Stat stat)
+    parameters:
+    - id: stat
+      type: DSLApp1.Model.Stat
+    return:
+      type: System.Int32
+    content.vb: Public Function GetBuffedStat(stat As Stat) As Integer
+  overload: DSLApp1.Model.CharacterCombatState.GetBuffedStat*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.GetBuffedStat(DSLApp1.Model.Stat)
+- uid: DSLApp1.Model.CharacterCombatState.OnCombatStart
+  commentId: M:DSLApp1.Model.CharacterCombatState.OnCombatStart
+  id: OnCombatStart
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: OnCombatStart()
+  nameWithType: CharacterCombatState.OnCombatStart()
+  fullName: DSLApp1.Model.CharacterCombatState.OnCombatStart()
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: OnCombatStart
+    path: src/Model/CharacterCombatState.cs
+    startLine: 135
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public void OnCombatStart()
+    content.vb: Public Sub OnCombatStart()
+  overload: DSLApp1.Model.CharacterCombatState.OnCombatStart*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.OnCombatStart
+- uid: DSLApp1.Model.CharacterCombatState.ApplyModifiers(DSLApp1.Model.ICombatCharacter)
+  commentId: M:DSLApp1.Model.CharacterCombatState.ApplyModifiers(DSLApp1.Model.ICombatCharacter)
+  id: ApplyModifiers(DSLApp1.Model.ICombatCharacter)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: ApplyModifiers(ICombatCharacter)
+  nameWithType: CharacterCombatState.ApplyModifiers(ICombatCharacter)
+  fullName: DSLApp1.Model.CharacterCombatState.ApplyModifiers(DSLApp1.Model.ICombatCharacter)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: ApplyModifiers
+    path: src/Model/CharacterCombatState.cs
+    startLine: 140
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public CombatEvent ApplyModifiers(ICombatCharacter character)
+    parameters:
+    - id: character
+      type: DSLApp1.Model.ICombatCharacter
+    return:
+      type: DSLApp1.Model.CombatEvent
+    content.vb: Public Function ApplyModifiers(character As ICombatCharacter) As CombatEvent
+  overload: DSLApp1.Model.CharacterCombatState.ApplyModifiers*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.ApplyModifiers(DSLApp1.Model.ICombatCharacter)
+- uid: DSLApp1.Model.CharacterCombatState.OnStartTurn
+  commentId: M:DSLApp1.Model.CharacterCombatState.OnStartTurn
+  id: OnStartTurn
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: OnStartTurn()
+  nameWithType: CharacterCombatState.OnStartTurn()
+  fullName: DSLApp1.Model.CharacterCombatState.OnStartTurn()
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: OnStartTurn
+    path: src/Model/CharacterCombatState.cs
+    startLine: 191
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public void OnStartTurn()
+    content.vb: Public Sub OnStartTurn()
+  overload: DSLApp1.Model.CharacterCombatState.OnStartTurn*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.OnStartTurn
+- uid: DSLApp1.Model.CharacterCombatState.OnEndTurn
+  commentId: M:DSLApp1.Model.CharacterCombatState.OnEndTurn
+  id: OnEndTurn
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: OnEndTurn()
+  nameWithType: CharacterCombatState.OnEndTurn()
+  fullName: DSLApp1.Model.CharacterCombatState.OnEndTurn()
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: OnEndTurn
+    path: src/Model/CharacterCombatState.cs
+    startLine: 200
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public void OnEndTurn()
+    content.vb: Public Sub OnEndTurn()
+  overload: DSLApp1.Model.CharacterCombatState.OnEndTurn*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.OnEndTurn
+- uid: DSLApp1.Model.CharacterCombatState.AddHp(System.Int32)
+  commentId: M:DSLApp1.Model.CharacterCombatState.AddHp(System.Int32)
+  id: AddHp(System.Int32)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: AddHp(int)
+  nameWithType: CharacterCombatState.AddHp(int)
+  fullName: DSLApp1.Model.CharacterCombatState.AddHp(int)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: AddHp
+    path: src/Model/CharacterCombatState.cs
+    startLine: 209
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public void AddHp(int change)
+    parameters:
+    - id: change
+      type: System.Int32
+    content.vb: Public Sub AddHp(change As Integer)
+  overload: DSLApp1.Model.CharacterCombatState.AddHp*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.AddHp(System.Int32)
+  nameWithType.vb: CharacterCombatState.AddHp(Integer)
+  fullName.vb: DSLApp1.Model.CharacterCombatState.AddHp(Integer)
+  name.vb: AddHp(Integer)
+- uid: DSLApp1.Model.CharacterCombatState.AddMana(System.Int32)
+  commentId: M:DSLApp1.Model.CharacterCombatState.AddMana(System.Int32)
+  id: AddMana(System.Int32)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: AddMana(int)
+  nameWithType: CharacterCombatState.AddMana(int)
+  fullName: DSLApp1.Model.CharacterCombatState.AddMana(int)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: AddMana
+    path: src/Model/CharacterCombatState.cs
+    startLine: 215
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public void AddMana(int manaChange)
+    parameters:
+    - id: manaChange
+      type: System.Int32
+    content.vb: Public Sub AddMana(manaChange As Integer)
+  overload: DSLApp1.Model.CharacterCombatState.AddMana*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.AddMana(System.Int32)
+  nameWithType.vb: CharacterCombatState.AddMana(Integer)
+  fullName.vb: DSLApp1.Model.CharacterCombatState.AddMana(Integer)
+  name.vb: AddMana(Integer)
+- uid: DSLApp1.Model.CharacterCombatState.AddOpportunityPoints(System.Int32)
+  commentId: M:DSLApp1.Model.CharacterCombatState.AddOpportunityPoints(System.Int32)
+  id: AddOpportunityPoints(System.Int32)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: AddOpportunityPoints(int)
+  nameWithType: CharacterCombatState.AddOpportunityPoints(int)
+  fullName: DSLApp1.Model.CharacterCombatState.AddOpportunityPoints(int)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: AddOpportunityPoints
+    path: src/Model/CharacterCombatState.cs
+    startLine: 220
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public void AddOpportunityPoints(int points)
+    parameters:
+    - id: points
+      type: System.Int32
+    content.vb: Public Sub AddOpportunityPoints(points As Integer)
+  overload: DSLApp1.Model.CharacterCombatState.AddOpportunityPoints*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.AddOpportunityPoints(System.Int32)
+  nameWithType.vb: CharacterCombatState.AddOpportunityPoints(Integer)
+  fullName.vb: DSLApp1.Model.CharacterCombatState.AddOpportunityPoints(Integer)
+  name.vb: AddOpportunityPoints(Integer)
+- uid: DSLApp1.Model.CharacterCombatState.InOpportunityMode
+  commentId: M:DSLApp1.Model.CharacterCombatState.InOpportunityMode
+  id: InOpportunityMode
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: InOpportunityMode()
+  nameWithType: CharacterCombatState.InOpportunityMode()
+  fullName: DSLApp1.Model.CharacterCombatState.InOpportunityMode()
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: InOpportunityMode
+    path: src/Model/CharacterCombatState.cs
+    startLine: 225
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public bool InOpportunityMode()
+    return:
+      type: System.Boolean
+    content.vb: Public Function InOpportunityMode() As Boolean
+  overload: DSLApp1.Model.CharacterCombatState.InOpportunityMode*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.InOpportunityMode
+- uid: DSLApp1.Model.CharacterCombatState.OnOpportunityAbilityUsed
+  commentId: M:DSLApp1.Model.CharacterCombatState.OnOpportunityAbilityUsed
+  id: OnOpportunityAbilityUsed
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: OnOpportunityAbilityUsed()
+  nameWithType: CharacterCombatState.OnOpportunityAbilityUsed()
+  fullName: DSLApp1.Model.CharacterCombatState.OnOpportunityAbilityUsed()
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: OnOpportunityAbilityUsed
+    path: src/Model/CharacterCombatState.cs
+    startLine: 226
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public void OnOpportunityAbilityUsed()
+    content.vb: Public Sub OnOpportunityAbilityUsed()
+  overload: DSLApp1.Model.CharacterCombatState.OnOpportunityAbilityUsed*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.OnOpportunityAbilityUsed
+- uid: DSLApp1.Model.CharacterCombatState.Hp
+  commentId: P:DSLApp1.Model.CharacterCombatState.Hp
+  id: Hp
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: Hp
+  nameWithType: CharacterCombatState.Hp
+  fullName: DSLApp1.Model.CharacterCombatState.Hp
+  type: Property
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Hp
+    path: src/Model/CharacterCombatState.cs
+    startLine: 234
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public int Hp { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Hp As Integer
+  overload: DSLApp1.Model.CharacterCombatState.Hp*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.Hp
+- uid: DSLApp1.Model.CharacterCombatState.Mana
+  commentId: P:DSLApp1.Model.CharacterCombatState.Mana
+  id: Mana
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: Mana
+  nameWithType: CharacterCombatState.Mana
+  fullName: DSLApp1.Model.CharacterCombatState.Mana
+  type: Property
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Mana
+    path: src/Model/CharacterCombatState.cs
+    startLine: 236
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public int Mana { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Mana As Integer
+  overload: DSLApp1.Model.CharacterCombatState.Mana*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.Mana
+- uid: DSLApp1.Model.CharacterCombatState.OpportunityGauge
+  commentId: P:DSLApp1.Model.CharacterCombatState.OpportunityGauge
+  id: OpportunityGauge
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: OpportunityGauge
+  nameWithType: CharacterCombatState.OpportunityGauge
+  fullName: DSLApp1.Model.CharacterCombatState.OpportunityGauge
+  type: Property
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: OpportunityGauge
+    path: src/Model/CharacterCombatState.cs
+    startLine: 238
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public int OpportunityGauge { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property OpportunityGauge As Integer
+  overload: DSLApp1.Model.CharacterCombatState.OpportunityGauge*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.OpportunityGauge
+- uid: DSLApp1.Model.CharacterCombatState.HpPercentage
+  commentId: P:DSLApp1.Model.CharacterCombatState.HpPercentage
+  id: HpPercentage
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: HpPercentage
+  nameWithType: CharacterCombatState.HpPercentage
+  fullName: DSLApp1.Model.CharacterCombatState.HpPercentage
+  type: Property
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HpPercentage
+    path: src/Model/CharacterCombatState.cs
+    startLine: 240
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public int HpPercentage { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property HpPercentage As Integer
+  overload: DSLApp1.Model.CharacterCombatState.HpPercentage*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.HpPercentage
+- uid: DSLApp1.Model.CharacterCombatState.AvailableAbilities(DSLApp1.Model.CombatState,DSLApp1.Model.CharacterCombatState.AbilityMode)
+  commentId: M:DSLApp1.Model.CharacterCombatState.AvailableAbilities(DSLApp1.Model.CombatState,DSLApp1.Model.CharacterCombatState.AbilityMode)
+  id: AvailableAbilities(DSLApp1.Model.CombatState,DSLApp1.Model.CharacterCombatState.AbilityMode)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: AvailableAbilities(CombatState, AbilityMode)
+  nameWithType: CharacterCombatState.AvailableAbilities(CombatState, CharacterCombatState.AbilityMode)
+  fullName: DSLApp1.Model.CharacterCombatState.AvailableAbilities(DSLApp1.Model.CombatState, DSLApp1.Model.CharacterCombatState.AbilityMode)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: AvailableAbilities
+    path: src/Model/CharacterCombatState.cs
+    startLine: 242
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public List<IAbility> AvailableAbilities(CombatState combat, CharacterCombatState.AbilityMode abilityMode)
+    parameters:
+    - id: combat
+      type: DSLApp1.Model.CombatState
+    - id: abilityMode
+      type: DSLApp1.Model.CharacterCombatState.AbilityMode
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.IAbility}
+    content.vb: Public Function AvailableAbilities(combat As CombatState, abilityMode As CharacterCombatState.AbilityMode) As List(Of IAbility)
+  overload: DSLApp1.Model.CharacterCombatState.AvailableAbilities*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.AvailableAbilities(DSLApp1.Model.CombatState,DSLApp1.Model.CharacterCombatState.AbilityMode)
+- uid: DSLApp1.Model.CharacterCombatState.GetPrimaryAbility
+  commentId: M:DSLApp1.Model.CharacterCombatState.GetPrimaryAbility
+  id: GetPrimaryAbility
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: GetPrimaryAbility()
+  nameWithType: CharacterCombatState.GetPrimaryAbility()
+  fullName: DSLApp1.Model.CharacterCombatState.GetPrimaryAbility()
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: GetPrimaryAbility
+    path: src/Model/CharacterCombatState.cs
+    startLine: 265
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public IAbility GetPrimaryAbility()
+    return:
+      type: DSLApp1.Model.IAbility
+    content.vb: Public Function GetPrimaryAbility() As IAbility
+  overload: DSLApp1.Model.CharacterCombatState.GetPrimaryAbility*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.GetPrimaryAbility
+- uid: DSLApp1.Model.CharacterCombatState.GetOpportunityAbility
+  commentId: M:DSLApp1.Model.CharacterCombatState.GetOpportunityAbility
+  id: GetOpportunityAbility
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: GetOpportunityAbility()
+  nameWithType: CharacterCombatState.GetOpportunityAbility()
+  fullName: DSLApp1.Model.CharacterCombatState.GetOpportunityAbility()
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: GetOpportunityAbility
+    path: src/Model/CharacterCombatState.cs
+    startLine: 266
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public IAbility GetOpportunityAbility()
+    return:
+      type: DSLApp1.Model.IAbility
+    content.vb: Public Function GetOpportunityAbility() As IAbility
+  overload: DSLApp1.Model.CharacterCombatState.GetOpportunityAbility*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.GetOpportunityAbility
+- uid: DSLApp1.Model.CharacterCombatState.GetHexPieceAbilities
+  commentId: M:DSLApp1.Model.CharacterCombatState.GetHexPieceAbilities
+  id: GetHexPieceAbilities
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: GetHexPieceAbilities()
+  nameWithType: CharacterCombatState.GetHexPieceAbilities()
+  fullName: DSLApp1.Model.CharacterCombatState.GetHexPieceAbilities()
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: GetHexPieceAbilities
+    path: src/Model/CharacterCombatState.cs
+    startLine: 271
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public List<IAbility> GetHexPieceAbilities()
+    return:
+      type: System.Collections.Generic.List{DSLApp1.Model.IAbility}
+    content.vb: Public Function GetHexPieceAbilities() As List(Of IAbility)
+  overload: DSLApp1.Model.CharacterCombatState.GetHexPieceAbilities*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.GetHexPieceAbilities
+- uid: DSLApp1.Model.CharacterCombatState.HexPieceAbilityOrRandom(System.Int32,System.Collections.Generic.List{DSLApp1.Model.IAbility})
+  commentId: M:DSLApp1.Model.CharacterCombatState.HexPieceAbilityOrRandom(System.Int32,System.Collections.Generic.List{DSLApp1.Model.IAbility})
+  id: HexPieceAbilityOrRandom(System.Int32,System.Collections.Generic.List{DSLApp1.Model.IAbility})
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: HexPieceAbilityOrRandom(int, List<IAbility>)
+  nameWithType: CharacterCombatState.HexPieceAbilityOrRandom(int, List<IAbility>)
+  fullName: DSLApp1.Model.CharacterCombatState.HexPieceAbilityOrRandom(int, System.Collections.Generic.List<DSLApp1.Model.IAbility>)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HexPieceAbilityOrRandom
+    path: src/Model/CharacterCombatState.cs
+    startLine: 276
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public IAbility HexPieceAbilityOrRandom(int index, List<IAbility> fallbackAbilities = null)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: fallbackAbilities
+      type: System.Collections.Generic.List{DSLApp1.Model.IAbility}
+    return:
+      type: DSLApp1.Model.IAbility
+    content.vb: Public Function HexPieceAbilityOrRandom(index As Integer, fallbackAbilities As List(Of IAbility) = Nothing) As IAbility
+  overload: DSLApp1.Model.CharacterCombatState.HexPieceAbilityOrRandom*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.HexPieceAbilityOrRandom(System.Int32,System.Collections.Generic.List{DSLApp1.Model.IAbility})
+  nameWithType.vb: CharacterCombatState.HexPieceAbilityOrRandom(Integer, List(Of IAbility))
+  fullName.vb: DSLApp1.Model.CharacterCombatState.HexPieceAbilityOrRandom(Integer, System.Collections.Generic.List(Of DSLApp1.Model.IAbility))
+  name.vb: HexPieceAbilityOrRandom(Integer, List(Of IAbility))
+- uid: DSLApp1.Model.CharacterCombatState.AddModifier(DSLApp1.Model.IModifier)
+  commentId: M:DSLApp1.Model.CharacterCombatState.AddModifier(DSLApp1.Model.IModifier)
+  id: AddModifier(DSLApp1.Model.IModifier)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: AddModifier(IModifier)
+  nameWithType: CharacterCombatState.AddModifier(IModifier)
+  fullName: DSLApp1.Model.CharacterCombatState.AddModifier(DSLApp1.Model.IModifier)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: AddModifier
+    path: src/Model/CharacterCombatState.cs
+    startLine: 292
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public void AddModifier(IModifier modifier)
+    parameters:
+    - id: modifier
+      type: DSLApp1.Model.IModifier
+    content.vb: Public Sub AddModifier(modifier As IModifier)
+  overload: DSLApp1.Model.CharacterCombatState.AddModifier*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.AddModifier(DSLApp1.Model.IModifier)
+- uid: DSLApp1.Model.CharacterCombatState.DamageMultiplier(DSLApp1.Model.IAbility)
+  commentId: M:DSLApp1.Model.CharacterCombatState.DamageMultiplier(DSLApp1.Model.IAbility)
+  id: DamageMultiplier(DSLApp1.Model.IAbility)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: DamageMultiplier(IAbility)
+  nameWithType: CharacterCombatState.DamageMultiplier(IAbility)
+  fullName: DSLApp1.Model.CharacterCombatState.DamageMultiplier(DSLApp1.Model.IAbility)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: DamageMultiplier
+    path: src/Model/CharacterCombatState.cs
+    startLine: 302
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public float DamageMultiplier(IAbility ability)
+    parameters:
+    - id: ability
+      type: DSLApp1.Model.IAbility
+    return:
+      type: System.Single
+    content.vb: Public Function DamageMultiplier(ability As IAbility) As Single
+  overload: DSLApp1.Model.CharacterCombatState.DamageMultiplier*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.DamageMultiplier(DSLApp1.Model.IAbility)
+- uid: DSLApp1.Model.CharacterCombatState.AttackMultiplier(DSLApp1.Model.IAbility,DSLApp1.Model.ICombatCharacter)
+  commentId: M:DSLApp1.Model.CharacterCombatState.AttackMultiplier(DSLApp1.Model.IAbility,DSLApp1.Model.ICombatCharacter)
+  id: AttackMultiplier(DSLApp1.Model.IAbility,DSLApp1.Model.ICombatCharacter)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: AttackMultiplier(IAbility, ICombatCharacter)
+  nameWithType: CharacterCombatState.AttackMultiplier(IAbility, ICombatCharacter)
+  fullName: DSLApp1.Model.CharacterCombatState.AttackMultiplier(DSLApp1.Model.IAbility, DSLApp1.Model.ICombatCharacter)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: AttackMultiplier
+    path: src/Model/CharacterCombatState.cs
+    startLine: 312
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public float AttackMultiplier(IAbility ability, ICombatCharacter character)
+    parameters:
+    - id: ability
+      type: DSLApp1.Model.IAbility
+    - id: character
+      type: DSLApp1.Model.ICombatCharacter
+    return:
+      type: System.Single
+    content.vb: Public Function AttackMultiplier(ability As IAbility, character As ICombatCharacter) As Single
+  overload: DSLApp1.Model.CharacterCombatState.AttackMultiplier*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.AttackMultiplier(DSLApp1.Model.IAbility,DSLApp1.Model.ICombatCharacter)
+- uid: DSLApp1.Model.CharacterCombatState.OnAbilityUsed(DSLApp1.Model.IAbility)
+  commentId: M:DSLApp1.Model.CharacterCombatState.OnAbilityUsed(DSLApp1.Model.IAbility)
+  id: OnAbilityUsed(DSLApp1.Model.IAbility)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: OnAbilityUsed(IAbility)
+  nameWithType: CharacterCombatState.OnAbilityUsed(IAbility)
+  fullName: DSLApp1.Model.CharacterCombatState.OnAbilityUsed(DSLApp1.Model.IAbility)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: OnAbilityUsed
+    path: src/Model/CharacterCombatState.cs
+    startLine: 323
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public void OnAbilityUsed(IAbility ability)
+    parameters:
+    - id: ability
+      type: DSLApp1.Model.IAbility
+    content.vb: Public Sub OnAbilityUsed(ability As IAbility)
+  overload: DSLApp1.Model.CharacterCombatState.OnAbilityUsed*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.OnAbilityUsed(DSLApp1.Model.IAbility)
+- uid: DSLApp1.Model.CharacterCombatState.GetAbilityUseCount(DSLApp1.Model.IAbility)
+  commentId: M:DSLApp1.Model.CharacterCombatState.GetAbilityUseCount(DSLApp1.Model.IAbility)
+  id: GetAbilityUseCount(DSLApp1.Model.IAbility)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: GetAbilityUseCount(IAbility)
+  nameWithType: CharacterCombatState.GetAbilityUseCount(IAbility)
+  fullName: DSLApp1.Model.CharacterCombatState.GetAbilityUseCount(DSLApp1.Model.IAbility)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: GetAbilityUseCount
+    path: src/Model/CharacterCombatState.cs
+    startLine: 329
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public int GetAbilityUseCount(IAbility ability)
+    parameters:
+    - id: ability
+      type: DSLApp1.Model.IAbility
+    return:
+      type: System.Int32
+    content.vb: Public Function GetAbilityUseCount(ability As IAbility) As Integer
+  overload: DSLApp1.Model.CharacterCombatState.GetAbilityUseCount*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.GetAbilityUseCount(DSLApp1.Model.IAbility)
+- uid: DSLApp1.Model.CharacterCombatState.Description
+  commentId: M:DSLApp1.Model.CharacterCombatState.Description
+  id: Description
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: Description()
+  nameWithType: CharacterCombatState.Description()
+  fullName: DSLApp1.Model.CharacterCombatState.Description()
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Description
+    path: src/Model/CharacterCombatState.cs
+    startLine: 334
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public string Description()
+    return:
+      type: System.String
+    content.vb: Public Function Description() As String
+  overload: DSLApp1.Model.CharacterCombatState.Description*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.Description
+- uid: DSLApp1.Model.CharacterCombatState.RemainingTurns(DSLApp1.Model.IModifier)
+  commentId: M:DSLApp1.Model.CharacterCombatState.RemainingTurns(DSLApp1.Model.IModifier)
+  id: RemainingTurns(DSLApp1.Model.IModifier)
+  parent: DSLApp1.Model.CharacterCombatState
+  langs:
+  - csharp
+  - vb
+  name: RemainingTurns(IModifier)
+  nameWithType: CharacterCombatState.RemainingTurns(IModifier)
+  fullName: DSLApp1.Model.CharacterCombatState.RemainingTurns(DSLApp1.Model.IModifier)
+  type: Method
+  source:
+    remote:
+      path: src/Model/CharacterCombatState.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: RemainingTurns
+    path: src/Model/CharacterCombatState.cs
+    startLine: 341
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  example: []
+  syntax:
+    content: public int RemainingTurns(IModifier modifier)
+    parameters:
+    - id: modifier
+      type: DSLApp1.Model.IModifier
+    return:
+      type: System.Int32
+    content.vb: Public Function RemainingTurns(modifier As IModifier) As Integer
+  overload: DSLApp1.Model.CharacterCombatState.RemainingTurns*
+  implements:
+  - DSLApp1.Model.ICharacterCombatState.RemainingTurns(DSLApp1.Model.IModifier)
+references:
+- uid: DSLApp1.Model
+  commentId: N:DSLApp1.Model
+  href: DSLApp1.html
+  name: DSLApp1.Model
+  nameWithType: DSLApp1.Model
+  fullName: DSLApp1.Model
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Model
+    name: Model
+    href: DSLApp1.Model.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Model
+    name: Model
+    href: DSLApp1.Model.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: DSLApp1.Model.ICharacterCombatState
+  commentId: T:DSLApp1.Model.ICharacterCombatState
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.ICharacterCombatState.html
+  name: ICharacterCombatState
+  nameWithType: ICharacterCombatState
+  fullName: DSLApp1.Model.ICharacterCombatState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DSLApp1.Model.CharacterCombatState.#ctor*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.#ctor
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState__ctor_DSLApp1_Model_ICharacterDefinition_
+  name: CharacterCombatState
+  nameWithType: CharacterCombatState.CharacterCombatState
+  fullName: DSLApp1.Model.CharacterCombatState.CharacterCombatState
+  nameWithType.vb: CharacterCombatState.New
+  fullName.vb: DSLApp1.Model.CharacterCombatState.New
+  name.vb: New
+- uid: DSLApp1.Model.ICharacterDefinition
+  commentId: T:DSLApp1.Model.ICharacterDefinition
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.ICharacterDefinition.html
+  name: ICharacterDefinition
+  nameWithType: ICharacterDefinition
+  fullName: DSLApp1.Model.ICharacterDefinition
+- uid: DSLApp1.Model.CharacterCombatState.OpportunityTurnsRemaining*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.OpportunityTurnsRemaining
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_OpportunityTurnsRemaining
+  name: OpportunityTurnsRemaining
+  nameWithType: CharacterCombatState.OpportunityTurnsRemaining
+  fullName: DSLApp1.Model.CharacterCombatState.OpportunityTurnsRemaining
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: DSLApp1.Model.CharacterCombatState.IsActive*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.IsActive
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_IsActive
+  name: IsActive
+  nameWithType: CharacterCombatState.IsActive
+  fullName: DSLApp1.Model.CharacterCombatState.IsActive
+- uid: DSLApp1.Model.ICharacterCombatState.IsActive
+  commentId: P:DSLApp1.Model.ICharacterCombatState.IsActive
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_IsActive
+  name: IsActive
+  nameWithType: ICharacterCombatState.IsActive
+  fullName: DSLApp1.Model.ICharacterCombatState.IsActive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: DSLApp1.Model.CharacterCombatState.Modifiers*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.Modifiers
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_Modifiers
+  name: Modifiers
+  nameWithType: CharacterCombatState.Modifiers
+  fullName: DSLApp1.Model.CharacterCombatState.Modifiers
+- uid: DSLApp1.Model.ICharacterCombatState.Modifiers
+  commentId: P:DSLApp1.Model.ICharacterCombatState.Modifiers
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_Modifiers
+  name: Modifiers
+  nameWithType: ICharacterCombatState.Modifiers
+  fullName: DSLApp1.Model.ICharacterCombatState.Modifiers
+- uid: System.Collections.Generic.List{DSLApp1.Model.IModifier}
+  commentId: T:System.Collections.Generic.List{DSLApp1.Model.IModifier}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IModifier>
+  nameWithType: List<IModifier>
+  fullName: System.Collections.Generic.List<DSLApp1.Model.IModifier>
+  nameWithType.vb: List(Of IModifier)
+  fullName.vb: System.Collections.Generic.List(Of DSLApp1.Model.IModifier)
+  name.vb: List(Of IModifier)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: DSLApp1.Model.IModifier
+    name: IModifier
+    href: DSLApp1.Model.IModifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Model.IModifier
+    name: IModifier
+    href: DSLApp1.Model.IModifier.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DSLApp1.Model.CharacterCombatState.CombatModifiers*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.CombatModifiers
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_CombatModifiers
+  name: CombatModifiers
+  nameWithType: CharacterCombatState.CombatModifiers
+  fullName: DSLApp1.Model.CharacterCombatState.CombatModifiers
+- uid: DSLApp1.Model.ICharacterCombatState.CombatModifiers
+  commentId: P:DSLApp1.Model.ICharacterCombatState.CombatModifiers
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_CombatModifiers
+  name: CombatModifiers
+  nameWithType: ICharacterCombatState.CombatModifiers
+  fullName: DSLApp1.Model.ICharacterCombatState.CombatModifiers
+- uid: DSLApp1.Model.CharacterCombatState.IsDead*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.IsDead
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_IsDead
+  name: IsDead
+  nameWithType: CharacterCombatState.IsDead
+  fullName: DSLApp1.Model.CharacterCombatState.IsDead
+- uid: DSLApp1.Model.ICharacterCombatState.IsDead
+  commentId: P:DSLApp1.Model.ICharacterCombatState.IsDead
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_IsDead
+  name: IsDead
+  nameWithType: ICharacterCombatState.IsDead
+  fullName: DSLApp1.Model.ICharacterCombatState.IsDead
+- uid: DSLApp1.Model.CharacterCombatState.GetStat*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.GetStat
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_GetStat_DSLApp1_Model_Stat_
+  name: GetStat
+  nameWithType: CharacterCombatState.GetStat
+  fullName: DSLApp1.Model.CharacterCombatState.GetStat
+- uid: DSLApp1.Model.Stat
+  commentId: T:DSLApp1.Model.Stat
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.Stat.html
+  name: Stat
+  nameWithType: Stat
+  fullName: DSLApp1.Model.Stat
+- uid: DSLApp1.Model.CharacterCombatState.GetBuffedStat*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.GetBuffedStat
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_GetBuffedStat_DSLApp1_Model_Stat_
+  name: GetBuffedStat
+  nameWithType: CharacterCombatState.GetBuffedStat
+  fullName: DSLApp1.Model.CharacterCombatState.GetBuffedStat
+- uid: DSLApp1.Model.ICharacterCombatState.GetBuffedStat(DSLApp1.Model.Stat)
+  commentId: M:DSLApp1.Model.ICharacterCombatState.GetBuffedStat(DSLApp1.Model.Stat)
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetBuffedStat_DSLApp1_Model_Stat_
+  name: GetBuffedStat(Stat)
+  nameWithType: ICharacterCombatState.GetBuffedStat(Stat)
+  fullName: DSLApp1.Model.ICharacterCombatState.GetBuffedStat(DSLApp1.Model.Stat)
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.GetBuffedStat(DSLApp1.Model.Stat)
+    name: GetBuffedStat
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetBuffedStat_DSLApp1_Model_Stat_
+  - name: (
+  - uid: DSLApp1.Model.Stat
+    name: Stat
+    href: DSLApp1.Model.Stat.html
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.GetBuffedStat(DSLApp1.Model.Stat)
+    name: GetBuffedStat
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetBuffedStat_DSLApp1_Model_Stat_
+  - name: (
+  - uid: DSLApp1.Model.Stat
+    name: Stat
+    href: DSLApp1.Model.Stat.html
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.OnCombatStart*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.OnCombatStart
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_OnCombatStart
+  name: OnCombatStart
+  nameWithType: CharacterCombatState.OnCombatStart
+  fullName: DSLApp1.Model.CharacterCombatState.OnCombatStart
+- uid: DSLApp1.Model.ICharacterCombatState.OnCombatStart
+  commentId: M:DSLApp1.Model.ICharacterCombatState.OnCombatStart
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnCombatStart
+  name: OnCombatStart()
+  nameWithType: ICharacterCombatState.OnCombatStart()
+  fullName: DSLApp1.Model.ICharacterCombatState.OnCombatStart()
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.OnCombatStart
+    name: OnCombatStart
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnCombatStart
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.OnCombatStart
+    name: OnCombatStart
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnCombatStart
+  - name: (
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.ApplyModifiers*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.ApplyModifiers
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_ApplyModifiers_DSLApp1_Model_ICombatCharacter_
+  name: ApplyModifiers
+  nameWithType: CharacterCombatState.ApplyModifiers
+  fullName: DSLApp1.Model.CharacterCombatState.ApplyModifiers
+- uid: DSLApp1.Model.ICharacterCombatState.ApplyModifiers(DSLApp1.Model.ICombatCharacter)
+  commentId: M:DSLApp1.Model.ICharacterCombatState.ApplyModifiers(DSLApp1.Model.ICombatCharacter)
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_ApplyModifiers_DSLApp1_Model_ICombatCharacter_
+  name: ApplyModifiers(ICombatCharacter)
+  nameWithType: ICharacterCombatState.ApplyModifiers(ICombatCharacter)
+  fullName: DSLApp1.Model.ICharacterCombatState.ApplyModifiers(DSLApp1.Model.ICombatCharacter)
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.ApplyModifiers(DSLApp1.Model.ICombatCharacter)
+    name: ApplyModifiers
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_ApplyModifiers_DSLApp1_Model_ICombatCharacter_
+  - name: (
+  - uid: DSLApp1.Model.ICombatCharacter
+    name: ICombatCharacter
+    href: DSLApp1.Model.ICombatCharacter.html
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.ApplyModifiers(DSLApp1.Model.ICombatCharacter)
+    name: ApplyModifiers
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_ApplyModifiers_DSLApp1_Model_ICombatCharacter_
+  - name: (
+  - uid: DSLApp1.Model.ICombatCharacter
+    name: ICombatCharacter
+    href: DSLApp1.Model.ICombatCharacter.html
+  - name: )
+- uid: DSLApp1.Model.ICombatCharacter
+  commentId: T:DSLApp1.Model.ICombatCharacter
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.ICombatCharacter.html
+  name: ICombatCharacter
+  nameWithType: ICombatCharacter
+  fullName: DSLApp1.Model.ICombatCharacter
+- uid: DSLApp1.Model.CombatEvent
+  commentId: T:DSLApp1.Model.CombatEvent
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.CombatEvent.html
+  name: CombatEvent
+  nameWithType: CombatEvent
+  fullName: DSLApp1.Model.CombatEvent
+- uid: DSLApp1.Model.CharacterCombatState.OnStartTurn*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.OnStartTurn
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_OnStartTurn
+  name: OnStartTurn
+  nameWithType: CharacterCombatState.OnStartTurn
+  fullName: DSLApp1.Model.CharacterCombatState.OnStartTurn
+- uid: DSLApp1.Model.ICharacterCombatState.OnStartTurn
+  commentId: M:DSLApp1.Model.ICharacterCombatState.OnStartTurn
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnStartTurn
+  name: OnStartTurn()
+  nameWithType: ICharacterCombatState.OnStartTurn()
+  fullName: DSLApp1.Model.ICharacterCombatState.OnStartTurn()
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.OnStartTurn
+    name: OnStartTurn
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnStartTurn
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.OnStartTurn
+    name: OnStartTurn
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnStartTurn
+  - name: (
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.OnEndTurn*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.OnEndTurn
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_OnEndTurn
+  name: OnEndTurn
+  nameWithType: CharacterCombatState.OnEndTurn
+  fullName: DSLApp1.Model.CharacterCombatState.OnEndTurn
+- uid: DSLApp1.Model.ICharacterCombatState.OnEndTurn
+  commentId: M:DSLApp1.Model.ICharacterCombatState.OnEndTurn
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnEndTurn
+  name: OnEndTurn()
+  nameWithType: ICharacterCombatState.OnEndTurn()
+  fullName: DSLApp1.Model.ICharacterCombatState.OnEndTurn()
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.OnEndTurn
+    name: OnEndTurn
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnEndTurn
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.OnEndTurn
+    name: OnEndTurn
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnEndTurn
+  - name: (
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.AddHp*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.AddHp
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_AddHp_System_Int32_
+  name: AddHp
+  nameWithType: CharacterCombatState.AddHp
+  fullName: DSLApp1.Model.CharacterCombatState.AddHp
+- uid: DSLApp1.Model.ICharacterCombatState.AddHp(System.Int32)
+  commentId: M:DSLApp1.Model.ICharacterCombatState.AddHp(System.Int32)
+  parent: DSLApp1.Model.ICharacterCombatState
+  isExternal: true
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AddHp_System_Int32_
+  name: AddHp(int)
+  nameWithType: ICharacterCombatState.AddHp(int)
+  fullName: DSLApp1.Model.ICharacterCombatState.AddHp(int)
+  nameWithType.vb: ICharacterCombatState.AddHp(Integer)
+  fullName.vb: DSLApp1.Model.ICharacterCombatState.AddHp(Integer)
+  name.vb: AddHp(Integer)
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.AddHp(System.Int32)
+    name: AddHp
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AddHp_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.AddHp(System.Int32)
+    name: AddHp
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AddHp_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.AddMana*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.AddMana
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_AddMana_System_Int32_
+  name: AddMana
+  nameWithType: CharacterCombatState.AddMana
+  fullName: DSLApp1.Model.CharacterCombatState.AddMana
+- uid: DSLApp1.Model.ICharacterCombatState.AddMana(System.Int32)
+  commentId: M:DSLApp1.Model.ICharacterCombatState.AddMana(System.Int32)
+  parent: DSLApp1.Model.ICharacterCombatState
+  isExternal: true
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AddMana_System_Int32_
+  name: AddMana(int)
+  nameWithType: ICharacterCombatState.AddMana(int)
+  fullName: DSLApp1.Model.ICharacterCombatState.AddMana(int)
+  nameWithType.vb: ICharacterCombatState.AddMana(Integer)
+  fullName.vb: DSLApp1.Model.ICharacterCombatState.AddMana(Integer)
+  name.vb: AddMana(Integer)
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.AddMana(System.Int32)
+    name: AddMana
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AddMana_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.AddMana(System.Int32)
+    name: AddMana
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AddMana_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.AddOpportunityPoints*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.AddOpportunityPoints
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_AddOpportunityPoints_System_Int32_
+  name: AddOpportunityPoints
+  nameWithType: CharacterCombatState.AddOpportunityPoints
+  fullName: DSLApp1.Model.CharacterCombatState.AddOpportunityPoints
+- uid: DSLApp1.Model.ICharacterCombatState.AddOpportunityPoints(System.Int32)
+  commentId: M:DSLApp1.Model.ICharacterCombatState.AddOpportunityPoints(System.Int32)
+  parent: DSLApp1.Model.ICharacterCombatState
+  isExternal: true
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AddOpportunityPoints_System_Int32_
+  name: AddOpportunityPoints(int)
+  nameWithType: ICharacterCombatState.AddOpportunityPoints(int)
+  fullName: DSLApp1.Model.ICharacterCombatState.AddOpportunityPoints(int)
+  nameWithType.vb: ICharacterCombatState.AddOpportunityPoints(Integer)
+  fullName.vb: DSLApp1.Model.ICharacterCombatState.AddOpportunityPoints(Integer)
+  name.vb: AddOpportunityPoints(Integer)
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.AddOpportunityPoints(System.Int32)
+    name: AddOpportunityPoints
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AddOpportunityPoints_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.AddOpportunityPoints(System.Int32)
+    name: AddOpportunityPoints
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AddOpportunityPoints_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.InOpportunityMode*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.InOpportunityMode
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_InOpportunityMode
+  name: InOpportunityMode
+  nameWithType: CharacterCombatState.InOpportunityMode
+  fullName: DSLApp1.Model.CharacterCombatState.InOpportunityMode
+- uid: DSLApp1.Model.ICharacterCombatState.InOpportunityMode
+  commentId: M:DSLApp1.Model.ICharacterCombatState.InOpportunityMode
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_InOpportunityMode
+  name: InOpportunityMode()
+  nameWithType: ICharacterCombatState.InOpportunityMode()
+  fullName: DSLApp1.Model.ICharacterCombatState.InOpportunityMode()
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.InOpportunityMode
+    name: InOpportunityMode
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_InOpportunityMode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.InOpportunityMode
+    name: InOpportunityMode
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_InOpportunityMode
+  - name: (
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.OnOpportunityAbilityUsed*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.OnOpportunityAbilityUsed
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_OnOpportunityAbilityUsed
+  name: OnOpportunityAbilityUsed
+  nameWithType: CharacterCombatState.OnOpportunityAbilityUsed
+  fullName: DSLApp1.Model.CharacterCombatState.OnOpportunityAbilityUsed
+- uid: DSLApp1.Model.ICharacterCombatState.OnOpportunityAbilityUsed
+  commentId: M:DSLApp1.Model.ICharacterCombatState.OnOpportunityAbilityUsed
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnOpportunityAbilityUsed
+  name: OnOpportunityAbilityUsed()
+  nameWithType: ICharacterCombatState.OnOpportunityAbilityUsed()
+  fullName: DSLApp1.Model.ICharacterCombatState.OnOpportunityAbilityUsed()
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.OnOpportunityAbilityUsed
+    name: OnOpportunityAbilityUsed
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnOpportunityAbilityUsed
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.OnOpportunityAbilityUsed
+    name: OnOpportunityAbilityUsed
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnOpportunityAbilityUsed
+  - name: (
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.Hp*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.Hp
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_Hp
+  name: Hp
+  nameWithType: CharacterCombatState.Hp
+  fullName: DSLApp1.Model.CharacterCombatState.Hp
+- uid: DSLApp1.Model.ICharacterCombatState.Hp
+  commentId: P:DSLApp1.Model.ICharacterCombatState.Hp
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_Hp
+  name: Hp
+  nameWithType: ICharacterCombatState.Hp
+  fullName: DSLApp1.Model.ICharacterCombatState.Hp
+- uid: DSLApp1.Model.CharacterCombatState.Mana*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.Mana
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_Mana
+  name: Mana
+  nameWithType: CharacterCombatState.Mana
+  fullName: DSLApp1.Model.CharacterCombatState.Mana
+- uid: DSLApp1.Model.ICharacterCombatState.Mana
+  commentId: P:DSLApp1.Model.ICharacterCombatState.Mana
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_Mana
+  name: Mana
+  nameWithType: ICharacterCombatState.Mana
+  fullName: DSLApp1.Model.ICharacterCombatState.Mana
+- uid: DSLApp1.Model.CharacterCombatState.OpportunityGauge*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.OpportunityGauge
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_OpportunityGauge
+  name: OpportunityGauge
+  nameWithType: CharacterCombatState.OpportunityGauge
+  fullName: DSLApp1.Model.CharacterCombatState.OpportunityGauge
+- uid: DSLApp1.Model.ICharacterCombatState.OpportunityGauge
+  commentId: P:DSLApp1.Model.ICharacterCombatState.OpportunityGauge
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OpportunityGauge
+  name: OpportunityGauge
+  nameWithType: ICharacterCombatState.OpportunityGauge
+  fullName: DSLApp1.Model.ICharacterCombatState.OpportunityGauge
+- uid: DSLApp1.Model.CharacterCombatState.HpPercentage*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.HpPercentage
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_HpPercentage
+  name: HpPercentage
+  nameWithType: CharacterCombatState.HpPercentage
+  fullName: DSLApp1.Model.CharacterCombatState.HpPercentage
+- uid: DSLApp1.Model.ICharacterCombatState.HpPercentage
+  commentId: P:DSLApp1.Model.ICharacterCombatState.HpPercentage
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_HpPercentage
+  name: HpPercentage
+  nameWithType: ICharacterCombatState.HpPercentage
+  fullName: DSLApp1.Model.ICharacterCombatState.HpPercentage
+- uid: DSLApp1.Model.CharacterCombatState.AvailableAbilities*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.AvailableAbilities
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_AvailableAbilities_DSLApp1_Model_CombatState_DSLApp1_Model_CharacterCombatState_AbilityMode_
+  name: AvailableAbilities
+  nameWithType: CharacterCombatState.AvailableAbilities
+  fullName: DSLApp1.Model.CharacterCombatState.AvailableAbilities
+- uid: DSLApp1.Model.ICharacterCombatState.AvailableAbilities(DSLApp1.Model.CombatState,DSLApp1.Model.CharacterCombatState.AbilityMode)
+  commentId: M:DSLApp1.Model.ICharacterCombatState.AvailableAbilities(DSLApp1.Model.CombatState,DSLApp1.Model.CharacterCombatState.AbilityMode)
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AvailableAbilities_DSLApp1_Model_CombatState_DSLApp1_Model_CharacterCombatState_AbilityMode_
+  name: AvailableAbilities(CombatState, AbilityMode)
+  nameWithType: ICharacterCombatState.AvailableAbilities(CombatState, CharacterCombatState.AbilityMode)
+  fullName: DSLApp1.Model.ICharacterCombatState.AvailableAbilities(DSLApp1.Model.CombatState, DSLApp1.Model.CharacterCombatState.AbilityMode)
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.AvailableAbilities(DSLApp1.Model.CombatState,DSLApp1.Model.CharacterCombatState.AbilityMode)
+    name: AvailableAbilities
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AvailableAbilities_DSLApp1_Model_CombatState_DSLApp1_Model_CharacterCombatState_AbilityMode_
+  - name: (
+  - uid: DSLApp1.Model.CombatState
+    name: CombatState
+    href: DSLApp1.Model.CombatState.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Model.CharacterCombatState.AbilityMode
+    name: AbilityMode
+    href: DSLApp1.Model.CharacterCombatState.AbilityMode.html
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.AvailableAbilities(DSLApp1.Model.CombatState,DSLApp1.Model.CharacterCombatState.AbilityMode)
+    name: AvailableAbilities
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AvailableAbilities_DSLApp1_Model_CombatState_DSLApp1_Model_CharacterCombatState_AbilityMode_
+  - name: (
+  - uid: DSLApp1.Model.CombatState
+    name: CombatState
+    href: DSLApp1.Model.CombatState.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Model.CharacterCombatState.AbilityMode
+    name: AbilityMode
+    href: DSLApp1.Model.CharacterCombatState.AbilityMode.html
+  - name: )
+- uid: DSLApp1.Model.CombatState
+  commentId: T:DSLApp1.Model.CombatState
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.CombatState.html
+  name: CombatState
+  nameWithType: CombatState
+  fullName: DSLApp1.Model.CombatState
+- uid: DSLApp1.Model.CharacterCombatState.AbilityMode
+  commentId: T:DSLApp1.Model.CharacterCombatState.AbilityMode
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.CharacterCombatState.html
+  name: CharacterCombatState.AbilityMode
+  nameWithType: CharacterCombatState.AbilityMode
+  fullName: DSLApp1.Model.CharacterCombatState.AbilityMode
+  spec.csharp:
+  - uid: DSLApp1.Model.CharacterCombatState
+    name: CharacterCombatState
+    href: DSLApp1.Model.CharacterCombatState.html
+  - name: .
+  - uid: DSLApp1.Model.CharacterCombatState.AbilityMode
+    name: AbilityMode
+    href: DSLApp1.Model.CharacterCombatState.AbilityMode.html
+  spec.vb:
+  - uid: DSLApp1.Model.CharacterCombatState
+    name: CharacterCombatState
+    href: DSLApp1.Model.CharacterCombatState.html
+  - name: .
+  - uid: DSLApp1.Model.CharacterCombatState.AbilityMode
+    name: AbilityMode
+    href: DSLApp1.Model.CharacterCombatState.AbilityMode.html
+- uid: System.Collections.Generic.List{DSLApp1.Model.IAbility}
+  commentId: T:System.Collections.Generic.List{DSLApp1.Model.IAbility}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<IAbility>
+  nameWithType: List<IAbility>
+  fullName: System.Collections.Generic.List<DSLApp1.Model.IAbility>
+  nameWithType.vb: List(Of IAbility)
+  fullName.vb: System.Collections.Generic.List(Of DSLApp1.Model.IAbility)
+  name.vb: List(Of IAbility)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    href: DSLApp1.Model.IAbility.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    href: DSLApp1.Model.IAbility.html
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.GetPrimaryAbility*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.GetPrimaryAbility
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_GetPrimaryAbility
+  name: GetPrimaryAbility
+  nameWithType: CharacterCombatState.GetPrimaryAbility
+  fullName: DSLApp1.Model.CharacterCombatState.GetPrimaryAbility
+- uid: DSLApp1.Model.ICharacterCombatState.GetPrimaryAbility
+  commentId: M:DSLApp1.Model.ICharacterCombatState.GetPrimaryAbility
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetPrimaryAbility
+  name: GetPrimaryAbility()
+  nameWithType: ICharacterCombatState.GetPrimaryAbility()
+  fullName: DSLApp1.Model.ICharacterCombatState.GetPrimaryAbility()
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.GetPrimaryAbility
+    name: GetPrimaryAbility
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetPrimaryAbility
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.GetPrimaryAbility
+    name: GetPrimaryAbility
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetPrimaryAbility
+  - name: (
+  - name: )
+- uid: DSLApp1.Model.IAbility
+  commentId: T:DSLApp1.Model.IAbility
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.IAbility.html
+  name: IAbility
+  nameWithType: IAbility
+  fullName: DSLApp1.Model.IAbility
+- uid: DSLApp1.Model.CharacterCombatState.GetOpportunityAbility*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.GetOpportunityAbility
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_GetOpportunityAbility
+  name: GetOpportunityAbility
+  nameWithType: CharacterCombatState.GetOpportunityAbility
+  fullName: DSLApp1.Model.CharacterCombatState.GetOpportunityAbility
+- uid: DSLApp1.Model.ICharacterCombatState.GetOpportunityAbility
+  commentId: M:DSLApp1.Model.ICharacterCombatState.GetOpportunityAbility
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetOpportunityAbility
+  name: GetOpportunityAbility()
+  nameWithType: ICharacterCombatState.GetOpportunityAbility()
+  fullName: DSLApp1.Model.ICharacterCombatState.GetOpportunityAbility()
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.GetOpportunityAbility
+    name: GetOpportunityAbility
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetOpportunityAbility
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.GetOpportunityAbility
+    name: GetOpportunityAbility
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetOpportunityAbility
+  - name: (
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.GetHexPieceAbilities*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.GetHexPieceAbilities
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_GetHexPieceAbilities
+  name: GetHexPieceAbilities
+  nameWithType: CharacterCombatState.GetHexPieceAbilities
+  fullName: DSLApp1.Model.CharacterCombatState.GetHexPieceAbilities
+- uid: DSLApp1.Model.ICharacterCombatState.GetHexPieceAbilities
+  commentId: M:DSLApp1.Model.ICharacterCombatState.GetHexPieceAbilities
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetHexPieceAbilities
+  name: GetHexPieceAbilities()
+  nameWithType: ICharacterCombatState.GetHexPieceAbilities()
+  fullName: DSLApp1.Model.ICharacterCombatState.GetHexPieceAbilities()
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.GetHexPieceAbilities
+    name: GetHexPieceAbilities
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetHexPieceAbilities
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.GetHexPieceAbilities
+    name: GetHexPieceAbilities
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetHexPieceAbilities
+  - name: (
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.HexPieceAbilityOrRandom*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.HexPieceAbilityOrRandom
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_HexPieceAbilityOrRandom_System_Int32_System_Collections_Generic_List_DSLApp1_Model_IAbility__
+  name: HexPieceAbilityOrRandom
+  nameWithType: CharacterCombatState.HexPieceAbilityOrRandom
+  fullName: DSLApp1.Model.CharacterCombatState.HexPieceAbilityOrRandom
+- uid: DSLApp1.Model.ICharacterCombatState.HexPieceAbilityOrRandom(System.Int32,System.Collections.Generic.List{DSLApp1.Model.IAbility})
+  commentId: M:DSLApp1.Model.ICharacterCombatState.HexPieceAbilityOrRandom(System.Int32,System.Collections.Generic.List{DSLApp1.Model.IAbility})
+  parent: DSLApp1.Model.ICharacterCombatState
+  isExternal: true
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_HexPieceAbilityOrRandom_System_Int32_System_Collections_Generic_List_DSLApp1_Model_IAbility__
+  name: HexPieceAbilityOrRandom(int, List<IAbility>)
+  nameWithType: ICharacterCombatState.HexPieceAbilityOrRandom(int, List<IAbility>)
+  fullName: DSLApp1.Model.ICharacterCombatState.HexPieceAbilityOrRandom(int, System.Collections.Generic.List<DSLApp1.Model.IAbility>)
+  nameWithType.vb: ICharacterCombatState.HexPieceAbilityOrRandom(Integer, List(Of IAbility))
+  fullName.vb: DSLApp1.Model.ICharacterCombatState.HexPieceAbilityOrRandom(Integer, System.Collections.Generic.List(Of DSLApp1.Model.IAbility))
+  name.vb: HexPieceAbilityOrRandom(Integer, List(Of IAbility))
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.HexPieceAbilityOrRandom(System.Int32,System.Collections.Generic.List{DSLApp1.Model.IAbility})
+    name: HexPieceAbilityOrRandom
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_HexPieceAbilityOrRandom_System_Int32_System_Collections_Generic_List_DSLApp1_Model_IAbility__
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    href: DSLApp1.Model.IAbility.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.HexPieceAbilityOrRandom(System.Int32,System.Collections.Generic.List{DSLApp1.Model.IAbility})
+    name: HexPieceAbilityOrRandom
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_HexPieceAbilityOrRandom_System_Int32_System_Collections_Generic_List_DSLApp1_Model_IAbility__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    href: DSLApp1.Model.IAbility.html
+  - name: )
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.AddModifier*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.AddModifier
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_AddModifier_DSLApp1_Model_IModifier_
+  name: AddModifier
+  nameWithType: CharacterCombatState.AddModifier
+  fullName: DSLApp1.Model.CharacterCombatState.AddModifier
+- uid: DSLApp1.Model.ICharacterCombatState.AddModifier(DSLApp1.Model.IModifier)
+  commentId: M:DSLApp1.Model.ICharacterCombatState.AddModifier(DSLApp1.Model.IModifier)
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AddModifier_DSLApp1_Model_IModifier_
+  name: AddModifier(IModifier)
+  nameWithType: ICharacterCombatState.AddModifier(IModifier)
+  fullName: DSLApp1.Model.ICharacterCombatState.AddModifier(DSLApp1.Model.IModifier)
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.AddModifier(DSLApp1.Model.IModifier)
+    name: AddModifier
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AddModifier_DSLApp1_Model_IModifier_
+  - name: (
+  - uid: DSLApp1.Model.IModifier
+    name: IModifier
+    href: DSLApp1.Model.IModifier.html
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.AddModifier(DSLApp1.Model.IModifier)
+    name: AddModifier
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AddModifier_DSLApp1_Model_IModifier_
+  - name: (
+  - uid: DSLApp1.Model.IModifier
+    name: IModifier
+    href: DSLApp1.Model.IModifier.html
+  - name: )
+- uid: DSLApp1.Model.IModifier
+  commentId: T:DSLApp1.Model.IModifier
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.IModifier.html
+  name: IModifier
+  nameWithType: IModifier
+  fullName: DSLApp1.Model.IModifier
+- uid: DSLApp1.Model.CharacterCombatState.DamageMultiplier*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.DamageMultiplier
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_DamageMultiplier_DSLApp1_Model_IAbility_
+  name: DamageMultiplier
+  nameWithType: CharacterCombatState.DamageMultiplier
+  fullName: DSLApp1.Model.CharacterCombatState.DamageMultiplier
+- uid: DSLApp1.Model.ICharacterCombatState.DamageMultiplier(DSLApp1.Model.IAbility)
+  commentId: M:DSLApp1.Model.ICharacterCombatState.DamageMultiplier(DSLApp1.Model.IAbility)
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_DamageMultiplier_DSLApp1_Model_IAbility_
+  name: DamageMultiplier(IAbility)
+  nameWithType: ICharacterCombatState.DamageMultiplier(IAbility)
+  fullName: DSLApp1.Model.ICharacterCombatState.DamageMultiplier(DSLApp1.Model.IAbility)
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.DamageMultiplier(DSLApp1.Model.IAbility)
+    name: DamageMultiplier
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_DamageMultiplier_DSLApp1_Model_IAbility_
+  - name: (
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    href: DSLApp1.Model.IAbility.html
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.DamageMultiplier(DSLApp1.Model.IAbility)
+    name: DamageMultiplier
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_DamageMultiplier_DSLApp1_Model_IAbility_
+  - name: (
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    href: DSLApp1.Model.IAbility.html
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: DSLApp1.Model.CharacterCombatState.AttackMultiplier*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.AttackMultiplier
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_AttackMultiplier_DSLApp1_Model_IAbility_DSLApp1_Model_ICombatCharacter_
+  name: AttackMultiplier
+  nameWithType: CharacterCombatState.AttackMultiplier
+  fullName: DSLApp1.Model.CharacterCombatState.AttackMultiplier
+- uid: DSLApp1.Model.ICharacterCombatState.AttackMultiplier(DSLApp1.Model.IAbility,DSLApp1.Model.ICombatCharacter)
+  commentId: M:DSLApp1.Model.ICharacterCombatState.AttackMultiplier(DSLApp1.Model.IAbility,DSLApp1.Model.ICombatCharacter)
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AttackMultiplier_DSLApp1_Model_IAbility_DSLApp1_Model_ICombatCharacter_
+  name: AttackMultiplier(IAbility, ICombatCharacter)
+  nameWithType: ICharacterCombatState.AttackMultiplier(IAbility, ICombatCharacter)
+  fullName: DSLApp1.Model.ICharacterCombatState.AttackMultiplier(DSLApp1.Model.IAbility, DSLApp1.Model.ICombatCharacter)
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.AttackMultiplier(DSLApp1.Model.IAbility,DSLApp1.Model.ICombatCharacter)
+    name: AttackMultiplier
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AttackMultiplier_DSLApp1_Model_IAbility_DSLApp1_Model_ICombatCharacter_
+  - name: (
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    href: DSLApp1.Model.IAbility.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Model.ICombatCharacter
+    name: ICombatCharacter
+    href: DSLApp1.Model.ICombatCharacter.html
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.AttackMultiplier(DSLApp1.Model.IAbility,DSLApp1.Model.ICombatCharacter)
+    name: AttackMultiplier
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_AttackMultiplier_DSLApp1_Model_IAbility_DSLApp1_Model_ICombatCharacter_
+  - name: (
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    href: DSLApp1.Model.IAbility.html
+  - name: ','
+  - name: " "
+  - uid: DSLApp1.Model.ICombatCharacter
+    name: ICombatCharacter
+    href: DSLApp1.Model.ICombatCharacter.html
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.OnAbilityUsed*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.OnAbilityUsed
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_OnAbilityUsed_DSLApp1_Model_IAbility_
+  name: OnAbilityUsed
+  nameWithType: CharacterCombatState.OnAbilityUsed
+  fullName: DSLApp1.Model.CharacterCombatState.OnAbilityUsed
+- uid: DSLApp1.Model.ICharacterCombatState.OnAbilityUsed(DSLApp1.Model.IAbility)
+  commentId: M:DSLApp1.Model.ICharacterCombatState.OnAbilityUsed(DSLApp1.Model.IAbility)
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnAbilityUsed_DSLApp1_Model_IAbility_
+  name: OnAbilityUsed(IAbility)
+  nameWithType: ICharacterCombatState.OnAbilityUsed(IAbility)
+  fullName: DSLApp1.Model.ICharacterCombatState.OnAbilityUsed(DSLApp1.Model.IAbility)
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.OnAbilityUsed(DSLApp1.Model.IAbility)
+    name: OnAbilityUsed
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnAbilityUsed_DSLApp1_Model_IAbility_
+  - name: (
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    href: DSLApp1.Model.IAbility.html
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.OnAbilityUsed(DSLApp1.Model.IAbility)
+    name: OnAbilityUsed
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_OnAbilityUsed_DSLApp1_Model_IAbility_
+  - name: (
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    href: DSLApp1.Model.IAbility.html
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.GetAbilityUseCount*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.GetAbilityUseCount
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_GetAbilityUseCount_DSLApp1_Model_IAbility_
+  name: GetAbilityUseCount
+  nameWithType: CharacterCombatState.GetAbilityUseCount
+  fullName: DSLApp1.Model.CharacterCombatState.GetAbilityUseCount
+- uid: DSLApp1.Model.ICharacterCombatState.GetAbilityUseCount(DSLApp1.Model.IAbility)
+  commentId: M:DSLApp1.Model.ICharacterCombatState.GetAbilityUseCount(DSLApp1.Model.IAbility)
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetAbilityUseCount_DSLApp1_Model_IAbility_
+  name: GetAbilityUseCount(IAbility)
+  nameWithType: ICharacterCombatState.GetAbilityUseCount(IAbility)
+  fullName: DSLApp1.Model.ICharacterCombatState.GetAbilityUseCount(DSLApp1.Model.IAbility)
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.GetAbilityUseCount(DSLApp1.Model.IAbility)
+    name: GetAbilityUseCount
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetAbilityUseCount_DSLApp1_Model_IAbility_
+  - name: (
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    href: DSLApp1.Model.IAbility.html
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.GetAbilityUseCount(DSLApp1.Model.IAbility)
+    name: GetAbilityUseCount
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_GetAbilityUseCount_DSLApp1_Model_IAbility_
+  - name: (
+  - uid: DSLApp1.Model.IAbility
+    name: IAbility
+    href: DSLApp1.Model.IAbility.html
+  - name: )
+- uid: DSLApp1.Model.CharacterCombatState.Description*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.Description
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_Description
+  name: Description
+  nameWithType: CharacterCombatState.Description
+  fullName: DSLApp1.Model.CharacterCombatState.Description
+- uid: DSLApp1.Model.ICharacterCombatState.Description
+  commentId: M:DSLApp1.Model.ICharacterCombatState.Description
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_Description
+  name: Description()
+  nameWithType: ICharacterCombatState.Description()
+  fullName: DSLApp1.Model.ICharacterCombatState.Description()
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.Description
+    name: Description
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_Description
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.Description
+    name: Description
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_Description
+  - name: (
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: DSLApp1.Model.CharacterCombatState.RemainingTurns*
+  commentId: Overload:DSLApp1.Model.CharacterCombatState.RemainingTurns
+  href: DSLApp1.Model.CharacterCombatState.html#DSLApp1_Model_CharacterCombatState_RemainingTurns_DSLApp1_Model_IModifier_
+  name: RemainingTurns
+  nameWithType: CharacterCombatState.RemainingTurns
+  fullName: DSLApp1.Model.CharacterCombatState.RemainingTurns
+- uid: DSLApp1.Model.ICharacterCombatState.RemainingTurns(DSLApp1.Model.IModifier)
+  commentId: M:DSLApp1.Model.ICharacterCombatState.RemainingTurns(DSLApp1.Model.IModifier)
+  parent: DSLApp1.Model.ICharacterCombatState
+  href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_RemainingTurns_DSLApp1_Model_IModifier_
+  name: RemainingTurns(IModifier)
+  nameWithType: ICharacterCombatState.RemainingTurns(IModifier)
+  fullName: DSLApp1.Model.ICharacterCombatState.RemainingTurns(DSLApp1.Model.IModifier)
+  spec.csharp:
+  - uid: DSLApp1.Model.ICharacterCombatState.RemainingTurns(DSLApp1.Model.IModifier)
+    name: RemainingTurns
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_RemainingTurns_DSLApp1_Model_IModifier_
+  - name: (
+  - uid: DSLApp1.Model.IModifier
+    name: IModifier
+    href: DSLApp1.Model.IModifier.html
+  - name: )
+  spec.vb:
+  - uid: DSLApp1.Model.ICharacterCombatState.RemainingTurns(DSLApp1.Model.IModifier)
+    name: RemainingTurns
+    href: DSLApp1.Model.ICharacterCombatState.html#DSLApp1_Model_ICharacterCombatState_RemainingTurns_DSLApp1_Model_IModifier_
+  - name: (
+  - uid: DSLApp1.Model.IModifier
+    name: IModifier
+    href: DSLApp1.Model.IModifier.html
+  - name: )

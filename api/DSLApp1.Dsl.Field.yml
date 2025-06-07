@@ -1,0 +1,517 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.Field
+  commentId: T:DSLApp1.Dsl.Field
+  id: Field
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.Field.Attack
+  - DSLApp1.Dsl.Field.Defence
+  - DSLApp1.Dsl.Field.Elements
+  - DSLApp1.Dsl.Field.Hits
+  - DSLApp1.Dsl.Field.Hp
+  - DSLApp1.Dsl.Field.HpPercent
+  - DSLApp1.Dsl.Field.Initiative
+  - DSLApp1.Dsl.Field.Intelligence
+  - DSLApp1.Dsl.Field.KillCount
+  - DSLApp1.Dsl.Field.Mana
+  - DSLApp1.Dsl.Field.Mechanics
+  - DSLApp1.Dsl.Field.Miss
+  - DSLApp1.Dsl.Field.Opportunity
+  - DSLApp1.Dsl.Field.Resistance
+  - DSLApp1.Dsl.Field.Roles
+  - DSLApp1.Dsl.Field.Roll
+  - DSLApp1.Dsl.Field.TargetCount
+  langs:
+  - csharp
+  - vb
+  name: Field
+  nameWithType: Field
+  fullName: DSLApp1.Dsl.Field
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Field
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 13
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum Field
+    content.vb: Public Enum Field
+- uid: DSLApp1.Dsl.Field.Attack
+  commentId: F:DSLApp1.Dsl.Field.Attack
+  id: Attack
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Attack
+  nameWithType: Field.Attack
+  fullName: DSLApp1.Dsl.Field.Attack
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Attack
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 15
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Attack = 0
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Defence
+  commentId: F:DSLApp1.Dsl.Field.Defence
+  id: Defence
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Defence
+  nameWithType: Field.Defence
+  fullName: DSLApp1.Dsl.Field.Defence
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Defence
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 16
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Defence = 1
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Intelligence
+  commentId: F:DSLApp1.Dsl.Field.Intelligence
+  id: Intelligence
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Intelligence
+  nameWithType: Field.Intelligence
+  fullName: DSLApp1.Dsl.Field.Intelligence
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Intelligence
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 17
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Intelligence = 2
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Resistance
+  commentId: F:DSLApp1.Dsl.Field.Resistance
+  id: Resistance
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Resistance
+  nameWithType: Field.Resistance
+  fullName: DSLApp1.Dsl.Field.Resistance
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Resistance
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 18
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Resistance = 3
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Initiative
+  commentId: F:DSLApp1.Dsl.Field.Initiative
+  id: Initiative
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Initiative
+  nameWithType: Field.Initiative
+  fullName: DSLApp1.Dsl.Field.Initiative
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Initiative
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 19
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Initiative = 4
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Mana
+  commentId: F:DSLApp1.Dsl.Field.Mana
+  id: Mana
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Mana
+  nameWithType: Field.Mana
+  fullName: DSLApp1.Dsl.Field.Mana
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Mana
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 20
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Mana = 5
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Hp
+  commentId: F:DSLApp1.Dsl.Field.Hp
+  id: Hp
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Hp
+  nameWithType: Field.Hp
+  fullName: DSLApp1.Dsl.Field.Hp
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Hp
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 21
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Hp = 6
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.HpPercent
+  commentId: F:DSLApp1.Dsl.Field.HpPercent
+  id: HpPercent
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: HpPercent
+  nameWithType: Field.HpPercent
+  fullName: DSLApp1.Dsl.Field.HpPercent
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: HpPercent
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 22
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: HpPercent = 7
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Opportunity
+  commentId: F:DSLApp1.Dsl.Field.Opportunity
+  id: Opportunity
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Opportunity
+  nameWithType: Field.Opportunity
+  fullName: DSLApp1.Dsl.Field.Opportunity
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Opportunity
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 23
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Opportunity = 8
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Miss
+  commentId: F:DSLApp1.Dsl.Field.Miss
+  id: Miss
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Miss
+  nameWithType: Field.Miss
+  fullName: DSLApp1.Dsl.Field.Miss
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Miss
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 24
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Miss = 9
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Hits
+  commentId: F:DSLApp1.Dsl.Field.Hits
+  id: Hits
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Hits
+  nameWithType: Field.Hits
+  fullName: DSLApp1.Dsl.Field.Hits
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Hits
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 25
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Hits = 10
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.KillCount
+  commentId: F:DSLApp1.Dsl.Field.KillCount
+  id: KillCount
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: KillCount
+  nameWithType: Field.KillCount
+  fullName: DSLApp1.Dsl.Field.KillCount
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: KillCount
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 26
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: KillCount = 11
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.TargetCount
+  commentId: F:DSLApp1.Dsl.Field.TargetCount
+  id: TargetCount
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: TargetCount
+  nameWithType: Field.TargetCount
+  fullName: DSLApp1.Dsl.Field.TargetCount
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: TargetCount
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 27
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: TargetCount = 12
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Roles
+  commentId: F:DSLApp1.Dsl.Field.Roles
+  id: Roles
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Roles
+  nameWithType: Field.Roles
+  fullName: DSLApp1.Dsl.Field.Roles
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Roles
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 28
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Roles = 13
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Elements
+  commentId: F:DSLApp1.Dsl.Field.Elements
+  id: Elements
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Elements
+  nameWithType: Field.Elements
+  fullName: DSLApp1.Dsl.Field.Elements
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Elements
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 29
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Elements = 14
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Mechanics
+  commentId: F:DSLApp1.Dsl.Field.Mechanics
+  id: Mechanics
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Mechanics
+  nameWithType: Field.Mechanics
+  fullName: DSLApp1.Dsl.Field.Mechanics
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Mechanics
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 30
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Mechanics = 15
+    return:
+      type: DSLApp1.Dsl.Field
+- uid: DSLApp1.Dsl.Field.Roll
+  commentId: F:DSLApp1.Dsl.Field.Roll
+  id: Roll
+  parent: DSLApp1.Dsl.Field
+  langs:
+  - csharp
+  - vb
+  name: Roll
+  nameWithType: Field.Roll
+  fullName: DSLApp1.Dsl.Field.Roll
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Conditions.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Roll
+    path: src/Dsl/DSLParser.Conditions.cs
+    startLine: 31
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Roll = 16
+    return:
+      type: DSLApp1.Dsl.Field
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.Field
+  commentId: T:DSLApp1.Dsl.Field
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.Field.html
+  name: Field
+  nameWithType: Field
+  fullName: DSLApp1.Dsl.Field

@@ -1,0 +1,193 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Model.Exclusivity
+  commentId: T:DSLApp1.Model.Exclusivity
+  id: Exclusivity
+  parent: DSLApp1.Model
+  children:
+  - DSLApp1.Model.Exclusivity.All
+  - DSLApp1.Model.Exclusivity.Beduin
+  - DSLApp1.Model.Exclusivity.Enemy
+  - DSLApp1.Model.Exclusivity.Knight
+  - DSLApp1.Model.Exclusivity.Priestess
+  langs:
+  - csharp
+  - vb
+  name: Exclusivity
+  nameWithType: Exclusivity
+  fullName: DSLApp1.Model.Exclusivity
+  type: Enum
+  source:
+    remote:
+      path: src/Model/Fragment.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Exclusivity
+    path: src/Model/Fragment.cs
+    startLine: 5
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: public enum Exclusivity
+    content.vb: Public Enum Exclusivity
+- uid: DSLApp1.Model.Exclusivity.All
+  commentId: F:DSLApp1.Model.Exclusivity.All
+  id: All
+  parent: DSLApp1.Model.Exclusivity
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: Exclusivity.All
+  fullName: DSLApp1.Model.Exclusivity.All
+  type: Field
+  source:
+    remote:
+      path: src/Model/Fragment.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: All
+    path: src/Model/Fragment.cs
+    startLine: 5
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: All = 0
+    return:
+      type: DSLApp1.Model.Exclusivity
+- uid: DSLApp1.Model.Exclusivity.Enemy
+  commentId: F:DSLApp1.Model.Exclusivity.Enemy
+  id: Enemy
+  parent: DSLApp1.Model.Exclusivity
+  langs:
+  - csharp
+  - vb
+  name: Enemy
+  nameWithType: Exclusivity.Enemy
+  fullName: DSLApp1.Model.Exclusivity.Enemy
+  type: Field
+  source:
+    remote:
+      path: src/Model/Fragment.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Enemy
+    path: src/Model/Fragment.cs
+    startLine: 5
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: Enemy = 1
+    return:
+      type: DSLApp1.Model.Exclusivity
+- uid: DSLApp1.Model.Exclusivity.Knight
+  commentId: F:DSLApp1.Model.Exclusivity.Knight
+  id: Knight
+  parent: DSLApp1.Model.Exclusivity
+  langs:
+  - csharp
+  - vb
+  name: Knight
+  nameWithType: Exclusivity.Knight
+  fullName: DSLApp1.Model.Exclusivity.Knight
+  type: Field
+  source:
+    remote:
+      path: src/Model/Fragment.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Knight
+    path: src/Model/Fragment.cs
+    startLine: 5
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: Knight = 2
+    return:
+      type: DSLApp1.Model.Exclusivity
+- uid: DSLApp1.Model.Exclusivity.Priestess
+  commentId: F:DSLApp1.Model.Exclusivity.Priestess
+  id: Priestess
+  parent: DSLApp1.Model.Exclusivity
+  langs:
+  - csharp
+  - vb
+  name: Priestess
+  nameWithType: Exclusivity.Priestess
+  fullName: DSLApp1.Model.Exclusivity.Priestess
+  type: Field
+  source:
+    remote:
+      path: src/Model/Fragment.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Priestess
+    path: src/Model/Fragment.cs
+    startLine: 5
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: Priestess = 3
+    return:
+      type: DSLApp1.Model.Exclusivity
+- uid: DSLApp1.Model.Exclusivity.Beduin
+  commentId: F:DSLApp1.Model.Exclusivity.Beduin
+  id: Beduin
+  parent: DSLApp1.Model.Exclusivity
+  langs:
+  - csharp
+  - vb
+  name: Beduin
+  nameWithType: Exclusivity.Beduin
+  fullName: DSLApp1.Model.Exclusivity.Beduin
+  type: Field
+  source:
+    remote:
+      path: src/Model/Fragment.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Beduin
+    path: src/Model/Fragment.cs
+    startLine: 5
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Model
+  syntax:
+    content: Beduin = 4
+    return:
+      type: DSLApp1.Model.Exclusivity
+references:
+- uid: DSLApp1.Model
+  commentId: N:DSLApp1.Model
+  href: DSLApp1.html
+  name: DSLApp1.Model
+  nameWithType: DSLApp1.Model
+  fullName: DSLApp1.Model
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Model
+    name: Model
+    href: DSLApp1.Model.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Model
+    name: Model
+    href: DSLApp1.Model.html
+- uid: DSLApp1.Model.Exclusivity
+  commentId: T:DSLApp1.Model.Exclusivity
+  parent: DSLApp1.Model
+  href: DSLApp1.Model.Exclusivity.html
+  name: Exclusivity
+  nameWithType: Exclusivity
+  fullName: DSLApp1.Model.Exclusivity

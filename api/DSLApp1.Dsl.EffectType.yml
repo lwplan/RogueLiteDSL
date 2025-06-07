@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: DSLApp1.Dsl.EffectType
+  commentId: T:DSLApp1.Dsl.EffectType
+  id: EffectType
+  parent: DSLApp1.Dsl
+  children:
+  - DSLApp1.Dsl.EffectType.Composite
+  - DSLApp1.Dsl.EffectType.Damage
+  - DSLApp1.Dsl.EffectType.Economy
+  - DSLApp1.Dsl.EffectType.Heal
+  - DSLApp1.Dsl.EffectType.Invoke
+  - DSLApp1.Dsl.EffectType.Modifier
+  langs:
+  - csharp
+  - vb
+  name: EffectType
+  nameWithType: EffectType
+  fullName: DSLApp1.Dsl.EffectType
+  type: Enum
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: EffectType
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 33
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: public enum EffectType
+    content.vb: Public Enum EffectType
+- uid: DSLApp1.Dsl.EffectType.Damage
+  commentId: F:DSLApp1.Dsl.EffectType.Damage
+  id: Damage
+  parent: DSLApp1.Dsl.EffectType
+  langs:
+  - csharp
+  - vb
+  name: Damage
+  nameWithType: EffectType.Damage
+  fullName: DSLApp1.Dsl.EffectType.Damage
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Damage
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 35
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Damage = 0
+    return:
+      type: DSLApp1.Dsl.EffectType
+- uid: DSLApp1.Dsl.EffectType.Heal
+  commentId: F:DSLApp1.Dsl.EffectType.Heal
+  id: Heal
+  parent: DSLApp1.Dsl.EffectType
+  langs:
+  - csharp
+  - vb
+  name: Heal
+  nameWithType: EffectType.Heal
+  fullName: DSLApp1.Dsl.EffectType.Heal
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Heal
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 36
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Heal = 1
+    return:
+      type: DSLApp1.Dsl.EffectType
+- uid: DSLApp1.Dsl.EffectType.Invoke
+  commentId: F:DSLApp1.Dsl.EffectType.Invoke
+  id: Invoke
+  parent: DSLApp1.Dsl.EffectType
+  langs:
+  - csharp
+  - vb
+  name: Invoke
+  nameWithType: EffectType.Invoke
+  fullName: DSLApp1.Dsl.EffectType.Invoke
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Invoke
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 37
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Invoke = 2
+    return:
+      type: DSLApp1.Dsl.EffectType
+- uid: DSLApp1.Dsl.EffectType.Economy
+  commentId: F:DSLApp1.Dsl.EffectType.Economy
+  id: Economy
+  parent: DSLApp1.Dsl.EffectType
+  langs:
+  - csharp
+  - vb
+  name: Economy
+  nameWithType: EffectType.Economy
+  fullName: DSLApp1.Dsl.EffectType.Economy
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Economy
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 38
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Economy = 3
+    return:
+      type: DSLApp1.Dsl.EffectType
+- uid: DSLApp1.Dsl.EffectType.Modifier
+  commentId: F:DSLApp1.Dsl.EffectType.Modifier
+  id: Modifier
+  parent: DSLApp1.Dsl.EffectType
+  langs:
+  - csharp
+  - vb
+  name: Modifier
+  nameWithType: EffectType.Modifier
+  fullName: DSLApp1.Dsl.EffectType.Modifier
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Modifier
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 39
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Modifier = 4
+    return:
+      type: DSLApp1.Dsl.EffectType
+- uid: DSLApp1.Dsl.EffectType.Composite
+  commentId: F:DSLApp1.Dsl.EffectType.Composite
+  id: Composite
+  parent: DSLApp1.Dsl.EffectType
+  langs:
+  - csharp
+  - vb
+  name: Composite
+  nameWithType: EffectType.Composite
+  fullName: DSLApp1.Dsl.EffectType.Composite
+  type: Field
+  source:
+    remote:
+      path: src/Dsl/DSLParser.Enums.cs
+      branch: main
+      repo: git@github.com:lwplan/RogueLiteDSL.git
+    id: Composite
+    path: src/Dsl/DSLParser.Enums.cs
+    startLine: 40
+  assemblies:
+  - DSLApp1
+  namespace: DSLApp1.Dsl
+  syntax:
+    content: Composite = 5
+    return:
+      type: DSLApp1.Dsl.EffectType
+references:
+- uid: DSLApp1.Dsl
+  commentId: N:DSLApp1.Dsl
+  href: DSLApp1.html
+  name: DSLApp1.Dsl
+  nameWithType: DSLApp1.Dsl
+  fullName: DSLApp1.Dsl
+  spec.csharp:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+  spec.vb:
+  - uid: DSLApp1
+    name: DSLApp1
+    href: DSLApp1.html
+  - name: .
+  - uid: DSLApp1.Dsl
+    name: Dsl
+    href: DSLApp1.Dsl.html
+- uid: DSLApp1.Dsl.EffectType
+  commentId: T:DSLApp1.Dsl.EffectType
+  parent: DSLApp1.Dsl
+  href: DSLApp1.Dsl.EffectType.html
+  name: EffectType
+  nameWithType: EffectType
+  fullName: DSLApp1.Dsl.EffectType
