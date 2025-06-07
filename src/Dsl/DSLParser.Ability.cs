@@ -63,9 +63,9 @@ public static partial class DslParsers
             from _lparen in Tok.LParen
             from role in RoleParser
             from _rparen in Tok.RParen
-            from _colon in Tok.Colon
             select role
         ).Optional()
+        from _colon in Tok.Colon
 
         // Optional clauses in order
         from charges in ChargesClauseParser.Optional()
