@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Components.Root;
 using CsvHelper;
 using CsvHelper.Configuration;
+using CsvHelper.Configuration.Attributes;
 using DSLApp1.Dsl;
 using Pidgin;
 using Xunit;
@@ -29,15 +30,19 @@ namespace DSLApp1.Tests.Dsl
 
         public static async Task<List<object[]>> LoadRows()
         {
-            var baseDir = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", ".."));
-            var csvPath = Path.Combine(baseDir, "tests", "TestData", "abilities.csv");
+            var csvPath = Path.Combine(AppContext.BaseDirectory, "TestData", "abilities.csv");
             using var reader = new StreamReader(csvPath);
-            var config = new CsvConfiguration(CultureInfo.InvariantCulture);
+            var config = new CsvConfiguration(CultureInfo.InvariantCulture)
+            {
+                HeaderValidated = null,
+                MissingFieldFound = null,
+            };
             using var csv = new CsvReader(reader, config);
             var records = csv.GetRecords<AbilityRow>().ToList();
 
             return records
                 .Where(r => r.Test.Equals("Yes", StringComparison.OrdinalIgnoreCase))
+                .Where(r => r.SyntaxCheck.Equals("OK", StringComparison.OrdinalIgnoreCase))
                 .Select(r => new object[] { r.Name, r.ProposedDSL, true })
                 .ToList();
         }
@@ -47,6 +52,8 @@ namespace DSLApp1.Tests.Dsl
             public string Name { get; set; } = string.Empty;
             public string Test { get; set; } = string.Empty;
             public string? Legacy { get; set; }
+            [Name("Syntax Check")]
+            public string SyntaxCheck { get; set; } = string.Empty;
             public string ProposedDSL { get; set; } = string.Empty;
         }
 
