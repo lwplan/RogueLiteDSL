@@ -23,27 +23,31 @@ namespace DSLApp1.Tests.Dsl
     {
         
         private readonly ITestOutputHelper _output;
-        private static readonly string SheetId = "1O9QoC-a7ZlYEijzzvyAcg8KNZw8j9kjh_HjwE5il4T0";
-        private static readonly string SheetName = "abilities"; // match the tab name exactly
         private static readonly Task<List<object[]>> CachedRows = LoadRows();
 
         public AbilityDslCsvTests(ITestOutputHelper output) => _output = output;
 
         public static async Task<List<object[]>> LoadRows()
         {
-            var loader = new GoogleCsvLoader(SheetId);
-            var records = await loader.LoadCsvRecords(SheetName);
+            var baseDir = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", ".."));
+            var csvPath = Path.Combine(baseDir, "tests", "TestData", "abilities.csv");
+            using var reader = new StreamReader(csvPath);
+            var config = new CsvConfiguration(CultureInfo.InvariantCulture);
+            using var csv = new CsvReader(reader, config);
+            var records = csv.GetRecords<AbilityRow>().ToList();
 
             return records
-                .Where(r => r.TryGetValue("Test", out var test) && test.Equals("Yes", StringComparison.OrdinalIgnoreCase))
-                .Select(r => new object[]
-                {
-                    r["Name"],
-                    r["ProposedDSL"],
-                    true
-                    
-                })
+                .Where(r => r.Test.Equals("Yes", StringComparison.OrdinalIgnoreCase))
+                .Select(r => new object[] { r.Name, r.ProposedDSL, true })
                 .ToList();
+        }
+
+        private record AbilityRow
+        {
+            public string Name { get; set; } = string.Empty;
+            public string Test { get; set; } = string.Empty;
+            public string? Legacy { get; set; }
+            public string ProposedDSL { get; set; } = string.Empty;
         }
 
         public static IEnumerable<object[]> CsvRows()
