@@ -13,7 +13,11 @@ public enum DamageMechanicType
 
 `ExtraDamage = 2` 
 
+`Kill = 5` 
+
 `Piercing = 0` 
+
+`ShieldBreaker = 4` 
 
 `Spiral = 1` 
 

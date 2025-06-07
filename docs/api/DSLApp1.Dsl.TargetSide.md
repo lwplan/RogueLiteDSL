@@ -9,9 +9,11 @@ public enum TargetSide
 
 ## Fields
 
-`Ally = 0` 
+`Ally = 1` 
 
-`Enemy = 1` 
+`Enemy = 2` 
 
-`Neutral = 2` 
+`Neutral = 3` 
+
+`Self = 0` 
 

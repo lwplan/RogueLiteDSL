@@ -94,6 +94,26 @@ public static Parser<Token, Op> ComparisonOpParser { get; }
 
  Parser<[Token](DSLApp1.Dsl.Token.md), [Op](DSLApp1.Dsl.Op.md)\>
 
+### <a id="DSLApp1_Dsl_DslParsers_ConditionBodyParser"></a> ConditionBodyParser
+
+```csharp
+public static Parser<Token, Condition> ConditionBodyParser { get; }
+```
+
+#### Property Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [Condition](DSLApp1.Dsl.Condition.md)\>
+
+### <a id="DSLApp1_Dsl_DslParsers_ConditionIfOrWhenParser"></a> ConditionIfOrWhenParser
+
+```csharp
+public static Parser<Token, Condition> ConditionIfOrWhenParser { get; }
+```
+
+#### Property Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [Condition](DSLApp1.Dsl.Condition.md)\>
+
 ### <a id="DSLApp1_Dsl_DslParsers_ConditionParser"></a> ConditionParser
 
 ```csharp
@@ -144,6 +164,16 @@ public static Parser<Token, List<DamageMechanic>> DamageMechanicGroupParser { ge
 
  Parser<[Token](DSLApp1.Dsl.Token.md), [List](https://learn.microsoft.com/dotnet/api/system.collections.generic.list\-1)<[DamageMechanic](DSLApp1.Dsl.DamageMechanic.md)\>\>
 
+### <a id="DSLApp1_Dsl_DslParsers_DamageMechanicListParser"></a> DamageMechanicListParser
+
+```csharp
+public static Parser<Token, List<DamageMechanic>> DamageMechanicListParser { get; }
+```
+
+#### Property Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [List](https://learn.microsoft.com/dotnet/api/system.collections.generic.list\-1)<[DamageMechanic](DSLApp1.Dsl.DamageMechanic.md)\>\>
+
 ### <a id="DSLApp1_Dsl_DslParsers_DamageMechanicTypeParser"></a> DamageMechanicTypeParser
 
 ```csharp
@@ -163,6 +193,16 @@ public static Parser<Token, SupportEffectIR> DamageSupportIRParser { get; }
 #### Property Value
 
  Parser<[Token](DSLApp1.Dsl.Token.md), [SupportEffectIR](DSLApp1.Dsl.SupportEffectIR.md)\>
+
+### <a id="DSLApp1_Dsl_DslParsers_DamageTypeParser"></a> DamageTypeParser
+
+```csharp
+public static Parser<Token, DamageType> DamageTypeParser { get; }
+```
+
+#### Property Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [DamageType](DSLApp1.Dsl.DamageType.md)\>
 
 ### <a id="DSLApp1_Dsl_DslParsers_DurationClauseParser"></a> DurationClauseParser
 
@@ -194,6 +234,16 @@ public static Parser<Token, SupportEffectIR> EffectSupportIRParser { get; }
 
  Parser<[Token](DSLApp1.Dsl.Token.md), [SupportEffectIR](DSLApp1.Dsl.SupportEffectIR.md)\>
 
+### <a id="DSLApp1_Dsl_DslParsers_EffectsClauseParser"></a> EffectsClauseParser
+
+```csharp
+public static Parser<Token, List<EffectIR>> EffectsClauseParser { get; }
+```
+
+#### Property Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [List](https://learn.microsoft.com/dotnet/api/system.collections.generic.list\-1)<[EffectIR](DSLApp1.Dsl.EffectIR.md)\>\>
+
 ### <a id="DSLApp1_Dsl_DslParsers_ElementParser"></a> ElementParser
 
 ```csharp
@@ -224,6 +274,16 @@ public static Parser<Token, TimingEvent> EventClauseParser { get; }
 
  Parser<[Token](DSLApp1.Dsl.Token.md), [TimingEvent](DSLApp1.Dsl.TimingEvent.md)\>
 
+### <a id="DSLApp1_Dsl_DslParsers_FullMultiplierMechanicParser"></a> FullMultiplierMechanicParser
+
+```csharp
+public static Parser<Token, MultiplierMechanicIR> FullMultiplierMechanicParser { get; }
+```
+
+#### Property Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [MultiplierMechanicIR](DSLApp1.Dsl.MultiplierMechanicIR.md)\>
+
 ### <a id="DSLApp1_Dsl_DslParsers_HeaderParser"></a> HeaderParser
 
 ```csharp
@@ -243,6 +303,26 @@ public static Parser<Token, HealMechanic> HealMechanicParser { get; }
 #### Property Value
 
  Parser<[Token](DSLApp1.Dsl.Token.md), [HealMechanic](DSLApp1.Dsl.HealMechanic.md)\>
+
+### <a id="DSLApp1_Dsl_DslParsers_HealSubMechanicListParser"></a> HealSubMechanicListParser
+
+```csharp
+public static Parser<Token, List<HealSubMechanic>> HealSubMechanicListParser { get; }
+```
+
+#### Property Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [List](https://learn.microsoft.com/dotnet/api/system.collections.generic.list\-1)<[HealSubMechanic](DSLApp1.Dsl.HealSubMechanic.md)\>\>
+
+### <a id="DSLApp1_Dsl_DslParsers_HealSubMechanicParser"></a> HealSubMechanicParser
+
+```csharp
+public static Parser<Token, HealSubMechanic> HealSubMechanicParser { get; }
+```
+
+#### Property Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [HealSubMechanic](DSLApp1.Dsl.HealSubMechanic.md)\>
 
 ### <a id="DSLApp1_Dsl_DslParsers_HealingSideEffectParser"></a> HealingSideEffectParser
 
@@ -273,16 +353,6 @@ public static Parser<Token, object> HexParser { get; }
 #### Property Value
 
  Parser<[Token](DSLApp1.Dsl.Token.md), [object](https://learn.microsoft.com/dotnet/api/system.object)\>
-
-### <a id="DSLApp1_Dsl_DslParsers_ImmediateClauseParser"></a> ImmediateClauseParser
-
-```csharp
-public static Parser<Token, EffectIR> ImmediateClauseParser { get; }
-```
-
-#### Property Value
-
- Parser<[Token](DSLApp1.Dsl.Token.md), [EffectIR](DSLApp1.Dsl.EffectIR.md)\>
 
 ### <a id="DSLApp1_Dsl_DslParsers_InflictsEffectParser"></a> InflictsEffectParser
 
@@ -333,16 +403,6 @@ public static Parser<Token, Condition> MissClauseParser { get; }
 #### Property Value
 
  Parser<[Token](DSLApp1.Dsl.Token.md), [Condition](DSLApp1.Dsl.Condition.md)\>
-
-### <a id="DSLApp1_Dsl_DslParsers_ModifierClauseParser"></a> ModifierClauseParser
-
-```csharp
-public static Parser<Token, EffectIR> ModifierClauseParser { get; }
-```
-
-#### Property Value
-
- Parser<[Token](DSLApp1.Dsl.Token.md), [EffectIR](DSLApp1.Dsl.EffectIR.md)\>
 
 ### <a id="DSLApp1_Dsl_DslParsers_ModifierMechanicParser"></a> ModifierMechanicParser
 
@@ -433,6 +493,16 @@ public static Parser<Token, SideEffectsIR> SideEffectsParser { get; }
 #### Property Value
 
  Parser<[Token](DSLApp1.Dsl.Token.md), [SideEffectsIR](DSLApp1.Dsl.SideEffectsIR.md)\>
+
+### <a id="DSLApp1_Dsl_DslParsers_SimpleMultiplierMechanicParser"></a> SimpleMultiplierMechanicParser
+
+```csharp
+public static Parser<Token, MultiplierMechanicIR> SimpleMultiplierMechanicParser { get; }
+```
+
+#### Property Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [MultiplierMechanicIR](DSLApp1.Dsl.MultiplierMechanicIR.md)\>
 
 ### <a id="DSLApp1_Dsl_DslParsers_StatBuffMechanicParser"></a> StatBuffMechanicParser
 
@@ -533,6 +603,36 @@ public static Parser<Token, Targetability> TargetabilityParser { get; }
 #### Property Value
 
  Parser<[Token](DSLApp1.Dsl.Token.md), [Targetability](DSLApp1.Model.Targetability.md)\>
+
+### <a id="DSLApp1_Dsl_DslParsers_TargetingMechanicListParser"></a> TargetingMechanicListParser
+
+```csharp
+public static Parser<Token, List<TargetingMechanic>> TargetingMechanicListParser { get; }
+```
+
+#### Property Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [List](https://learn.microsoft.com/dotnet/api/system.collections.generic.list\-1)<[TargetingMechanic](DSLApp1.Dsl.TargetingMechanic.md)\>\>
+
+### <a id="DSLApp1_Dsl_DslParsers_TargetingMechanicParser"></a> TargetingMechanicParser
+
+```csharp
+public static Parser<Token, TargetingMechanic> TargetingMechanicParser { get; }
+```
+
+#### Property Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [TargetingMechanic](DSLApp1.Dsl.TargetingMechanic.md)\>
+
+### <a id="DSLApp1_Dsl_DslParsers_TargetingMechanicTypeParser"></a> TargetingMechanicTypeParser
+
+```csharp
+public static Parser<Token, TargetingMechanicsType> TargetingMechanicTypeParser { get; }
+```
+
+#### Property Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [TargetingMechanicsType](DSLApp1.Dsl.TargetingMechanicsType.md)\>
 
 ### <a id="DSLApp1_Dsl_DslParsers_TargetingParser"></a> TargetingParser
 

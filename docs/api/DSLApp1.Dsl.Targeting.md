@@ -28,10 +28,10 @@ public record Targeting : IEquatable<Targeting>
 
 ## Constructors
 
-### <a id="DSLApp1_Dsl_Targeting__ctor_DSLApp1_Dsl_AutoTargetingStrategy_DSLApp1_Dsl_TargetType_DSLApp1_Dsl_TargetSide_"></a> Targeting\(AutoTargetingStrategy, TargetType, TargetSide\)
+### <a id="DSLApp1_Dsl_Targeting__ctor_DSLApp1_Dsl_AutoTargetingStrategy_DSLApp1_Dsl_TargetType_DSLApp1_Dsl_TargetSide_System_Collections_Generic_List_DSLApp1_Dsl_TargetingMechanic__"></a> Targeting\(AutoTargetingStrategy, TargetType, TargetSide, List<TargetingMechanic\>?\)
 
 ```csharp
-public Targeting(AutoTargetingStrategy AutoTargetingStrategy, TargetType TargetType, TargetSide TargetSide)
+public Targeting(AutoTargetingStrategy AutoTargetingStrategy, TargetType TargetType, TargetSide TargetSide, List<TargetingMechanic>? With = null)
 ```
 
 #### Parameters
@@ -41,6 +41,8 @@ public Targeting(AutoTargetingStrategy AutoTargetingStrategy, TargetType TargetT
 `TargetType` [TargetType](DSLApp1.Dsl.TargetType.md)
 
 `TargetSide` [TargetSide](DSLApp1.Dsl.TargetSide.md)
+
+`With` [List](https://learn.microsoft.com/dotnet/api/system.collections.generic.list\-1)<[TargetingMechanic](DSLApp1.Dsl.TargetingMechanic.md)\>?
 
 ## Properties
 
@@ -73,4 +75,14 @@ public TargetType TargetType { get; init; }
 #### Property Value
 
  [TargetType](DSLApp1.Dsl.TargetType.md)
+
+### <a id="DSLApp1_Dsl_Targeting_With"></a> With
+
+```csharp
+public List<TargetingMechanic>? With { get; init; }
+```
+
+#### Property Value
+
+ [List](https://learn.microsoft.com/dotnet/api/system.collections.generic.list\-1)<[TargetingMechanic](DSLApp1.Dsl.TargetingMechanic.md)\>?
 

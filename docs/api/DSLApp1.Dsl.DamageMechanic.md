@@ -28,10 +28,10 @@ public record DamageMechanic : IEquatable<DamageMechanic>
 
 ## Constructors
 
-### <a id="DSLApp1_Dsl_DamageMechanic__ctor_DSLApp1_Dsl_DamageMechanicType_System_Single_DSLApp1_Dsl_Condition_"></a> DamageMechanic\(DamageMechanicType, float, Condition\)
+### <a id="DSLApp1_Dsl_DamageMechanic__ctor_DSLApp1_Dsl_DamageMechanicType_System_Single_DSLApp1_Dsl_Condition_"></a> DamageMechanic\(DamageMechanicType, float, Condition?\)
 
 ```csharp
-public DamageMechanic(DamageMechanicType MechanicType, float Value, Condition Condition)
+public DamageMechanic(DamageMechanicType MechanicType, float Value, Condition? Condition)
 ```
 
 #### Parameters
@@ -40,19 +40,19 @@ public DamageMechanic(DamageMechanicType MechanicType, float Value, Condition Co
 
 `Value` [float](https://learn.microsoft.com/dotnet/api/system.single)
 
-`Condition` [Condition](DSLApp1.Dsl.Condition.md)
+`Condition` [Condition](DSLApp1.Dsl.Condition.md)?
 
 ## Properties
 
 ### <a id="DSLApp1_Dsl_DamageMechanic_Condition"></a> Condition
 
 ```csharp
-public Condition Condition { get; init; }
+public Condition? Condition { get; init; }
 ```
 
 #### Property Value
 
- [Condition](DSLApp1.Dsl.Condition.md)
+ [Condition](DSLApp1.Dsl.Condition.md)?
 
 ### <a id="DSLApp1_Dsl_DamageMechanic_MechanicType"></a> MechanicType
 

@@ -4,6 +4,11 @@
 
  [AbilityIR](DSLApp1.Dsl.AbilityIR.md)
 
+ [AlphaWordValidator](DSLApp1.Dsl.AlphaWordValidator.md)
+
+Utility for validating raw DSL text before macro expansion.
+Ensures all alphabetic sequences are either known keywords or macros.
+
  [AndCondition](DSLApp1.Dsl.AndCondition.md)
 
  [AppliesModifierIR](DSLApp1.Dsl.AppliesModifierIR.md)
@@ -45,6 +50,8 @@
  [HealEffectIR](DSLApp1.Dsl.HealEffectIR.md)
 
  [HealMechanic](DSLApp1.Dsl.HealMechanic.md)
+
+ [HealSubMechanic](DSLApp1.Dsl.HealSubMechanic.md)
 
  [HealingSideEffectMechanic](DSLApp1.Dsl.HealingSideEffectMechanic.md)
 
@@ -88,9 +95,15 @@
 
  [Targeting](DSLApp1.Dsl.Targeting.md)
 
+ [TargetingMechanic](DSLApp1.Dsl.TargetingMechanic.md)
+
  [Tok](DSLApp1.Dsl.Tok.md)
 
  [Token](DSLApp1.Dsl.Token.md)
+
+ [UnimplementedKeywordChecker](DSLApp1.Dsl.UnimplementedKeywordChecker.md)
+
+Scans token streams for keywords representing mechanics that are not yet implemented.
 
 ### Enums
 
@@ -118,6 +131,8 @@
 
  [HealMechanicType](DSLApp1.Dsl.HealMechanicType.md)
 
+ [HealSubMechanicType](DSLApp1.Dsl.HealSubMechanicType.md)
+
  [HexType](DSLApp1.Dsl.HexType.md)
 
  [InvokeMechanicType](DSLApp1.Dsl.InvokeMechanicType.md)
@@ -137,6 +152,8 @@
  [TargetSide](DSLApp1.Dsl.TargetSide.md)
 
  [TargetType](DSLApp1.Dsl.TargetType.md)
+
+ [TargetingMechanicsType](DSLApp1.Dsl.TargetingMechanicsType.md)
 
  [TimingEvent](DSLApp1.Dsl.TimingEvent.md)
 

@@ -22,6 +22,8 @@
   - name: Classes
   - name: AbilityIR
     href: DSLApp1.Dsl.AbilityIR.md
+  - name: AlphaWordValidator
+    href: DSLApp1.Dsl.AlphaWordValidator.md
   - name: AndCondition
     href: DSLApp1.Dsl.AndCondition.md
   - name: AppliesModifierIR
@@ -64,6 +66,8 @@
     href: DSLApp1.Dsl.HealEffectIR.md
   - name: HealMechanic
     href: DSLApp1.Dsl.HealMechanic.md
+  - name: HealSubMechanic
+    href: DSLApp1.Dsl.HealSubMechanic.md
   - name: HealingSideEffectMechanic
     href: DSLApp1.Dsl.HealingSideEffectMechanic.md
   - name: InvokeEffectIR
@@ -106,10 +110,14 @@
     href: DSLApp1.Dsl.TargetTag.md
   - name: Targeting
     href: DSLApp1.Dsl.Targeting.md
+  - name: TargetingMechanic
+    href: DSLApp1.Dsl.TargetingMechanic.md
   - name: Tok
     href: DSLApp1.Dsl.Tok.md
   - name: Token
     href: DSLApp1.Dsl.Token.md
+  - name: UnimplementedKeywordChecker
+    href: DSLApp1.Dsl.UnimplementedKeywordChecker.md
   - name: Enums
   - name: AutoTargetingStrategy
     href: DSLApp1.Dsl.AutoTargetingStrategy.md
@@ -135,6 +143,8 @@
     href: DSLApp1.Dsl.Field.md
   - name: HealMechanicType
     href: DSLApp1.Dsl.HealMechanicType.md
+  - name: HealSubMechanicType
+    href: DSLApp1.Dsl.HealSubMechanicType.md
   - name: HexType
     href: DSLApp1.Dsl.HexType.md
   - name: InvokeMechanicType
@@ -155,6 +165,8 @@
     href: DSLApp1.Dsl.TargetSide.md
   - name: TargetType
     href: DSLApp1.Dsl.TargetType.md
+  - name: TargetingMechanicsType
+    href: DSLApp1.Dsl.TargetingMechanicsType.md
   - name: TimingEvent
     href: DSLApp1.Dsl.TimingEvent.md
   - name: TokenType

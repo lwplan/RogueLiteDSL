@@ -53,7 +53,7 @@ public record StateMechanicIR(
 public record MultiplierMechanicIR(
     MultiplierMechanicType Type,
     float? Amount,
-    TargetTag Against,
+    TargetTag? Against,
     Condition? When
 ) : ModifierMechanicIR;
 
@@ -126,7 +126,7 @@ public static partial class DslParsers
             Tok.Frailty.ThenReturn(MultiplierMechanicType.Frailty)
         )
         from amount in Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)
-        select new MultiplierMechanicIR(type, amount, new ElementTag(Element.None), null);
+        select new MultiplierMechanicIR(type, amount, null, null);
 
     public static Parser<Token, MultiplierMechanicIR> MultiplierMechanicParser =>
         Try(FullMultiplierMechanicParser)
