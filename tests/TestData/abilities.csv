@@ -19,11 +19,11 @@ Radiating light,Pass,midrange healing with regeneration I,Ability (Holy): Restor
 Waterfall meditation,Pass,Applies a small range selfheal and applies Surge II,Ability (Holy): Targeting Self Restores 8 hp then Applies @Surge[II] for 2 turns,,,,
 Ice bolas,Pass,"Physical water skill which exhaust, applies Slow III",Ability : Deals Water Physical(8) damage with Exhaust then Applies @Slow[III] for 2 turns,,,,
 Holy Smite,Pass,A blast of holy light,Ability (Holy): Deals Light Magical(15) damage,,,,
-Camouflage,Pass,Applies a powerful buff so the next attack is Charge III,"Ability : Targeting Self, Apply @Charge[III] for 1 turn",,,,
+Camouflage,Pass,Applies a powerful buff so the next attack is Charge III,Ability : Targeting Self Applies @Charge[III] for 1 turn,,,,
 Desert Javeline,Pass,A moderate earth physical skill which deals big damage,Ability : Deals Earth Physical(18) damage,,,,
 Nomad care,Pass,"moderate selfhealing, double potency if low hp*",Ability : Restores 10 hp then Restores 10 hp if Target HpPercent < 50,,,,
 Oil vial,Pass,"Leaves enemies oiled, which lowers their initiative and more vulnerable to fire",Ability : Applies Oiled for 3 turns then Applies Vulnerability(125%) to Fire damage for 3 turns,,,,
-Poison darts,Unimplemented,Deals low damage and applies poison II,Ability : Deals Physical(4) damage then Applies @Poison[II] for 3 turns,,,,
+Poison darts,Pass,Deals low damage and applies poison II,Ability : Deals Physical(4) damage then Applies @Poison[II] for 3 turns,,,,
 Desert firebomb,Unimplemented,"Deals moderate fire (int) damage, any enemy is oiled it triggers an explosion for extra damage*",Ability : Deals Fire Magical(10) damage afterwards Splash(50%) if target has Oiled,,,,
 Balance,Unimplemented,"Applies to any ally Enlightement I, Protection I, Vigor I and Endurance I",Ability : Targeting Ally Applies @Enlightened[I], @Protection[I], @Vigor[I], @Endurance[I] for 3 turns,,,,
 Prayer,Unimplemented,Applies low healing and regeneration I,Ability : Restores 6 hp then Restores 2 hp for 2 turns,,,,
@@ -54,7 +54,7 @@ Heavy Shell,Pass,,Ability (Artillery): Charges 1 turn then Deals Physical(15) Fi
 Piercing Shrapnel,Pass,,Support (Artillery): Adds Piercing(50%) to damage (Adjective = Piercing),"Syntax Error: Parse error.
     unexpected Token { Type = Keyword, Text = Support }
     at line 1, col 1",,,
-Storm Mortar,Pass,,Ability (Artillery): Deals Physical(6) Electrical damage afterwards [Bounce if roll < 30],OK,,,
+Storm Mortar,Pass,,Ability (Artillery): Deals Physical(6) Electrical damage afterwards Bounce if roll < 30,OK,,,
 Load Munition,Pass,,Support(Artillery) : Adds Fire to damage,"Syntax Error: Parse error.
     unexpected Token { Type = Keyword, Text = Support }
     at line 1, col 1",,,
