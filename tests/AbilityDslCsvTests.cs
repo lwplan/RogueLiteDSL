@@ -136,26 +136,30 @@ namespace DSLApp1.Tests.Dsl
         [MemberData(nameof(CsvRows))]
         public void Csv_ProposedDsl_Matches_CurrentGrammar(AbilityRow row)
         {
+            // skip rows explicitly marked as Unimplemented
+            if (string.Equals(row.Test, "Unimplemented", StringComparison.OrdinalIgnoreCase))
+                return;
+
             var expanded = Regex.Replace(
                 row.ProposedDSL,
                 @"@\w+\[[IVXLCDM]+\]",
                 m => MacroExpander.Expand(m.Value, Macros));
 
-            try
+            var tokens = DslTokenizer.Tokenize(expanded);
+            var result = DslParsers.HexParser.Parse(tokens);
+
+            if (string.Equals(row.Test, "Pass", StringComparison.OrdinalIgnoreCase))
             {
-                var tokens = DslTokenizer.Tokenize(expanded);
-
-                foreach (var t in tokens)
-                    _output.WriteLine($"{t.Type}: '{t.Text}'");
-
-                var unimpl = UnimplementedKeywordChecker.Find(tokens);
-                var parser = DslParsers.HexParser;
-                var result = parser.Parse(tokens);
-                _output.WriteLine($"{row.Name}: {(unimpl.Any() ? "Unimplemented" : result.Success ? "Pass" : "Fail")}");
+                Assert.True(result.Success, $"Expected '{row.Name}' to parse successfully, but it failed.");
             }
-            catch (Exception ex)
+            else if (string.Equals(row.Test, "Fail", StringComparison.OrdinalIgnoreCase))
             {
-                _output.WriteLine($"{row.Name}: Exception {ex.Message}");
+                Assert.False(result.Success, $"Expected '{row.Name}' to fail parsing, but it succeeded.");
+            }
+            else
+            {
+                // if the status is neither Pass nor Fail, write it for diagnostic purposes
+                _output.WriteLine($"Unknown test status '{row.Test}' for row '{row.Name}'");
             }
         }
     }
