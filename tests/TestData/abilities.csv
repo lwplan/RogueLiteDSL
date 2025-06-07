@@ -109,7 +109,7 @@ Form Practice,Fail,"Reduce damage taken by 20% until next turn. If not interrupt
 Rising Focus,Unimplemented,This ability gains +0.1 multiplier for each turn it's held unused (up to +0.3). Using it resets the stack.,Ability (Discipline): Deals Physical(10) damage with Power(110%+ stored) resets on use,,,,
 Unwavering,Unimplemented,"Immune to delay, stun, or redirection for 2 turns. Bonus only applies if you haven't used a Random or Multihit ability.","Ability (Discipline): Applies Immunity(Delay,Stun,Redirect) for 2 turns if no Random or Multihit used",,,,
 Perfect Rhythm,Unimplemented,"If you've used the same type of ability three turns in a row, gain +1 initiative on the fourth turn.",Ability (Discipline): Applies Initiative(1) if same type used 3 turns,,,,
-Wither Touch,Fail,Inflicts Weaken: Target deals -30% damage for 2 turns.,Ability (Curse): Applies @Weaken[II] for 2 turns,,,,
+Wither Touch,Fail,Inflicts Weaken: Target deals -30% damage for 2 turns.,Ability (Curse): Applies @Weakness[II] for 2 turns,,,,
 Soul Chain,Fail,"Target takes 10 damage at the end of each turn for 3 turns. If they use a healing effect, double the next tick.",Ability (Curse): Applies 'Deals Physical(10) damage' for 3 turns double next tick if heals,,,,
 Black Echo,Fail,"If the target uses an ability next turn, they take 50% recoil damage.",Ability (Curse): Applies Recoil(50%) if target acts next turn,,,,
 Mark of Frailty,Fail,Reduces the target's defense by 6 for 3 turns.,Ability (Curse): Applies Debuff(6) to Defense for 3 turns,,,,
