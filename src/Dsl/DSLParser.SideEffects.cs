@@ -50,29 +50,22 @@ public static partial class DslParsers
     public static Parser<Token, SideEffectMechanicIR> SideEffectMechanicParser =>
         OneOf(
             Tok.Bounce.Then(
-                Tok.LParen
-                    .Then(AmountLiteral)
-                    .Before(Tok.RParen)
-            ).Select(value => (SideEffectMechanicIR)new SideEffectMechanic(SideEffectMechanicType.Bounce, value)),
+                Try(Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)).Optional()
+            ).Select(value => (SideEffectMechanicIR)new SideEffectMechanic(SideEffectMechanicType.Bounce, value.GetValueOrDefault(0f))),
 
             Tok.Splash.Then(
-                Tok.LParen
-                    .Then(AmountLiteral)
-                    .Before(Tok.RParen)
-            ).Select(value => (SideEffectMechanicIR)new SideEffectMechanic(SideEffectMechanicType.Splash, value)),
+                Try(Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)).Optional()
+            ).Select(value => (SideEffectMechanicIR)new SideEffectMechanic(SideEffectMechanicType.Splash, value.GetValueOrDefault(0f))),
 
             Tok.Exhaust.Then(
-                Tok.LParen
-                    .Then(AmountLiteral)
-                    .Before(Tok.RParen)
-            ).Select(value => (SideEffectMechanicIR)new SideEffectMechanic(SideEffectMechanicType.Exhaust, value)),
+                Try(Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)).Optional()
+            ).Select(value => (SideEffectMechanicIR)new SideEffectMechanic(SideEffectMechanicType.Exhaust, value.GetValueOrDefault(0f))),
 
             Tok.CoolOff.Then(
-                Tok.LParen
-                    .Then(AmountLiteral)
-                    .Before(Tok.RParen)
-            ).Select(value => (SideEffectMechanicIR)new SideEffectMechanic(SideEffectMechanicType.CoolOff, value))
+                Try(Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)).Optional()
+            ).Select(value => (SideEffectMechanicIR)new SideEffectMechanic(SideEffectMechanicType.CoolOff, value.GetValueOrDefault(0f)))
         );
+
 
     public static Parser<Token, SideEffectMechanicIR> HealingSideEffectParser =>
         from heal in HealMechanicParser  // reuse your existing Heals parser here
