@@ -34,17 +34,31 @@ public static partial class DslParsers
         );
 
     // Immediate effects (one max)
-    public static Parser<Token, EffectIR> ImmediateClauseParser =>
-        Try(
-            InvokeEffectParser.Cast<EffectIR>()
-                .Or(DamageEffectParser.Cast<EffectIR>())
-                .Or(HealsEffectParser.Cast<EffectIR>())
-        );
+    public static Parser<Token, List<EffectIR>> EffectsClauseParser =>
+        OneOf(
+                InvokeEffectParser.Cast<EffectIR>(),
+                DamageEffectParser.Cast<EffectIR>(),
+                HealsEffectParser.Cast<EffectIR>(),
+                InflictsEffectParser.Cast<EffectIR>(),
+                AppliesEffectParser.Cast<EffectIR>()
+            ).Separated(Tok.Then)
+            .Select(ValidateEffectChain);
 
-    // Modifier effects (many allowed)
-    public static Parser<Token, EffectIR> ModifierClauseParser =>
-        InflictsEffectParser.Cast<EffectIR>()
-            .Or(AppliesEffectParser.Cast<EffectIR>());
+    private static List<EffectIR> ValidateEffectChain(IEnumerable<EffectIR> effects)
+    {
+        var effectList = effects.ToList();
+        if (effectList.Count > 1)
+        {
+            for (int i = 1; i < effectList.Count; i++)
+            {
+                if (effectList[i] is not ModifierEffectIR)
+                    throw new Exception(
+                        $"Effect at position {i + 1} must be a ModifierEffectIR (e.g., Applies, Inflicts). Found: {effectList[i].GetType().Name}");
+            }
+        }
+        return effectList;
+    }
+
 
     // Side effects (optional)
     public static Parser<Token, SideEffectsIR> SideEffectsClauseParser =>
@@ -70,27 +84,35 @@ public static partial class DslParsers
         // Optional clauses in order
         from charges in ChargesClauseParser.Optional()
         from targeting in TargetingParser.Optional()
-        from immediate in ImmediateClauseParser.Optional()
-        from modifiers in ModifierClauseParser.Many()
+        from effects in EffectsClauseParser.Optional()
         from sideEffects in SideEffectsClauseParser.Optional()
         from miss in MissClauseParser.Optional()
 
+        // Split effects into immediate and modifiers
+        let immediateEffect =
+            effects.HasValue
+                ? effects.Value.FirstOrDefault(e => e is not ModifierEffectIR)
+                : null
+
+        let modifierEffects =
+            effects.HasValue
+                ? effects.Value.Where(e => e is ModifierEffectIR).ToList()
+                : new List<EffectIR>()
+
         select new AbilityIR(
-            (immediate.HasValue 
-                ? new List<EffectIR>(){immediate.Value}
-                : Enumerable.Empty<EffectIR>())
-            .Concat(modifiers)
-            .ToList(),
-    
-            targeting.HasValue
-                ? targeting.Value
-                : new Targeting(AutoTargetingStrategy.UserSelected, TargetType.Single, TargetSide.Enemy),
-    
+            immediateEffect != null
+                ? new List<EffectIR> { immediateEffect }.Concat(modifierEffects).ToList()
+                : modifierEffects,
+
+            targeting.GetValueOrDefault(new Targeting(AutoTargetingStrategy.UserSelected, TargetType.Single, TargetSide.Enemy)),
+
             role.HasValue ? new List<Compatibility> { role.Value } : new List<Compatibility>(),
-            sideEffects.HasValue 
-                ? new List<SideEffectsIR> { sideEffects.Value } 
+
+            sideEffects.HasValue
+                ? new List<SideEffectsIR> { sideEffects.Value }
                 : new List<SideEffectsIR>(),
-    
+
             miss.GetValueOrDefault()
         );
+
 }
