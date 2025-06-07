@@ -17,12 +17,14 @@
         "dest": "."
       },
       {
-        "files": ["docs/**.md"],
-        "exclude": ["docs/index.md"],
+        "src": "docs",
+        "files": ["**.md"],
+        "exclude": ["index.md"],
         "dest": "docs"
       },
       {
-        "files": ["api/**.yml"],
+        "src": "api",
+        "files": ["**.yml"],
         "dest": "api"
       }
     ],
