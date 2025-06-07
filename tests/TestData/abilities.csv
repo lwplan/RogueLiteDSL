@@ -80,7 +80,7 @@ Fatal Mark,Unimplemented,Marks an enemy: the next attack deals double damage,Abi
 Killing Blow (Splash),Pass,Physical attack on a kill 50% of damage applied to all enemies.,Ability (Execution): Deals Physical(10) damage afterwards Splash(50%) if kills > 0,OK,,,
 Farewell,Pass,if the enemy is 15% or less HP you immediately kill him.,Ability (Execution): Deals Physical(0) damage with Kill if target hpPercent < 15,OK,,,
 Killing Blow (Bounce),Pass,"If this attack kills the target, deal 50% of that damage to a second random enemy.",Ability (Execution): Deals Physical(10) damage afterwards Bounce(50%) if kills > 0,#ERROR!,,,
-Sacred Light,Pass,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies Heals(20),OK,,,
+Sacred Light,Pass,Heals all allies for 20 HP.,Ability (Holy): Targeting Allies Restores 20 hp,OK,,,
 Holy Armor,Pass,Grants +6 Defense for 3 turns.,Ability (Holy): Applies Buff(6) to Defense for 3 turns,#ERROR!,,,
 Divine Reflex,Pass,Grants +2 initiative for the next 2 rounds,Ability (Holy): Applies Buff(6) to initiative for 2 rounds,#ERROR!,,,
 Radiant Vow,Pass,"If the user dies this round, they revive with 1 HP.",Ability (Holy): Applies Revival(1) for 1 round,OK,,,

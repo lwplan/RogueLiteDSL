@@ -16,6 +16,7 @@ public enum AutoTargetingStrategy
 
 public enum TargetSide
 {
+    Self,
     Ally,
     Enemy,
     Neutral
@@ -92,6 +93,7 @@ public static partial class DslParsers
 
         // Required side
         from side in OneOf(
+            Tok.Self.ThenReturn(TargetSide.Self),
             Tok.Ally.ThenReturn(TargetSide.Ally),
             Tok.Allies.ThenReturn(TargetSide.Ally),
             Tok.Enemy.ThenReturn(TargetSide.Enemy),
@@ -113,6 +115,7 @@ public static partial class DslParsers
 private static TargetType InferTargetTypeFromSide(TargetSide side) =>
     side switch
     {
+        TargetSide.Self => TargetType.Single,
         TargetSide.Ally => TargetType.Single,
         TargetSide.Enemy => TargetType.Single,
         TargetSide.Neutral => TargetType.Multiple,
