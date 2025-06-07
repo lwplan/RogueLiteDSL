@@ -7,7 +7,7 @@
           "exclude": ["**/bin/**", "**/obj/**", "tests/**"]
         }
       ],
-      "dest": "api"
+      "dest": "obj/api"
     }
   ],
   "build": {
@@ -23,7 +23,7 @@
         "dest": "docs"
       },
       {
-        "src": "api",
+        "src": "obj/api",
         "files": ["**.yml"],
         "dest": "api"
       }
