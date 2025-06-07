@@ -22,7 +22,7 @@ namespace DSLApp1.Dsl
                 "Magical","to","ExtraDamage","Crit","ShieldBreaker","MultiHit",
                 "MultiTarget","Random","turns","rounds","turn","round","Start","End",
                 "Buff","Debuff","Vulnerability","Protection","Power","Frailty",
-                "Blessing","Curse","Stun","Defensive","Revival","Shield","Cleanse",
+                "Blessing","Curse","Stun","Defensive","Revival","Shield","Wet","Oiled","Cleanse",
                 "Bounce","Splash","Exhaust","CoolOff","Invokes","Delay","Advance",
                 "Swap","Shuffle","All","Miss","Attack","Defense","Intelligence",
                 "Resistance","Initiative","Applies","Mana","Hp","HpPercent",
