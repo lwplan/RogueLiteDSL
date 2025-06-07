@@ -90,7 +90,7 @@ public static partial class DslParsers
             .Or(RoleParser.Select(c => new CompatibilityTag(c) as TargetTag));
 
 
-    public static Parser<Token, MultiplierMechanicIR> MultiplierMechanicParser =>
+    public static Parser<Token, MultiplierMechanicIR> FullMultiplierMechanicParser =>
         from type in OneOf(
             Tok.Vulnerability.ThenReturn(MultiplierMechanicType.Vulnerability),
             Tok.Protection.ThenReturn(MultiplierMechanicType.Protection),
@@ -106,6 +106,20 @@ public static partial class DslParsers
         from _ in Tok.Damage
         from when in Try(Tok.When.Then(ConditionParser)).Optional()
         select new MultiplierMechanicIR(type, amount.GetValueOrDefault(), against, when.GetValueOrDefault());
+
+    public static Parser<Token, MultiplierMechanicIR> SimpleMultiplierMechanicParser =>
+        from type in OneOf(
+            Tok.Vulnerability.ThenReturn(MultiplierMechanicType.Vulnerability),
+            Tok.Protection.ThenReturn(MultiplierMechanicType.Protection),
+            Tok.Power.ThenReturn(MultiplierMechanicType.Power),
+            Tok.Frailty.ThenReturn(MultiplierMechanicType.Frailty)
+        )
+        from amount in Tok.LParen.Then(AmountLiteral).Before(Tok.RParen)
+        select new MultiplierMechanicIR(type, amount, new ElementTag(Element.None), null);
+
+    public static Parser<Token, MultiplierMechanicIR> MultiplierMechanicParser =>
+        Try(FullMultiplierMechanicParser)
+            .Or(SimpleMultiplierMechanicParser);
 
 
     public static Parser<Token, StatBuffMechanicIR> StatBuffMechanicParser =>
