@@ -92,6 +92,7 @@ namespace DSLApp1.Dsl
             public static readonly Parser<Token, Token> Defensive = Keyword("Defensive");
             public static readonly Parser<Token, Token> Revival = Keyword("Revival");
             public static readonly Parser<Token, Token> Shield = Keyword("Shield");
+            public static readonly Parser<Token, Token> Cleanse = Keyword("Cleanse");
             
             public static readonly Parser<Token, Token> Bounce = Keyword("Bounce");
             public static readonly Parser<Token, Token> Splash = Keyword("Splash");

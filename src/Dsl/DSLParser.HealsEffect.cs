@@ -9,7 +9,7 @@ public enum HealSubMechanicType
     Cleanse
 }
 
-public record HealSubMechanic(HealSubMechanicType HealSubMechanicType, float Amount)
+public record HealSubMechanic(HealSubMechanicType HealSubMechanicType, float Amount);
 
 
 public enum HealMechanicType
@@ -43,6 +43,17 @@ public record HealEffectIR(
 
 public static partial class DslParsers
 {
+    public static Parser<Token, HealSubMechanic> HealSubMechanicParser =>
+        Tok.Cleanse.Select(_ => new HealSubMechanic(HealSubMechanicType.Cleanse, 0f));
+
+    public static Parser<Token, List<HealSubMechanic>> HealSubMechanicListParser =>
+        Try(
+            from _l in Tok.LBracket
+            from items in HealSubMechanicParser.Separated(Comma)
+            from _r in Tok.RBracket
+            select items.ToList()
+        ).Or(HealSubMechanicParser.Separated(Comma).Select(ms => ms.ToList()));
+
     public static Parser<Token, HealMechanic> HealMechanicParser =>
         from healType in OneOf(
             Tok.Restores.ThenReturn(HealMechanicType.Restore),
@@ -66,6 +77,7 @@ public static partial class DslParsers
 
     public static Parser<Token, EffectIR> HealsEffectParser =>
         from heal in HealMechanicParser
+        from withSub in Try(Tok.With.Then(HealSubMechanicListParser)).Optional()
         from targeting in Try(TargetingParser).Optional()
         from duration in Try(DurationClauseParser).Optional()
 
@@ -77,6 +89,7 @@ public static partial class DslParsers
                     new HealEffectIR(
                         Subject.Target,
                         heal,
+                        withSub.GetValueOrDefault(),
                         targeting.GetValueOrDefault()
                     ),
                     heal.Condition
@@ -84,5 +97,5 @@ public static partial class DslParsers
             )
             : targeting.HasValue
                 ? throw new Exception("Targeting without duration is not allowed for healing effects.")
-                : (EffectIR)new HealEffectIR(Subject.Target, heal);
+                : (EffectIR)new HealEffectIR(Subject.Target, heal, withSub.GetValueOrDefault());
 }
