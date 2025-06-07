@@ -17,6 +17,7 @@ public enum Element
     Poison,
     Ice,
     Water,
+    Earth,
     Dark,
     Light,
     None
@@ -78,6 +79,7 @@ public static partial class DslParsers
         Tok.Poison.ThenReturn(Element.Poison),
         Tok.Ice.ThenReturn(Element.Ice),
         Tok.Water.ThenReturn(Element.Water),
+        Tok.Earth.ThenReturn(Element.Earth),
         Tok.Dark.ThenReturn(Element.Dark),
         Tok.Light.ThenReturn(Element.Light),
         Tok.Electrical.ThenReturn(Element.Electrical)
