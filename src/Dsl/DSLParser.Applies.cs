@@ -13,7 +13,9 @@ public enum StateMechanicType
     Stun,
     Defensive,
     Revival,
-    Shield
+    Shield,
+    Wet,
+    Oiled
 }
 
 
