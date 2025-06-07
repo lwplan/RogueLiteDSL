@@ -47,27 +47,36 @@ public static partial class DslParsers
         from items in DamageMechanicAtom.Separated(Comma)
         from _r in Tok.RBracket
         select items.ToList();
+
+
+
+    public static Parser<Token, DamageType> DamageTypeParser =>
+        from parsed in
+            Try( // First: Element before base
+                from element in ElementParser
+                from formula in DamageFormulaParser
+                from baseDamage in Tok.LParen.Then(IntLiteral).Before(Tok.RParen)
+                select (element, formula, baseDamage)
+            ).Or( // Second: Element after base
+                from formula in DamageFormulaParser
+                from baseDamage in Tok.LParen.Then(IntLiteral).Before(Tok.RParen)
+                from element in ElementParser.Optional()
+                select (element.GetValueOrDefault(), formula, baseDamage)
+            )
+        select new DamageType(parsed.formula,  parsed.element, parsed.baseDamage);
     
     public static Parser<Token, DamageEffectIR> DamageEffectParser =>
         from _deals in Tok.Deals
-        from formula in DamageFormulaParser
-        from baseDamage in Tok.LParen.Then(IntLiteral).Before(Tok.RParen)
-        from element in ElementParser.Optional()
-        from _dmg in Tok.Damage
+        from _damageType in DamageTypeParser
+        from _damage in Tok.Damage
         from withMechs in Try(
             from _w in Tok.With
             from ms in DamageMechanicGroupParser
             select ms
         ).Optional()
-        
-        // Optional targeting
-        from targeting in Try(TargetingParser).Optional()
-        
         select new DamageEffectIR(
             Subject.Target,
-            new DamageType(formula, element.GetValueOrDefault(Element.None), baseDamage),
-            withMechs.HasValue ? withMechs.Value : null,
-            targeting.HasValue ? targeting.Value : null
+            _damageType,
+            withMechs.GetValueOrDefault()
         );
-    
 }
