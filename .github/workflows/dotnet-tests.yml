@@ -18,5 +18,5 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore DSLApp1.sln
       - name: Run tests
-        run: dotnet test DSLApp1.sln --no-build --verbosity normal
+        run: dotnet test DSLApp1.sln --verbosity normal
 
