@@ -19,7 +19,7 @@ Radiating light,Pass,midrange healing with regeneration I,Ability (Holy): Restor
 Waterfall meditation,Unimplemented,Applies a small range selfheal and applies Surge II,Ability (Holy): Targeting Self Restores 8 hp then Applies @Surge[II] for 2 turns,,,,
 Ice bolas,Pass,"Physical water skill which exhaust, applies Slow III",Ability : Deals Water Physical(8) damage then Applies @Slow[III] for 2 turns afterwards Exhaust,,,,
 Holy Smite,Pass,A blast of holy light,Ability (Holy): Deals Light Magical(15) damage,,,,
-Camouflage,Pass,Applies a powerful buff so the next attack is Charge III,Ability : Targeting Self Apply @Charge[III] for 1 turn,,,,
+Camouflage,Pass,Applies a powerful buff so the next attack is Charge III,Ability : Targeting Self Applies @Charge[III] for 1 turn,,,,
 Desert Javeline,Pass,A moderate earth physical skill which deals big damage,Ability : Deals Earth Physical(18) damage,,,,
 Nomad care,Unimplemented,"moderate selfhealing, double potency if low hp*",Ability : Restores 10 hp then Restores 10 hp if Target HpPercent < 50,,,,
 Oil vial,Unimplemented,"Leaves enemies oiled, which lowers their initiative and more vulnerable to fire",Ability : Applies Oiled for 3 turns then Applies Vulnerability(125%) to Fire damage for 3 turns,,,,
