@@ -30,10 +30,10 @@ public record MultiplierMechanicIR : ModifierMechanicIR, IEquatable<ModifierMech
 
 ## Constructors
 
-### <a id="DSLApp1_Dsl_MultiplierMechanicIR__ctor_DSLApp1_Dsl_MultiplierMechanicType_System_Nullable_System_Single__DSLApp1_Dsl_TargetTag_DSLApp1_Dsl_Condition_"></a> MultiplierMechanicIR\(MultiplierMechanicType, float?, TargetTag, Condition?\)
+### <a id="DSLApp1_Dsl_MultiplierMechanicIR__ctor_DSLApp1_Dsl_MultiplierMechanicType_System_Nullable_System_Single__DSLApp1_Dsl_TargetTag_DSLApp1_Dsl_Condition_"></a> MultiplierMechanicIR\(MultiplierMechanicType, float?, TargetTag?, Condition?\)
 
 ```csharp
-public MultiplierMechanicIR(MultiplierMechanicType Type, float? Amount, TargetTag Against, Condition? When)
+public MultiplierMechanicIR(MultiplierMechanicType Type, float? Amount, TargetTag? Against, Condition? When)
 ```
 
 #### Parameters
@@ -42,7 +42,7 @@ public MultiplierMechanicIR(MultiplierMechanicType Type, float? Amount, TargetTa
 
 `Amount` [float](https://learn.microsoft.com/dotnet/api/system.single)?
 
-`Against` [TargetTag](DSLApp1.Dsl.TargetTag.md)
+`Against` [TargetTag](DSLApp1.Dsl.TargetTag.md)?
 
 `When` [Condition](DSLApp1.Dsl.Condition.md)?
 
@@ -51,12 +51,12 @@ public MultiplierMechanicIR(MultiplierMechanicType Type, float? Amount, TargetTa
 ### <a id="DSLApp1_Dsl_MultiplierMechanicIR_Against"></a> Against
 
 ```csharp
-public TargetTag Against { get; init; }
+public TargetTag? Against { get; init; }
 ```
 
 #### Property Value
 
- [TargetTag](DSLApp1.Dsl.TargetTag.md)
+ [TargetTag](DSLApp1.Dsl.TargetTag.md)?
 
 ### <a id="DSLApp1_Dsl_MultiplierMechanicIR_Amount"></a> Amount
 

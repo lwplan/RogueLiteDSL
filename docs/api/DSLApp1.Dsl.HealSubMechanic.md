@@ -1,20 +1,20 @@
-# <a id="DSLApp1_Dsl_HealMechanic"></a> Class HealMechanic
+# <a id="DSLApp1_Dsl_HealSubMechanic"></a> Class HealSubMechanic
 
 Namespace: [DSLApp1.Dsl](DSLApp1.Dsl.md)  
 Assembly: DSLApp1.dll  
 
 ```csharp
-public record HealMechanic : IEquatable<HealMechanic>
+public record HealSubMechanic : IEquatable<HealSubMechanic>
 ```
 
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[HealMechanic](DSLApp1.Dsl.HealMechanic.md)
+[HealSubMechanic](DSLApp1.Dsl.HealSubMechanic.md)
 
 #### Implements
 
-[IEquatable<HealMechanic\>](https://learn.microsoft.com/dotnet/api/system.iequatable\-1)
+[IEquatable<HealSubMechanic\>](https://learn.microsoft.com/dotnet/api/system.iequatable\-1)
 
 #### Inherited Members
 
@@ -28,25 +28,21 @@ public record HealMechanic : IEquatable<HealMechanic>
 
 ## Constructors
 
-### <a id="DSLApp1_Dsl_HealMechanic__ctor_DSLApp1_Dsl_HealMechanicType_System_Single_DSLApp1_Dsl_EconomyStat_DSLApp1_Dsl_Condition_"></a> HealMechanic\(HealMechanicType, float, EconomyStat, Condition\)
+### <a id="DSLApp1_Dsl_HealSubMechanic__ctor_DSLApp1_Dsl_HealSubMechanicType_System_Single_"></a> HealSubMechanic\(HealSubMechanicType, float\)
 
 ```csharp
-public HealMechanic(HealMechanicType Type, float Amount, EconomyStat Stat, Condition Condition)
+public HealSubMechanic(HealSubMechanicType Type, float Amount)
 ```
 
 #### Parameters
 
-`Type` [HealMechanicType](DSLApp1.Dsl.HealMechanicType.md)
+`Type` [HealSubMechanicType](DSLApp1.Dsl.HealSubMechanicType.md)
 
 `Amount` [float](https://learn.microsoft.com/dotnet/api/system.single)
 
-`Stat` [EconomyStat](DSLApp1.Dsl.EconomyStat.md)
-
-`Condition` [Condition](DSLApp1.Dsl.Condition.md)
-
 ## Properties
 
-### <a id="DSLApp1_Dsl_HealMechanic_Amount"></a> Amount
+### <a id="DSLApp1_Dsl_HealSubMechanic_Amount"></a> Amount
 
 ```csharp
 public float Amount { get; init; }
@@ -56,33 +52,13 @@ public float Amount { get; init; }
 
  [float](https://learn.microsoft.com/dotnet/api/system.single)
 
-### <a id="DSLApp1_Dsl_HealMechanic_Condition"></a> Condition
+### <a id="DSLApp1_Dsl_HealSubMechanic_Type"></a> Type
 
 ```csharp
-public Condition Condition { get; init; }
+public HealSubMechanicType Type { get; init; }
 ```
 
 #### Property Value
 
- [Condition](DSLApp1.Dsl.Condition.md)
-
-### <a id="DSLApp1_Dsl_HealMechanic_Stat"></a> Stat
-
-```csharp
-public EconomyStat Stat { get; init; }
-```
-
-#### Property Value
-
- [EconomyStat](DSLApp1.Dsl.EconomyStat.md)
-
-### <a id="DSLApp1_Dsl_HealMechanic_Type"></a> Type
-
-```csharp
-public HealMechanicType Type { get; init; }
-```
-
-#### Property Value
-
- [HealMechanicType](DSLApp1.Dsl.HealMechanicType.md)
+ [HealSubMechanicType](DSLApp1.Dsl.HealSubMechanicType.md)
 

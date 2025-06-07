@@ -204,6 +204,16 @@ public static readonly Parser<Token, Token> Charges
 
  Parser<[Token](DSLApp1.Dsl.Token.md), [Token](DSLApp1.Dsl.Token.md)\>
 
+### <a id="DSLApp1_Dsl_Tok_Cleanse"></a> Cleanse
+
+```csharp
+public static readonly Parser<Token, Token> Cleanse
+```
+
+#### Field Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [Token](DSLApp1.Dsl.Token.md)\>
+
 ### <a id="DSLApp1_Dsl_Tok_Colon"></a> Colon
 
 ```csharp
@@ -328,6 +338,26 @@ public static readonly Parser<Token, Token> Delay
 
 ```csharp
 public static readonly Parser<Token, Token> Drains
+```
+
+#### Field Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [Token](DSLApp1.Dsl.Token.md)\>
+
+### <a id="DSLApp1_Dsl_Tok_EOF"></a> EOF
+
+```csharp
+public static readonly Parser<Token, Token> EOF
+```
+
+#### Field Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [Token](DSLApp1.Dsl.Token.md)\>
+
+### <a id="DSLApp1_Dsl_Tok_Earth"></a> Earth
+
+```csharp
+public static readonly Parser<Token, Token> Earth
 ```
 
 #### Field Value
@@ -568,6 +598,16 @@ public static readonly Parser<Token, Token> Intelligence
 
 ```csharp
 public static readonly Parser<Token, Token> Invokes
+```
+
+#### Field Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [Token](DSLApp1.Dsl.Token.md)\>
+
+### <a id="DSLApp1_Dsl_Tok_Kill"></a> Kill
+
+```csharp
+public static readonly Parser<Token, Token> Kill
 ```
 
 #### Field Value
@@ -938,6 +978,16 @@ public static readonly Parser<Token, Token> Self
 
 ```csharp
 public static readonly Parser<Token, Token> Shield
+```
+
+#### Field Value
+
+ Parser<[Token](DSLApp1.Dsl.Token.md), [Token](DSLApp1.Dsl.Token.md)\>
+
+### <a id="DSLApp1_Dsl_Tok_ShieldBreaker"></a> ShieldBreaker
+
+```csharp
+public static readonly Parser<Token, Token> ShieldBreaker
 ```
 
 #### Field Value

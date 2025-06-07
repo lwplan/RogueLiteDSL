@@ -35,23 +35,23 @@ public record HealEffectIR : EffectIR, IEquatable<EffectIR>, IEquatable<HealEffe
 ### <a id="DSLApp1_Dsl_HealEffectIR__ctor_DSLApp1_Dsl_Subject_DSLApp1_Dsl_HealMechanic_DSLApp1_Dsl_Targeting_"></a> HealEffectIR\(Subject, HealMechanic, Targeting?\)
 
 ```csharp
-public HealEffectIR(Subject Subject, HealMechanic HealMechanic, Targeting? Targeting = null)
+public HealEffectIR(Subject Subject, HealMechanic Mechanic, Targeting? Targeting = null)
 ```
 
 #### Parameters
 
 `Subject` [Subject](DSLApp1.Dsl.Subject.md)
 
-`HealMechanic` [HealMechanic](DSLApp1.Dsl.HealMechanic.md)
+`Mechanic` [HealMechanic](DSLApp1.Dsl.HealMechanic.md)
 
 `Targeting` [Targeting](DSLApp1.Dsl.Targeting.md)?
 
 ## Properties
 
-### <a id="DSLApp1_Dsl_HealEffectIR_HealMechanic"></a> HealMechanic
+### <a id="DSLApp1_Dsl_HealEffectIR_Mechanic"></a> Mechanic
 
 ```csharp
-public HealMechanic HealMechanic { get; init; }
+public HealMechanic Mechanic { get; init; }
 ```
 
 #### Property Value
