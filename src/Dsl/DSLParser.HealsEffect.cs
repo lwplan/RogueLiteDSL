@@ -4,6 +4,14 @@ using static Pidgin.Parser;
 
 namespace DSLApp1.Dsl;
 
+public enum HealSubMechanicType
+{
+    Cleanse
+}
+
+public record HealSubMechanic(HealSubMechanicType HealSubMechanicType, float Amount)
+
+
 public enum HealMechanicType
 {
     Restore,
@@ -28,6 +36,7 @@ public record HealMechanic(
 public record HealEffectIR(
     Subject Subject,
     HealMechanic HealMechanic,
+    List<HealSubMechanic>? SubMechanics,
     Targeting? Targeting = null
 ) : EffectIR(Subject, EffectType.Heal);
 
